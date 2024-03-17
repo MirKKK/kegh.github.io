@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Java知识体系构建]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Java知识体系构建</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 17 Mar 2024 03:30:11 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 17 Mar 2024 03:28:12 GMT</pubDate><copyright><![CDATA[kegh]]></copyright><ttl>60</ttl><dc:creator>kegh</dc:creator><item><title><![CDATA[01、计算机硬件]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Java知识体系构建]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Java知识体系构建</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 17 Mar 2024 03:58:56 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 17 Mar 2024 03:56:12 GMT</pubDate><copyright><![CDATA[kegh]]></copyright><ttl>60</ttl><dc:creator>kegh</dc:creator><item><title><![CDATA[01、计算机硬件]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\01、计算机基础\01、计算机硬件.html</link><guid isPermaLink="false">01、通用基础/01、计算机基础/01、计算机硬件.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:45 GMT</pubDate></item><item><title><![CDATA[02、操作系统]]></title><description><![CDATA[ 
  <br><br>--Microsoft 公司推出的操作系统。（在 windows 之前的操作系统）<br>
 --DOS 是英文"Disk Operating System"的缩写, 其中文含意是"磁盘操作系统".<br>
@@ -620,12 +620,12 @@ netstat -ant |awk '/:80/{split($5,ip,”:”);++A[ip[1]]}END{for(i in A) print A
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\02、线性表-链表.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/02、线性表 - 链表.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:44 GMT</pubDate></item><item><title><![CDATA[03、线性表(散列) - 哈希表]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\03、线性表(散列)-哈希表.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/03、线性表(散列) - 哈希表.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:43 GMT</pubDate></item><item><title><![CDATA[一. 初识算法]]></title><description><![CDATA[ 
  <br><br><br>定义<br>在数学和计算机科学领域，算法是一系列有限的严谨指令，通常用于解决一类特定问题或执行计算<br>
-In mathematics and computer science, an algorithm (/ˈælɡərɪðəm/) is a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation.<a href="\#fn-1-9ecef8733a0afbb6" class="footnote-link" target="_self" rel="noopener">[1]</a>
-<br>Introduction to Algorithm<a href="\#fn-2-9ecef8733a0afbb6" class="footnote-link" target="_self" rel="noopener">[2]</a><br>不正式的说，算法就是任何定义优良的计算过程：接收一些值作为输入，在有限的时间内，产生一些值作为输出。<br>
+In mathematics and computer science, an algorithm (/ˈælɡərɪðəm/) is a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation.<a href="\#fn-1-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[1]</a>
+<br>Introduction to Algorithm<a href="\#fn-2-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[2]</a><br>不正式的说，算法就是任何定义优良的计算过程：接收一些值作为输入，在有限的时间内，产生一些值作为输出。<br>
 Informally, an algorithm is any well-defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output in a finite amount of time.
 <br><br>定义<br>在计算机科学领域，数据结构是一种数据组织、管理和存储格式，通常被选择用来高效访问数据<br>
 In computer science, a data structure is a data organization, management, and storage format that is usually chosen for efficient access to data
-<br>Introduction to Algorithm<a href="\#fn-2-9ecef8733a0afbb6" class="footnote-link" target="_self" rel="noopener">[2-1]</a><br>数据结构是一种存储和组织数据的方式，旨在便于访问和修改<br>
+<br>Introduction to Algorithm<a href="\#fn-2-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[2-1]</a><br>数据结构是一种存储和组织数据的方式，旨在便于访问和修改<br>
 A data structure is a way to store and organize data in order to facilitate access and modifications
 <br>接下来我们通过对一个非常著名的二分查找算法的讲解来认识一下算法<br><br>二分查找算法也称折半查找，是一种非常高效的工作于有序数组的查找算法。后续的课程中还会学习更多的查找算法，但在此之前，不妨用它作为入门。<br><br>需求：在有序数组  内，查找值 <br>
 <br>如果找到返回索引
@@ -752,7 +752,7 @@ return -1，执行一次
 <br>
 为了对  进行化简，应当抓住主要矛盾，找到一个变化趋势与之相近的表示法
 
-<br>大  表示法<a href="\#fn-4-9ecef8733a0afbb6" class="footnote-link" target="_self" rel="noopener">[4]</a><br>“.\imgs\image-20221108103846566.png” could not be found.<br>其中<br>
+<br>大  表示法<a href="\#fn-4-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[4]</a><br>“.\imgs\image-20221108103846566.png” could not be found.<br>其中<br>
 <br> 都为一个常数
 <br> 是实际执行代码行数与 n 的函数
 <br> 是经过化简，变化趋势与  一致的 n 的函数
@@ -962,7 +962,7 @@ In computer science, an array is a data structure consisting of a collection of 
 <br>8 字节 markword
 <br>4 字节 class 指针（压缩 class 指针的情况）
 <br>4 字节 数组大小（决定了数组最大容量是 ）
-<br>数组元素 + 对齐字节（java 中所有对象大小都是 8 字节的整数倍<a href="\#fn-5-9ecef8733a0afbb6" class="footnote-link" target="_self" rel="noopener">[5]</a>，不足的要用对齐字节补足）
+<br>数组元素 + 对齐字节（java 中所有对象大小都是 8 字节的整数倍<a href="\#fn-5-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[5]</a>，不足的要用对齐字节补足）
 <br>例如<br>int[] array = {1, 2, 3, 4, 5};
 复制<br>的大小为 40 个字节，组成如下<br>8 + 4 + 4 + 5*4 + 4(alignment)
 复制<br>随机访问性能<br>即根据索引查找元素，时间复杂度是 <br><br>java 版本<br>public class DynamicArray implements Iterable&lt;Integer&gt; {
@@ -1185,7 +1185,7 @@ I/O 读写时同样可以体现局部性原理
 <br>代码位置：openjdk\src\hotspot\share\oops\arrayOop.hpp
 <br>只不过此检查代码，不需要由程序员自己来调用，JVM 会帮我们调用<br><br><br>定义<br>在计算机科学中，链表是数据元素的线性集合，其每个元素都指向下一个元素，元素存储上并不连续<br>
 In computer science, a linked list is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. 
-<br>可以分类为<a href="\#fn-6-9ecef8733a0afbb6" class="footnote-link" target="_self" rel="noopener">[6]</a><br>
+<br>可以分类为<a href="\#fn-6-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[6]</a><br>
 <br>单向链表，每个元素只知道其下一个元素是谁
 <br>“.\imgs\image-20221110083407176.png” could not be found.<br>
 <br>双向链表，每个元素知道其上一个元素和下一个元素
@@ -1847,10 +1847,10 @@ void f(Node node = 1) {
 
 <br>
 
-<br>更多 Fibonacci 参考<a href="\#fn-7-9ecef8733a0afbb6" class="footnote-link" target="_self" rel="noopener">[7]</a><a href="\#fn-8-9ecef8733a0afbb6" class="footnote-link" target="_self" rel="noopener">[8]</a><a href="\#fn-9-9ecef8733a0afbb6" class="footnote-link" target="_self" rel="noopener">[9]</a>
+<br>更多 Fibonacci 参考<a href="\#fn-7-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[7]</a><a href="\#fn-8-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[8]</a><a href="\#fn-9-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[9]</a>
 <br>以上时间复杂度分析，未考虑大数相加的因素
 
-<br>变体1 - 兔子问题<a href="\#fn-7-9ecef8733a0afbb6" class="footnote-link" target="_self" rel="noopener">[7-1]</a><br>“imgs/image-20221110155655827.png” could not be found.<br>
+<br>变体1 - 兔子问题<a href="\#fn-7-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[7-1]</a><br>“imgs/image-20221110155655827.png” could not be found.<br>
 <br>第一个月，有一对未成熟的兔子（黑色，注意图中个头较小）
 <br>第二个月，它们成熟
 <br>第三个月，它们能产下一对新的小兔子（蓝色）
@@ -1952,7 +1952,7 @@ public static int f(int[] cache, int n) {
 }
 复制<br>
 <br>最后一步执行的是加法
-<br>一些语言<a href="\#fn-10-9ecef8733a0afbb6" class="footnote-link" target="_self" rel="noopener">[10]</a>的编译器能够对尾调用做优化，例如<br>function a() {
+<br>一些语言<a href="\#fn-10-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[10]</a>的编译器能够对尾调用做优化，例如<br>function a() {
     // 做前面的事
     return b() 
 }
@@ -5079,7 +5079,7 @@ private ListNode middle(ListNode head) {
     }
     return true;
 }
-复制<br><br>本题以及下题，实际是 Floyd's Tortoise and Hare Algorithm （Floyd 龟兔赛跑算法）<a href="\#fn-15-9ecef8733a0afbb6" class="footnote-link" target="_self" rel="noopener">[15]</a><br>
+复制<br><br>本题以及下题，实际是 Floyd's Tortoise and Hare Algorithm （Floyd 龟兔赛跑算法）<a href="\#fn-15-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[15]</a><br>
 除了 Floyd 判环算法外，还有其它的判环算法，详见 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Cycle_detection" target="_blank">https://en.wikipedia.org/wiki/Cycle_detection</a>
 <br><img style="zoom: 50%;" alt="image-20221229190646563" src="\imgs\image-20221229190646563.png" referrerpolicy="no-referrer"><br>如果链表上存在环，那么在环上以不同速度前进的两个指针必定会在某个时刻相遇。算法分为两个阶段<br>阶段1<br>
 <br>龟一次走一步，兔子一次走两步
@@ -6660,21 +6660,21 @@ public TreeNode constructExpressionTree(String[] tokens) {
 <br><a data-tooltip-position="top" aria-label="https://link.zhihu.com/?target=https%3A//leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/" rel="noopener" class="external-link" href="https://link.zhihu.com/?target=https%3A//leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/" target="_blank">114. Flatten Binary Tree to Linked List (二叉树展开为链表)</a>, Medium, 877 likes
 <br>
 <br>
-<br><a data-tooltip-position="top" aria-label="https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://www.merriam-webster.com/dictionary/algorithm" target="_blank">"Definition of ALGORITHM"</a>. Merriam-Webster Online Dictionary. <a data-tooltip-position="top" aria-label="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" target="_blank">Archived</a> from the original on February 14, 2020. Retrieved November 14, 2019.<a href="\#fnref-1-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Introduction to Algorithm 中文译作《算法导论》<a href="\#fnref-2-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-2-1-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>主要参考文档 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank">https://en.wikipedia.org/wiki/Binary_search_algorithm</a><a href="\#fnref-3-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>图片及概念均摘自 Introduction to Algorithm 4th，3.1节，3.2 节<a href="\#fnref-4-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>jdk 版本有关，64 位 jdk，按 8 字节对齐<a href="\#fnref-5-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>图片引用自 wikipedia linkedlist 条目，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Linked_list" target="_blank">https://en.wikipedia.org/wiki/Linked_list</a><a href="\#fnref-6-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Fibonacci 介绍：<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank">https://en.wikipedia.org/wiki/Fibonacci_number</a><a href="\#fnref-7-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-7-1-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br><a data-tooltip-position="top" aria-label="https://zhuanlan.zhihu.com/p/165877869" rel="noopener" class="external-link" href="https://zhuanlan.zhihu.com/p/165877869" target="_blank">几种计算Fibonacci数列算法的时间复杂度比较 - 知乎 (zhihu.com)</a><a href="\#fnref-8-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>几种斐波那契数列算法比较 <a data-tooltip-position="top" aria-label="https://www.nayuki.io/page/fast-fibonacci-algorithms" rel="noopener" class="external-link" href="https://www.nayuki.io/page/fast-fibonacci-algorithms" target="_blank">Fast Fibonacci algorithms (nayuki.io)</a><a href="\#fnref-9-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>我知道的有 C++，Scala<a href="\#fnref-10-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>与主定理类似的还有 Akra–Bazzi method，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method" target="_blank">https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method</a><a href="\#fnref-11-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Josephus problem 主要参考 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Josephus_problem" target="_blank">https://en.wikipedia.org/wiki/Josephus_problem</a><a href="\#fnref-12-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>汉诺塔图片资料均来自 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">https://en.wikipedia.org/wiki/Tower_of_Hanoi</a><a href="\#fnref-13-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>也称为 Pascal's triangle <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Pascal%27s_triangle" target="_blank">https://en.wikipedia.org/wiki/Pascal%27s_triangle</a><a href="\#fnref-14-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>龟兔赛跑动画来自于 <a data-tooltip-position="top" aria-label="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" rel="noopener" class="external-link" href="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" target="_blank">Floyd's Hare and Tortoise Algorithm Demo - One Step! Code (onestepcode.com)</a><a href="\#fnref-15-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br><a data-tooltip-position="top" aria-label="https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://www.merriam-webster.com/dictionary/algorithm" target="_blank">"Definition of ALGORITHM"</a>. Merriam-Webster Online Dictionary. <a data-tooltip-position="top" aria-label="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" target="_blank">Archived</a> from the original on February 14, 2020. Retrieved November 14, 2019.<a href="\#fnref-1-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Introduction to Algorithm 中文译作《算法导论》<a href="\#fnref-2-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-2-1-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>主要参考文档 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank">https://en.wikipedia.org/wiki/Binary_search_algorithm</a><a href="\#fnref-3-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>图片及概念均摘自 Introduction to Algorithm 4th，3.1节，3.2 节<a href="\#fnref-4-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>jdk 版本有关，64 位 jdk，按 8 字节对齐<a href="\#fnref-5-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>图片引用自 wikipedia linkedlist 条目，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Linked_list" target="_blank">https://en.wikipedia.org/wiki/Linked_list</a><a href="\#fnref-6-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Fibonacci 介绍：<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank">https://en.wikipedia.org/wiki/Fibonacci_number</a><a href="\#fnref-7-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-7-1-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br><a data-tooltip-position="top" aria-label="https://zhuanlan.zhihu.com/p/165877869" rel="noopener" class="external-link" href="https://zhuanlan.zhihu.com/p/165877869" target="_blank">几种计算Fibonacci数列算法的时间复杂度比较 - 知乎 (zhihu.com)</a><a href="\#fnref-8-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>几种斐波那契数列算法比较 <a data-tooltip-position="top" aria-label="https://www.nayuki.io/page/fast-fibonacci-algorithms" rel="noopener" class="external-link" href="https://www.nayuki.io/page/fast-fibonacci-algorithms" target="_blank">Fast Fibonacci algorithms (nayuki.io)</a><a href="\#fnref-9-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>我知道的有 C++，Scala<a href="\#fnref-10-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>与主定理类似的还有 Akra–Bazzi method，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method" target="_blank">https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method</a><a href="\#fnref-11-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Josephus problem 主要参考 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Josephus_problem" target="_blank">https://en.wikipedia.org/wiki/Josephus_problem</a><a href="\#fnref-12-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>汉诺塔图片资料均来自 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">https://en.wikipedia.org/wiki/Tower_of_Hanoi</a><a href="\#fnref-13-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>也称为 Pascal's triangle <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Pascal%27s_triangle" target="_blank">https://en.wikipedia.org/wiki/Pascal%27s_triangle</a><a href="\#fnref-14-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>龟兔赛跑动画来自于 <a data-tooltip-position="top" aria-label="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" rel="noopener" class="external-link" href="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" target="_blank">Floyd's Hare and Tortoise Algorithm Demo - One Step! Code (onestepcode.com)</a><a href="\#fnref-15-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\03、ds-a-第一篇-基础数据结构.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/03、DS-A 第一篇 基础数据结构.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:44 GMT</pubDate><enclosure url="imgs\image-20221108095747933.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;imgs\image-20221108095747933.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[04、线性表 - 栈和队列]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\04、线性表-栈和队列.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/04、线性表 - 栈和队列.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:44 GMT</pubDate></item><item><title><![CDATA[05、树 - 基础和Overview]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\05、树-基础和overview.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/05、树 - 基础和Overview.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:43 GMT</pubDate></item><item><title><![CDATA[★ 常见排序算法 ★]]></title><description><![CDATA[ 
@@ -7407,7 +7407,16 @@ func main() {
     fmt.Println(conn1) //&lt;nil&gt;  
     fmt.Println(err) //dial tcp 127.0.0.1:8080: connectex: No connection could be made because the target machine actively refused it.  
 }
-复制<br>在多个短变量声明和赋值中，至少有一个新声明的变量出现在左值中，即便其他变量名可能是重复声明的，编译器也不会报错<br>❷ 特例 2：重写全局<br><br><br><br>
+复制<br>在多个短变量声明和赋值中，至少有一个新声明的变量出现在左值中，即便其他变量名可能是重复声明的，编译器也不会报错<br>❷ 特例 2：重写全局<br><br><br>package main
+import "fmt"
+//声明全局变量
+var bb float32 = 3.14
+func main() {
+	bb := 3
+	fmt.Println(bb)
+}
+//执行结果 3
+复制<br><br>
 变量交换，比如 a=100，b=200，交换之后 a=200，b=100
 <br>常用第三变量赋值，或者位运算，但是 Go 里面可以这样：<br>package main
 
@@ -22219,7 +22228,135 @@ systemctl restart docker
  ]]></description><link>07、云原生相关\01、容器化、编排\01、docker\07、dockerfile详解.html</link><guid isPermaLink="false">07、云原生相关/01、容器化、编排/01、Docker/07、Dockerfile详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:43 GMT</pubDate></item><item><title><![CDATA[08、DockerCompose详解]]></title><description><![CDATA[ 
  ]]></description><link>07、云原生相关\01、容器化、编排\01、docker\08、dockercompose详解.html</link><guid isPermaLink="false">07、云原生相关/01、容器化、编排/01、Docker/08、DockerCompose详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:43 GMT</pubDate></item><item><title><![CDATA[09、Docker底层实现]]></title><description><![CDATA[ 
  ]]></description><link>07、云原生相关\01、容器化、编排\01、docker\09、docker底层实现.html</link><guid isPermaLink="false">07、云原生相关/01、容器化、编排/01、Docker/09、Docker底层实现.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:43 GMT</pubDate></item><item><title><![CDATA[10、Docker安全相关]]></title><description><![CDATA[ 
- ]]></description><link>07、云原生相关\01、容器化、编排\01、docker\10、docker安全相关.html</link><guid isPermaLink="false">07、云原生相关/01、容器化、编排/01、Docker/10、Docker安全相关.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:43 GMT</pubDate></item><item><title><![CDATA[git]]></title><description><![CDATA[ 
+ ]]></description><link>07、云原生相关\01、容器化、编排\01、docker\10、docker安全相关.html</link><guid isPermaLink="false">07、云原生相关/01、容器化、编排/01、Docker/10、Docker安全相关.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:43 GMT</pubDate></item><item><title><![CDATA[01、个人简历和面试]]></title><description><![CDATA[ 
+ <br><br><br>姓名、性别、年龄、联系方式、邮箱、学校学历专业（好的写，不好的放到后面）、籍贯 <br>联系方式、邮箱： 简历再好，联系不到 = 白费！<br>
+籍贯：可以碰运气，老乡会有亲切感。<br>
+学历：好的放前面，穷<br>
+专业：计算机专业可以写。<br>
+工作经验：3 年以下不要写。<br>
+薪资：不写 / 准确值 / 面议 ，不要写区间范围。<br>以上信息最好列出来，不要堆在一起，并且格式上最好统一。<br><br>求职意向岗位、期望薪水、到岗时间 <br><br><br>不要担心有些内容过于包装，先争取面试机会。<br>我自己可以，是最棒的，不要瞻前顾后。<br><br>不要做的事情：<br>1）不要不敢写技能<br>
+哪怕是项目没有使用到，问到不会也没关系，不会有啥损失，也可以<br>2）不要纯粹堆积技术名词<br>
+纯堆积毫无意义，面试官会在自己的知识体系中挑选，问几个不会就知道简历上其他的掌握都是假的，哪怕是你后面的东西真的会。<br>3）不要写无关紧要的技术<br>
+Html、css 类似于这样的技术点，对于面试和技术体系来说没有任何增值。<br>
+甚至有写 Office？毫无意义还减分，认为你是个外行转入。<br>4）不要写了解<br>
+了解 = 不会，知道技术名词，对于细节一无所知，是一个减分项目。<br>
+最低写熟练应用、熟练掌握、熟悉。<br>需要<br>
+1）提前了解企业的招聘需求<br>
+不建议海投，针对性的调整和修改。HR 不动技术，会进行筛选，和企业需求相匹配。<br>2）突出技术细节<br>3）带上项目中的应用<br>
+可以加上：并在项目中熟练使用。<br>
+这样引导面试官去问，给他挖陷阱。<br>
+在哪些地方使用，这时候把提前准备好的东西拿出来。<br>
+解决过类似问题，技术方案。<br>4）逻辑性和条理性<br>
+最好按照先易后难，或者一定技术栈顺序，让别人感觉到你的条理性。<br>5）格式和标点统一<br>精通、熟悉<br>3-5 年，5 年以上要加上精通<br>格式上：写上对一个技术点的掌握程度，对里面的哪些具体内容深入了解，列出来引导面试。<br><br>1、精通、熟悉 java 核心知识，多年一线研发经验，具备良好的编程能力，并熟练使用设计模式熟练掌握 javase 基础知识，对集合、线程、io 等都有深入理解，具备良好的面向对象的编程思想，并熟练使用设计模式<br>
+2、精通、熟悉 java 并发编程，对 java 的各种锁机制，线程池机制、AQS 等都有深入理解，并在项目中熟练使用<br>
+3、精通、熟悉 JVM，对 GC 算法、垃圾回收器，类加载机制都有深入的理解，并且参与过线上项目的 JVM 调优工作<br>
+4、熟悉 spring、springmvc、mybatis、springboot 等核心框架，可以根据需求快速搭建项目，并阅读过核心源码（看过循环依赖的核心代码实现、bean 的生命周期、springboot 自动装配原理、内嵌 tomcat 源码、springboot 启动流程)<br>
+（ioc、aop、生命周期、循环依赖、声明式事务、传播特性、项目中 aop 的扩展点、九组件源码、源码的扩展点、自动装配的原理、springboot 启动流程、内嵌 tomcat 原理、代理模式的应用）<br>5、熟悉 springcloud、springcloud alibaba、dubbo 等微服务框架, 对 nacos, sentinel 等组件有深入理解, 对服务划分、服务治理、服务分层等都有深入理解，并具备线上项目经验。<br>6、熟悉常用的分布式解决方案：分布式事务、分布式锁、分布式 ID <br>7、熟悉 mysql，对 mysql 的锁、事务、索引等都有深入研究，并参与过线上项目的调优工作<br>
+精通、熟悉 SQL 语言和 mysql 调优，多年实战经验，对索引的优化及存储引擎有深入的研究，对 mysql 的事务、锁有深入理解，对 mysql 集群，主从复制、读写分离，分库分表都有实战经验，对 MHA，MMM 等高可用架构有实际的经验<br>8、熟悉 redis，了解底层磁盘及 IO 模型，数据持久化机制，哨兵机制，对于单机和集群 redis 都有实际经验<br>
+了解底层磁盘及网络 IO 模型，数据持久化机制，多数据类型缓存应用，高可用机制以及分布式集群实现，主从复制、哨兵机制，分片集群<br>9、熟悉 kafka，了解核心原理，对于底层刷盘机制、集群分片机制都有深入理解，并对消息丢失和重复消费有对应的线上解决方案<br>了解数据刷盘机制，集群分片化机制，在高吞吐量情况下消息不丢和重复消费以及消息投递一致性问题，<br>
+有实际的项目经验 rocketMQ, rabbitMQ, 不建议写 activeMQ<br>10、熟悉 zookeeper 底层原理和实现机制，了解 paxos,zab 算法，对 CAP 有深入理解。<br>了解 paxos, zab 算法，对 CAP 定理有深入理解，选举机制，zookeeper 实现分布式锁<br>熟悉大型网站高并发设计方案，对 nginx, lvs, keepalived, cdn, dns 等都有深入的理解，参与过高并发、高可用，高吞吐，高性能的架构设计方案<br>11、mongodb<br>
+12、 es<br>
+13、操作系统、机组、网络<br>
+14、 netty<br>
+15、 docker, k 8 s<br>
+16、 nginx, lvs, lua<br>
+17、http、 https<br>
+18、 xxljob<br><br>避免文字堆积，项目介绍不要太多，非军工企业基本上随便吹。<br>项目名称：XX 系统公司名称 XX 平台项目<br>
+描述：三四行文字描述即可，切忌大段落的文字堆积，要凸显出重点，有什么价值（具体的数据量）项目解决了什么问题（提供了什么行业的哪些具体的解决方案，有多少企业和个人在使用），可以添加核心的业务模块，但是不要全部都是核心模块<br>技术架构：项目中用到的所有的技术做罗列（只写技术名词）<br>职责描述：一定要分条展示，同时要虚 (需求分析，数据库建模，项目进度把控，技术选型，架构设计）实（实际的业务开发功能）结合至少要写 5 条以上，凸显出自己的核心价值<br>项目难点：个人不建议添加，一般的项目是没有难点的，可以提前去准备，但是这个是要面试的时候说的，而不是提前写出来的，每个人的技术认知和储备不一样，你写的内容在面试官看来可能不是难点，如果要写，从调优、重构、架构设计方面来考虑<br><br>不建议分条展示，写成一个段落即可展示你的行业背景和技术经验，比如做过什么行业的项目，提出过什么技术解决方案，接触过多大数据量的项目，对那些技术有深入研究，阅读过哪些技术类的书籍，做过哪些博客的积累，热爱工作，沟通能力强，责任心强对于大学生、实习生、经验不多的学生，要展示的是你的学习能力和态度对技术有热情，深入研究过 XXX、XXx 等技术、leetcode 有多少题目的储备、做过哪些教研室的项目，获得了什么成长，自己私下怎么学习技术的，阅读过哪些书籍，看过哪些 github 的项目，做过哪些博客的积累<br><br>公司名称职位时间<br><br> 学校学历专业时间 <br> 1、简历是敲门砖，任何人的简历都是要包装的，所以不要有抵触心理<br>
+2、在技术储备有问题的情况下不要想着去碰运气，如果技术不扎实，有面试机会也很难过<br>
+3、技术才是王道――<br><br>简历格式，不要左右分屏。<br>
+不要带框的，干净简洁。<br>发 PDF 格式<br><br>现在市场卷，并且海投的人较多。<br>
+公司层面收到大量简历，觉得自己公司很强。<br><br>对于感兴趣的公司，可以对其加分项观摩写入简历。<br>
+同时自己避免乱投海投。<br>原因：对公司有研究，不属于乱投海投的人。<br><br>技术岗、管理岗位、工作年限范围岗。<br>原因：简历后台也可以筛选，扩大被筛选范围。<br><br>最好在工作日的 10-12 点，下午 14-17 点之间投递。<br>原因：人事上班时间，聊天会在上面，容易被观察到。<br><br>在线简历：填写的最基本信息，筛选和查看的主要途径，简历完善度可能也会影响推荐。<br>附件简历：在线简历不能满足个性化需要，或者无法展示你的技能优势。<br>在线简历是投递前能看到的简历，附件简历是投递后才能看到的。<br>
+不要关闭在线简历。<br><br>不要"求"，开门见山，简短描述优势。（直接甩价值）<br>不要滋长 HR 嚣张气焰。<br><br>Boss 直聘：类似于求职中的实时通讯，回复率较高，反馈好。<br>
+智联招聘：综合性招聘软件，覆盖较广。建议小众、传统、三四线岗位。<br>
+拉勾网：互联网基因重，垂直度较高，页面简洁。<br>
+58 同城：比较杂，骗子最多。<br>
+前程无忧：<br>
+猎聘：<br><br>天眼查：查看公司情况<br>
+脉脉：入职感受，团队氛围<br>
+牛客：笔试面试刷题<br><br>每个公司的技术栈都不一样，选择你去引导面试官，而不是他去结合自己公司来问你。<br><br>1、简历是广告<br>
+广告可以虚夸，让别人知道你的价值！<br>2、调整心态<br>
+不管你会多少东西，我天下第一，让自己超常发挥。<br>3、不可能完全准备好<br>
+可以准备，但不要想着准备充足，先按照当前技术储备取尝试一些公司（我就是来试水的）面试回来之后做总结，不断总结，复盘，才能成长。<br>4、博取概率<br>
+不需要百分之百的成功才去做，概率学，50%也要去争取，拼概率就成功，万一 Cover 住在职场再提升。<br>5、不要太谦虚<br>
+对自己不要太谦虚，为什么无知的人越自信？有时候技术差自信的人反而吃香。<br>
+举例：<br>
+100 -&gt; 80  10 成 8   4 W- 3 w<br>
+60 -&gt; 80    10 成 2  3 W -2 W<br>6、不患得患失<br>
+全中国企业多，好公司也多，没必要在一棵树上吊死。可以有心仪的公司，留到最后，等试完水准备充分再去。<br>7、自尊心不要太强<br>
+没有到饥寒交迫的时候，总是有自尊心，害怕结果怕丢人，不敢尝试。年轻人的自尊心不值钱。<br>
+面试什么都不损失，不要担心。害怕就永远没有机会。<br><br><br><br>面试录音。<br><br>会发现面试的东西基本一样。哪怕是通过面试来学习，通过概率也是不断增加的。<br><br><br>系统化学习、项目推动学习。<br>细节 - 整体 <br>花费时间长。<br>整体 - 细节<br><br>目的是通过面试。<br>不调试 bug、不纠错、不纠结、先冲刺通过面试。<br>通过面试之后再系统学习。<br><br>1、定位<br>2、目标<br>3、实施<br><br>掌握基本技能<br><br>计算机操作系统<br>
+计算机组成原理<br>
+计算机网络网络与 I 0 模型<br>
+计算机编译原理<br>
+算法和数据结构（简易版）<br><br><br><br>深入理解 TCP 原理<br>
+JⅣM 调优之底层原理<br>
+Java 并发编程原理<br>
+深入理解 HTTPS 原理<br><br>LVS 负载均衡<br>
+Nginx 调优<br>
+JVM 调优性能调优<br>
+Mysql 调优<br>
+Tomcat 调优<br>
+MySQL 性能调优与架构设计<br>
+Nginx+lua+OpenResty 高性能实践<br><br>一、线程基础概念<br>
+二、并发编程的三大特性<br>
+三、锁<br>
+四、阻塞队列<br>
+五、线程池<br>
+六、并发集合<br>
+七、JUC 并发工具<br>
+八、异步编程<br>
+★单机最快 MQ-Disruptor 4<br>
+★线程池<br>
+★CAS 与原子操作<br>
+★ThreadLocal 详解<br>
+★JMH<br><br>Spring 底层源码<br>
+Spring MVC 源码<br>
+Mybatis 源码框架原理源码<br>
+Springboot 源码<br>
+SpringSecurity 源码<br>
+Spring Cloud Alibaba 源码<br>
+Spring Webflux 深入实战<br>
+Dubbo 源码<br><br><br>Spring Cloud Alibaba 微服务架构实战<br>
+apollo 配置中心<br>
+领域驱动模型设计与微服务架构<br>
+分布式 CAP 理论<br>
+分布式微服务架构设计<br>
+数据一致性方案<br>
+分布式锁<br>
+分布式事务<br>
+分布式幂等<br>
+分布式存储<br>
+分布式注册中心架构设计理论（97 h）<br>
+分布式配置中心<br>
+分布式会话分布式任务<br>
+负载均衡<br>
+熔断方案<br>
+降级方案<br>
+限流方案隔离方案服务监控方案响应式 web 响应式数据库响应式编程分布式 ID 生成方案<br><br><br><br><br><br>1、算法<br>2、system design<br>架构设计，春节红包雨活动，30 秒内抢 1 亿元红包，红包数量 1000 万，用户数 3000 万，可以连续抢，只可以抢成功一次；然后再进行资源评估。<br>日志、监控。<br>3、面试八股：JVM 并发，设计模式，源码<br>4、应用项目（2-4 个项目）<br>5、设计相关<br>6、大数据、云原生<br><br>·原单位提升<br>
+·跳槽 (频率)·比原来更值钱-&gt;<br>1：阅读工作机会，了解市场<br>
+2：定期投一投简历并更新<br><br>IT 薪水高！<br>
+各行各业都有中年危机。包括公务员。<br>年轻的时候重视。<br>没有和年龄匹配的技能栈，需要 T 字型技术栈。<br>技术 -  业务  - 管理<br>现在已经大龄，如 38 岁：<br>技术管理 -&gt; 架构师技术管理<br>
+快速的补充。]]></description><link>09、职场求职\01、简历面试\01、个人简历和面试.html</link><guid isPermaLink="false">09、职场求职/01、简历面试/01、个人简历和面试.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:46 GMT</pubDate></item><item><title><![CDATA[03、面试通用问题汇总]]></title><description><![CDATA[ 
+ ]]></description><link>09、职场求职\01、简历面试\03、面试通用问题汇总.html</link><guid isPermaLink="false">09、职场求职/01、简历面试/03、面试通用问题汇总.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:46 GMT</pubDate></item><item><title><![CDATA[02、公司企业和员工]]></title><description><![CDATA[ 
+ ]]></description><link>09、职场求职\02、企业和员工\02、公司企业和员工.html</link><guid isPermaLink="false">09、职场求职/02、企业和员工/02、公司企业和员工.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:46 GMT</pubDate></item><item><title><![CDATA[04、一些项目术语]]></title><description><![CDATA[ 
+ <br>信贷<br>
+P2P：P2P借贷平台连接借款人和投资人，通过在线平台提供借贷服务。这种模式通过去除传统金融机构的中介角色，降低了借款成本，并为投资人提供了更高的回报潜力。平台可以通过收取借款人和投资人的费用或利息来盈利。<br>风险：<br>
+<br>借款人信用风险：P2P 平台通常吸引了各类借款人，包括信用状况较差的人群。借款人的违约风险可能导致投资人无法获得预期的回报。
+<br>投资人信用风险：投资人也面临着借款人违约的风险。如果借款人无法按时还款或违约，投资人可能无法收回本金和利息。
+<br>平台风险：P2P平台本身也存在风险。一些平台可能会出现运营不善、违规操作或甚至欺诈行为。这种情况下，投资人可能会面临资金安全和回报损失的风险。
+<br>流动性风险：P2P社交借贷通常具有较长的投资期限。投资人在投资资金后，可能需要等待一段时间才能获得回报或提前退出。如果投资人需要在紧急情况下迅速取回资金，可能会面临流动性困难。
+<br>法律和监管风险：不同国家和地区对P2P社交借贷平台的监管规定不同。投资人和借款人需要关注相关法律法规，并了解平台是否符合监管要求。监管变化可能会对平台运营和投资人权益产生影响。
+<br>信息不对称风险：在P2P平台上，借款人和投资人的信息可能不对称。投资人可能难以准确评估借款人的信用状况和还款能力，从而增加了投资风险。
+<br>资金监管模式，来降低风险：<br><img src="\09、职场求职\03、项目和业务\assets\04、一些项目术语\img-20240302_152236.png"><br><img src="\09、职场求职\03、项目和业务\assets\04、一些项目术语\img-20240302_152648.png"><br>标的：借款人在 P 2 P 平台上发布借款的相关信息（金额... 时间.…. 利息….)<br>
+发标：借款人在 P 2 P 平台上发布借款的动作<br>
+投标：投资人针对某个标的进行出借的动作<br>B2B：企业之间的交易和合作关系。在 B2B 模式中，一个企业提供产品或服务给另一个企业，而不是直接面向个人消费者。这种模式通常涉及大宗交易、供应链合作、跨国企业间的合作等。B2B 模式下的交易可能是定制化的，价格和合同条件通常会根据双方的需求和协商而定。<br>B2C：（企业对个人消费者）是指企业向个人消费者销售产品或提供服务的模式。在B2C模式中，企业直接与个人消费者进行交易，通过零售渠道、电子商务平台或线下商店销售产品和服务。B2C模式通常涉及广告、市场推广、个性化消费体验等方面的活动，以吸引和满足个人消费者的需求。<br>区别：<br>
+<br>参与方：B2B 模式中的参与方是企业，而 B2C 模式中的参与方是个人消费者。
+<br>交易规模和频率：B2B交易往往涉及大宗交易和长期合作，而B2C交易通常是小额交易，频率较高。
+<br>决策过程：在B2B模式中，决策过程可能更为复杂，需要多个层面的决策者参与。而在B2C模式中，决策过程通常由个人消费者自主决定。
+<br>销售和营销策略：B2B模式下的销售和营销策略通常更加专业化和面向企业需求，注重建立长期合作关系。B2C模式下的销售和营销策略则更注重个人消费者的情感连接和品牌体验。
+<br>C2C（Consumer-to-Consumer）：C2C模式允许个人消费者之间直接进行交易。这种模式通常在在线市场或平台上实现，个人消费者可以在平台上销售自己的产品、提供服务或进行二手交易。平台提供交易撮合、支付处理和信任保障等功能，以促成个人消费者之间的交易。<br>咸鱼是一个典型的C2C（Consumer-to-Consumer）二手交易平台。在咸鱼上，个人消费者可以直接在平台上出售和购买二手物品，实现个人之间的交易。]]></description><link>09、职场求职\03、项目和业务\04、一些项目术语.html</link><guid isPermaLink="false">09、职场求职/03、项目和业务/04、一些项目术语.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:46 GMT</pubDate><enclosure url="09、职场求职\03、项目和业务\assets\04、一些项目术语\img-20240302_152236.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;09、职场求职\03、项目和业务\assets\04、一些项目术语\img-20240302_152236.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[git]]></title><description><![CDATA[ 
  <br><br>一般来说，团队合作开发的话，每个人都需要在自己的功能分支 feat/XXX 上开发，最后一起合并到总的开发分支 dev 上，然后将开发分支 dev 合并到测试分支上，最后将测试分支合并到正式发布分支上。<br>其中总的开发分支一般叫做 dev 分支，正式发布分支一般是叫 main/master/release 分支。<br>“\images\git\image-分支规范.png” could not be found.<br>比如说有 A、B、C 三个人协助进行功能开发：<br>
 <br>首先 A、B、C 三位小伙伴从总开发分支 Dev 上开辟自己的功能分支，分别是 feat/AXXX、feat/BXXX、feat/CXXX，也就是图中 feat/AXXX、feat/BXXX、feat/CXXX 的三条线；
 <br>然后在自己的开发机上进行开发，这里的开发机可以是本地环境也可以是一些云端的开发机。开发完毕后，再分别合到总开发分支 dev 上，也就是图中蓝色的三条线，在这个过程中可能会产生一些代码冲突，挨个 solve 即可；
@@ -22533,7 +22670,7 @@ ___
     它实际上包含了两行。
 复制<br>在这个例子中，[^1]&nbsp;是对脚注的引用，[^1]: 这是脚注的内容。&nbsp;<br>
 标识符可以是数字或单词，但不能包含空格或制表符。标识符仅将脚注参考与脚注本身相关联-在输出中，脚注按顺序编号。<br>
-脚注代号可以随便命名，不过推荐使用数字序号。脚注代号+∶+空格＋脚注内容<br>这是一段带有多个脚注的文本<a href="\#fn-1-9ecef8733a0afbb6" class="footnote-link" target="_self" rel="noopener">[1]</a>内容<a href="\#fn-2-9ecef8733a0afbb6" class="footnote-link" target="_self" rel="noopener">[2]</a>。<br><br><br><br>可以通过&nbsp;- [ ]&nbsp;来创建一个未完成的任务，通过&nbsp;- [x]&nbsp;来创建一个已完成的任务。例如：<br>- [ ] 这是一个未完成的任务。
+脚注代号可以随便命名，不过推荐使用数字序号。脚注代号+∶+空格＋脚注内容<br>这是一段带有多个脚注的文本<a href="\#fn-1-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[1]</a>内容<a href="\#fn-2-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[2]</a>。<br><br><br><br>可以通过&nbsp;- [ ]&nbsp;来创建一个未完成的任务，通过&nbsp;- [x]&nbsp;来创建一个已完成的任务。例如：<br>- [ ] 这是一个未完成的任务。
 - [x] 这是一个已完成的任务。
 复制<br>
 <br>这是一个未完成的任务。
@@ -22611,6 +22748,6 @@ Expected one of the following:
 图片格式最好为：. PNG 这种支持高清方式<br>文章内所有链接统一使用标准 markdown 格式，防止使用 typora 使连接失效。<br>
 如果已经有 obisidian 的链接了，单文件可以直接选中已有文件，只要设置对了会自动变成 markdown 的原本格式。<br>
 <br>
-<br>这是第一个脚注的内容。<a href="\#fnref-1-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>这是第二个脚注的内容。<a href="\#fnref-2-9ecef8733a0afbb6" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>这是第一个脚注的内容。<a href="\#fnref-1-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>这是第二个脚注的内容。<a href="\#fnref-2-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>readme.html</link><guid isPermaLink="false">README.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 26 Feb 2024 12:56:50 GMT</pubDate></item></channel></rss>
