@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Java知识体系构建]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Java知识体系构建</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 17 Mar 2024 03:58:56 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 17 Mar 2024 03:56:12 GMT</pubDate><copyright><![CDATA[kegh]]></copyright><ttl>60</ttl><dc:creator>kegh</dc:creator><item><title><![CDATA[01、计算机硬件]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Java知识体系构建]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Java知识体系构建</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 17 Mar 2024 04:27:07 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 17 Mar 2024 04:25:27 GMT</pubDate><copyright><![CDATA[kegh]]></copyright><ttl>60</ttl><dc:creator>kegh</dc:creator><item><title><![CDATA[01、计算机硬件]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\01、计算机基础\01、计算机硬件.html</link><guid isPermaLink="false">01、通用基础/01、计算机基础/01、计算机硬件.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:45 GMT</pubDate></item><item><title><![CDATA[02、操作系统]]></title><description><![CDATA[ 
  <br><br>--Microsoft 公司推出的操作系统。（在 windows 之前的操作系统）<br>
 --DOS 是英文"Disk Operating System"的缩写, 其中文含意是"磁盘操作系统".<br>
@@ -620,12 +620,12 @@ netstat -ant |awk '/:80/{split($5,ip,”:”);++A[ip[1]]}END{for(i in A) print A
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\02、线性表-链表.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/02、线性表 - 链表.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:44 GMT</pubDate></item><item><title><![CDATA[03、线性表(散列) - 哈希表]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\03、线性表(散列)-哈希表.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/03、线性表(散列) - 哈希表.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:43 GMT</pubDate></item><item><title><![CDATA[一. 初识算法]]></title><description><![CDATA[ 
  <br><br><br>定义<br>在数学和计算机科学领域，算法是一系列有限的严谨指令，通常用于解决一类特定问题或执行计算<br>
-In mathematics and computer science, an algorithm (/ˈælɡərɪðəm/) is a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation.<a href="\#fn-1-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[1]</a>
-<br>Introduction to Algorithm<a href="\#fn-2-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[2]</a><br>不正式的说，算法就是任何定义优良的计算过程：接收一些值作为输入，在有限的时间内，产生一些值作为输出。<br>
+In mathematics and computer science, an algorithm (/ˈælɡərɪðəm/) is a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation.<a href="\#fn-1-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[1]</a>
+<br>Introduction to Algorithm<a href="\#fn-2-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[2]</a><br>不正式的说，算法就是任何定义优良的计算过程：接收一些值作为输入，在有限的时间内，产生一些值作为输出。<br>
 Informally, an algorithm is any well-defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output in a finite amount of time.
 <br><br>定义<br>在计算机科学领域，数据结构是一种数据组织、管理和存储格式，通常被选择用来高效访问数据<br>
 In computer science, a data structure is a data organization, management, and storage format that is usually chosen for efficient access to data
-<br>Introduction to Algorithm<a href="\#fn-2-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[2-1]</a><br>数据结构是一种存储和组织数据的方式，旨在便于访问和修改<br>
+<br>Introduction to Algorithm<a href="\#fn-2-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[2-1]</a><br>数据结构是一种存储和组织数据的方式，旨在便于访问和修改<br>
 A data structure is a way to store and organize data in order to facilitate access and modifications
 <br>接下来我们通过对一个非常著名的二分查找算法的讲解来认识一下算法<br><br>二分查找算法也称折半查找，是一种非常高效的工作于有序数组的查找算法。后续的课程中还会学习更多的查找算法，但在此之前，不妨用它作为入门。<br><br>需求：在有序数组  内，查找值 <br>
 <br>如果找到返回索引
@@ -752,7 +752,7 @@ return -1，执行一次
 <br>
 为了对  进行化简，应当抓住主要矛盾，找到一个变化趋势与之相近的表示法
 
-<br>大  表示法<a href="\#fn-4-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[4]</a><br>“.\imgs\image-20221108103846566.png” could not be found.<br>其中<br>
+<br>大  表示法<a href="\#fn-4-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[4]</a><br>“.\imgs\image-20221108103846566.png” could not be found.<br>其中<br>
 <br> 都为一个常数
 <br> 是实际执行代码行数与 n 的函数
 <br> 是经过化简，变化趋势与  一致的 n 的函数
@@ -962,7 +962,7 @@ In computer science, an array is a data structure consisting of a collection of 
 <br>8 字节 markword
 <br>4 字节 class 指针（压缩 class 指针的情况）
 <br>4 字节 数组大小（决定了数组最大容量是 ）
-<br>数组元素 + 对齐字节（java 中所有对象大小都是 8 字节的整数倍<a href="\#fn-5-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[5]</a>，不足的要用对齐字节补足）
+<br>数组元素 + 对齐字节（java 中所有对象大小都是 8 字节的整数倍<a href="\#fn-5-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[5]</a>，不足的要用对齐字节补足）
 <br>例如<br>int[] array = {1, 2, 3, 4, 5};
 复制<br>的大小为 40 个字节，组成如下<br>8 + 4 + 4 + 5*4 + 4(alignment)
 复制<br>随机访问性能<br>即根据索引查找元素，时间复杂度是 <br><br>java 版本<br>public class DynamicArray implements Iterable&lt;Integer&gt; {
@@ -1185,7 +1185,7 @@ I/O 读写时同样可以体现局部性原理
 <br>代码位置：openjdk\src\hotspot\share\oops\arrayOop.hpp
 <br>只不过此检查代码，不需要由程序员自己来调用，JVM 会帮我们调用<br><br><br>定义<br>在计算机科学中，链表是数据元素的线性集合，其每个元素都指向下一个元素，元素存储上并不连续<br>
 In computer science, a linked list is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. 
-<br>可以分类为<a href="\#fn-6-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[6]</a><br>
+<br>可以分类为<a href="\#fn-6-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[6]</a><br>
 <br>单向链表，每个元素只知道其下一个元素是谁
 <br>“.\imgs\image-20221110083407176.png” could not be found.<br>
 <br>双向链表，每个元素知道其上一个元素和下一个元素
@@ -1847,10 +1847,10 @@ void f(Node node = 1) {
 
 <br>
 
-<br>更多 Fibonacci 参考<a href="\#fn-7-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[7]</a><a href="\#fn-8-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[8]</a><a href="\#fn-9-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[9]</a>
+<br>更多 Fibonacci 参考<a href="\#fn-7-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[7]</a><a href="\#fn-8-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[8]</a><a href="\#fn-9-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[9]</a>
 <br>以上时间复杂度分析，未考虑大数相加的因素
 
-<br>变体1 - 兔子问题<a href="\#fn-7-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[7-1]</a><br>“imgs/image-20221110155655827.png” could not be found.<br>
+<br>变体1 - 兔子问题<a href="\#fn-7-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[7-1]</a><br>“imgs/image-20221110155655827.png” could not be found.<br>
 <br>第一个月，有一对未成熟的兔子（黑色，注意图中个头较小）
 <br>第二个月，它们成熟
 <br>第三个月，它们能产下一对新的小兔子（蓝色）
@@ -1952,7 +1952,7 @@ public static int f(int[] cache, int n) {
 }
 复制<br>
 <br>最后一步执行的是加法
-<br>一些语言<a href="\#fn-10-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[10]</a>的编译器能够对尾调用做优化，例如<br>function a() {
+<br>一些语言<a href="\#fn-10-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[10]</a>的编译器能够对尾调用做优化，例如<br>function a() {
     // 做前面的事
     return b() 
 }
@@ -5079,7 +5079,7 @@ private ListNode middle(ListNode head) {
     }
     return true;
 }
-复制<br><br>本题以及下题，实际是 Floyd's Tortoise and Hare Algorithm （Floyd 龟兔赛跑算法）<a href="\#fn-15-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[15]</a><br>
+复制<br><br>本题以及下题，实际是 Floyd's Tortoise and Hare Algorithm （Floyd 龟兔赛跑算法）<a href="\#fn-15-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[15]</a><br>
 除了 Floyd 判环算法外，还有其它的判环算法，详见 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Cycle_detection" target="_blank">https://en.wikipedia.org/wiki/Cycle_detection</a>
 <br><img style="zoom: 50%;" alt="image-20221229190646563" src="\imgs\image-20221229190646563.png" referrerpolicy="no-referrer"><br>如果链表上存在环，那么在环上以不同速度前进的两个指针必定会在某个时刻相遇。算法分为两个阶段<br>阶段1<br>
 <br>龟一次走一步，兔子一次走两步
@@ -6660,21 +6660,21 @@ public TreeNode constructExpressionTree(String[] tokens) {
 <br><a data-tooltip-position="top" aria-label="https://link.zhihu.com/?target=https%3A//leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/" rel="noopener" class="external-link" href="https://link.zhihu.com/?target=https%3A//leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/" target="_blank">114. Flatten Binary Tree to Linked List (二叉树展开为链表)</a>, Medium, 877 likes
 <br>
 <br>
-<br><a data-tooltip-position="top" aria-label="https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://www.merriam-webster.com/dictionary/algorithm" target="_blank">"Definition of ALGORITHM"</a>. Merriam-Webster Online Dictionary. <a data-tooltip-position="top" aria-label="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" target="_blank">Archived</a> from the original on February 14, 2020. Retrieved November 14, 2019.<a href="\#fnref-1-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Introduction to Algorithm 中文译作《算法导论》<a href="\#fnref-2-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-2-1-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>主要参考文档 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank">https://en.wikipedia.org/wiki/Binary_search_algorithm</a><a href="\#fnref-3-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>图片及概念均摘自 Introduction to Algorithm 4th，3.1节，3.2 节<a href="\#fnref-4-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>jdk 版本有关，64 位 jdk，按 8 字节对齐<a href="\#fnref-5-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>图片引用自 wikipedia linkedlist 条目，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Linked_list" target="_blank">https://en.wikipedia.org/wiki/Linked_list</a><a href="\#fnref-6-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Fibonacci 介绍：<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank">https://en.wikipedia.org/wiki/Fibonacci_number</a><a href="\#fnref-7-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-7-1-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br><a data-tooltip-position="top" aria-label="https://zhuanlan.zhihu.com/p/165877869" rel="noopener" class="external-link" href="https://zhuanlan.zhihu.com/p/165877869" target="_blank">几种计算Fibonacci数列算法的时间复杂度比较 - 知乎 (zhihu.com)</a><a href="\#fnref-8-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>几种斐波那契数列算法比较 <a data-tooltip-position="top" aria-label="https://www.nayuki.io/page/fast-fibonacci-algorithms" rel="noopener" class="external-link" href="https://www.nayuki.io/page/fast-fibonacci-algorithms" target="_blank">Fast Fibonacci algorithms (nayuki.io)</a><a href="\#fnref-9-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>我知道的有 C++，Scala<a href="\#fnref-10-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>与主定理类似的还有 Akra–Bazzi method，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method" target="_blank">https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method</a><a href="\#fnref-11-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Josephus problem 主要参考 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Josephus_problem" target="_blank">https://en.wikipedia.org/wiki/Josephus_problem</a><a href="\#fnref-12-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>汉诺塔图片资料均来自 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">https://en.wikipedia.org/wiki/Tower_of_Hanoi</a><a href="\#fnref-13-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>也称为 Pascal's triangle <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Pascal%27s_triangle" target="_blank">https://en.wikipedia.org/wiki/Pascal%27s_triangle</a><a href="\#fnref-14-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>龟兔赛跑动画来自于 <a data-tooltip-position="top" aria-label="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" rel="noopener" class="external-link" href="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" target="_blank">Floyd's Hare and Tortoise Algorithm Demo - One Step! Code (onestepcode.com)</a><a href="\#fnref-15-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br><a data-tooltip-position="top" aria-label="https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://www.merriam-webster.com/dictionary/algorithm" target="_blank">"Definition of ALGORITHM"</a>. Merriam-Webster Online Dictionary. <a data-tooltip-position="top" aria-label="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" target="_blank">Archived</a> from the original on February 14, 2020. Retrieved November 14, 2019.<a href="\#fnref-1-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Introduction to Algorithm 中文译作《算法导论》<a href="\#fnref-2-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-2-1-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>主要参考文档 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank">https://en.wikipedia.org/wiki/Binary_search_algorithm</a><a href="\#fnref-3-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>图片及概念均摘自 Introduction to Algorithm 4th，3.1节，3.2 节<a href="\#fnref-4-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>jdk 版本有关，64 位 jdk，按 8 字节对齐<a href="\#fnref-5-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>图片引用自 wikipedia linkedlist 条目，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Linked_list" target="_blank">https://en.wikipedia.org/wiki/Linked_list</a><a href="\#fnref-6-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Fibonacci 介绍：<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank">https://en.wikipedia.org/wiki/Fibonacci_number</a><a href="\#fnref-7-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-7-1-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br><a data-tooltip-position="top" aria-label="https://zhuanlan.zhihu.com/p/165877869" rel="noopener" class="external-link" href="https://zhuanlan.zhihu.com/p/165877869" target="_blank">几种计算Fibonacci数列算法的时间复杂度比较 - 知乎 (zhihu.com)</a><a href="\#fnref-8-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>几种斐波那契数列算法比较 <a data-tooltip-position="top" aria-label="https://www.nayuki.io/page/fast-fibonacci-algorithms" rel="noopener" class="external-link" href="https://www.nayuki.io/page/fast-fibonacci-algorithms" target="_blank">Fast Fibonacci algorithms (nayuki.io)</a><a href="\#fnref-9-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>我知道的有 C++，Scala<a href="\#fnref-10-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>与主定理类似的还有 Akra–Bazzi method，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method" target="_blank">https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method</a><a href="\#fnref-11-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Josephus problem 主要参考 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Josephus_problem" target="_blank">https://en.wikipedia.org/wiki/Josephus_problem</a><a href="\#fnref-12-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>汉诺塔图片资料均来自 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">https://en.wikipedia.org/wiki/Tower_of_Hanoi</a><a href="\#fnref-13-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>也称为 Pascal's triangle <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Pascal%27s_triangle" target="_blank">https://en.wikipedia.org/wiki/Pascal%27s_triangle</a><a href="\#fnref-14-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>龟兔赛跑动画来自于 <a data-tooltip-position="top" aria-label="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" rel="noopener" class="external-link" href="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" target="_blank">Floyd's Hare and Tortoise Algorithm Demo - One Step! Code (onestepcode.com)</a><a href="\#fnref-15-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\03、ds-a-第一篇-基础数据结构.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/03、DS-A 第一篇 基础数据结构.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:44 GMT</pubDate><enclosure url="imgs\image-20221108095747933.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;imgs\image-20221108095747933.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[04、线性表 - 栈和队列]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\04、线性表-栈和队列.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/04、线性表 - 栈和队列.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:44 GMT</pubDate></item><item><title><![CDATA[05、树 - 基础和Overview]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\05、树-基础和overview.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/05、树 - 基础和Overview.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:43 GMT</pubDate></item><item><title><![CDATA[★ 常见排序算法 ★]]></title><description><![CDATA[ 
@@ -7407,16 +7407,7 @@ func main() {
     fmt.Println(conn1) //&lt;nil&gt;  
     fmt.Println(err) //dial tcp 127.0.0.1:8080: connectex: No connection could be made because the target machine actively refused it.  
 }
-复制<br>在多个短变量声明和赋值中，至少有一个新声明的变量出现在左值中，即便其他变量名可能是重复声明的，编译器也不会报错<br>❷ 特例 2：重写全局<br><br><br>package main
-import "fmt"
-//声明全局变量
-var bb float32 = 3.14
-func main() {
-	bb := 3
-	fmt.Println(bb)
-}
-//执行结果 3
-复制<br><br>
+复制<br>在多个短变量声明和赋值中，至少有一个新声明的变量出现在左值中，即便其他变量名可能是重复声明的，编译器也不会报错<br>❷ 特例 2：重写全局<br><br><br><br>
 变量交换，比如 a=100，b=200，交换之后 a=200，b=100
 <br>常用第三变量赋值，或者位运算，但是 Go 里面可以这样：<br>package main
 
@@ -20713,7 +20704,7 @@ AOF会记录每个写命令到AOF文件，随着时间越来越长，AOF文件�
 <br>单机如果部署多个实例，要防止多个机器同时运行持久化、重写操作，防止出现内存、CPU、IO资源竞争，让持久化变为串行；
 <br>可以加入主从机器，利用一台从机器进行备份处理，其它机器正常响应客户端的命令；
 <br>RDB持久化与AOF持久化可以同时存在，配合使用。
-]]></description><link>04、数据库\02、redis\05、持久化：rdb和aof机制详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/05、持久化：RDB和AOF机制详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sat, 16 Mar 2024 03:00:28 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_210729.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_210729.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[06、高可用：主从复制详解]]></title><description><![CDATA[ 
+]]></description><link>04、数据库\02、redis\05、持久化：rdb和aof机制详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/05、持久化：RDB和AOF机制详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 04:17:27 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_210729.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_210729.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[06、高可用：主从复制详解]]></title><description><![CDATA[ 
  <br><br>
 主从复制，是指将一台 Redis 服务器的数据，复制到其他的 Redis 服务器。前者称为主节点(master)，后者称为从节点(slave)；<br>
 数据的复制是单向的，主 ==&gt; 从
@@ -22670,7 +22661,7 @@ ___
     它实际上包含了两行。
 复制<br>在这个例子中，[^1]&nbsp;是对脚注的引用，[^1]: 这是脚注的内容。&nbsp;<br>
 标识符可以是数字或单词，但不能包含空格或制表符。标识符仅将脚注参考与脚注本身相关联-在输出中，脚注按顺序编号。<br>
-脚注代号可以随便命名，不过推荐使用数字序号。脚注代号+∶+空格＋脚注内容<br>这是一段带有多个脚注的文本<a href="\#fn-1-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[1]</a>内容<a href="\#fn-2-5f5117886fe864ff" class="footnote-link" target="_self" rel="noopener">[2]</a>。<br><br><br><br>可以通过&nbsp;- [ ]&nbsp;来创建一个未完成的任务，通过&nbsp;- [x]&nbsp;来创建一个已完成的任务。例如：<br>- [ ] 这是一个未完成的任务。
+脚注代号可以随便命名，不过推荐使用数字序号。脚注代号+∶+空格＋脚注内容<br>这是一段带有多个脚注的文本<a href="\#fn-1-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[1]</a>内容<a href="\#fn-2-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[2]</a>。<br><br><br><br>可以通过&nbsp;- [ ]&nbsp;来创建一个未完成的任务，通过&nbsp;- [x]&nbsp;来创建一个已完成的任务。例如：<br>- [ ] 这是一个未完成的任务。
 - [x] 这是一个已完成的任务。
 复制<br>
 <br>这是一个未完成的任务。
@@ -22748,6 +22739,6 @@ Expected one of the following:
 图片格式最好为：. PNG 这种支持高清方式<br>文章内所有链接统一使用标准 markdown 格式，防止使用 typora 使连接失效。<br>
 如果已经有 obisidian 的链接了，单文件可以直接选中已有文件，只要设置对了会自动变成 markdown 的原本格式。<br>
 <br>
-<br>这是第一个脚注的内容。<a href="\#fnref-1-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>这是第二个脚注的内容。<a href="\#fnref-2-5f5117886fe864ff" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>这是第一个脚注的内容。<a href="\#fnref-1-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>这是第二个脚注的内容。<a href="\#fnref-2-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>readme.html</link><guid isPermaLink="false">README.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 26 Feb 2024 12:56:50 GMT</pubDate></item></channel></rss>
