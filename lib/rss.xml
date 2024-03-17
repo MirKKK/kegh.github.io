@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Java知识体系构建]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Java知识体系构建</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 17 Mar 2024 04:27:07 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 17 Mar 2024 04:25:27 GMT</pubDate><copyright><![CDATA[kegh]]></copyright><ttl>60</ttl><dc:creator>kegh</dc:creator><item><title><![CDATA[01、计算机硬件]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Java知识体系构建]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Java知识体系构建</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 17 Mar 2024 14:00:17 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 17 Mar 2024 13:58:49 GMT</pubDate><copyright><![CDATA[kegh]]></copyright><ttl>60</ttl><dc:creator>kegh</dc:creator><item><title><![CDATA[01、计算机硬件]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\01、计算机基础\01、计算机硬件.html</link><guid isPermaLink="false">01、通用基础/01、计算机基础/01、计算机硬件.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:45 GMT</pubDate></item><item><title><![CDATA[02、操作系统]]></title><description><![CDATA[ 
  <br><br>--Microsoft 公司推出的操作系统。（在 windows 之前的操作系统）<br>
 --DOS 是英文"Disk Operating System"的缩写, 其中文含意是"磁盘操作系统".<br>
@@ -620,12 +620,12 @@ netstat -ant |awk '/:80/{split($5,ip,”:”);++A[ip[1]]}END{for(i in A) print A
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\02、线性表-链表.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/02、线性表 - 链表.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:44 GMT</pubDate></item><item><title><![CDATA[03、线性表(散列) - 哈希表]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\03、线性表(散列)-哈希表.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/03、线性表(散列) - 哈希表.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:43 GMT</pubDate></item><item><title><![CDATA[一. 初识算法]]></title><description><![CDATA[ 
  <br><br><br>定义<br>在数学和计算机科学领域，算法是一系列有限的严谨指令，通常用于解决一类特定问题或执行计算<br>
-In mathematics and computer science, an algorithm (/ˈælɡərɪðəm/) is a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation.<a href="\#fn-1-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[1]</a>
-<br>Introduction to Algorithm<a href="\#fn-2-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[2]</a><br>不正式的说，算法就是任何定义优良的计算过程：接收一些值作为输入，在有限的时间内，产生一些值作为输出。<br>
+In mathematics and computer science, an algorithm (/ˈælɡərɪðəm/) is a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation.<a href="\#fn-1-e71c45efc46d5c5b" class="footnote-link" target="_self" rel="noopener">[1]</a>
+<br>Introduction to Algorithm<a href="\#fn-2-e71c45efc46d5c5b" class="footnote-link" target="_self" rel="noopener">[2]</a><br>不正式的说，算法就是任何定义优良的计算过程：接收一些值作为输入，在有限的时间内，产生一些值作为输出。<br>
 Informally, an algorithm is any well-defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output in a finite amount of time.
 <br><br>定义<br>在计算机科学领域，数据结构是一种数据组织、管理和存储格式，通常被选择用来高效访问数据<br>
 In computer science, a data structure is a data organization, management, and storage format that is usually chosen for efficient access to data
-<br>Introduction to Algorithm<a href="\#fn-2-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[2-1]</a><br>数据结构是一种存储和组织数据的方式，旨在便于访问和修改<br>
+<br>Introduction to Algorithm<a href="\#fn-2-e71c45efc46d5c5b" class="footnote-link" target="_self" rel="noopener">[2-1]</a><br>数据结构是一种存储和组织数据的方式，旨在便于访问和修改<br>
 A data structure is a way to store and organize data in order to facilitate access and modifications
 <br>接下来我们通过对一个非常著名的二分查找算法的讲解来认识一下算法<br><br>二分查找算法也称折半查找，是一种非常高效的工作于有序数组的查找算法。后续的课程中还会学习更多的查找算法，但在此之前，不妨用它作为入门。<br><br>需求：在有序数组  内，查找值 <br>
 <br>如果找到返回索引
@@ -752,7 +752,7 @@ return -1，执行一次
 <br>
 为了对  进行化简，应当抓住主要矛盾，找到一个变化趋势与之相近的表示法
 
-<br>大  表示法<a href="\#fn-4-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[4]</a><br>“.\imgs\image-20221108103846566.png” could not be found.<br>其中<br>
+<br>大  表示法<a href="\#fn-4-e71c45efc46d5c5b" class="footnote-link" target="_self" rel="noopener">[4]</a><br>“.\imgs\image-20221108103846566.png” could not be found.<br>其中<br>
 <br> 都为一个常数
 <br> 是实际执行代码行数与 n 的函数
 <br> 是经过化简，变化趋势与  一致的 n 的函数
@@ -962,7 +962,7 @@ In computer science, an array is a data structure consisting of a collection of 
 <br>8 字节 markword
 <br>4 字节 class 指针（压缩 class 指针的情况）
 <br>4 字节 数组大小（决定了数组最大容量是 ）
-<br>数组元素 + 对齐字节（java 中所有对象大小都是 8 字节的整数倍<a href="\#fn-5-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[5]</a>，不足的要用对齐字节补足）
+<br>数组元素 + 对齐字节（java 中所有对象大小都是 8 字节的整数倍<a href="\#fn-5-e71c45efc46d5c5b" class="footnote-link" target="_self" rel="noopener">[5]</a>，不足的要用对齐字节补足）
 <br>例如<br>int[] array = {1, 2, 3, 4, 5};
 复制<br>的大小为 40 个字节，组成如下<br>8 + 4 + 4 + 5*4 + 4(alignment)
 复制<br>随机访问性能<br>即根据索引查找元素，时间复杂度是 <br><br>java 版本<br>public class DynamicArray implements Iterable&lt;Integer&gt; {
@@ -1185,7 +1185,7 @@ I/O 读写时同样可以体现局部性原理
 <br>代码位置：openjdk\src\hotspot\share\oops\arrayOop.hpp
 <br>只不过此检查代码，不需要由程序员自己来调用，JVM 会帮我们调用<br><br><br>定义<br>在计算机科学中，链表是数据元素的线性集合，其每个元素都指向下一个元素，元素存储上并不连续<br>
 In computer science, a linked list is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. 
-<br>可以分类为<a href="\#fn-6-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[6]</a><br>
+<br>可以分类为<a href="\#fn-6-e71c45efc46d5c5b" class="footnote-link" target="_self" rel="noopener">[6]</a><br>
 <br>单向链表，每个元素只知道其下一个元素是谁
 <br>“.\imgs\image-20221110083407176.png” could not be found.<br>
 <br>双向链表，每个元素知道其上一个元素和下一个元素
@@ -1847,10 +1847,10 @@ void f(Node node = 1) {
 
 <br>
 
-<br>更多 Fibonacci 参考<a href="\#fn-7-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[7]</a><a href="\#fn-8-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[8]</a><a href="\#fn-9-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[9]</a>
+<br>更多 Fibonacci 参考<a href="\#fn-7-e71c45efc46d5c5b" class="footnote-link" target="_self" rel="noopener">[7]</a><a href="\#fn-8-e71c45efc46d5c5b" class="footnote-link" target="_self" rel="noopener">[8]</a><a href="\#fn-9-e71c45efc46d5c5b" class="footnote-link" target="_self" rel="noopener">[9]</a>
 <br>以上时间复杂度分析，未考虑大数相加的因素
 
-<br>变体1 - 兔子问题<a href="\#fn-7-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[7-1]</a><br>“imgs/image-20221110155655827.png” could not be found.<br>
+<br>变体1 - 兔子问题<a href="\#fn-7-e71c45efc46d5c5b" class="footnote-link" target="_self" rel="noopener">[7-1]</a><br>“imgs/image-20221110155655827.png” could not be found.<br>
 <br>第一个月，有一对未成熟的兔子（黑色，注意图中个头较小）
 <br>第二个月，它们成熟
 <br>第三个月，它们能产下一对新的小兔子（蓝色）
@@ -1952,7 +1952,7 @@ public static int f(int[] cache, int n) {
 }
 复制<br>
 <br>最后一步执行的是加法
-<br>一些语言<a href="\#fn-10-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[10]</a>的编译器能够对尾调用做优化，例如<br>function a() {
+<br>一些语言<a href="\#fn-10-e71c45efc46d5c5b" class="footnote-link" target="_self" rel="noopener">[10]</a>的编译器能够对尾调用做优化，例如<br>function a() {
     // 做前面的事
     return b() 
 }
@@ -5079,7 +5079,7 @@ private ListNode middle(ListNode head) {
     }
     return true;
 }
-复制<br><br>本题以及下题，实际是 Floyd's Tortoise and Hare Algorithm （Floyd 龟兔赛跑算法）<a href="\#fn-15-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[15]</a><br>
+复制<br><br>本题以及下题，实际是 Floyd's Tortoise and Hare Algorithm （Floyd 龟兔赛跑算法）<a href="\#fn-15-e71c45efc46d5c5b" class="footnote-link" target="_self" rel="noopener">[15]</a><br>
 除了 Floyd 判环算法外，还有其它的判环算法，详见 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Cycle_detection" target="_blank">https://en.wikipedia.org/wiki/Cycle_detection</a>
 <br><img style="zoom: 50%;" alt="image-20221229190646563" src="\imgs\image-20221229190646563.png" referrerpolicy="no-referrer"><br>如果链表上存在环，那么在环上以不同速度前进的两个指针必定会在某个时刻相遇。算法分为两个阶段<br>阶段1<br>
 <br>龟一次走一步，兔子一次走两步
@@ -6660,21 +6660,21 @@ public TreeNode constructExpressionTree(String[] tokens) {
 <br><a data-tooltip-position="top" aria-label="https://link.zhihu.com/?target=https%3A//leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/" rel="noopener" class="external-link" href="https://link.zhihu.com/?target=https%3A//leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/" target="_blank">114. Flatten Binary Tree to Linked List (二叉树展开为链表)</a>, Medium, 877 likes
 <br>
 <br>
-<br><a data-tooltip-position="top" aria-label="https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://www.merriam-webster.com/dictionary/algorithm" target="_blank">"Definition of ALGORITHM"</a>. Merriam-Webster Online Dictionary. <a data-tooltip-position="top" aria-label="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" target="_blank">Archived</a> from the original on February 14, 2020. Retrieved November 14, 2019.<a href="\#fnref-1-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Introduction to Algorithm 中文译作《算法导论》<a href="\#fnref-2-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-2-1-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>主要参考文档 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank">https://en.wikipedia.org/wiki/Binary_search_algorithm</a><a href="\#fnref-3-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>图片及概念均摘自 Introduction to Algorithm 4th，3.1节，3.2 节<a href="\#fnref-4-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>jdk 版本有关，64 位 jdk，按 8 字节对齐<a href="\#fnref-5-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>图片引用自 wikipedia linkedlist 条目，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Linked_list" target="_blank">https://en.wikipedia.org/wiki/Linked_list</a><a href="\#fnref-6-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Fibonacci 介绍：<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank">https://en.wikipedia.org/wiki/Fibonacci_number</a><a href="\#fnref-7-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-7-1-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br><a data-tooltip-position="top" aria-label="https://zhuanlan.zhihu.com/p/165877869" rel="noopener" class="external-link" href="https://zhuanlan.zhihu.com/p/165877869" target="_blank">几种计算Fibonacci数列算法的时间复杂度比较 - 知乎 (zhihu.com)</a><a href="\#fnref-8-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>几种斐波那契数列算法比较 <a data-tooltip-position="top" aria-label="https://www.nayuki.io/page/fast-fibonacci-algorithms" rel="noopener" class="external-link" href="https://www.nayuki.io/page/fast-fibonacci-algorithms" target="_blank">Fast Fibonacci algorithms (nayuki.io)</a><a href="\#fnref-9-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>我知道的有 C++，Scala<a href="\#fnref-10-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>与主定理类似的还有 Akra–Bazzi method，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method" target="_blank">https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method</a><a href="\#fnref-11-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Josephus problem 主要参考 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Josephus_problem" target="_blank">https://en.wikipedia.org/wiki/Josephus_problem</a><a href="\#fnref-12-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>汉诺塔图片资料均来自 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">https://en.wikipedia.org/wiki/Tower_of_Hanoi</a><a href="\#fnref-13-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>也称为 Pascal's triangle <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Pascal%27s_triangle" target="_blank">https://en.wikipedia.org/wiki/Pascal%27s_triangle</a><a href="\#fnref-14-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>龟兔赛跑动画来自于 <a data-tooltip-position="top" aria-label="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" rel="noopener" class="external-link" href="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" target="_blank">Floyd's Hare and Tortoise Algorithm Demo - One Step! Code (onestepcode.com)</a><a href="\#fnref-15-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br><a data-tooltip-position="top" aria-label="https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://www.merriam-webster.com/dictionary/algorithm" target="_blank">"Definition of ALGORITHM"</a>. Merriam-Webster Online Dictionary. <a data-tooltip-position="top" aria-label="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" target="_blank">Archived</a> from the original on February 14, 2020. Retrieved November 14, 2019.<a href="\#fnref-1-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Introduction to Algorithm 中文译作《算法导论》<a href="\#fnref-2-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-2-1-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>主要参考文档 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank">https://en.wikipedia.org/wiki/Binary_search_algorithm</a><a href="\#fnref-3-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>图片及概念均摘自 Introduction to Algorithm 4th，3.1节，3.2 节<a href="\#fnref-4-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>jdk 版本有关，64 位 jdk，按 8 字节对齐<a href="\#fnref-5-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>图片引用自 wikipedia linkedlist 条目，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Linked_list" target="_blank">https://en.wikipedia.org/wiki/Linked_list</a><a href="\#fnref-6-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Fibonacci 介绍：<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank">https://en.wikipedia.org/wiki/Fibonacci_number</a><a href="\#fnref-7-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-7-1-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br><a data-tooltip-position="top" aria-label="https://zhuanlan.zhihu.com/p/165877869" rel="noopener" class="external-link" href="https://zhuanlan.zhihu.com/p/165877869" target="_blank">几种计算Fibonacci数列算法的时间复杂度比较 - 知乎 (zhihu.com)</a><a href="\#fnref-8-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>几种斐波那契数列算法比较 <a data-tooltip-position="top" aria-label="https://www.nayuki.io/page/fast-fibonacci-algorithms" rel="noopener" class="external-link" href="https://www.nayuki.io/page/fast-fibonacci-algorithms" target="_blank">Fast Fibonacci algorithms (nayuki.io)</a><a href="\#fnref-9-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>我知道的有 C++，Scala<a href="\#fnref-10-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>与主定理类似的还有 Akra–Bazzi method，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method" target="_blank">https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method</a><a href="\#fnref-11-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Josephus problem 主要参考 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Josephus_problem" target="_blank">https://en.wikipedia.org/wiki/Josephus_problem</a><a href="\#fnref-12-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>汉诺塔图片资料均来自 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">https://en.wikipedia.org/wiki/Tower_of_Hanoi</a><a href="\#fnref-13-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>也称为 Pascal's triangle <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Pascal%27s_triangle" target="_blank">https://en.wikipedia.org/wiki/Pascal%27s_triangle</a><a href="\#fnref-14-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>龟兔赛跑动画来自于 <a data-tooltip-position="top" aria-label="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" rel="noopener" class="external-link" href="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" target="_blank">Floyd's Hare and Tortoise Algorithm Demo - One Step! Code (onestepcode.com)</a><a href="\#fnref-15-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\03、ds-a-第一篇-基础数据结构.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/03、DS-A 第一篇 基础数据结构.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:44 GMT</pubDate><enclosure url="imgs\image-20221108095747933.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;imgs\image-20221108095747933.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[04、线性表 - 栈和队列]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\04、线性表-栈和队列.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/04、线性表 - 栈和队列.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:44 GMT</pubDate></item><item><title><![CDATA[05、树 - 基础和Overview]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\05、树-基础和overview.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/05、树 - 基础和Overview.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:43 GMT</pubDate></item><item><title><![CDATA[★ 常见排序算法 ★]]></title><description><![CDATA[ 
@@ -7407,7 +7407,16 @@ func main() {
     fmt.Println(conn1) //&lt;nil&gt;  
     fmt.Println(err) //dial tcp 127.0.0.1:8080: connectex: No connection could be made because the target machine actively refused it.  
 }
-复制<br>在多个短变量声明和赋值中，至少有一个新声明的变量出现在左值中，即便其他变量名可能是重复声明的，编译器也不会报错<br>❷ 特例 2：重写全局<br><br><br><br>
+复制<br>在多个短变量声明和赋值中，至少有一个新声明的变量出现在左值中，即便其他变量名可能是重复声明的，编译器也不会报错<br>❷ 特例 2：重写全局<br><br><br>package main
+import "fmt"
+//声明全局变量
+var bb float32 = 3.14
+func main() {
+	bb := 3
+	fmt.Println(bb)
+}
+//执行结果 3
+复制<br><br>
 变量交换，比如 a=100，b=200，交换之后 a=200，b=100
 <br>常用第三变量赋值，或者位运算，但是 Go 里面可以这样：<br>package main
 
@@ -19274,7 +19283,7 @@ FROM information_schema.TABLES
 GROUP BY table_schema;
 复制<br><br>借鉴博客：<br><a rel="noopener" class="external-link" href="https://github.com/Buildings-Lei/mysql_note/blob/main/README.md" target="_blank">https://github.com/Buildings-Lei/mysql_note/blob/main/README.md</a><br><a rel="noopener" class="external-link" href="https://blog.csdn.net/da_ge_de_nv_ren/article/details/128837934" target="_blank">https://blog.csdn.net/da_ge_de_nv_ren/article/details/128837934</a><br><a rel="noopener" class="external-link" href="https://blog.csdn.net/da_ge_de_nv_ren/article/details/128837934" target="_blank">https://blog.csdn.net/da_ge_de_nv_ren/article/details/128837934</a><br><a rel="noopener" class="external-link" href="https://dhc.pythonanywhere.com/entry/share/?key=12e4a7324f68371db3984d93e26e458962a4f0bc188ec23ec70637a4f3b4d58f" target="_blank">https://dhc.pythonanywhere.com/entry/share/?key=12e4a7324f68371db3984d93e26e458962a4f0bc188ec23ec70637a4f3b4d58f</a>]]></description><link>04、数据库\01、mysql\mysql.html</link><guid isPermaLink="false">04、数据库/01、MySql/MySQL.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:46 GMT</pubDate></item><item><title><![CDATA[00、 ★ Redis 总览 ★]]></title><description><![CDATA[ 
  ]]></description><link>04、数据库\02、redis\00、-★-redis-总览-★.html</link><guid isPermaLink="false">04、数据库/02、Redis/00、 ★ Redis 总览 ★.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sat, 16 Mar 2024 09:41:41 GMT</pubDate></item><item><title><![CDATA[01、Redis 概念和基础]]></title><description><![CDATA[ 
- <br><br>Redis 是一款内存高速缓存数据库。Redis 全称为：Remote Dictionary Server（远程词典服务），使用 C 语言编写，Redis 是一个 key-value 存储系统（键值存储系统），是一个基于内存的键值型 NoSQL 数据库，支持丰富的数据类型，如：String、list、set、zset、hash。<br>Redis 是一种支持 key-value 等多种数据结构的存储系统。可用于缓存，事件发布或订阅，高速队列等场景。支持网络，提供字符串，哈希，列表，队列，集合结构直接存取，基于内存，可持久化。<br><br>
+ <br><br>Redis 全称为：Remote Dictionary Server（远程词典服务），是一款内存高速缓存数据库。<br>使用 C 语言编写，是一个 key-value 存储系统（键值存储系统），基于内存的键值型 NoSQL 数据库，支持丰富的数据类型。<br><br>
 <br>读写性能优异
 
 <br>Redis能读的速度是110000次/s,写的速度是81000次/s （测试条件见下一节）。
@@ -19310,20 +19319,28 @@ GROUP BY table_schema;
 <br>Redis Cluster
 
 
-<br><br><br>缓存是Redis最常见的应用场景，之所有这么使用，主要是因为Redis读写性能优异。而且逐渐有取代memcached，成为首选服务端缓存的组件。而且，Redis内部是支持事务的，在使用时候能有效保证数据的一致性。<br>作为缓存使用时，一般有两种方式保存数据：<br>
-<br>读取前，先去读Redis，如果没有数据，读取数据库，将数据拉入Redis。
-<br>插入数据时，同时写入Redis。
-<br>方案一：实施起来简单，但是有两个需要注意的地方：<br>
-<br>避免缓存击穿。（数据库没有就需要命中的数据，导致Redis一直没有数据，而一直命中数据库。）
+<br><br><br>缓存是Redis最常见的应用场景，之所有这么使用，主要是因为Redis读写性能优异。而且逐渐有取代 memcached 成为首选服务端缓存的组件。而且，Redis内部是支持事务的，在使用时候能有效保证数据的一致性。 <br>作为缓存使用时，一般有两种方式保存数据：<br>1、方案一：读取前，先去读 Redis，如果没有数据，读取数据库，将数据拉入 Redis。<br>适用：对于数据实时性要求不是特别高的场景。<br>
+实施起来简单，需要注意：<br>
+<br>避免缓存击穿。（数据库没有就需要命中的数据，导致 Redis 一直没有数据，而一直命中数据库。）
 <br>数据的实时性相对会差一点。
-<br>方案二：数据实时性强，但是开发时不便于统一处理。<br>当然，两种方式根据实际情况来适用。如：方案一适用于对于数据实时性要求不是特别高的场景。方案二适用于字典表、数据量不大的数据存储。<br><br>redis中可以使用expire命令设置一个键的生存时间，到时间后redis会删除它。利用这一特性可以运用在限时的优惠活动信息、手机验证码等业务场景。<br><br>redis由于incrby命令可以实现原子性的递增，所以可以运用于高并发的秒杀活动、分布式序列号的生成、具体业务还体现在比如限制一个手机号发多少条短信、一个接口一分钟限制多少请求、一个接口一天限制调用多少次等等。<br><br>这个主要利用redis的setnx命令进行，setnx："set if not exists"就是如果不存在则成功设置缓存同时返回1，否则返回0 ，这个特性在很多后台中都有所运用，因为我们服务器是集群的，定时任务可能在两台机器上都会运行，所以在定时任务中首先 通过setnx设置一个lock， 如果成功设置则执行，如果没有成功设置，则表明该定时任务已执行。 当然结合具体业务，我们可以给这个lock加一个过期时间，比如说30分钟执行一次的定时任务，那么这个过期时间设置为小于30分钟的一个时间就可以，这个与定时任务的周期以及定时任务执行消耗时间相关。<br>在分布式锁的场景中，主要用在比如秒杀系统等。<br><br>比如在订单生产后我们占用了库存，10分钟后去检验用户是否真正购买，如果没有购买将该单据设置无效，同时还原库存。 由于redis自2.8.0之后版本提供Keyspace Notifications功能，允许客户订阅Pub/Sub频道，以便以某种方式接收影响Redis数据集的事件。 所以我们对于上面的需求就可以用以下解决方案，我们在订单生产时，设置一个key，同时设置10分钟后过期， 我们在后台实现一个监听器，监听key的实效，监听到key失效时将后续逻辑加上。<br>当然我们也可以利用rabbitmq、activemq等消息中间件的延迟队列服务实现该需求。<br><br>关系型数据库在排行榜方面查询速度普遍偏慢，所以可以借助redis的SortedSet进行热点数据的排序。<br>比如点赞排行榜，做一个SortedSet, 然后以用户的openid作为上面的username, 以用户的点赞数作为上面的score, 然后针对每个用户做一个hash, 通过zrangebyscore就可以按照点赞数获取排行榜，然后再根据username获取用户的hash信息，这个当时在实际运用中性能体验也蛮不错的。<br><br>Redis 利用集合的一些命令，比如求交集、并集、差集等。<br>在微博应用中，每个用户关注的人存在一个集合中，就很容易实现求两个人的共同好友功能。<br><br>由于Redis有list push和list pop这样的命令，所以能够很方便的执行队列操作。<br><br>官方文档<br>
-Redis 官网: <a rel="noopener" class="external-link" href="http://redis.io/" target="_blank">http://redis.io/</a><br>Redis 官方文档: <a rel="noopener" class="external-link" href="http://redis.io/documentation" target="_blank">http://redis.io/documentation</a><br>Redis 下载: <a rel="noopener" class="external-link" href="http://redis.io/download" target="_blank">http://redis.io/download</a><br>笔记博客<br>
-<a rel="noopener" class="external-link" href="http://blog.czk.pub/post/999e4e35.html#Redis%E4%B8%BB%E4%BB%8E%E9%9B%86%E7%BE%A4" target="_blank">http://blog.czk.pub/post/999e4e35.html#Redis%E4%B8%BB%E4%BB%8E%E9%9B%86%E7%BE%A4</a>]]></description><link>04、数据库\02、redis\01、redis-概念和基础.html</link><guid isPermaLink="false">04、数据库/02、Redis/01、Redis 概念和基础.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:45 GMT</pubDate></item><item><title><![CDATA[02、Redis 的安装说明]]></title><description><![CDATA[ 
+<br>2、方案二：插入数据时，同时写入Redis。<br>适用：字典表、数据量不大的数据存储。<br>
+数据实时性强，但是开发时不便于统一处理。<br><br>利用 Redis 的 expire 命令设置一个键的生存时间，到时间后 Redis 会删除它。<br>可以运用在限时的优惠活动信息、手机验证码等业务场景。 <br><br>Redis  使用 incrby 命令可以实现原子性的递增。<br>可以运用于高并发的秒杀活动、分布式序列号的生成、具体业务还体现在比如限制一个手机号发多少条短信、一个接口一分钟限制多少请求、一个接口一天限制调用多少次等等。<br><br>利用 Redis 的 setnx 命令（set if not exists），如果不存在则成功设置缓存同时返回 1，否则返回 0 。<br>一般服务器是集群的，定时任务可能在两台机器上都会运行，所以在定时任务中首先通过 setnx 设置一个 lock，如果成功设置则执行，如果没有成功设置，则表明该定时任务已执行。<br>结合具体业务，可以给这个 lock 加一个过期时间，如 30 分钟执行一次的定时任务，那么这个过期时间设置为小于 30 分钟的时间，这个与定时任务的周期以及定时任务执行消耗时间相关。<br>在分布式锁的场景中，主要用在比如秒杀系统等。<br><br>提供 Keyspace Notifications 功能，允许客户订阅 Pub/Sub 频道，以便以某种方式接收影响 Redis 数据集的事件。<br>比如在订单生产后我们占用了库存，10 分钟后去检验用户是否真正购买，如果没有购买将该单据设置无效，同时还原库存。<br>
+在订单生产时，设置一个 key，同时设置 10 分钟后过期，我们在后台实现一个监听器，监听 key 的实效，监听到 key 失效时将后续逻辑加上。<br>当然也可以利用 RocketMQ 等消息中间件的延迟队列服务实现该需求。<br><br>借助 Redis 的 SortedSet 进行热点数据的排序，而关系型数据库在排行榜方面查询速度普遍偏慢。<br>比如点赞排行榜，做一个 SortedSet, 然后以用户的 openid 作为上面的 username, 以用户的点赞数作为上面的 score, 然后针对每个用户做一个 hash, 通过 zrangebyscore 就可以按照点赞数获取排行榜，然后再根据 username 获取用户的 hash 信息，这个当时在实际运用中性能体验也蛮不错的。<br><br>Redis 利用集合的一些命令，比如求交集、并集、差集等。<br>在微博应用中，每个用户关注的人存在一个集合中，就很容易实现求两个人的共同好友功能。<br><br>由于 Redis 有 list push 和 list pop 这样的命令，所以能够很方便的执行队列操作。<br><br>
+<br>
+<a data-tooltip-position="top" aria-label="http://redis.io/" rel="noopener" class="external-link" href="http://redis.io/" target="_blank">Redis 官网</a>:
+
+<br>
+<a data-tooltip-position="top" aria-label="http://redis.io/documentation" rel="noopener" class="external-link" href="http://redis.io/documentation" target="_blank">Redis 官方文档:</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="http://redis.io/download" rel="noopener" class="external-link" href="http://redis.io/download" target="_blank">Redis 下载</a>
+
+]]></description><link>04、数据库\02、redis\01、redis-概念和基础.html</link><guid isPermaLink="false">04、数据库/02、Redis/01、Redis 概念和基础.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 06:33:34 GMT</pubDate></item><item><title><![CDATA[02、Redis 的安装说明]]></title><description><![CDATA[ 
  <br>本章是基于 CentOS 7 下的 Redis 集群教程，包括：<br>
 <br>单机安装 Redis
 <br>Redis 主从
 <br>Redis 分片集群
-<br><br>首先需要安装 Redis 所需要的依赖：<br>yum install -y gcc tcl
+<br><br>需要安装 Redis 所需要的依赖：<br>yum install -y gcc tcl
 复制<br>将提供的 Redis 安装包上传到虚拟机的任意目录：<br><img src="\04、数据库\02、redis\assets\02、redis-的安装说明\img-20240314_200522.png"><br>例如，我放到了 /tmp 目录：<br>
 <img src="\04、数据库\02、redis\assets\02、redis-的安装说明\img-20240314_200545.png"><br>解压缩：<br>tar -xzf redis-6.2.4.tar.gz
 复制<br>解压后：<br>
@@ -19380,7 +19397,7 @@ redis-server 7003/redis.conf
 现在三个实例还没有任何关系，要配置主从可以使用 replicaof 或者 slaveof（5.0 以前）命令。<br>有临时和永久两种模式：<br>
 <br>修改配置文件（永久生效）
 
-<br>在 redis. Conf 中添加一行配置：slaveof &lt;masterip&gt; &lt;masterport&gt;
+<br>在 redis.conf 中添加一行配置：slaveof &lt;masterip&gt; &lt;masterport&gt;
 
 
 <br>执行 slaveof 命令（重启后失效）
@@ -19411,7 +19428,7 @@ cd /tmp
 # 创建目录
 mkdir s1 s2 s3
 复制<br>如图：<br>
-<img src="\04、数据库\02、redis\assets\02、redis-的安装说明\img-20240314_203447.png"><br>然后我们在 s 1 目录创建一个 sentinel. Conf 文件，添加下面的内容：<br>port 27001
+<img src="\04、数据库\02、redis\assets\02、redis-的安装说明\img-20240314_203447.png"><br>然后我们在 s 1 目录创建一个 sentinel.conf 文件，添加下面的内容：<br>port 27001
 sentinel announce-ip 192.168.150.101
 sentinel monitor mymaster 192.168.150.101 7001 2
 sentinel down-after-milliseconds mymaster 5000
@@ -19485,7 +19502,7 @@ printf '%s\n' 7001 7002 7003 8001 8002 8003 | xargs -I{} -t redis-server {}/redi
 复制<br>通过 ps 查看状态：<br>ps -ef | grep redis
 复制<br>发现服务都已经正常启动：<br><img src="\04、数据库\02、redis\assets\02、redis-的安装说明\img-20240314_210433.png"><br>如果要关闭所有进程，可以执行命令：<br>ps -ef | grep redis | awk '{print $2}' | xargs kill
 复制<br>或者（推荐这种方式）：<br>printf '%s\n' 7001 7002 7003 8001 8002 8003 | xargs -I{} -t redis-cli -p {} shutdown
-复制<br><br>虽然服务启动了，但是目前每个服务之间都是独立的，没有任何关联。<br>我们需要执行命令来创建集群，在 Redis 5.0 之前创建集群比较麻烦，5.0 之后集群管理命令都集成到了 redis-cli 中。<br><br>Redis 5.0 之前集群命令都是用 redis 安装包下的 src/redis-trib. Rb 来实现的。因为 redis-trib. Rb 是有 ruby 语言编写的所以需要安装 ruby 环境。<br># 安装依赖
+复制<br><br>虽然服务启动了，但是目前每个服务之间都是独立的，没有任何关联。<br>我们需要执行命令来创建集群，在 Redis 5.0 之前创建集群比较麻烦，5.0 之后集群管理命令都集成到了 redis-cli 中。<br><br>Redis 5.0 之前集群命令都是用 redis 安装包下的 src/redis-trib.rb 来实现的。因为 redis-trib.rb 是有 ruby 语言编写的所以需要安装 ruby 环境。<br># 安装依赖
 yum -y install zlib ruby rubygems
 gem install redis
 复制<br>然后通过命令来管理集群：<br># 进入redis的src目录
@@ -19513,7 +19530,7 @@ get num
 set a 1
 复制<br>结果悲剧了：<br>
 <img src="\04、数据库\02、redis\assets\02、redis-的安装说明\img-20240314_211130.png"><br>集群操作时，需要给 redis-cli 加上 -c 参数，这个命令启用了 Redis 集群模式（Cluster Mode）<br>redis-cli -c -p 7001
-复制<br><img src="\04、数据库\02、redis\assets\02、redis-的安装说明\img-20240314_211158.png">]]></description><link>04、数据库\02、redis\02、redis-的安装说明.html</link><guid isPermaLink="false">04、数据库/02、Redis/02、Redis 的安装说明.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sat, 16 Mar 2024 12:08:33 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\02、redis-的安装说明\img-20240314_200522.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\02、redis-的安装说明\img-20240314_200522.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[03、常见命令&数据类型]]></title><description><![CDATA[ 
+复制<br><img src="\04、数据库\02、redis\assets\02、redis-的安装说明\img-20240314_211158.png">]]></description><link>04、数据库\02、redis\02、redis-的安装说明.html</link><guid isPermaLink="false">04、数据库/02、Redis/02、Redis 的安装说明.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 06:52:16 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\02、redis-的安装说明\img-20240314_200522.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\02、redis-的安装说明\img-20240314_200522.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[03、常见命令&数据类型]]></title><description><![CDATA[ 
  <br><br>首先对 redis 来说，所有的 key（键）都是字符串。我们在谈基础数据结构时，讨论的是存储值的数据类型，主要包括常见的5种数据类型，分别是：String、List、Set、Zset、Hash。<br><br><br>
 <br>KEYS pattern：查看复合模版的所有 keys, 不建议在生产坏境下使用
 <br>DEL key：删除一个指定的 key
@@ -19544,112 +19561,115 @@ OK
 (integer) -1
 127.0.0.1:6379&gt; type k1
 string
-复制<br><br><br>String类型是二进制安全的，意思是 redis 的 string 可以包含任何数据。如数字，字符串，jpg图片或者序列化的对象。<br><br>Redis 中的 String 是动态字符串，内部结构类似 ArrayList。采用预分配冗余空间的方式减少内存的频繁分配。<br>内部为字符串分配的实际空间一般高于字符串长度，当字符串长度 &lt;1MB 时，扩容方式是加倍 也就是原来的两倍。当字符串长度&gt; 1 MB 时，一次扩容 1 MB，直到最大 512 MB<br><br><br><br>SET key value:设置key的值
+复制<br><br><br>String类型是二进制安全的，意思是 redis 的 string 可以包含任何数据。如数字，字符串，jpg图片或者序列化的对象。<br><br>Redis 中的 String 是动态字符串，内部结构类似 ArrayList。采用预分配冗余空间的方式减少内存的频繁分配。<br>内部为字符串分配的实际空间一般高于字符串长度。<br>
+当字符串长度 &lt; 1 MB 时，扩容方式是加倍也就是原来的两倍。<br>
+当字符串长度 &gt; 1 MB 时，一次扩容 1 MB，直到最大 512 MB。<br><br><br><br># SET key value:设置key的值
 127.0.0.1:6379&gt; set id 42022220018718
 OK
 
-GET key:获取key的值
+# GET key:获取key的值
 127.0.0.1:6379&gt; get id
 "42022220018718"
 
-DEL key:删除指定key
+# DEL key:删除指定key
 127.0.0.1:6379&gt; del id
 (integer) 1
 
-GETSET key value:修改key的值 并返回原来得到值
+# GETSET key value:修改key的值 并返回原来得到值
 127.0.0.1:6379&gt; getset id 420222200102058719
 "420222200102058718"
 
-setex key seconds value:给指定key值赋值的同时，设置该key的有效时间
+# setex key seconds value:给指定key值赋值的同时，设置该key的有效时间
 127.0.0.1:6379&gt; setex house 50 三室一厅
 OK
 127.0.0.1:6379&gt; ttl house
 (integer) 41
 
-setnx house value:设置key值，如果key已存在，则不存储
+# setnx house value:设置key值，如果key已存在，则不存储
 127.0.0.1:6379&gt; setnx name chen-zikang
 (integer) 0
 127.0.0.1:6379&gt; setnx house 三室一厅
 (integer) 1
 
-mget key [key...]:同时获取多个key值
+# mget key [key...]:同时获取多个key值
 127.0.0.1:6379&gt; mget name sex age
 1) "chen-zi-kang"
 2) "aman"
 3) "18"
 
-mset key value [key value...]：同时设置多个key值
+# mset key value [key value...]：同时设置多个key值
 127.0.0.1:6379&gt; mset hieght 170cm weight 110
 OK
 
-msetnx key value [key value...]： 同时设置多个key值，如已经存在，则不存储 ，这是一个原子操作。
+# msetnx key value [key value...]： 同时设置多个key值，如已经存在，则不存储 ，这是一个原子操作。
 127.0.0.1:6379&gt; msetnx hieght 170cm money 100000
 (integer) 0
 
-append key value:在该key值的后边加上value
+# append key value:在该key值的后边加上value
 127.0.0.1:6379&gt; append name is-a-good-boy
 (integer) 25
 
-strlen key:返回这个key值得长度
+# strlen key:返回这个key值得长度
 127.0.0.1:6379&gt; strlen name
 (integer) 25
 
-getrange key begin end: 获取该key值  索引从begin到end的字符串  包头包尾
+# getrange key begin end: 获取该key值  索引从begin到end的字符串  包头包尾
 127.0.0.1:6379&gt; set name czk-is-handsame
 OK
 127.0.0.1:6379&gt; getrange name 0 10
 "czk-is-hand"
 
-setrange key offset value : 修改offset位以后的 value值
+# setrange key offset value : 修改offset位以后的 value值
 127.0.0.1:6379&gt; setrange name 10 man
 (integer) 15
 127.0.0.1:6379&gt; get name
 "czk-is-hanmanme"
 复制<br><br>
-<br>缓存： 经典使用场景，把常用信息，字符串，图片或者视频等信息放到redis中，redis作为缓存层，mysql做持久化层，降低mysql的读写压力。
-<br>计数器：redis是单线程模型，一个命令执行完才会执行下一个，同时数据可以一步落地到其他的数据源。
-<br>session：常见方案spring session + redis实现session共享
+<br>缓存： 经典使用场景，把常用信息，字符串，图片或者视频等信息放到 redis 中，redis 作为缓存层，mysql 做持久化层，降低 mysql 的读写压力。
+<br>计数器：redis 是单线程模型，一个命令执行完才会执行下一个，同时数据可以一步落地到其他的数据源。
+<br>session：常见方案 spring session + redis 实现 session 共享
 <br><br>redis 的列表是一个字符链表，内部结构类似 LinkedList。left，right 都可以添加。<br>
 如果键不在，则创建新链表，如果已存在则新加内容。<br>
 如果当前链表没有值，则该链表也会自动删除。<br>
-redis 的列表最多可存储 2^32-1 个元素（4294967295，每个列表可以存储 40 多亿个元素）<br><br>底层是一个快速链表（quickList）的结构，在列表元素较少时，使用内存存储压缩列表 ziplist。当元素数量较多时，改成 quickList，也就是将多个 zipList 串起来使用，以减少内存的碎片化。<br><br><br>使用列表的技巧:<br>
+redis 的列表最多可存储 2^32-1 个元素（4294967295，每个列表可以存储 40 多亿个元素）<br><br>底层是一个快速链表（quickList）的结构。<br>在列表元素较少时，使用内存存储压缩列表 ziplist。<br>
+当元素数量较多时，改成 quickList，也就是将多个 zipList 串起来使用，以减少内存的碎片化。<br><br><br>使用列表的技巧:<br>
 <br>lpush+lpop=Stack(栈)
 <br>lpush+rpop=Queue（队列）
 <br>lpush+ltrim=Capped Collection（有限集合）
 <br>lpush+brpop=Message Queue（消息队列）
-<br><br>lpush key value : 从头部（左边）压进（新增）一个新元素
+<br><br># lpush key value : 从头部（左边）压进（新增）一个新元素
 127.0.0.1:6379&gt; lpush list1 v1 v2 v3 v4 v5
 (integer) 5
 
-rpush key value : 从尾部（右边）压进（新增）一个新元素
+# rpush key value : 从尾部（右边）压进（新增）一个新元素
 rpush list1 v6
 (integer) 6
 
-lpop key value : 从头部（左边）弹出（删除）一个元素并返回
+# lpop key value : 从头部（左边）弹出（删除）一个元素并返回
 127.0.0.1:6379&gt; lpop list1
 "v5"
 
-rpop key value : 从尾部（右边）弹出（删除）一个元素并返回
+# rpop key value : 从尾部（右边）弹出（删除）一个元素并返回
 127.0.0.1:6379&gt; rpop list1
 "v1"
 
-lset key index value : 修改索引号为index的元素的值为value
+# lset key index value : 修改索引号为index的元素的值为value
 127.0.0.1:6379&gt; lset list1 4 v7
 OK
 
-lrem key count value : 删除count个元素值为value
+# lrem key count value : 删除count个元素值为value
 127.0.0.1:6379&gt; lrem list1 0 v0
 (integer) 1
 
-linsert key before/after old_value new_value : 在某一个旧元素值的前边或后边插入一个新的值
+# linsert key before/after old_value new_value : 在某一个旧元素值的前边或后边插入一个新的值
 127.0.0.1:6379&gt; linsert list1 before v7 v6
 (integer) 6
 
-lindex key index : 查询当前list中索引为index的值
+# lindex key index : 查询当前list中索引为index的值
 127.0.0.1:6379&gt; lindex list1 5
 "v6"
 
-lrange key start end : 遍历list的所有元素并显示
+# lrange key start end : 遍历list的所有元素并显示
 127.0.0.1:6379&gt; lrange list1 0 -1
 1) "v3"
 2) "v4"
@@ -19657,91 +19677,42 @@ lrange key start end : 遍历list的所有元素并显示
 4) "v6"
 5) "v7"
 
-ltrim key start end : 截取list从stater到end位置的值并保留
+# ltrim key start end : 截取list从stater到end位置的值并保留
 127.0.0.1:6379&gt; ltrim list1 2 6
 OK
 
-llen key : 返回一个list的元素个数 
+# llen key : 返回一个list的元素个数 
 127.0.0.1:6379&gt; llen list1
 (integer) 5著作权归https://pdai.tech所有。 链接：&lt;https://pdai.tech/md/db/nosql-redis/db-redis-data-types.html&gt;
 复制<br><br>
 <br>微博TimeLine: 有人发布微博，用lpush加入时间轴，展示新的列表信息。
 <br>消息队列
-<br><br>Redis 的集合是 String 类型的无序不重复的元素集，同时提供交集、并集、差集等操作，集合中最大的成员数为 2^32-1（40 多亿）。Redis 中集合是通过哈希表实现的，所以添加，删除，查找的复杂度都是 O (1)。<br><br>​ 类似 HashSet, 也是通过哈希表实现的，相当于所有的 value 都为空。通过计算 hash 的方式来快速排重，也是 set 能提供判断一个成员是否在集合内的原因<br><br><br><br>sadd key member [member...] : 添加set集合的member
-127.0.0.1:6379&gt; sadd set1 value1 value2 value3
-(integer) 3
-
-srem key member [member...] : 删除set集合中的member
-127.0.0.1:6379&gt; srem set1 value1
-(integer) 1
-
-spop key [count] : 随机弹出count个member  
-127.0.0.1:6379&gt; spop set1 1
-1) "menber2"
-
-scard key : 获取set的成员个数 
-127.0.0.1:6379&gt; scard set2
-(integer) 2
-
-smembers key :  获取set的所有成员
-127.0.0.1:6379&gt; smembers set2
-1) "value3"
-2) "member1"
-
-sismember key member : 判断member是否是set中的成员
-127.0.0.1:6379&gt; sismember set1 member1
-(integer) 1
-
-srandmember key count : 随机返回count个成员
-127.0.0.1:6379&gt; srandmember set1 1
-(integer) 1
-
-smove sourse destination member : 移动source中的成员member到destination中
-127.0.0.1:6379&gt; smove set1 set2  member1 
-(integer) 1
-
-sdiff key1 key2 [key3...] : 返回key1与key2的差集
-127.0.0.1:6379&gt; sdiff set2 set1
-1) "value3"
-
-sinter key1 key2 [key3...] : 返回key1与key2的交集
-127.0.0.1:6379&gt; sinter set1 set2
-1) "member1"
-
-sunion key1 key2 [key3...] : 返回key1与key2的交集
-127.0.0.1:6379&gt; sunion set2 set1
-1) "value3"
-2) "value1"
-3) "menber3"
-4) "member1"
-5) "member2"
-复制<br><br>
-<br>标签（tag）,给用户添加标签，或者用户给消息添加标签，这样有同一标签或者类似标签的可以给推荐关注的事或者关注的人。
-<br>点赞，或点踩，收藏等，可以放到set中实
-<br><br>Redis hash 是一个 string 类型的 field（字段） 和 value（值） 的映射表，hash 特别适合用于存储对象。<br><br>​底层的实现结构，与 HashMap 一样，是 “数组 + 链表” 的二维结构，第一维 hash 的数据位置碰撞时，将碰撞元素用链表串接起来，不同的是，redis 字典的值只能是字符串，而且两者的 rehash 方式不同。Java 的 hashmap 是一次全部 rehash，耗时较高，redis 为了提高性能，采用渐进式 rehash 策略。具体方式为，同时保留新旧两个 hash 结构，然后逐步搬迁，最后取代。<br><br><br><br>hset key field value : 给hash设置field和value
+<br><br>Redis hash 是一个 string 类型的 field（字段） 和 value（值） 的映射表，hash 特别适合用于存储对象。<br><br>​底层的实现结构，与 HashMap 一样，是 “数组 + 链表” 的二维结构，第一维 hash 的数据位置碰撞时，将碰撞元素用链表串接起来。<br>不同的是，redis 字典的值只能是字符串，而且两者的 rehash 方式不同。<br>
+Java 的 hashmap 是一次全部 rehash，耗时较高，<br>
+Redis 为了提高性能，采用渐进式 rehash 策略。具体方式为，同时保留新旧两个 hash 结构，然后逐步搬迁，最后取代。<br><br><br><br># hset key field value : 给hash设置field和value
 127.0.0.1:6379&gt; hset hash1 k1 v1
 (integer) 1
 
-hget  key field : 获取hash中健值为field的值
+# hget key field : 获取hash中健值为field的值
 127.0.0.1:6379&gt; hget hash1 k1
 "v1"
 
-hmset key field value [field value...] : 同时给hash设置多个field和value
+# hmset key field value [field value...] : 同时给hash设置多个field和value
 127.0.0.1:6379&gt; hmset hash1 k2 v2 k3 v3 k4 v4
 OK
 
-hmget key field [field...] : 同时获取hash中多个健值为field的值
+# hmget key field [field...] : 同时获取hash中多个健值为field的值
 127.0.0.1:6379&gt; hmget hash1 k1 k2 k3 k4
 1) "v1"
 2) "v2"
 3) "v3"
 4) "v4"
 
-hsetnx key field value : 判断hash中是否存在 该field值，不存在则添加
+# hsetnx key field value : 判断hash中是否存在 该field值，不存在则添加
 127.0.0.1:6379&gt; hsetnx hash1 k5 v5
 (integer) 1
 
-hgetall key : 获取hash中所有的field和value的值
+# hgetall key : 获取hash中所有的field和value的值
 127.0.0.1:6379&gt; hgetall hash1
  1) "k3"
  2) "v3"
@@ -19754,46 +19725,98 @@ hgetall key : 获取hash中所有的field和value的值
  9) "k2"
 10) "81.83635"
 
-hkeys key : 获取hash中所有的field的值
+# hkeys key : 获取hash中所有的field的值
 127.0.0.1:6379&gt; hkeys hash1
 1) "k3"
 2) "k4"
 3) "k5"
 
-hvals key : 获取hash中所有value的值
+# hvals key : 获取hash中所有value的值
 127.0.0.1:6379&gt; hvals hash1
 1) "v3"
 2) "v4"
 3) "v5"
 
-hexists key field : 判断hash中是否存在field值 
+# hexists key field : 判断hash中是否存在field值 
 127.0.0.1:6379&gt; hexists hash1 k1
 (integer) 1
 
-hlen key : 获取hash中键值对的个数
+# hlen key : 获取hash中键值对的个数
 127.0.0.1:6379&gt; hlen hash1
 (integer) 5
 
-hincrby key field increment : 设置hash中field属性自增，前提是整数，自增步长为increment
+# hincrby key field increment : 设置hash中field属性自增，前提是整数，自增步长为increment
 127.0.0.1:6379&gt; hincrby hash1 k2 10
 (integer) 10
 
-hincrbyfloat key field increment : 设置hash中field属性自增 ，可以是小数，自增步长为increment
+# hincrbyfloat key field increment : 设置hash中field属性自增 ，可以是小数，自增步长为increment
 127.0.0.1:6379&gt; hincrbyfloat hash1 k2 10.1
 "40.1"
 复制<br><br>
-<br>缓存： 能直观，相比string更节省空间，的维护缓存信息，如用户信息，视频信息等。
+<br>缓存： 能直观，相比 string 更节省空间，的维护缓存信息，如用户信息，视频信息等。
+<br><br>Redis 的集合是 String 类型的无序不重复的元素集，同时提供交集、并集、差集等操作，集合中最大的成员数为 2^32-1（40 多亿）。Redis 中集合是通过哈希表实现的，所以添加，删除，查找的复杂度都是 O (1)。<br><br>​ 类似 HashSet, 也是通过哈希表实现的，相当于所有的 value 都为空。通过计算 hash 的方式来快速排重，也是 set 能提供判断一个成员是否在集合内的原因<br><br><br><br># sadd key member [member...] : 添加set集合的member
+127.0.0.1:6379&gt; sadd set1 value1 value2 value3
+(integer) 3
+
+# srem key member [member...] : 删除set集合中的member
+127.0.0.1:6379&gt; srem set1 value1
+(integer) 1
+
+# spop key [count] : 随机弹出count个member  
+127.0.0.1:6379&gt; spop set1 1
+1) "menber2"
+
+# scard key : 获取set的成员个数 
+127.0.0.1:6379&gt; scard set2
+(integer) 2
+
+# smembers key :  获取set的所有成员
+127.0.0.1:6379&gt; smembers set2
+1) "value3"
+2) "member1"
+
+# sismember key member : 判断member是否是set中的成员
+127.0.0.1:6379&gt; sismember set1 member1
+(integer) 1
+
+# srandmember key count : 随机返回count个成员
+127.0.0.1:6379&gt; srandmember set1 1
+(integer) 1
+
+# smove sourse destination member : 移动source中的成员member到destination中
+127.0.0.1:6379&gt; smove set1 set2  member1 
+(integer) 1
+
+# sdiff key1 key2 [key3...] : 返回key1与key2的差集
+127.0.0.1:6379&gt; sdiff set2 set1
+1) "value3"
+
+# sinter key1 key2 [key3...] : 返回key1与key2的交集
+127.0.0.1:6379&gt; sinter set1 set2
+1) "member1"
+
+# sunion key1 key2 [key3...] : 返回key1与key2的交集
+127.0.0.1:6379&gt; sunion set2 set1
+1) "value3"
+2) "value1"
+3) "menber3"
+4) "member1"
+5) "member2"
+复制<br><br>
+<br>标签（tag）,给用户添加标签，或者用户给消息添加标签，这样有同一标签或者类似标签的可以给推荐关注的事或者关注的人。
+<br>点赞，或点踩，收藏等，可以放到set中实现
 <br><br>
-Redis 有序集合和集合一样也是 string 类型元素的集合，且不允许重复的成员。不同的是每个元素都会关联一个 double 类型的分数。Redis 正是通过分数来为集合中的成员进行从小到大的排序。Zset 的成员是唯一的，但分数是可以重复的。
-<br><br>压缩列表 (ziplist): ziplist 是为了提高存储效率而设计的一种特殊编码的双向链表。它可以存储字符串或者整数，存储整数时是采用整数的二进制而不是字符串形式存储。它能在 O (1) 的时间复杂度下完成 list 两端的 push 和 pop 操作。但是因为每次操作都需要重新分配 ziplist 的内存，所以实际复杂度和 ziplist 的内存使用量相关<br>跳跃表（zSkiplist): 跳跃表的性能可以保证在查找，删除，添加等操作的时候在对数期望时间内完成，这个性能是可以和平衡树来相比较的，而且在实现方面比平衡树要优雅，这是采用跳跃表的主要原因。跳跃表的复杂度是 O (log (n))。<br><br><br><br>zadd key score member [score member...]:添加zset集合新的成员分数和成员。
+Redis 有序集合和集合一样也是 string 类型元素的集合，且不允许重复的成员。不同的是每个元素都会关联一个 double 类型的分数。<br>
+Redis 正是通过分数来为集合中的成员进行从小到大的排序。Zset 的成员是唯一的，但分数是可以重复的。
+<br><br>压缩列表 (ziplist): ziplist 是为了提高存储效率而设计的一种特殊编码的双向链表。它可以存储字符串或者整数，存储整数时是采用整数的二进制而不是字符串形式存储。它能在 O (1) 的时间复杂度下完成 list 两端的 push 和 pop 操作。但是因为每次操作都需要重新分配 ziplist 的内存，所以实际复杂度和 ziplist 的内存使用量相关<br>跳跃表（zSkiplist): 跳跃表的性能可以保证在查找，删除，添加等操作的时候在对数期望时间内完成，这个性能是可以和平衡树来相比较的，而且在实现方面比平衡树要优雅，这是采用跳跃表的主要原因。跳跃表的复杂度是 O (log (n))。<br><br><br><br># zadd key score member [score member...]:添加zset集合新的成员分数和成员。
 127.0.0.1:6379&gt; zadd k1 10 c1 20 c2 30 c3 40 c4 50 c5 60 c6 70 c7 80 c8 90 c9 
 (integer) 9
 
-zrem key member [member...]:删除zset中的成员member
+# zrem key member [member...]:删除zset中的成员member
 127.0.0.1:6379&gt; zrem zset key1
 (integer) 1
 
-zrange key start stop [withscores]:遍历zset，获取所有成员 ，若加上withscores，则分数被同时返回
+# zrange key start stop [withscores]:遍历zset，获取所有成员 ，若加上withscores，则分数被同时返回
 127.0.0.1:6379&gt; zrange k1 0 -1
 1) "c1"
 2) "c2"
@@ -19805,29 +19828,29 @@ zrange key start stop [withscores]:遍历zset，获取所有成员 ，若加上w
 8) "c8"
 9) "c9"
 
-zrangebyscore key min max [withscores] [limit offset count] : 获取指定范围内分数的所有成员 （升序） withscores表示带上分数，limit表示分页
+# zrangebyscore key min max [withscores] [limit offset count] : 获取指定范围内分数的所有成员 （升序） withscores表示带上分数，limit表示分页
 127.0.0.1:6379&gt; zrevrangebyscore k1 50 (10
 1) "c5"
 2) "c4"
 3) "c3"
 4) "c2"
 
-zcard key:获取zset成员个数
+# zcard key:获取zset成员个数
 127.0.0.1:6379&gt;zcard k1
 (integer)8
-zcount key min max :获取zset在指定分数范围内的成员个数,“（”左括号表示闭区间
+# zcount key min max :获取zset在指定分数范围内的成员个数,“（”左括号表示闭区间
 127.0.0.1:6379&gt; zcount k1 0 (60
 (integer) 5
 
-zrank key member : 获取zset中成员member的排名（升序）
+# zrank key member : 获取zset中成员member的排名（升序）
 127.0.0.1:6379&gt; zvrank k1 c9
 (integer) 8
 
-zrevrank key member:获取zset中成员member的排名（降序）
+# zrevrank key member:获取zset中成员member的排名（降序）
 127.0.0.1:6379&gt; zrevrank k1 c9
 (integer) 0
 
-zrevrange key [withscores]: 获取zset中所有的成员（降序）
+# zrevrange key [withscores]: 获取zset中所有的成员（降序）
 127.0.0.1:6379&gt; zrevrange k1 0 -1
 1) "c9"
 2) "c8"
@@ -19840,7 +19863,10 @@ zrevrange key [withscores]: 获取zset中所有的成员（降序）
 9) "c1"
 复制<br><br>
 <br>排行榜：有序集合经典使用场景。例如小说视频等网站需要对用户上传的小说视频做排行榜，榜单可以按照用户关注数，更新时间，字数等打分，做排行。
-<br><br><br><br>举个例子，A = {1, 2, 3, 4, 5}， B = {3, 5, 6, 7, 9}；那么基数（不重复的元素）= 1, 2, 4, 6, 7, 9； （允许容错，即可以接受一定误差）<br><br>这个结构可以非常省内存的去统计各种计数，比如注册 IP 数、每日访问 IP 数、页面实时 UV、在线用户数，共同好友数等。<br><br>一个大型的网站，每天 IP 比如有 100 万，粗算一个 IP 消耗 15 字节，那么 100 万个 IP 就是 15 M。而 HyperLogLog 在 Redis 中每个键占用的内容都是 12 K，理论存储近似接近 2^64 个值，不管存储的内容是什么，它一个基于基数估算的算法，只能比较准确的估算出基数，可以使用少量固定的内存去存储并识别集合中的唯一元素。而且这个估算的基数并不一定准确，是一个带有 0.81% 标准错误的近似值（对于可以接受一定容错的业务场景，比如 IP 数统计，UV 等，是可以忽略不计的）。<br><br>127.0.0.1:6379&gt; pfadd key1 a b c d e f g h i	# 创建第一组元素
+<br><br><br><br>基数是指一个集合中不同元素的数量。<br>举个例子，A = {1, 2, 3, 4, 5}， B = {3, 5, 6, 7, 9}；那么基数（不重复的元素）= {1, 2, 4, 6, 7, 9}<br><br>这个结构可以使用极少量内存的情况下估算出非常大的数据集中的基数。<br>对于可以接受一定容错的业务场景，比如注册 IP 数、每日访问 IP 数、页面实时 UV、在线用户数，共同好友数等。<br><br>一个大型的网站，每天 IP 比如有 100 万，粗算一个 IP 消耗 15 字节，那么 100 万个 IP 就是 15 M。<br>
+<br>HyperLogLog 在 Redis 中每个键占用的内容都是 12 K，理论存储近似接近 2^64 个值，在处理大规模数据时不需要存储所有的元素，而是通过一种概率算法来估计不同元素的数量。
+<br>估算的基数是近似值，但相对准确，是一个带有 0.81%（不到百分之一）标准错误的值。
+<br><br>127.0.0.1:6379&gt; pfadd key1 a b c d e f g h i	# 创建第一组元素
 (integer) 1
 127.0.0.1:6379&gt; pfcount key1					# 统计元素的基数数量
 (integer) 9
@@ -19852,7 +19878,7 @@ zrevrange key [withscores]: 获取zset中所有的成员（降序）
 OK
 127.0.0.1:6379&gt; pfcount key3
 (integer) 13
-复制<br><br>Bitmap 即位图数据结构，都是操作二进制位来进行记录，只有 0 和 1 两个状态。<br><br>比如：统计用户信息，活跃，不活跃！ 登录，未登录！ 打卡，不打卡！ 两个状态的，都可以使用 Bitmaps！<br>如果存储一年的打卡状态需要多少内存呢？ 365 天 = 365 bit 1 字节 = 8 bit 46 个字节左右！<br><br>使用 bitmap 来记录周一到周日的打卡！ 周一：1 周二：0 周三：0 周四：1 ……<br>127.0.0.1:6379&gt; setbit sign 0 1
+复制<br><br>Bitmap 即位图数据结构，都是操作二进制位来进行记录，只有 0 和 1 两个状态。<br><br>只要是两个状态的，都可以使用 Bitmaps。<br>比如：统计用户信息，活跃，不活跃！ 登录，未登录！ 打卡，不打卡！ ！<br>如果存储一年的打卡状态需要多少内存呢？ 365 天 = 365 bit 1 字节 = 8 bit 46 个字节左右！<br><br>使用 bitmap 来记录周一到周日的打卡！ 周一：1 周二：0 周三：0 周四：1 ……<br>127.0.0.1:6379&gt; setbit sign 0 1
 (integer) 0
 127.0.0.1:6379&gt; setbit sign 1 1
 (integer) 0
@@ -19971,7 +19997,7 @@ Redis5.0 中还增加了一个数据结构Stream，从字面上看是流类型�
 <br>但是发布订阅模式是无法持久化的，如果出现网络断开、Redis 宕机等，消息就会被丢弃；
 
 
-<br>基于List LPUSH+BRPOP 或者 基于Sorted-Set的实现
+<br>基于 List LPUSH + BRPOP 或者基于 Sorted-Set 的实现 
 
 <br>支持了持久化，但是不支持多播，分组消费等
 
@@ -19986,7 +20012,7 @@ Redis5.0 中还增加了一个数据结构Stream，从字面上看是流类型�
 
 <br>消息有序性
 <br>消息的持久化
-<br>我们不妨看看Redis考虑了哪些设计？<br>
+<br><img src="\04、数据库\02、redis\assets\03、常见命令&amp;数据类型\img-20240317_162235.png"><br>我们不妨看看Redis考虑了哪些设计？<br>
 <br>消息ID的序列化生成
 <br>消息遍历
 <br>消息的阻塞和非阻塞读取
@@ -19995,9 +20021,9 @@ Redis5.0 中还增加了一个数据结构Stream，从字面上看是流类型�
 <br>消息队列监控
 <br>...
 <br>
-这也是我们需要理解Stream的点，但是结合上面的图，我们也应该理解Redis Stream也是一种超轻量MQ并没有完全实现消息队列所有设计要点，这决定着它适用的场景。
+这也是我们需要理解Stream的点，但是结合上面的图，我们也应该理解 Redis Stream 也是一种超轻量MQ并没有完全实现消息队列所有设计要点，这决定着它适用的场景。
 <br><br>
-经过梳理总结，我认为从以下几个大的方面去理解Stream是比较合适的，总结如下：@pdai
+经过梳理总结，我认为从以下几个大的方面去理解Stream是比较合适的
 <br>
 <br>Stream的结构设计
 <br>生产和消费
@@ -20008,7 +20034,7 @@ Redis5.0 中还增加了一个数据结构Stream，从字面上看是流类型�
 
 
 <br>监控状态
-<br><br>每个 Stream 都有唯一的名称，它就是 Redis 的 key，在我们首次使用 xadd 指令追加消息时自动创建。<br>“/images/db/redis/db-redis-stream-2.png” could not be found.<br>上图解析：<br>
+<br><br>每个 Stream 都有唯一的名称，它就是 Redis 的 key，在我们首次使用 xadd 指令追加消息时自动创建。<br><img src="\04、数据库\02、redis\assets\03、常见命令&amp;数据类型\img-20240317_162313.png"><br>上图解析：<br>
 <br>Consumer Group ：消费组，使用 XGROUP CREATE 命令创建，一个消费组有多个消费者(Consumer), 这些消费者之间是竞争关系。
 <br>last_delivered_id ：游标，每个消费组会有个游标 last_delivered_id，任意一个消费者读取了消息都会使游标 last_delivered_id 往前移动。
 <br>pending_ids ：消费者(Consumer)的状态变量，作用是维护消费者的未确认的 id。 pending_ids 记录了当前已经被客户端读取的消息，但是还没有 ack (Acknowledge character：确认字符）。如果客户端没有ack，这个变量里面的消息ID会越来越多，一旦某个消息被ack，它就开始减少。这个pending_ids变量在Redis官方被称之为PEL，也就是Pending Entries List，这是一个很核心的数据结构，它用来确保客户端至少消费了消息一次，而不会在网络传输的中途丢失了没处理。
@@ -20124,7 +20150,7 @@ Redis5.0 中还增加了一个数据结构Stream，从字面上看是流类型�
 (1.07s)
 复制<br><br>
 <br>消费组消费图
-<br>“/images/db/redis/db-redis-stream-3.png” could not be found.<br>
+<br><img alt="assets/03、常见命令&amp;数据类型/img-20240317_162705.png" src="\04、数据库\02、redis\assets\03、常见命令&amp;数据类型\img-20240317_162705.png" style="width: 600px; max-width: 100%;"><br>
 <br>相关命令：
 
 <br>XGROUP CREATE - 创建消费者组
@@ -20324,9 +20350,10 @@ OK
    6) (integer) 23683256
 复制<br>至此，消息队列的操作说明大体结束！<br><br>
 我们结合MQ中常见问题，看Redis是如何解决的，来进一步理解Redis。
-<br><br>可用作时通信等，大数据分析，异地数据备份等<br>“/images/db/redis/db-redis-stream-4.png” could not be found.<br>客户端可以平滑扩展，提高处理能力<br>“/images/db/redis/db-redis-stream-5.png” could not be found.<br><br>
+<br><br>可用作时通信等，大数据分析，异地数据备份等<br><img alt="assets/03、常见命令&amp;数据类型/img-20240317_162936.png" src="\04、数据库\02、redis\assets\03、常见命令&amp;数据类型\img-20240317_162936.png" style="width: 675px; max-width: 100%;"><br>客户端可以平滑扩展，提高处理能力<br><img alt="assets/03、常见命令&amp;数据类型/img-20240317_162950.png" src="\04、数据库\02、redis\assets\03、常见命令&amp;数据类型\img-20240317_162950.png" style="width: 700px; max-width: 100%;"><br><br>
 在 <a class="internal-link" data-href="/md/algorithm/alg-domain-id-snowflake.html" href="\md\algorithm\alg-domain-id-snowflake.html" target="_self" rel="noopener">分布式算法 - ID算法</a>设计中, 一个常见的问题就是时间回拨问题，那么Redis的消息ID设计中是否考虑到这个问题呢？
-<br>XADD生成的1553439850328-0，就是Redis生成的消息ID，由两部分组成:时间戳-序号。时间戳是毫秒级单位，是生成消息的Redis服务器时间，它是个64位整型（int64）。序号是在这个毫秒时间点内的消息序号，它也是个64位整型。<br>可以通过multi批处理，来验证序号的递增：<br>127.0.0.1:6379&gt; MULTI
+<br>Redis XADD 生成的消息ID，由两部分组成：时间戳-序号。<br>
+时间戳是毫秒级单位，是生成消息的Redis服务器时间，它是个64位整型（int64）。序号是在这个毫秒时间点内的消息序号，它也是个64位整型。<br>可以通过multi批处理，来验证序号的递增：<br>127.0.0.1:6379&gt; MULTI
 OK
 127.0.0.1:6379&gt; XADD memberMessage * msg one
 QUEUED
@@ -20344,7 +20371,8 @@ QUEUED
 3) "1553441006884-2"
 4) "1553441006884-3"
 5) "1553441006884-4"
-复制<br>由于一个redis命令的执行很快，所以可以看到在同一时间戳内，是通过序号递增来表示消息的。<br>为了保证消息是有序的，因此Redis生成的ID是单调递增有序的。由于ID中包含时间戳部分，为了避免服务器时间错误而带来的问题（例如服务器时间延后了），Redis的每个Stream类型数据都维护一个latest_generated_id属性，用于记录最后一个消息的ID。若发现当前时间戳退后（小于latest_generated_id所记录的），则采用时间戳不变而序号递增的方案来作为新消息ID（这也是序号为什么使用int64的原因，保证有足够多的的序号），从而保证ID的单调递增性质。<br>强烈建议使用Redis的方案生成消息ID，因为这种时间戳+序号的单调递增的ID方案，几乎可以满足你全部的需求。但同时，记住ID是支持自定义的，别忘了！<br><br>为了解决组内消息读取但处理期间消费者崩溃带来的消息丢失问题，STREAM 设计了 Pending 列表，用于记录读取但并未处理完毕的消息。命令XPENDIING 用来获消费组或消费内消费者的未处理完毕的消息。演示如下：<br>127.0.0.1:6379&gt; XPENDING mq mqGroup # mpGroup的Pending情况
+复制<br>由于一个redis命令的执行很快，所以可以看到在同一时间戳内，是通过序号递增来表示消息的。<br>为了保证消息是有序的，因此Redis生成的ID是单调递增有序的。由于ID中包含时间戳部分，为了避免服务器时间错误而带来的问题（例如服务器时间延后了），Redis的每个Stream类型数据都维护一个latest_generated_id属性，用于记录最后一个消息的ID。若发现当前时间戳退后（小于latest_generated_id所记录的），则采用时间戳不变而序号递增的方案来作为新消息ID（这也是序号为什么使用int64的原因，保证有足够多的的序号），从而保证ID的单调递增性质。<br>强烈建议使用Redis的方案生成消息ID，因为这种时间戳+序号的单调递增的ID方案，几乎可以满足你全部的需求。<br>
+但同时，记住ID是支持自定义的，别忘了！<br><br>为了解决组内消息读取但处理期间消费者崩溃带来的消息丢失问题，STREAM 设计了 Pending 列表，用于记录读取但并未处理完毕的消息。<br>命令XPENDIING 用来获消费组或消费内消费者的未处理完毕的消息。演示如下：<br>127.0.0.1:6379&gt; XPENDING mq mqGroup # mpGroup的Pending情况
 1) (integer) 5 # 5个已读取但未处理的消息
 2) "1553585533795-0" # 起始ID
 3) "1553585533795-4" # 结束ID
@@ -20425,15 +20453,21 @@ QUEUED
 2) 1) "1553585533795-2"
    2) 1) "msg"
       2) "3"
-复制<br>注意本例中，并没有删除Pending中的消息因此你查看Pending，消息还会在。可以执行XACK标识其处理完毕！<br><br><a rel="noopener" class="external-link" href="http://blog.czk.pub/post/4e38cf26.html#%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8-1" target="_blank">http://blog.czk.pub/post/4e38cf26.html#%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8-1</a>]]></description><link>04、数据库\02、redis\03、常见命令&amp;数据类型.html</link><guid isPermaLink="false">04、数据库/02、Redis/03、常见命令&amp;数据类型.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Fri, 15 Mar 2024 14:13:02 GMT</pubDate></item><item><title><![CDATA[04、Redis 的 Java 客户端]]></title><description><![CDATA[ 
- <br>在 Redis 官网中提供了各种语言的客户端，地址： <a rel="noopener" class="external-link" href="https://redis.io/docs/clients/" target="_blank">https://redis.io/docs/clients/</a><br><img alt="assets/04、Redis 的 Java 客户端/img-20240317_093601.png" src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_093601.png" style="width: 725px; max-width: 100%;"><br>其中 Java 客户端也包含很多：<br><img alt="assets/04、Redis 的 Java 客户端/img-20240317_093735.png" src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_093735.png" style="width: 700px; max-width: 100%;"><br>标记为 ❤ 的就是推荐使用的 java 客户端，包括：<br>
+复制<br>注意本例中，并没有删除Pending中的消息因此你查看Pending，消息还会在。可以执行XACK标识其处理完毕！<br><br>
+<br><a rel="noopener" class="external-link" href="https://www.runoob.com/redis/redis-stream.html" target="_blank">https://www.runoob.com/redis/redis-stream.html</a>
+<br><a rel="noopener" class="external-link" href="https://www.zhihu.com/question/279540635" target="_blank">https://www.zhihu.com/question/279540635</a>
+<br><a rel="noopener" class="external-link" href="https://zhuanlan.zhihu.com/p/60501638" target="_blank">https://zhuanlan.zhihu.com/p/60501638</a>
+]]></description><link>04、数据库\02、redis\03、常见命令&amp;数据类型.html</link><guid isPermaLink="false">04、数据库/02、Redis/03、常见命令&amp;数据类型.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 08:32:57 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\03、常见命令&amp;数据类型\img-20240317_162235.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\03、常见命令&amp;数据类型\img-20240317_162235.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[04、Redis 的 Java 客户端]]></title><description><![CDATA[ 
+ <br>在 Redis 官网中提供了各种语言的客户端，地址： <a rel="noopener" class="external-link" href="https://redis.io/docs/clients/" target="_blank">https://redis.io/docs/clients/</a><br>
+<img alt="assets/04、Redis 的 Java 客户端/img-20240317_093601.png" src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_093601.png" style="width: 725px; max-width: 100%;"><br>
+其中 Java 客户端也包含很多：<br><img alt="assets/04、Redis 的 Java 客户端/img-20240317_093735.png" src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_093735.png" style="width: 700px; max-width: 100%;"><br>标记为 ❤ 的就是推荐使用的 java 客户端，包括：<br>
 <br>
 Jedis 和 Lettuce：这两个主要是提供了 Redis 命令对应的 API，方便我们操作 Redis，而 SpringDataRedis 又对这两种做了抽象和封装，因此我们后期会直接以 SpringDataRedis 来学习。
 
 <br>
 Redisson：是在 Redis 基础上实现了分布式的可伸缩的 java 数据结构，例如 Map、Queue 等，而且支持跨进程的同步机制：Lock、Semaphore 等待，比较适合用来实现特殊的功能需求。
 
-<br><br>Jedis 的官网地址： <a rel="noopener" class="external-link" href="https://github.com/redis/jedis" target="_blank">https://github.com/redis/jedis</a><br>1、引入依赖：<br>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<br><br><br>Jedis 的官网地址： <a rel="noopener" class="external-link" href="https://github.com/redis/jedis" target="_blank">https://github.com/redis/jedis</a><br>1、引入依赖：<br>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;project xmlns=" http://maven.apache.org/POM/4.0.0"
          xmlns:xsi=" http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
@@ -20530,16 +20564,188 @@ public class JedisPoolTest {
         System.out.println("name = " + name);//name = 小猪
     }
 }
-复制<br>]]></description><link>04、数据库\02、redis\04、redis-的-java-客户端.html</link><guid isPermaLink="false">04、数据库/02、Redis/04、Redis 的 Java 客户端.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 01:43:15 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_093601.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_093601.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[05、持久化：RDB和AOF机制详解]]></title><description><![CDATA[ 
+复制<br><br>SpringData 是 Spring 中数据操作的模块，包含对各种数据库的集成，其中对 Redis 的集成模块就叫做 SpringDataRedis。<br>
+官网地址： <a rel="noopener" class="external-link" href="https://spring.io/projects/spring-data-redis" target="_blank">https://spring.io/projects/spring-data-redis</a><br>
+<br>提供了对不同 Redis 客户端的整合（Lettuce 和 Jedis）
+<br>提供了 RedisTemplate 统一 API 来操作 Redis
+<br>支持 Redis 的发布订阅模型
+<br>支持 Redis 哨兵和 Redis 集群
+<br>支持基于 Lettuce 的响应式编程
+<br>支持基于 JDK、JSON、字符串、Spring 对象的数据序列化及反序列化
+<br>支持基于 Redis 的 JDKCollection 实现
+<br>SPringDataRedis 中提供了 RedisTemplate 工具类，其中封装了各种对 Redis 的操作。并且将不同数据类型的操作 API 封装到了不同的类型中：<br><img src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_163857.png"><br><br>SpringBoot 已经提供了对 SpringDataRedis 的支持，使用非常简单。<br>
+首先，新建一个 maven 项目，然后按照下面步骤执行：<br>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+    &lt;parent&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
+        &lt;version&gt;2.5.6&lt;/version&gt;
+        &lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;
+    &lt;/parent&gt;
+    &lt;groupId&gt;tech.chen&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-client-spring-data-redis&lt;/artifactId&gt;
+    &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+    &lt;name&gt;spring-client-spring-data-redis&lt;/name&gt;
+    &lt;description&gt;Demo project for Spring Boot&lt;/description&gt;
+    &lt;properties&gt;
+        &lt;java.version&gt;1.8&lt;/java.version&gt;
+    &lt;/properties&gt;
+    &lt;dependencies&gt;
+        &lt;!--redis依赖--&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-data-redis&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!--common-pool--&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.apache.commons&lt;/groupId&gt;
+            &lt;artifactId&gt;commons-pool2&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
+            &lt;artifactId&gt;lombok&lt;/artifactId&gt;
+            &lt;optional&gt;true&lt;/optional&gt;
+        &lt;/dependency&gt;
+        &lt;!--Jackson依赖 ,springmvc中自带依赖，这里由于没有，故引用--&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;
+            &lt;artifactId&gt;jackson-databind&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+                &lt;configuration&gt;
+                    &lt;excludes&gt;
+                        &lt;exclude&gt;
+                            &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
+                            &lt;artifactId&gt;lombok&lt;/artifactId&gt;
+                        &lt;/exclude&gt;
+                    &lt;/excludes&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;
+复制<br>2）配置 Redis<br>spring:
+  redis:
+    host: 192.168.200.130
+    port: 6379
+    password: 123321
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: 1000ms
+复制<br>3）注入 RedisTemplate<br>因为有了 SpringBoot 的自动装配，我们可以拿来就用：<br>@SpringBootTest
+class RedisStringTests {
+    @Autowired
+    private RedisTemplate redisTemplate;
+}
+复制<br>4）编写测试<br>@SpringBootTest
+class SpringClientSpringDataRedisApplicationTests {
+    @Autowired
+    private RedisTemplate redisTemplate;
+    @Test
+    void string() {
+        // 写入一条String数据
+        redisTemplate.opsForValue().set("name", "阿陈");
+        // 获取string数据
+        Object name = redisTemplate.opsForValue().get("name");
+        System.out.println("name = " + name);//name = 阿陈
+    }
+}
+复制<br>查看 redisGUI, 发现 redis 中存的数据并不像我们预期的那样 name: 阿陈<br><img src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_164501.png"><br><br>Redis 序列化器有以下几种：<br><img src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_164538.png"><br>常用的是 StringRedisSerializer 和 Jackson2JsonRedisSerializer 。<br>RedisTemplate 可以接收任意 Object 作为值写入 Redis：<br><img src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_164603.png"><br>只不过写入前会把 Object 序列化为字节形式，默认是采用 JDK 序列化，得到的结果是这样的：<br><img alt="assets/04、Redis 的 Java 客户端/img-20240317_164624.png" src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_164624.png" style="width: 975px; max-width: 100%;"><br>缺点：<br>
+<br>可读性差
+<br>内存占用较大
+<br>我们可以自定义 RedisTemplate 的序列化方式，代码如下：<br>@Configuration
+public class RedisConfig {
+
+    @Bean
+    public RedisTemplate&lt;String, Object&gt; redisTemplate(RedisConnectionFactory connectionFactory) {
+        // 创建RedisTemplate对象
+        RedisTemplate&lt;String, Object&gt; template = new RedisTemplate&lt;&gt;();
+        // 设置连接工厂
+        template.setConnectionFactory(connectionFactory);
+        // 创建JSON序列化工具
+        GenericJackson2JsonRedisSerializer jsonRedisSerializer = new GenericJackson2JsonRedisSerializer();
+        // 设置Key和hashKey的序列化
+        template.setKeySerializer(RedisSerializer.string());
+        template.setHashKeySerializer(RedisSerializer.string());
+        // 设置Value和hashValue的序列化
+        template.setValueSerializer(jsonRedisSerializer);
+        template.setHashValueSerializer(jsonRedisSerializer);
+        // 返回
+        return template;
+    }
+}
+复制<br>这里采用了 JSON 序列化来代替默认的 JDK 序列化方式，一般我们使用 redis 的时候，redis 的 key 都是 String 类型的，故在对 key 使用序列化器时，都采用 RedisSerializer.String () 的方式。再次测试，结果如图：<br><img src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_164810.png"><br>如果我们是存 java 对象，那 redis 会怎样显示？<br>@Test
+void stringObjTest() {
+    User user = new User();
+    user.setName("阿陈");
+    user.setAge(21);
+    // 写入一条String数据
+    redisTemplate.opsForValue().set("login:user:101", user);
+    // 获取string数据
+    User user1 = (User) redisTemplate.opsForValue().get("login:user:101");
+    System.out.println("user1 = " + user1);//user1 = tech.chen.springclientspringdataredis.entity.User@516592b1
+}
+复制<br><img src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_164919.png"><br>整体可读性有了很大提升，并且能将 Java 对象自动的序列化为 JSON 字符串，并且查询时能自动把 JSON 反序列化为 Java 对象。不过，其中记录了序列化时对应的 class 名称，目的是为了查询时实现自动反序列化。这会带来额外的内存开销。<br><br>为了节省内存空间，我们可以不使用 JSON 序列化器来处理 value，而是统一使用 String 序列化器，要求只能存储 String 类型的 key 和 value。当需要存储 Java 对象时，手动完成对象的序列化和反序列化。<br><img src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_165035.png"><br>因为存入和读取时的序列化及反序列化都是我们自己实现的，SpringDataRedis 就不会将 class 信息写入 Redis 了。<br>这种用法比较普遍，因此 SpringDataRedis 就提供了 RedisTemplate 的子类：StringRedisTemplate ，它的 key 和 value 的序列化方式默认就是 String 方式。<br><img src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_165047.png"><br>省去了我们自定义 RedisTemplate 的序列化方式的步骤，而是直接使用：<br>/**
+ * @Date 2022/8/2 20:55
+ * @Author c-z-k
+ */
+@SpringBootTest
+public class StringRedisTemplateTest {
+    @Autowired
+    private StringRedisTemplate stringRedisTemplate;
+
+    private static final ObjectMapper objectMapper = new ObjectMapper();
+    @Test
+    void stringTest() {
+        // 写入一条String数据
+        stringRedisTemplate.opsForValue().set("name", "阿陈");
+        // 获取string数据
+        Object name = stringRedisTemplate.opsForValue().get("name");
+        System.out.println("name = " + name);//name = 阿陈
+    }
+    @Test
+    void stringObjTest() {
+        User user = new User();
+        user.setName("阿陈");
+        user.setAge(21);
+        // 写入一条String数据
+        String userJson = null;
+        try {
+            userJson = objectMapper.writeValueAsString(user);
+            stringRedisTemplate.opsForValue().set("login:user:101", userJson);
+            // 获取string数据
+            String result = stringRedisTemplate.opsForValue().get("login:user:101");
+            User user1 = objectMapper.readValue(result, User.class);
+            System.out.println("user1 = " + user1);//user1 = tech.chen.springclientspringdataredis.entity.User@3878be7b
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+    }
+}
+复制<br><img src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_165131.png">]]></description><link>04、数据库\02、redis\04、redis-的-java-客户端.html</link><guid isPermaLink="false">04、数据库/02、Redis/04、Redis 的 Java 客户端.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 08:56:18 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_093601.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_093601.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[05、持久化：RDB和AOF机制详解]]></title><description><![CDATA[ 
  <br><br>Redis 是个基于内存的数据库。那服务一旦宕机，内存中的数据将全部丢失。<br>通常的解决方案是从后端数据库恢复这些数据，但后端数据库有性能瓶颈，如果是大数据量的恢复：<br>
 1、会对数据库带来巨大的压力。<br>
 2、数据库的性能不如Redis。导致程序响应慢。所以对Redis来说，实现数据的持久化，避免从后端数据库中恢复数据，是至关重要的。<br><br>RDB 就是 Redis DataBase 的缩写，中文名为快照/内存快照，RDB 持久化是把当前进程数据生成快照保存到磁盘上的过程，由于是某一时刻的快照，那么快照中的值要早于或者等于内存中的值。<br>
 触发rdb持久化的方式有2种，分别是手动触发和自动触发。
 <br><br><br>
-<br>save命令：阻塞当前Redis服务器，直到RDB过程完成为止，对于内存 比较大的实例会造成长时间阻塞，线上环境不建议使用<br>
-
-<br>bgsave命令：Redis进程执行fork操作创建子进程，RDB持久化过程由子 进程负责，完成后自动结束。阻塞只发生在fork阶段，一般时间很短<br>
-
+<br>save命令：阻塞当前Redis服务器，直到RDB过程完成为止，对于内存 比较大的实例会造成长时间阻塞，线上环境不建议使用
+<br>bgsave命令：Redis进程执行fork操作创建子进程，RDB持久化过程由子 进程负责，完成后自动结束。阻塞只发生在fork阶段，一般时间很短
 <br>具体流程如下：<br>
 <br>redis客户端执行bgsave命令或者自动触发bgsave命令；
 <br>主进程判断当前是否已经存在正在执行的子进程，如果存在，那么主进程直接返回；
@@ -20611,17 +20817,21 @@ rdbchecksum yes
 
 <br>针对 RDB 不适合实时持久化的问题，Redis 提供了 AOF 持久化方式来解。<br><br>Append Only file（追加文件），日志里记录的是 Redis 收到的每一条命令，这些命令是以文本形式保存。<br><br>日志采用写后日志，先写内存，后写日志。<br>
 PS: 大多数的数据库采用的是写前日志（WAL），例如 MySQL，通过写前日志和两阶段提交，实现数据和逻辑的一致性。
-<br><img alt="assets/05、持久化：RDB和AOF机制详解/img-20240315_212409.png" src="\04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_212409.png" style="width: 550px; max-width: 100%;"><br>采用写日志有两方面好处：<br>
+<br><img alt="assets/05、持久化：RDB和AOF机制详解/img-20240315_212409.png" src="\04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_212409.png" style="width: 550px; max-width: 100%;"><br>采用后写日志有两方面好处：<br>
 <br>避免额外的检查开销：Redis 在向 AOF 里面记录日志的时候，并不会先去对这些命令进行语法检查。所以，如果先记日志再执行命令的话，日志中就有可能记录了错误的命令，Redis 在使用日志恢复数据时，就可能会出错。
 <br>不会阻塞当前的写操作
 <br>但这种方式存在潜在风险：<br>
-<br>如果命令执行完成，写日志之前宕机了，会丢失数据。
-<br>主线程写磁盘压力大，导致写盘慢，阻塞后续操作。
+<br>
+如果命令执行完成，写日志之前宕机了，会丢失数据。
+
+<br>
+如果磁盘写入速度跟不上 Redis 的写命令速度，主线程在写入 AOF 时将会被阻塞，可能导致整体性能下降。
+4.0 前的版本，Redis 的主线程负责写 AOF 文件。<br>
+4.0 后的版本，通过使用后台 I/O 线程和内存缓冲区来改善 AOF 持久化的性能，减少了主线程的 I/O 阻塞问题。
+
 <br><br>AOF日志记录Redis的每个写命令，步骤分为：命令追加（append）、文件写入（write）和文件同步（sync）。<br>
-<br>命令追加 当AOF持久化功能打开了，服务器在执行完一个写命令之后，会以协议格式将被执行的写命令追加到服务器的 aof_buf 缓冲区。<br>
-
-<br>文件写入和同步 关于何时将 aof_buf 缓冲区的内容写入AOF文件中<br>
-
+<br>命令追加 当AOF持久化功能打开了，服务器在执行完一个写命令之后，会以协议格式将被执行的写命令追加到服务器的 aof_buf 缓冲区。
+<br>文件写入和同步 关于何时将 aof_buf 缓冲区的内容写入AOF文件中
 <br>Redis 提供了三种写回策略：<br>Always，同步写回：每个写命令执行完，立马同步地将日志写回磁盘；<br>Everysec，每秒写回：每个写命令执行完，只是先把日志写到AOF文件的内存缓冲区，每隔一秒把缓冲区中的内容写入磁盘；<br>No，操作系统控制的写回：每个写命令执行完，只是先把日志写到 AOF 文件的内存缓冲区，由操作系统决定何时将缓冲区内容写回磁盘。<br><img alt="assets/05、持久化：RDB和AOF机制详解/img-20240315_214448.png" src="\04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_214448.png" style="width: 700px; max-width: 100%;"><br><br>默认情况下，Redis 是没有开启 AOF 的。<br>可以通过配置 redis.conf 文件来开启 AOF 持久化，关于 AOF 的配置如下：<br># appendonly参数开启AOF持久化
 appendonly no
 
@@ -20704,7 +20914,7 @@ AOF会记录每个写命令到AOF文件，随着时间越来越长，AOF文件�
 <br>单机如果部署多个实例，要防止多个机器同时运行持久化、重写操作，防止出现内存、CPU、IO资源竞争，让持久化变为串行；
 <br>可以加入主从机器，利用一台从机器进行备份处理，其它机器正常响应客户端的命令；
 <br>RDB持久化与AOF持久化可以同时存在，配合使用。
-]]></description><link>04、数据库\02、redis\05、持久化：rdb和aof机制详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/05、持久化：RDB和AOF机制详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 04:17:27 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_210729.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_210729.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[06、高可用：主从复制详解]]></title><description><![CDATA[ 
+]]></description><link>04、数据库\02、redis\05、持久化：rdb和aof机制详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/05、持久化：RDB和AOF机制详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 09:05:39 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_210729.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_210729.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[06、高可用：主从复制详解]]></title><description><![CDATA[ 
  <br><br>
 主从复制，是指将一台 Redis 服务器的数据，复制到其他的 Redis 服务器。前者称为主节点(master)，后者称为从节点(slave)；<br>
 数据的复制是单向的，主 ==&gt; 从
@@ -20767,7 +20977,7 @@ AOF会记录每个写命令到AOF文件，随着时间越来越长，AOF文件�
 <br>在没有使用哨兵的读写分离场景下，应用针对读和写分别连接不同的Redis节点；当主节点或从节点出现问题而发生更改时，需要及时修改应用程序读写Redis数据的连接；连接的切换可以手动进行，或者自己写监控程序进行切换，但前者响应慢、容易出错，后者实现复杂，成本都不算低。<br>
 <br>总结
 <br>在使用读写分离之前，可以考虑其他方法增加 Redis 的读负载能力：如尽量优化主节点（减少慢查询、减少持久化等其他情况带来的阻塞等）提高负载能力；<br>
-使用Redis集群同时提高读负载能力和写负载能力等。如果使用读写分离，可以使用哨兵，使主从节点的故障切换尽可能自动化，并减少对应用程序的侵入。<br>]]></description><link>04、数据库\02、redis\06、高可用：主从复制详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/06、高可用：主从复制详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sat, 16 Mar 2024 03:50:17 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\06、高可用：主从复制详解\img-20240316_112111.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\06、高可用：主从复制详解\img-20240316_112111.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[07、高可用：哨兵机制（Redis Sentinel）详解]]></title><description><![CDATA[ 
+使用Redis集群同时提高读负载能力和写负载能力等。如果使用读写分离，可以使用哨兵，使主从节点的故障切换尽可能自动化，并减少对应用程序的侵入。<br>]]></description><link>04、数据库\02、redis\06、高可用：主从复制详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/06、高可用：主从复制详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 09:06:04 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\06、高可用：主从复制详解\img-20240316_112111.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\06、高可用：主从复制详解\img-20240316_112111.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[07、高可用：哨兵机制（Redis Sentinel）详解]]></title><description><![CDATA[ 
  <br><br>
 slave 节点宕机恢复后可以找 master 节点同步数据，那 master 节点宕机怎么办?
 <br>只有主从，没有哨兵的情况下：<br>
@@ -20814,13 +21024,34 @@ Redis 1 主 4 从，5 个哨兵，哨兵配置 quorum 为 2，如果 3 个哨兵
 <br>选择salve-priority从节点优先级最高（redis.conf）的
 <br>选择复制偏移量最大，只复制最完整的从节点
 <br>最后是判断 slave 节点的运行 id 大小，越小优先级越高。
-<br>“/images/db/redis/db-redis-sen-3.jpg” could not be found.<br><br>
+<br><br>
 新的主库选择出来后，就可以开始进行故障的转移了。
 <br><img src="\04、数据库\02、redis\assets\07、高可用：哨兵机制（redis-sentinel）详解\img-20240316_154049.png"><br>故障转移流程如下：<br>
 <br>sentinel 给被选中的 slave 节点发送 slaveof no one 命令，让该节点成为 master
 <br>sentinel 给所有其它 slave 发送 slaveof masterIP masterPort 命令，让这些 slave 成为新 master 的从节点，开始从新的 master 上同步数据。
 <br>sentinel 将故障节点标记为 slave，当故障节点恢复后会自动成为新的 master 的 slave 节点
-]]></description><link>04、数据库\02、redis\07、高可用：哨兵机制（redis-sentinel）详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/07、高可用：哨兵机制（Redis Sentinel）详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sat, 16 Mar 2024 07:42:52 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\07、高可用：哨兵机制（redis-sentinel）详解\img-20240316_115425.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\07、高可用：哨兵机制（redis-sentinel）详解\img-20240316_115425.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[08、高可拓展：分片技术（Redis Cluster）详解]]></title><description><![CDATA[ 
+<br><br>在 Sentinel 集群监管下的 Redis 主从集群，其节点会因为自动故障转移而发生变化，Redis 的客户端必须感知这种变化，及时更新连接信息。Spring 的 RedisTemplate 底层利用 lettuce 实现了节点的感知和自动切换。<br>下面，我们通过一个测试来实现 RedisTemplate 集成哨兵机制。<br>1、引入依赖<br>&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-data-redis&lt;/artifactId&gt;
+&lt;/dependency&gt;
+复制<br>2、配置 Redis 地址<br>spring:
+  redis:
+    sentinel:
+      master: mymaster
+      nodes:
+        - 192.168.150.101:27001
+        - 192.168.150.101:27002
+        - 192.168.150.101:27003
+复制<br>3、配置读写分离<br>@Bean
+public LettuceClientConfigurationBuilderCustomizer clientConfigurationBuilderCustomizer(){
+    return clientConfigurationBuilder -&gt; clientConfigurationBuilder.readFrom(ReadFrom.REPLICA_PREFERRED);
+}
+复制<br>这个 bean 中配置的就是读写策略，包括四种：<br>
+<br>MASTER：从主节点读取
+<br>MASTER_PREFERRED：优先从 master 节点读取，master 不可用才读取 replica
+<br>REPLICA：从 slave（replica）节点读取
+<br>REPLICA _PREFERRED：优先从 slave（replica）节点读取，所有的 slave 都不可用才读取 master
+]]></description><link>04、数据库\02、redis\07、高可用：哨兵机制（redis-sentinel）详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/07、高可用：哨兵机制（Redis Sentinel）详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 09:21:01 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\07、高可用：哨兵机制（redis-sentinel）详解\img-20240316_115425.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\07、高可用：哨兵机制（redis-sentinel）详解\img-20240316_115425.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[08、高可拓展：分片技术（Redis Cluster）详解]]></title><description><![CDATA[ 
  <br><br>
 Redis-cluster是一种服务器Sharding技术，Redis3.0以后版本正式提供支持。
 <br><br>高性能可线性扩展至最多1000节点。集群中没有代理，（集群节点间）使用异步复制，没有归并操作(merge operations on values)<br>
@@ -20942,15 +21173,15 @@ Redis Cluster中节点状态如何维护呢？这里便涉及 有哪些状态，
 <br>状态信息，比如发送者认为该节点已经不可达，会在状态信息中标记其为PFAIL或FAIL
 
 
-<br><br>1，新节点加入<br>
+<br><br>❶ 新节点加入<br>
 <br>发送meet包加入集群
 <br>从 pong 包中的 gossip 得到未知的其他节点 
 <br>循环上述过程，直到最终加入集群
-<br><img alt="assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_195202.png" src="\04、数据库\02、redis\assets\08、高可拓展：分片技术（redis-cluster）详解\img-20240316_195202.png" style="width: 550px; max-width: 100%;"><br>2，Slots信息<br>
+<br><img alt="assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_195202.png" src="\04、数据库\02、redis\assets\08、高可拓展：分片技术（redis-cluster）详解\img-20240316_195202.png" style="width: 550px; max-width: 100%;"><br>❷ Slots信息<br>
 <br>判断发送者声明的 slots 信息，跟本地记录的是否有不同 
 <br>如果不同，且发送者 epoch 较大，更新本地记录
 <br>如果不同，且发送者 epoch 小，发送 Update 信息通知发送者
-<br>3，Master slave信息<br>发现发送者的master、slave信息变化，更新本地状态<br>4，节点Fail探测(故障发现)<br>
+<br>❸ Master slave信息<br>发现发送者的master、slave信息变化，更新本地状态<br>❹ 节点Fail探测(故障发现)<br>
 <br>超过超时时间仍然没有收到 pong 包的节点会被当前节点标记为 PFAIL 
 <br>PFAIL 标记会随着 gossip 传播 
 <br>每次收到心跳包会检测其中对其他节点的 PFAIL 标记，当做对该节点 FAIL 的投票维护在本机 
@@ -20983,7 +21214,7 @@ Redis Cluster是如何进行扩容和缩容的呢？
 复制<br>4）命令通知集群槽位 10 已经迁移到节点 B。<br>redis-cli --cluster setslot 10 node &lt;target-node-id&gt;
 复制<br><br>缩容的大致过程与扩容一致，需要判断下线的节点是否是主节点，以及主节点上是否有槽。<br>若主节点上有槽，需要将槽迁移到集群中其他主节点，槽迁移完成之后，需要向其他节点广播该节点准备下线（cluster forget nodeId）。最后需要将该下线主节点的从节点指向其他主节点，当然最好是先将从节点下线。<br><br>
 通过几个例子，再深入理解Redis Cluster
-<br><br>我们知道一致性hash算法是2的16次方，为什么hash slot是2的14次方呢？<br>Redis 集群通过在心跳包中使用一个2K 大小的 bitmap 来有效地传递包含16384个槽的状态信息。<br>在redis节点发送心跳包时需要把所有的槽放到这个心跳包里，以便让节点知道当前集群信息，16384=16k，在发送心跳包时使用char进行bitmap压缩后是2k（2  8 (8 bit)  1024(1k) = 16K），也就是说使用2k的空间创建了16k的槽数。<br>虽然使用CRC16算法最多可以分配65535（2^16-1）个槽位，65535=65k，压缩后就是8k（8  8 (8 bit)  1024(1k) =65K），也就是说需要需要8k的心跳包，作者认为这样做不太值得；并且一般情况下一个redis集群不会有超过1000个master节点，所以16k的槽位是个比较合适的选择。<br><br>在集群模式下，所有的publish命令都会向所有节点（包括从节点）进行广播，造成每条publish数据都会在集群内所有节点传播一次，加重了带宽负担，对于在有大量节点的集群中频繁使用pub，会严重消耗带宽，不建议使用。（虽然官网上讲有时候可以使用Bloom过滤器或其他算法进行优化的）<br>]]></description><link>04、数据库\02、redis\08、高可拓展：分片技术（redis-cluster）详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/08、高可拓展：分片技术（Redis Cluster）详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sat, 16 Mar 2024 12:05:46 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\08、高可拓展：分片技术（redis-cluster）详解\img-20240316_154508.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\08、高可拓展：分片技术（redis-cluster）详解\img-20240316_154508.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染]]></title><description><![CDATA[ 
+<br><br>我们知道一致性hash算法是2的16次方，为什么hash slot是2的14次方呢？<br>Redis 集群通过在心跳包中使用一个2K 大小的 bitmap 来有效地传递包含16384个槽的状态信息。<br>在redis节点发送心跳包时需要把所有的槽放到这个心跳包里，以便让节点知道当前集群信息，16384=16k，在发送心跳包时使用char进行bitmap压缩后是2k（2  8 (8 bit)  1024(1k) = 16K），也就是说使用2k的空间创建了16k的槽数。<br>虽然使用CRC16算法最多可以分配65535（2^16-1）个槽位，65535=65k，压缩后就是8k（8  8 (8 bit)  1024(1k) =65K），也就是说需要需要8k的心跳包，作者认为这样做不太值得；并且一般情况下一个redis集群不会有超过1000个master节点，所以16k的槽位是个比较合适的选择。<br><br>在集群模式下，所有的publish命令都会向所有节点（包括从节点）进行广播，造成每条publish数据都会在集群内所有节点传播一次，加重了带宽负担，对于在有大量节点的集群中频繁使用pub，会严重消耗带宽，不建议使用。（虽然官网上讲有时候可以使用Bloom过滤器或其他算法进行优化的）<br>]]></description><link>04、数据库\02、redis\08、高可拓展：分片技术（redis-cluster）详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/08、高可拓展：分片技术（Redis Cluster）详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 09:22:25 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\08、高可拓展：分片技术（redis-cluster）详解\img-20240316_154508.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\08、高可拓展：分片技术（redis-cluster）详解\img-20240316_154508.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染]]></title><description><![CDATA[ 
  <br>在高并发的业务场景下，数据库大多数情况都是用户并发访问最薄弱的环节。所以，就需要使用redis做一个缓冲操作，让请求先访问到redis，而不是直接访问Mysql等数据库。这样可以大大缓解数据库的压力。<br>当缓存库出现时，必须要考虑如下问题：<br>
 <br>缓存穿透
 <br>缓存穿击
@@ -21054,7 +21285,7 @@ Write Behind Caching Pattern ：调用者只操作缓存，其他线程去异步
 <br>失效：应用程序先从cache取数据，没有得到，则从数据库中取数据，成功后，放到缓存中。
 <br>命中：应用程序从cache中取数据，取到后返回。
 <br>更新：先把数据存到数据库中，成功后，再让缓存失效。
-<br><img src="\04、数据库\02、redis\assets\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染\img-20240316_214840.png"><br><br>流程如下所示<br>
+<br><img alt="assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_214840.png" src="\04、数据库\02、redis\assets\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染\img-20240316_214840.png" style="width: 900px; max-width: 100%;"><br><br>流程如下所示<br>
 <img src="\04、数据库\02、redis\assets\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染\img-20240316_215143.png"><br>
 <br>更新数据库数据；
 <br>缓存因为种种问题删除失败
@@ -21068,7 +21299,7 @@ Write Behind Caching Pattern ：调用者只操作缓存，其他线程去异步
 <br>1）数据操作主要分为两大块：<br>
 <br>一个是全量（将全部数据一次写入到 redis）
 <br>一个是增量（实时更新）
-<br>这里说的是增量，指的是 mysql 的 update、insert、delate 变更数据。 <br>2）读取 binlog 后分析，利用消息队列，推送更新各台的 redis 缓存数据。<br>这样一旦MySQL中产生了新的写入、更新、删除等操作，就可以把binlog相关的消息推送至Redis，Redis再根据binlog中的记录，对Redis进行更新。<br>其实这种机制，很类似MySQL的主从备份机制，因为MySQL的主备也是通过binlog来实现的数据一致性。<br>这里可以结合使用 canal(阿里的一款开源框架)，通过该框架可以对 MySQL 的 binlog 进行订阅，而 canal 正是模仿了 mysql 的 slave 数据库的备份请求，使得 Redis 的数据更新达到了相同的效果。 <br>当然，这里的消息推送工具你也可以采用别的第三方：kafka、rabbitMQ 等来实现推送更新 Redis。 ]]></description><link>04、数据库\02、redis\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染.html</link><guid isPermaLink="false">04、数据库/02、Redis/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 01:34:14 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染\img-20240316_214619.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染\img-20240316_214619.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[10、Redis 监控详解]]></title><description><![CDATA[ 
+<br>这里说的是增量，指的是 mysql 的 update、insert、delate 变更数据。 <br>2）读取 binlog 后分析，利用消息队列，推送更新各台的 redis 缓存数据。<br>这样一旦MySQL中产生了新的写入、更新、删除等操作，就可以把binlog相关的消息推送至Redis，Redis再根据binlog中的记录，对Redis进行更新。<br>其实这种机制，很类似MySQL的主从备份机制，因为MySQL的主备也是通过binlog来实现的数据一致性。<br>这里可以结合使用 canal(阿里的一款开源框架)，通过该框架可以对 MySQL 的 binlog 进行订阅，而 canal 正是模仿了 mysql 的 slave 数据库的备份请求，使得 Redis 的数据更新达到了相同的效果。 <br>当然，这里的消息推送工具你也可以采用别的第三方：kafka、rabbitMQ 等来实现推送更新 Redis。 ]]></description><link>04、数据库\02、redis\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染.html</link><guid isPermaLink="false">04、数据库/02、Redis/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 09:22:54 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染\img-20240316_214619.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染\img-20240316_214619.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[10、Redis 监控详解]]></title><description><![CDATA[ 
  <br><br>
 如果只是想简单看一下Redis的负载情况的话，完全可以用它提供的一些命令来完成。
 <br><br>Redis提供的INFO命令不仅能够查看实时的吞吐量(ops/sec)，还能看到一些有用的运行时信息。<br>
@@ -21179,7 +21410,7 @@ cluster_enabled:0
 db0:keys=5557407,expires=362,avg_ttl=604780497
 db15:keys=1,expires=0,avg_ttl=0
 复制<br>
-<br>查看某个section的信息
+<br>查看某个模块的信息 
 <br>127.0.0.1:6379&gt; info memory
 # Memory
 used_memory:1067440
@@ -21197,7 +21428,7 @@ maxmemory_human:0B
 maxmemory_policy:noeviction
 mem_fragmentation_ratio:9.32
 mem_allocator:jemalloc-4.0.3
-复制<br><br>monitor用来监视服务端收到的命令。<br>127.0.0.1:6379&gt; monitor
+复制<br><br>monitor 用来监视服务端收到的命令。<br>127.0.0.1:6379&gt; monitor
 OK
 1616045629.853032 [10 192.168.0.101:37990] "PING"
 1616045629.858214 [10 192.168.0.101:37990] "PING"
@@ -21205,22 +21436,18 @@ OK
 1616045632.193607 [10 192.168.0.101:37990] "GET" "test_key_from_app"
 1616045632.200572 [10 192.168.0.101:37990] "SET" "test_key_from_app" "1616045625017"
 1616045632.200973 [10 192.168.0.101:37990] "SET" "test_key_from_app" "1616045622621"
-复制<br><br>
-<br>监控延迟 - latency
-<br>[root@redis_test_vm ~]# redis-cli --latency -h 127.0.0.1
+复制<br><br><br>[root@redis_test_vm ~] redis-cli --latency -h 127.0.0.1
 min: 0, max: 1, avg: 0.21
-复制<br>如果我们故意用DEBUG命令制造延迟，就能看到一些输出上的变化：<br>[root@redis_test_vm ~]# redis-cli -h 127.0.0.1
+复制<br>如果我们故意用DEBUG命令制造延迟，就能看到一些输出上的变化：<br>[root@redis_test_vm ~] redis-cli -h 127.0.0.1
 127.0.0.1:6379&gt; debug sleep 2
 OK
 (2.00s)
 127.0.0.1:6379&gt; debug sleep 3
 OK
 (3.00s)
-复制<br>观测延迟<br>[root@redis_test_vm ~]# redis-cli --latency -h 127.0.0.1
+复制<br>观测延迟<br>[root@redis_test_vm ~] redis-cli --latency -h 127.0.0.1
 min: 0, max: 1995, avg: 1.60 (492 samples)
-复制<br>
-<br>客户端监控 - ping
-<br>127.0.0.1:6379&gt; ping
+复制<br><br>127.0.0.1:6379&gt; ping
 PONG
 127.0.0.1:6379&gt; ping
 PONG
@@ -21228,9 +21455,7 @@ PONG
 OK
 1616045629.853032 [10 192.168.0.101:37990] "PING"
 1616045629.858214 [10 192.168.0.101:37990] "PING"
-复制<br>
-<br>服务端 - 内部机制
-<br>服务端内部的延迟监控稍微麻烦一些，因为延迟记录的默认阈值是0。尽管空间和时间耗费很小，Redis为了高性能还是默认关闭了它。所以首先我们要开启它，设置一个合理的阈值，例如下面命令中设置的100ms：<br>127.0.0.1:6379&gt; CONFIG SET latency-monitor-threshold 100
+复制<br><br>服务端内部的延迟监控稍微麻烦一些，因为延迟记录的默认阈值是0。尽管空间和时间耗费很小，Redis为了高性能还是默认关闭了它。所以首先我们要开启它，设置一个合理的阈值，例如下面命令中设置的100ms：<br>127.0.0.1:6379&gt; CONFIG SET latency-monitor-threshold 100
 OK
 复制<br>因为Redis执行命令非常快，所以我们用DEBUG命令人为制造一些慢执行命令：<br>127.0.0.1:6379&gt; debug sleep 2
 OK
@@ -21294,9 +21519,7 @@ I have a few advices for you:
 - I detected a non zero amount of anonymous huge pages used by your process. This creates very serious latency events in different conditions, especially when Redis is persisting on disk. To disable THP support use the command 'echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled', make sure to also add it into /etc/rc.local so that the command will be executed again after a reboot. Note that even if you have already disabled THP, you still need to restart the Redis process to get rid of the huge pages already created.
 复制<br>如果你沒有配置 CONFIG SET latency-monitor-threshold &lt;milliseconds&gt;., 会返回如下信息<br>127.0.0.1:6379&gt; latency doctor
 I'm sorry, Dave, I can't do that. Latency monitoring is disabled in this Redis instance. You may use "CONFIG SET latency-monitor-threshold &lt;milliseconds&gt;." in order to enable it. If we weren't in a deep space mission I'd suggest to take a look at http://redis.io/topics/latency-monitor.
-复制<br>
-<br>度量延迟Baseline - intrinsic-latency
-<br>延迟中的一部分是来自环境的，比如操作系统内核、虚拟化环境等等。Redis提供了让我们度量这一部分延迟基线(Baseline)的方法：<br>[root@redis_test_vm ~]# redis-cli --intrinsic-latency 100 -h 127.0.0.1
+复制<br><br>延迟中的一部分是来自环境的，比如操作系统内核、虚拟化环境等等。Redis提供了让我们度量这一部分延迟基线(Baseline)的方法：<br>[root@redis_test_vm ~]# redis-cli --intrinsic-latency 100 -h 127.0.0.1
 Could not connect to Redis at 127.0.0.1:6379: Connection refused
 Max latency so far: 1 microseconds.
 Max latency so far: 62 microseconds.
@@ -21316,15 +21539,15 @@ Worst run took 142405x longer than the average latency.
 <br>用于生产环境： 基于redis_exporter以及grafana可以做到指标可视化，持久化，监控以及报警等
 <br><br>
 <a data-tooltip-position="top" aria-label="https://github.com/junegunn/redis-stat" rel="noopener" class="external-link" href="https://github.com/junegunn/redis-stat" target="_blank">redis-stat在新窗口打开</a>是一个比较有名的redis指标可视化的监控工具，采用ruby开发，基于redis的info和monitor命令来统计，不影响redis性能。
-<br>它提供了命令行彩色控制台展示模式<br>“/images/db/redis/redis-stat-1.png” could not be found.<br>和web模式<br>“/images/db/redis/redis-stat-2.png” could not be found.<br><br>
+<br>它提供了命令行彩色控制台展示模式<br><img src="\04、数据库\02、redis\assets\10、redis-监控详解\img-20240317_203104.png"><br>和web模式<br><img src="\04、数据库\02、redis\assets\10、redis-监控详解\img-20240317_203115.png"><br><br>
 <a data-tooltip-position="top" aria-label="https://github.com/nkrode/RedisLive" rel="noopener" class="external-link" href="https://github.com/nkrode/RedisLive" target="_blank">RedisLive在新窗口打开</a>是采用python开发的redis的可视化及查询分析工具
 <br>docker运行<br>docker run --name redis-live -p 8888:8888 -d snakeliwei/redislive
-复制<br>运行实例图<br>“/images/db/redis/redis-live-1.png” could not be found.<br>访问<a rel="noopener" class="external-link" href="http://192.168.99.100:8888/index.html" target="_blank">http://192.168.99.100:8888/index.html</a><br><br>
+复制<br>运行实例图<br><img src="\04、数据库\02、redis\assets\10、redis-监控详解\img-20240317_203142.png"><br><br>
 <a data-tooltip-position="top" aria-label="https://github.com/steelThread/redmon" rel="noopener" class="external-link" href="https://github.com/steelThread/redmon" target="_blank">redmon在新窗口打开</a>提供了cli、admin的web界面，同时也能够实时监控redis
 <br>docker运行<br>docker run -p 4567:4567 -d  vieux/redmon -r redis://192.168.99.100:6379
-复制<br>监控<br>“/images/db/redis/redis-redmon-1.png” could not be found.<br>cli<br>“/images/db/redis/redis-redmon-2.png” could not be found.<br>动态更新配置<br>“/images/db/redis/redis-redmon-3.png” could not be found.<br><br>
+复制<br>监控<br><img src="\04、数据库\02、redis\assets\10、redis-监控详解\img-20240317_203213.png"><br>cli<br><img src="\04、数据库\02、redis\assets\10、redis-监控详解\img-20240317_203222.png"><br>动态更新配置<br><img src="\04、数据库\02、redis\assets\10、redis-监控详解\img-20240317_203232.png"><br><br>
 <a data-tooltip-position="top" aria-label="https://github.com/oliver006/redis_exporter" rel="noopener" class="external-link" href="https://github.com/oliver006/redis_exporter" target="_blank">redis_exporter在新窗口打开</a>为Prometheus提供了redis指标的exporter，支持Redis 2.x, 3.x, 4.x, 5.x, and 6.x，配合Prometheus以及grafana的Prometheus Redis插件，可以在grafana进行可视化及监控
-<br>运行实例图<br>“/images/db/redis/redis-export-1.png” could not be found.<br>“/images/db/redis/redis-export-2.png” could not be found.<br><br>
+<br>运行实例图<br><img src="\04、数据库\02、redis\assets\10、redis-监控详解\img-20240317_203249.png"><br><img src="\04、数据库\02、redis\assets\10、redis-监控详解\img-20240317_203257.png"><br><br>
 那么上面我们谈到的监控体系到底应该考虑什么？ redis这类敏感的纯内存、高并发和低延时的服务，一套完善的监控告警方案，是精细化运营的前提。
 <br>我们从以下几个角度来理解：<br>
 <br>什么样的场景会谈到redis监控体系？
@@ -21338,7 +21561,7 @@ Worst run took 142405x longer than the average latency.
 <br>所有应用系统共用一套缓存集群;
 <br>集群节点数几十个，加上容灾备用环境，节点数量翻倍;
 <br>集群节点内存配置较高。
-<br>“/images/db/redis/db-redis-monitor-2.png” could not be found.<br>问题描述<br>系统刚开始关于Redis的一切都很正常，随着应用系统接入越来越多，应用系统子模块接入也越来越多，开始出现一些问题，应用系统有感知，集群服务端也有感知，如下描述：<br>
+<br><img src="\04、数据库\02、redis\assets\10、redis-监控详解\img-20240317_203336.png"><br>问题描述<br>系统刚开始关于Redis的一切都很正常，随着应用系统接入越来越多，应用系统子模块接入也越来越多，开始出现一些问题，应用系统有感知，集群服务端也有感知，如下描述：<br>
 <br>集群节点崩溃;
 <br>集群节点假死;
 <br>某些后端应用访问集群响应特别慢。
@@ -21501,7 +21724,7 @@ cmdstat_lpop:calls=4,usec=33,usec_per_call=8.25
 <br>95%的响应时间长度 （respond_time_95_max):
 <br>95%的平均响应时间长度 (respond_time_95_avg):
 <br><br>
-无论哪种，要体系化，必然要考虑如下几点。@pdai
+无论哪种，要体系化，必然要考虑如下几点。
 <br>
 <br>指标采集，即采集redis提供的metric指标，所以方案中有时候会出现Agent，比如metricBeat；
 <br>监控的数据持久化，只有将监控数据放到数据库，才能对比和长期监控；
@@ -21522,8 +21745,243 @@ cmdstat_lpop:calls=4,usec=33,usec_per_call=8.25
 <br>收集管道：fluentd
 <br>DB: Prometheus
 <br>view和告警: Grafana及插件
-<br>“/images/db/redis/redis-export-1.png” could not be found.<br>“/images/db/redis/redis-export-2.png” could not be found.<br><br>著作权归@pdai所有 原文链接：<a rel="noopener" class="external-link" href="https://pdai.tech/md/db/nosql-redis/db-redis-y-monitor.html" target="_blank">https://pdai.tech/md/db/nosql-redis/db-redis-y-monitor.html</a>]]></description><link>04、数据库\02、redis\10、redis-监控详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/10、Redis 监控详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sat, 16 Mar 2024 12:38:58 GMT</pubDate></item><item><title><![CDATA[11、Redis 性能调优]]></title><description><![CDATA[ 
- <br><br><br><br><br>]]></description><link>04、数据库\02、redis\11、redis-性能调优.html</link><guid isPermaLink="false">04、数据库/02、Redis/11、Redis 性能调优.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sat, 16 Mar 2024 13:10:17 GMT</pubDate></item><item><title><![CDATA[12、底层原理：数据结构]]></title><description><![CDATA[ 
+<br><img src="\04、数据库\02、redis\assets\10、redis-监控详解\img-20240317_203646.png"><br><img src="\04、数据库\02、redis\assets\10、redis-监控详解\img-20240317_203650.png">]]></description><link>04、数据库\02、redis\10、redis-监控详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/10、Redis 监控详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 12:37:19 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\10、redis-监控详解\img-20240317_203104.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\10、redis-监控详解\img-20240317_203104.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[11、Redis 最佳实践&性能调优]]></title><description><![CDATA[ 
+ <br><br>Redis 是一款非常优秀的 NoSQL 数据库，但更重要的是，作为使用者应该学会在不同的场景中如何更好的使用它，更大的发挥它的价值，以及扼杀问题于摇篮。<br><br><br>Redis 的 Key 虽然可以自定义，但最好遵循下面的几个最佳实践约定：<br>
+<br>遵循基本格式：[业务名称]:[数据名]:[id]
+<br>长度不超过 44 字节
+<br>不包含特殊字符
+<br>例如：登录业务，保存用户信息，其 key 可以设计成如下格式：<br>
+<img src="\04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_212716.png"><br><br>BigKey 通常以 Key 的大小和 Key 中成员的数量来综合判定，例如：<br>
+<br>Key 本身的数据量过大：一个 String 类型的 Key ，它的值为 5 MB
+<br>Key 中的成员数过多：一个 ZSET 类型的 Key ，它的成员数量为 10,000 个
+<br>Key 中成员的数据量过大：一个 Hash 类型的 Key ，它的成员数量虽然只有 1,000 个但这些成员的 Value（值）总大小为 100 MB
+<br>判断元素的大小：<br>MEMORY USAGE KEY
+复制<br>推荐值：<br>
+<br>单个 key 的 value 小于 10 KB
+<br>对于集合类型的 key，建议元素数量小于 1000
+<br><br><br>Redis 处理指令是很快的，花费的主要时间在于网络传输。<br>单次 N 条命令的执行流程<br>
+<img alt="assets/11、Redis 最佳实践&amp;性能调优/img-20240317_213922.png" src="\04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_213922.png" style="width: 775px; max-width: 100%;"><br>批量发送以减少时间：<br>
+<img alt="assets/11、Redis 最佳实践&amp;性能调优/img-20240317_214119.png" src="\04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_214119.png" style="width: 775px; max-width: 100%;"><br><br>Redis 提供了很多  这样的，可以实现批量插入数据，例如：<br>
+<br>Mset
+<br>Hmset<br>
+利用 mset 批量插入 10 万条数据
+<br>@Test
+void testMxx() {
+    String[] arr = new String[2000];
+    int j;
+    long b = System.currentTimeMillis();
+    for (int i = 1; i &lt;= 100000; i++) {
+        j = (i % 1000) &lt;&lt; 1;
+        arr[j] = "test:key_" + i;
+        arr[j + 1] = "value_" + i;
+        if (j == 0) {
+            jedis.mset(arr);
+        }
+    }
+    long e = System.currentTimeMillis();
+    System.out.println("time: " + (e - b));
+}
+复制<br><br>MSET 虽然可以批处理，但是却只能操作部分数据类型，因此如果有对复杂数据类型的批处理需要，建议使用 Pipeline<br>@Test
+void testPipeline() {
+    // 创建管道
+    Pipeline pipeline = jedis.pipelined();
+    long b = System.currentTimeMillis();
+    for (int i = 1; i &lt;= 100000; i++) {
+        // 放入命令到管道
+        pipeline.set("test:key_" + i, "value_" + i);
+        if (i % 1000 == 0) {
+            // 每放入1000条命令，批量执行
+            pipeline.sync();
+        }
+    }
+    long e = System.currentTimeMillis();
+    System.out.println("time: " + (e - b));
+}
+复制<br><br>如 MSET 或 Pipeline 这样的批处理需要在一次请求中携带多条命令，而此时如果 Redis 是一个集群，那批处理命令的多个 key 必须落在一个插槽中，否则就会导致执行失败。大家可以想一想这样的要求其实很难实现，因为我们在批处理时，可能一次要插入很多条数据，这些数据很有可能不会都落在相同的节点上，这就会导致报错了。<br>第一种方案：串行执行，所以这种方式没有什么意义，当然，执行起来就很简单了，缺点就是耗时过久。<br>第二种方案：串行 slot，简单来说，就是执行前，客户端先计算一下对应的 key 的 slot ，一样 slot 的 key 就放到一个组里边，不同的，就放到不同的组里边，然后对每个组执行 pipeline 的批处理，他就能串行执行各个组的命令，这种做法比第一种方法耗时要少，但是缺点呢，相对来说复杂一点，所以这种方案还需要优化一下<br>第三种方案：并行 slot，相较于第二种方案，在分组完成后串行执行，第三种方案，就变成了并行执行各个命令，所以他的耗时就非常短，但是实现呢，也更加复杂。<br>第四种：hash_tag，redis 计算 key 的 slot 的时候，其实是根据 key 的有效部分来计算的，通过这种方式就能一次处理所有的 key，这种方式耗时最短，实现也简单，但是如果通过操作 key 的有效部分，那么就会导致所有的 key 都落在一个节点上，产生数据倾斜的问题，所以我们推荐使用第三种方式。<br>串行化代码实现<br>public class JedisClusterTest {
+
+    private JedisCluster jedisCluster;
+
+    @BeforeEach
+    void setUp() {
+        // 配置连接池
+        JedisPoolConfig poolConfig = new JedisPoolConfig();
+        poolConfig.setMaxTotal(8);
+        poolConfig.setMaxIdle(8);
+        poolConfig.setMinIdle(0);
+        poolConfig.setMaxWaitMillis(1000);
+        HashSet&lt;HostAndPort&gt; nodes = new HashSet&lt;&gt;();
+        nodes.add(new HostAndPort("192.168.150.101", 7001));
+        nodes.add(new HostAndPort("192.168.150.101", 7002));
+        nodes.add(new HostAndPort("192.168.150.101", 7003));
+        nodes.add(new HostAndPort("192.168.150.101", 8001));
+        nodes.add(new HostAndPort("192.168.150.101", 8002));
+        nodes.add(new HostAndPort("192.168.150.101", 8003));
+        jedisCluster = new JedisCluster(nodes, poolConfig);
+    }
+
+    @Test
+    void testMSet() {
+        jedisCluster.mset("name", "Jack", "age", "21", "sex", "male");
+
+    }
+
+    @Test
+    void testMSet2() {
+        Map&lt;String, String&gt; map = new HashMap&lt;&gt;(3);
+        map.put("name", "Jack");
+        map.put("age", "21");
+        map.put("sex", "Male");
+        //对Map数据进行分组。根据相同的slot放在一个分组
+        //key就是slot，value就是一个组
+        Map&lt;Integer, List&lt;Map.Entry&lt;String, String&gt;&gt;&gt; result = map.entrySet()
+                .stream()
+                .collect(Collectors.groupingBy(
+                        entry -&gt; ClusterSlotHashUtil.calculateSlot(entry.getKey()))
+                );
+        //串行的去执行mset的逻辑
+        for (List&lt;Map.Entry&lt;String, String&gt;&gt; list : result.values()) {
+            String[] arr = new String[list.size() * 2];
+            int j = 0;
+            for (int i = 0; i &lt; list.size(); i++) {
+                j = i&lt;&lt;2;
+                Map.Entry&lt;String, String&gt; e = list.get(0);
+                arr[j] = e.getKey();
+                arr[j + 1] = e.getValue();
+            }
+            jedisCluster.mset(arr);
+        }
+    }
+
+    @AfterEach
+    void tearDown() {
+        if (jedisCluster != null) {
+            jedisCluster.close();
+        }
+    }
+}
+复制<br>Spring 集群环境下批处理代码<br>@Test
+ void testMSetInCluster() {
+     Map&lt;String, String&gt; map = new HashMap&lt;&gt;(3);
+     map.put("name", "Rose");
+     map.put("age", "21");
+     map.put("sex", "Female");
+     stringRedisTemplate.opsForValue().multiSet(map);
+     List&lt;String&gt; strings = stringRedisTemplate.opsForValue().multiGet(Arrays.asList("name", "age", "sex"));
+     strings.forEach(System.out::println);
+ }
+复制<br><br><br>Redis 的持久化虽然可以保证数据安全，但也会带来很多额外的开销。<br>因此持久化请遵循下列建议：<br>
+<br>用来做缓存的 Redis 实例尽量不要开启持久化功能
+<br>建议关闭 RDB 持久化功能，使用 AOF 持久化
+<br>利用脚本定期在 slave 节点做 RDB，实现数据备份
+<br>设置合理的 rewrite 阈值，避免频繁的 bgrewrite
+<br>配置 no-appendfsync-on-rewrite = yes，禁止在 rewrite 期间做 aof，避免因 AOF 引起的阻塞。简单说就是，禁止在重写期间 fsync 刷盘
+<br><br>
+<br>Redis 实例的物理机要预留足够内存，应对 fork 和 rewrite
+<br>单个 Redis 实例内存上限不要太大，例如 4 G 或 8 G。可以加快 fork 的速度、减少主从同步、数据迁移压力（可以单机部署多台 redis 实例）
+<br>不要与 CPU 密集型应用部署在一起
+<br>不要与高硬盘负载应用一起部署。例如：数据库、消息队列
+<br><br><br>针对 Redis 变慢的场景，本文将协助排查，并给出高效的解决方案。<br><br>发现业务服务 API 响应延迟变长，首先你需要先排查服务内部，究竟是哪个环节拖慢了整个服务。<br>在服务内部集成链路追踪，也就是在服务访问外部依赖的出入口，记录下每次请求外部依赖的响应延时。<br><img src="\04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_204104.png"><br>发现确实是操作 Redis 的这条链路耗时变长了，此刻才需要把焦点关注在业务服务到 Redis 这条链路上。<br><br>基准性能就是指 Redis 在一台负载正常的机器上，最大的响应延迟和平均响应延迟的值。<br>Redis 在不同的软硬件环境下，它的性能是各不相同的，所以不能参考其他性能。<br>
+例如：我的机器配置比较低，当延迟为 2ms 时，我就认为 Redis 变慢了，但是如果你的硬件配置比较高，那么在你的运行环境下，可能延迟是 0.5ms 时就可以认为 Redis 变慢了。<br>
+<br>在 Redis 服务器上测试实例的响应延迟情况：
+<br>$ redis-cli -h 127.0.0.1 -p 6379 --intrinsic-latency 60
+Max latency so far: 1 microseconds.
+Max latency so far: 15 microseconds.
+Max latency so far: 17 microseconds.
+Max latency so far: 18 microseconds.
+Max latency so far: 31 microseconds.
+Max latency so far: 32 microseconds.
+Max latency so far: 59 microseconds.
+Max latency so far: 72 microseconds.
+ 
+1428669267 total runs (avg latency: 0.0420 microseconds / 42.00 nanoseconds per run).
+Worst run took 1429x longer than the average latency.
+复制<br>从输出结果可以看到，这 60 秒内的最大响应延迟为 72 微秒（0.072毫秒）。<br>
+<br>还可以使用以下命令，查看一段时间内 Redis 的最小、最大、平均访问延迟：
+<br>$ redis-cli -h 127.0.0.1 -p 6379 --latency-history -i 1
+min: 0, max: 1, avg: 0.13 (100 samples) -- 1.01 seconds range
+min: 0, max: 1, avg: 0.12 (99 samples) -- 1.01 seconds range
+min: 0, max: 1, avg: 0.13 (99 samples) -- 1.01 seconds range
+min: 0, max: 1, avg: 0.10 (99 samples) -- 1.01 seconds range
+min: 0, max: 1, avg: 0.13 (98 samples) -- 1.00 seconds range
+min: 0, max: 1, avg: 0.08 (99 samples) -- 1.01 seconds range
+...
+复制<br>以上输出结果是，每间隔 1 秒，采样 Redis 的平均操作耗时，其结果分布在 0.08 ~ 0.13 毫秒之间。<br>了解了基准性能测试方法，那么你就可以按照以下几步，来判断你的 Redis 是否真的变慢了：<br>
+<br>在相同配置的服务器上，测试一个正常 Redis 实例的基准性能
+<br>找到你认为可能变慢的 Redis 实例，测试这个实例的基准性能
+<br>如果你观察到，这个实例的运行延迟是正常 Redis 基准性能的 2 倍以上，即可认为这个 Redis 实例确实变慢了
+<br>确认是 Redis 变慢了，那如何排查是哪里发生了问题呢？<br><br>Redis 提供了慢日志命令的统计功能，它记录了有哪些命令在执行时耗时比较久。<br>查看 Redis 慢日志之前，你需要设置慢日志的阈值。例如，设置慢日志的阈值为 5 毫秒，并且保留最近 500 条慢日志记录：<br># 命令执行耗时超过 5 毫秒，记录慢日志
+CONFIG SET slowlog-log-slower-than 5000
+# 只保留最近 500 条慢日志
+CONFIG SET slowlog-max-len 500
+复制<br>设置完成之后，所有执行的命令如果操作耗时超过了 5 毫秒，都会被 Redis 记录下来。<br>此时，你可以执行以下命令，就可以查询到最近记录的慢日志：<br>127.0.0.1:6379&gt; SLOWLOG get 5
+1) 1) (integer) 32693       # 慢日志ID
+   2) (integer) 1593763337  # 执行时间戳
+   3) (integer) 5299        # 执行耗时(微秒)
+   4) 1) "LRANGE"           # 具体执行的命令和参数
+      2) "user_list:2000"
+      3) "0"
+      4) "-1"
+2) 1) (integer) 32692
+   2) (integer) 1593763337
+   3) (integer) 5044
+   4) 1) "GET"
+      2) "user_info:1000"
+...
+复制<br>通过查看慢日志，我们就可以知道在什么时间点，执行了哪些命令比较耗时。<br><br>如果你的应用程序执行的 Redis 命令有以下特点，那么有可能会导致操作延迟变大：<br>
+<br>经常使用 O(N) 以上复杂度的命令，例如 SORT、SUNION、ZUNIONSTORE 聚合类命令
+<br>使用 O(N) 复杂度的命令，但 N 的值非常大
+<br>第一种情况导致变慢的原因在于，Redis 在操作内存数据时，时间复杂度过高，要花费更多的 CPU 资源。<br>第二种情况导致变慢的原因在于，Redis 一次需要返回给客户端的数据过多，更多时间花费在数据协议的组装和网络传输过程中。<br>另外，我们还可以从资源使用率层面来分析，如果你的应用程序操作 Redis 的 OPS 不是很大，但 Redis 实例的 CPU 使用率却很高，那么很有可能是使用了复杂度过高的命令导致的。<br>除此之外，我们都知道，Redis 是单线程处理客户端请求的，如果你经常使用以上命令，那么当 Redis 处理客户端请求时，一旦前面某个命令发生耗时，就会导致后面的请求发生排队，对于客户端来说，响应延迟也会变长。<br><img src="\04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_205043.png"><br>以下方法优化你的业务：<br>
+<br>尽量不使用 O(N) 以上复杂度过高的命令，对于数据的聚合操作，放在客户端做
+<br>执行 O(N) 命令，保证 N 尽量的小（推荐 N &lt;= 300），每次获取尽量少的数据，让 Redis 可以及时处理返回
+<br><br>Bigkey 导致 Redis 在创建（分配内存）、删除（释放内存）时，都会很耗时。<br><br>1）网络阻塞<br>
+对 BigKey 执行读请求时，少量的 QPS 就可能导致带宽使用率被占满，导致 Redis 实例，乃至所在物理机变慢<br>2）数据倾斜<br>
+BigKey 所在的 Redis 实例内存使用率远超其他实例，无法使数据分片的内存资源达到均衡<br>3）Redis 阻塞<br>
+对元素较多的 hash、list、zset 等做运算会耗时较旧，使主线程被阻塞<br>4）CPU 压力<br>
+对 BigKey 的数据序列化和反序列化会导致 CPU 的使用率飙升，影响 Redis 实例和本机其它应用<br>5）其他<br>
+bigkey 在分片集群模式下，对于数据的迁移也有性能影响，数据过期、数据淘汰、透明大页等都会受到 bigkey 的影响。<br><br>Redis 提供了扫描 bigkey 的命令，输出结果是以类型维度展示的：<br>$ redis-cli -h 127.0.0.1 -p 6379 --bigkeys -i 0.01
+ 
+...
+-------- summary -------
+ 
+Sampled 829675 keys in the keyspace!
+Total key length in bytes is 10059825 (avg len 12.13)
+ 
+Biggest string found 'key:291880' has 10 bytes
+Biggest   list found 'mylist:004' has 40 items
+Biggest    set found 'myset:2386' has 38 members
+Biggest   hash found 'myhash:3574' has 37 fields
+Biggest   zset found 'myzset:2704' has 42 members
+ 
+36313 strings with 363130 bytes (04.38% of keys, avg size 10.00)
+787393 lists with 896540 items (94.90% of keys, avg size 1.14)
+1994 sets with 40052 members (00.24% of keys, avg size 20.09)
+1990 hashs with 39632 fields (00.24% of keys, avg size 19.92)
+1985 zsets with 39750 members (00.24% of keys, avg size 20.03)
+复制<br>返回的结果：<br>
+<br>每种数据类型所占用的最大内存 / 拥有最多元素的 key 。
+<br>每种数据类型在整个实例中的占比和平均大小 / 元素数量。
+<br>这个命令的原理： Redis 在内部执行了 SCAN 命令，遍历整个实例中所有的 key，针对 key 的类型，分别执行 STRLEN、LLEN、HLEN、SCARD、ZCARD 命令，来获取 String 类型的长度、容器类型（List、Hash、Set、ZSet）的元素个数。<br><br>但执行这个命令时，要注意 2 个问题：<br>1、对线上实例进行 bigkey 扫描时，Redis 的 OPS 会突增，为了降低扫描过程中对 Redis 的影响，最好控制一下扫描的频率，指定 -i 参数即可，它表示扫描过程中每次扫描后休息的时间间隔，单位是秒<br>2、扫描结果中，对于容器类型（List、Hash、Set、ZSet）的 key，只能扫描出元素最多的 key。但一个 key 的元素多，不一定表示占用内存也多，你还需要根据业务情况，进一步评估内存占用情况<br>
+建议在控制台或者业务逻辑中加入扫描逻辑，在低业务时段采用 SCAN 扫描，可以排查出更详细的信息，而非仅关键时刻的扫描。
+<br><br>有两点可以优化：<br>1）业务应用尽量避免写入 bigkey<br>
+2）如果你使用的 Redis 是 4.0 以上版本，用 UNLINK 命令替代 DEL，此命令可以把释放 key 内存的操作，放到后台线程中去执行，从而降低对 Redis 的影响<br>
+如果你使用的 Redis 是 6.0 以上版本，可以开启 lazy-free 机制（lazyfree-lazy-user-del = yes），在执行 DEL 命令时，释放内存也会放到后台线程中执行<br>即便可以使用方案 2，也不建议你在实例中存入 bigkey。因为 bigkey 在很多场景下，依旧会产生性能问题。<br><br>平时在操作 Redis 时，并没有延迟很大的情况发生，变慢的时间点很有规律，例如某个整点，或者每间隔多久就会发生一波延迟。<br>业务代码中是否存在设置大量 key 集中过期的情况，在这个时间点访问 Redis 时，就可能会导致延时变大。<br><br>Redis 的过期数据采用被动过期 + 主动过期两种策略：<br>
+<br>被动过期：只有当访问某个 key 时，才判断这个 key 是否已过期，如果已过期，则从实例中删除
+<br>主动过期：Redis 内部维护了一个定时任务，默认每隔 100 毫秒（1秒10次）就会从全局的过期哈希表中随机取出 20 个 key，然后删除其中过期的 key，如果过期 key 的比例超过了 25%，则继续重复此过程，直到过期 key 的比例下降到 25% 以下，或者这次任务的执行耗时超过了 25 毫秒，才会退出循环
+<br>这个主动过期 key 的定时任务，是在 Redis 主线程中执行的。<br><br>在执行主动过期的过程中，出现了需要大量删除过期 key 的情况，此时应用程序在访问 Redis 时，必须要等待这个过期任务执行结束，Redis 才可以服务这个客户端请求。此时就会出现，应用访问 Redis 延时变大。<br>如果此时需要过期删除的是一个 bigkey，那么这个耗时会更久。而且，这个操作延迟的命令并不会记录在慢日志中。<br>因为慢日志中只记录一个命令真正操作内存数据的耗时，而 Redis 主动删除过期 key 的逻辑，是在命令真正执行之前执行的。<br>慢日志中没有操作耗时的命令，但应用程序却感知到了延迟变大，其实时间都花费在了删除过期 key 上，这种情况我们需要尤为注意。<br><br>需要检查你的业务代码，是否存在集中过期 key 的逻辑。<br>一般集中过期使用的是 expireat / pexpireat 命令，你需要在代码中搜索这个关键字。<br>排查代码后，如果确实存在集中过期 key 的逻辑存在，但这种逻辑又是业务所必须的，那此时如何优化，同时又不对 Redis 有性能影响呢？<br><br>一般有两种方案来规避这个问题：<br>
+<br>集中过期 key 增加一个随机过期时间，把集中过期的时间打散，降低 Redis 清理过期 key 的压力
+<br>如果你使用的 Redis 是 4.0 以上版本，可以开启 lazy-free 机制，当删除过期 key 时，把释放内存的操作放到后台线程中执行，避免阻塞主线程
+<br>第一种方案，在设置 key 的过期时间时，增加一个随机时间，伪代码可以这么写：<br># 在过期时间点之后的 5 分钟内随机过期掉
+redis.expireat(key, expire_time + random(300))
+复制<br>这样一来，Redis 在处理过期时，不会因为集中删除过多的 key 导致压力过大，从而避免阻塞主线程。<br>第二种方案，Redis 4.0 以上版本，开启 lazy-free 机制：<br># 释放过期 key 的内存，放到后台线程执行
+lazyfree-lazy-expire yes
+复制<br>另外，除了业务层面的优化和修改配置之外，你还可以通过运维手段及时发现这种情况。<br>运维层面，需要把 Redis 的各项运行状态数据监控起来，在 Redis 上执行 INFO 命令就可以拿到这个实例所有的运行状态数据。<br>在这里我们需要重点关注 expired_keys 这一项，它代表整个实例到目前为止，累计删除过期 key 的数量。<br>你需要把这个指标监控起来，当这个指标在很短时间内出现了突增，需要及时报警出来，然后与业务应用报慢的时间点进行对比分析，确认时间是否一致，如果一致，则可以确认确实是因为集中过期 key 导致的延迟变大。<br>
+<br>CPU 相关：使用复杂度过高命令、数据的持久化，都与耗费过多的 CPU 资源有关
+<br>内存相关：bigkey 内存的申请和释放、数据过期、数据淘汰、碎片整理、内存大页、内存写时复制都与内存息息相关
+<br>磁盘相关：数据持久化、AOF 刷盘策略，也会受到磁盘的影响
+<br>网络相关：短连接、实例流量过载、网络流量过载，也会降低 Redis 性能
+<br>计算机系统：CPU 结构、内存分配，都属于最基础的计算机系统知识
+<br>操作系统：写时复制、内存大页、Swap、CPU 绑定，都属于操作系统层面的知识
+]]></description><link>04、数据库\02、redis\11、redis-最佳实践&amp;性能调优.html</link><guid isPermaLink="false">04、数据库/02、Redis/11、Redis 最佳实践&amp;性能调优.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 13:53:42 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_212716.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_212716.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[12、底层原理：数据结构]]></title><description><![CDATA[ 
  ]]></description><link>04、数据库\02、redis\12、底层原理：数据结构.html</link><guid isPermaLink="false">04、数据库/02、Redis/12、底层原理：数据结构.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:45 GMT</pubDate></item><item><title><![CDATA[13、底层原理：网络模型]]></title><description><![CDATA[ 
  ]]></description><link>04、数据库\02、redis\13、底层原理：网络模型.html</link><guid isPermaLink="false">04、数据库/02、Redis/13、底层原理：网络模型.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:45 GMT</pubDate></item><item><title><![CDATA[100、 ★ Redis面试题汇总 ★]]></title><description><![CDATA[ 
  <br><br>
@@ -22661,7 +23119,7 @@ ___
     它实际上包含了两行。
 复制<br>在这个例子中，[^1]&nbsp;是对脚注的引用，[^1]: 这是脚注的内容。&nbsp;<br>
 标识符可以是数字或单词，但不能包含空格或制表符。标识符仅将脚注参考与脚注本身相关联-在输出中，脚注按顺序编号。<br>
-脚注代号可以随便命名，不过推荐使用数字序号。脚注代号+∶+空格＋脚注内容<br>这是一段带有多个脚注的文本<a href="\#fn-1-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[1]</a>内容<a href="\#fn-2-6e1ad751c99e09b3" class="footnote-link" target="_self" rel="noopener">[2]</a>。<br><br><br><br>可以通过&nbsp;- [ ]&nbsp;来创建一个未完成的任务，通过&nbsp;- [x]&nbsp;来创建一个已完成的任务。例如：<br>- [ ] 这是一个未完成的任务。
+脚注代号可以随便命名，不过推荐使用数字序号。脚注代号+∶+空格＋脚注内容<br>这是一段带有多个脚注的文本<a href="\#fn-1-e71c45efc46d5c5b" class="footnote-link" target="_self" rel="noopener">[1]</a>内容<a href="\#fn-2-e71c45efc46d5c5b" class="footnote-link" target="_self" rel="noopener">[2]</a>。<br><br><br><br>可以通过&nbsp;- [ ]&nbsp;来创建一个未完成的任务，通过&nbsp;- [x]&nbsp;来创建一个已完成的任务。例如：<br>- [ ] 这是一个未完成的任务。
 - [x] 这是一个已完成的任务。
 复制<br>
 <br>这是一个未完成的任务。
@@ -22739,6 +23197,6 @@ Expected one of the following:
 图片格式最好为：. PNG 这种支持高清方式<br>文章内所有链接统一使用标准 markdown 格式，防止使用 typora 使连接失效。<br>
 如果已经有 obisidian 的链接了，单文件可以直接选中已有文件，只要设置对了会自动变成 markdown 的原本格式。<br>
 <br>
-<br>这是第一个脚注的内容。<a href="\#fnref-1-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>这是第二个脚注的内容。<a href="\#fnref-2-6e1ad751c99e09b3" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>这是第一个脚注的内容。<a href="\#fnref-1-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>这是第二个脚注的内容。<a href="\#fnref-2-e71c45efc46d5c5b" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>readme.html</link><guid isPermaLink="false">README.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 26 Feb 2024 12:56:50 GMT</pubDate></item></channel></rss>
