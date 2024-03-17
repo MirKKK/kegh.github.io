@@ -1,0 +1,3241 @@
+{
+  "vaultName": "Java知识体系构建",
+  "lastExport": 1710641143113,
+  "pluginVersion": "1.8.01",
+  "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title background-settings-workplace-theme-dark-in-the-sky notebook-liked-markdown-page-grid-notebook-1 layout-style-options-default bt-default-unordered-list default-ol-list-marker list-no-border bt-connected-indent-hover bt-colorful-connected-indent-hover folder-icons remove-arrow bt-toggle-colorful-folder folder-colorful-six table-width-100 tag-default admonition-bg-color-same style-options-for-admonition-plugin style-options-for-buttons-plugin dataview-list-style-pacman quiet-outline-optimize code-theme-bt-default mute-code-indent-line code-line-number whole-code-wrap",
+  "useCustomHeadContent": false,
+  "useCustomFavicon": false,
+  "files": [
+    "01、通用基础/01、计算机基础/assets/04、Unix IO 模型/img-20240316_211809.png",
+    "01、通用基础/01、计算机基础/assets/04、Unix IO 模型/img-20240316_211906.png",
+    "01、通用基础/01、计算机基础/assets/04、Unix IO 模型/img-20240316_212152.png",
+    "01、通用基础/01、计算机基础/01、计算机硬件.md",
+    "01、通用基础/01、计算机基础/02、操作系统.md",
+    "01、通用基础/01、计算机基础/03、通用概念.md",
+    "01、通用基础/01、计算机基础/04、Unix IO 模型.md",
+    "01、通用基础/01、计算机基础/Linux常见命令.md",
+    "01、通用基础/01、计算机基础/Linux日志查询详解.md",
+    "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_193956.png",
+    "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_194139.png",
+    "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_201000.png",
+    "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_210221.png",
+    "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_212633.png",
+    "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_212820.png",
+    "01、通用基础/02、计算机网络/assets/6、网络协议 - HTTP 协议详解/img-20240304_215954.png",
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_213216.png",
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_213416.png",
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_213913.png",
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_213919.png",
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_214021.png",
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_214200.png",
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_214212.png",
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_214245.png",
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_214312.png",
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_214326.png",
+    "01、通用基础/02、计算机网络/1、计算机网络基础部分梳理.md",
+    "01、通用基础/02、计算机网络/2、七层网络协议.md",
+    "01、通用基础/02、计算机网络/3、网络协议 - IP 相关协议详解.md",
+    "01、通用基础/02、计算机网络/4、网络协议 - TCP 协议详解.md",
+    "01、通用基础/02、计算机网络/5、网络协议 - UDP 协议详解.md",
+    "01、通用基础/02、计算机网络/6、网络协议 - HTTP 协议详解.md",
+    "01、通用基础/02、计算机网络/7、网络协议 - DNS 相关详解.md",
+    "01、通用基础/02、计算机网络/8、输入URL 到页面加载过程详解.md",
+    "01、通用基础/02、计算机网络/9、工具-netstat查看服务及监听端口详解.md",
+    "01、通用基础/02、计算机网络/10、工具-网络抓包神器 tcpdump 使用详解.md",
+    "01、通用基础/04、数据结构算法/01、数据结构/01、线性表 - 数组和矩阵.md",
+    "01、通用基础/04、数据结构算法/01、数据结构/02、线性表 - 链表.md",
+    "01、通用基础/04、数据结构算法/01、数据结构/03、线性表(散列) - 哈希表.md",
+    "01、通用基础/04、数据结构算法/01、数据结构/03、DS-A 第一篇 基础数据结构.md",
+    "01、通用基础/04、数据结构算法/01、数据结构/04、线性表 - 栈和队列.md",
+    "01、通用基础/04、数据结构算法/01、数据结构/05、树 - 基础和Overview.md",
+    "01、通用基础/04、数据结构算法/02、算法/01、常见的排序算法.md",
+    "01、通用基础/04、数据结构算法/03、其他领域算法/一致性hash.md",
+    "01、通用基础/04、数据结构算法/03、其他领域算法/Raft算法.md",
+    "01、通用基础/05、软件设计基础/assets/02、UML-统一建模软件/img-20240311_205149.png",
+    "01、通用基础/05、软件设计基础/assets/02、UML-统一建模软件/img-20240311_205218.png",
+    "01、通用基础/05、软件设计基础/assets/02、UML-统一建模软件/img-20240311_205227.png",
+    "01、通用基础/05、软件设计基础/assets/02、UML-统一建模软件/img-20240311_205418.png",
+    "01、通用基础/05、软件设计基础/assets/02、UML-统一建模软件/img-20240311_205443.png",
+    "01、通用基础/05、软件设计基础/assets/02、UML-统一建模软件/img-20240311_205653.png",
+    "01、通用基础/05、软件设计基础/assets/02、UML-统一建模软件/img-20240311_205752.png",
+    "01、通用基础/05、软件设计基础/01、软件工程发展史.md",
+    "01、通用基础/05、软件设计基础/02、UML-统一建模软件.md",
+    "01、通用基础/05、软件设计基础/03、软件设计原则.md",
+    "01、通用基础/05、软件设计基础/04、设计模式.md",
+    "01、通用基础/05、软件设计基础/05、系统开发.md",
+    "01、通用基础/05、软件设计基础/06、立项到软件落地文档.md",
+    "01、通用基础/05、软件设计基础/07、main.go",
+    "02、多编程语言/01、编程语言基础/01、编程语言对比.md",
+    "02、多编程语言/01、编程语言基础/02、语言通用.md",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240111_204742.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240111_213502.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_202244.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_202326.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_203318.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_203627.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_204040.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_210121.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_210518.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_211007.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_214047.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_214101.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_214319.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_093823.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_095314.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_095458.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_102210.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_104300.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_141917.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_213221.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_213810.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240114_104008.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240114_104359.png",
+    "02、多编程语言/03、Go语言/01、Go语言基础/00、★ Go语言基础 ★.md",
+    "02、多编程语言/03、Go语言/01、Go语言基础/01、走进Go.md",
+    "02、多编程语言/03、Go语言/01、Go语言基础/02、Go 基础语法.md",
+    "02、多编程语言/03、Go语言/01、Go语言基础/03、函数与过程.md",
+    "02、多编程语言/03、Go语言/01、Go语言基础/04、数据结构和处理.md",
+    "02、多编程语言/03、Go语言/01、Go语言基础/05、面向对象.md",
+    "02、多编程语言/03、Go语言/01、Go语言基础/06、异常处理.md",
+    "02、多编程语言/03、Go语言/01、Go语言基础/07、包管理.md",
+    "02、多编程语言/03、Go语言/01、Go语言基础/100、Go语言基础.md",
+    "02、多编程语言/03、Go语言/01、Go语言基础/101、Go语言基础2.md",
+    "03、Java核心/04、Jvm 相关/JVM-内存结构.md",
+    "03、Java核心/05、Java 版本和特性/Java8/assets/01、函数编程/img-20240127_103306.png",
+    "03、Java核心/05、Java 版本和特性/Java8/assets/01、函数编程/img-20240127_110053.png",
+    "03、Java核心/05、Java 版本和特性/Java8/assets/01、函数编程/img-20240127_110820.png",
+    "03、Java核心/05、Java 版本和特性/Java8/assets/01、函数编程/img-20240128_103832.png",
+    "03、Java核心/05、Java 版本和特性/Java8/assets/01、函数编程/img-20240128_114739.png",
+    "03、Java核心/05、Java 版本和特性/Java8/01、函数编程.md",
+    "03、Java核心/05、Java 版本和特性/Java8/02、默认方法.md",
+    "03、Java核心/05、Java 版本和特性/Java8/03、Optional类深度解析.md",
+    "03、Java核心/05、Java 版本和特性/Java8/Java8新特性.md",
+    "03、Java核心/05、Java 版本和特性/00、Java-LST版本.md",
+    "04、数据库/01、MySql/MySQL.md",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_200522.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_200545.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_200754.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_201125.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_201954.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_202631.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_203055.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_203237.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_203447.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_204825.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_204845.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_204954.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_205019.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_205437.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_210433.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_210936.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_211000.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_211130.png",
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_211158.png",
+    "04、数据库/02、Redis/assets/04、Redis 的 Java 客户端/img-20240317_093601.png",
+    "04、数据库/02、Redis/assets/04、Redis 的 Java 客户端/img-20240317_093735.png",
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240315_210729.png",
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240315_212409.png",
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240315_214448.png",
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_091542.png",
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_094029.png",
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_094131.png",
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_094358.png",
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_094541.png",
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_101040.png",
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_101519.png",
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_102846.png",
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_102906.png",
+    "04、数据库/02、Redis/assets/06、高可用：主从复制详解/img-20240316_112111.png",
+    "04、数据库/02、Redis/assets/06、高可用：主从复制详解/img-20240316_112157.png",
+    "04、数据库/02、Redis/assets/06、高可用：主从复制详解/img-20240316_112513.png",
+    "04、数据库/02、Redis/assets/06、高可用：主从复制详解/img-20240316_112913.png",
+    "04、数据库/02、Redis/assets/06、高可用：主从复制详解/img-20240316_113651.png",
+    "04、数据库/02、Redis/assets/06、高可用：主从复制详解/img-20240316_113846.png",
+    "04、数据库/02、Redis/assets/06、高可用：主从复制详解/img-20240316_113907.png",
+    "04、数据库/02、Redis/assets/07、高可用：哨兵机制（Redis Sentinel）详解/img-20240316_115425.png",
+    "04、数据库/02、Redis/assets/07、高可用：哨兵机制（Redis Sentinel）详解/img-20240316_153130.png",
+    "04、数据库/02、Redis/assets/07、高可用：哨兵机制（Redis Sentinel）详解/img-20240316_153246.png",
+    "04、数据库/02、Redis/assets/07、高可用：哨兵机制（Redis Sentinel）详解/img-20240316_154049.png",
+    "04、数据库/02、Redis/assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_154508.png",
+    "04、数据库/02、Redis/assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_164951.png",
+    "04、数据库/02、Redis/assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_165837.png",
+    "04、数据库/02、Redis/assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_194503.png",
+    "04、数据库/02、Redis/assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_194517.png",
+    "04、数据库/02、Redis/assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_194631.png",
+    "04、数据库/02、Redis/assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_195202.png",
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_213544.png",
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_213936.png",
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_213945.png",
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_214619.png",
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_214840.png",
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_215130.png",
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_215141.png",
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_215143.png",
+    "04、数据库/02、Redis/00、 ★ Redis 总览 ★.md",
+    "04、数据库/02、Redis/01、Redis 概念和基础.md",
+    "04、数据库/02、Redis/02、Redis 的安装说明.md",
+    "04、数据库/02、Redis/03、常见命令&数据类型.md",
+    "04、数据库/02、Redis/04、Redis 的 Java 客户端.md",
+    "04、数据库/02、Redis/05、持久化：RDB和AOF机制详解.md",
+    "04、数据库/02、Redis/06、高可用：主从复制详解.md",
+    "04、数据库/02、Redis/07、高可用：哨兵机制（Redis Sentinel）详解.md",
+    "04、数据库/02、Redis/08、高可拓展：分片技术（Redis Cluster）详解.md",
+    "04、数据库/02、Redis/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染.md",
+    "04、数据库/02、Redis/10、Redis 监控详解.md",
+    "04、数据库/02、Redis/11、Redis 性能调优.md",
+    "04、数据库/02、Redis/12、底层原理：数据结构.md",
+    "04、数据库/02、Redis/13、底层原理：网络模型.md",
+    "04、数据库/02、Redis/100、 ★ Redis面试题汇总 ★.md",
+    "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_195642.png",
+    "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_201605.png",
+    "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_201811.png",
+    "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_202107.png",
+    "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_203147.png",
+    "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_204209.png",
+    "06、架构设计/02、分布式系统/00、常见词汇.md",
+    "06、架构设计/02、分布式系统/01、限流.md",
+    "06、架构设计/03、微服务架构/SpringBoot/0.md",
+    "07、云原生相关/01、容器化、编排/01、Docker/assets/01、虚拟化Dorcker/img-20240310_151555.png",
+    "07、云原生相关/01、容器化、编排/01、Docker/assets/03、Docker基本命令/img-20240310_155608.png",
+    "07、云原生相关/01、容器化、编排/01、Docker/assets/03、Docker基本命令/img-20240310_160337.png",
+    "07、云原生相关/01、容器化、编排/01、Docker/assets/03、Docker基本命令/img-20240310_161103.png",
+    "07、云原生相关/01、容器化、编排/01、Docker/01、虚拟化Dorcker.md",
+    "07、云原生相关/01、容器化、编排/01、Docker/02、Docker基本概念和安装.md",
+    "07、云原生相关/01、容器化、编排/01、Docker/03、Docker基本命令.md",
+    "07、云原生相关/01、容器化、编排/01、Docker/04、Web应用实例.md",
+    "07、云原生相关/01、容器化、编排/01、Docker/05、Docker网络使用和配置.md",
+    "07、云原生相关/01、容器化、编排/01、Docker/06、Docker数据卷和数据管理.md",
+    "07、云原生相关/01、容器化、编排/01、Docker/07、Dockerfile详解.md",
+    "07、云原生相关/01、容器化、编排/01、Docker/08、DockerCompose详解.md",
+    "07、云原生相关/01、容器化、编排/01、Docker/09、Docker底层实现.md",
+    "07、云原生相关/01、容器化、编排/01、Docker/10、Docker安全相关.md",
+    "07、云原生相关/assets/02、Docker基本概念和安装/img-20240310_154211.png",
+    "09、职场求职/01、简历面试/01、个人简历和面试.md",
+    "09、职场求职/01、简历面试/03、面试通用问题汇总.md",
+    "09、职场求职/02、企业和员工/02、公司企业和员工.md",
+    "09、职场求职/03、项目和业务/assets/04、一些项目术语/img-20240302_152236.png",
+    "09、职场求职/03、项目和业务/assets/04、一些项目术语/img-20240302_152648.png",
+    "09、职场求职/03、项目和业务/04、一些项目术语.md",
+    "11、常用工具/git/images/git/image-安装完成.png",
+    "11、常用工具/git/images/git/image-查看克隆仓库的日志.png",
+    "11、常用工具/git/images/git/image-查看提交结果历史.png",
+    "11、常用工具/git/images/git/image-查看push结果.png",
+    "11、常用工具/git/images/git/image-冲突提示.png",
+    "11、常用工具/git/images/git/image-初始化本地仓库.png",
+    "11、常用工具/git/images/git/image-处理冲突.png",
+    "11、常用工具/git/images/git/image-创建分支.png",
+    "11、常用工具/git/images/git/image-方便的创建.png",
+    "11、常用工具/git/images/git/image-分支规范.png",
+    "11、常用工具/git/images/git/image-合并或更新远端.png",
+    "11、常用工具/git/images/git/image-回退上一版本.png",
+    "11、常用工具/git/images/git/image-进行抓取.png",
+    "11、常用工具/git/images/git/image-设置远端仓库.png",
+    "11、常用工具/git/images/git/image-输入远端地址.png",
+    "11、常用工具/git/images/git/image-提交本地仓库.png",
+    "11、常用工具/git/images/git/image-提交仓库查看日志.png",
+    "11、常用工具/git/images/git/image-推送到远程仓库.png",
+    "11、常用工具/git/images/git/image-文件修改.png",
+    "11、常用工具/git/images/git/image-新建仓库.png",
+    "11、常用工具/git/images/git/image-新建file04提交.png",
+    "11、常用工具/git/images/git/image-新克隆的结果.png",
+    "11、常用工具/git/images/git/image-选择项目.png",
+    "11、常用工具/git/images/git/image-再次回退.png",
+    "11、常用工具/git/images/git/image-bashrc.png",
+    "11、常用工具/git/images/git/image-bashrc-content.png",
+    "11、常用工具/git/images/git/image-branch.png",
+    "11、常用工具/git/images/git/image-checkout-dev.png",
+    "11、常用工具/git/images/git/image-deal-merge.png",
+    "11、常用工具/git/images/git/image-delete-dev01.png",
+    "11、常用工具/git/images/git/image-delete-dev02.png",
+    "11、常用工具/git/images/git/image-git.png",
+    "11、常用工具/git/images/git/image-git-文件状态.png",
+    "11、常用工具/git/images/git/image-git-add.png",
+    "11、常用工具/git/images/git/image-git-branch.png",
+    "11、常用工具/git/images/git/image-git-branch-result.png",
+    "11、常用工具/git/images/git/image-git-breach-vv.png",
+    "11、常用工具/git/images/git/image-git-checkout.png",
+    "11、常用工具/git/images/git/image-git-checkout-b.png",
+    "11、常用工具/git/images/git/image-git-clone.png",
+    "11、常用工具/git/images/git/image-git-commit.png",
+    "11、常用工具/git/images/git/image-git-init.png",
+    "11、常用工具/git/images/git/image-git-log.png",
+    "11、常用工具/git/images/git/image-git-push-origin.png",
+    "11、常用工具/git/images/git/image-git-remote.png",
+    "11、常用工具/git/images/git/image-git-remote-add-origin.png",
+    "11、常用工具/git/images/git/image-git-status.png",
+    "11、常用工具/git/images/git/image-git流程.png",
+    "11、常用工具/git/images/git/image-master-to-remote-master.png",
+    "11、常用工具/git/images/git/image-master-update-file01.png",
+    "11、常用工具/git/images/git/image-merge-dev01.png",
+    "11、常用工具/git/images/git/image-merge-dev2master.png",
+    "11、常用工具/git/images/git/image-merge-file-content.png",
+    "11、常用工具/git/images/git/image-newfile03.png",
+    "11、常用工具/git/images/git/image-remote-merge.png",
+    "11、常用工具/git/images/git/image-ssh地址.png",
+    "11、常用工具/git/images/git/image-SVN.png",
+    "11、常用工具/git/images/git/image-test-git-fetch.png",
+    "11、常用工具/git/images/git/image-update-file01.png",
+    "11、常用工具/git/images/git/image-work.png",
+    "11、常用工具/git/git.md",
+    "11、常用工具/maven.md",
+    "README.md",
+    "TOdo.md",
+    "lib/media/img-20240310_154211.png",
+    "lib/scripts/graph-wasm.wasm",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/fonts/mathjax_zero.woff",
+    "lib/fonts/mathjax_main-regular.woff",
+    "lib/fonts/mathjax_main-bold.woff",
+    "lib/fonts/mathjax_math-italic.woff",
+    "lib/fonts/mathjax_main-italic.woff",
+    "lib/fonts/mathjax_math-bolditalic.woff",
+    "lib/fonts/mathjax_size1-regular.woff",
+    "lib/fonts/mathjax_size2-regular.woff",
+    "lib/fonts/mathjax_size3-regular.woff",
+    "lib/fonts/mathjax_size4-regular.woff",
+    "lib/fonts/mathjax_ams-regular.woff",
+    "lib/fonts/mathjax_calligraphic-regular.woff",
+    "lib/fonts/mathjax_calligraphic-bold.woff",
+    "lib/fonts/mathjax_fraktur-regular.woff",
+    "lib/fonts/mathjax_fraktur-bold.woff",
+    "lib/fonts/mathjax_sansserif-regular.woff",
+    "lib/fonts/mathjax_sansserif-bold.woff",
+    "lib/fonts/mathjax_sansserif-italic.woff",
+    "lib/fonts/mathjax_script-regular.woff",
+    "lib/fonts/mathjax_typewriter-regular.woff",
+    "lib/fonts/mathjax_vector-regular.woff",
+    "lib/fonts/mathjax_vector-bold.woff",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/theme.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/supported-plugins.css",
+    "lib/styles/main-styles.css",
+    "lib/styles/snippets.css"
+  ],
+  "mainDependencies": [
+    "lib/scripts/graph-wasm.wasm",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/fonts/mathjax_zero.woff",
+    "lib/fonts/mathjax_main-regular.woff",
+    "lib/fonts/mathjax_main-bold.woff",
+    "lib/fonts/mathjax_math-italic.woff",
+    "lib/fonts/mathjax_main-italic.woff",
+    "lib/fonts/mathjax_math-bolditalic.woff",
+    "lib/fonts/mathjax_size1-regular.woff",
+    "lib/fonts/mathjax_size2-regular.woff",
+    "lib/fonts/mathjax_size3-regular.woff",
+    "lib/fonts/mathjax_size4-regular.woff",
+    "lib/fonts/mathjax_ams-regular.woff",
+    "lib/fonts/mathjax_calligraphic-regular.woff",
+    "lib/fonts/mathjax_calligraphic-bold.woff",
+    "lib/fonts/mathjax_fraktur-regular.woff",
+    "lib/fonts/mathjax_fraktur-bold.woff",
+    "lib/fonts/mathjax_sansserif-regular.woff",
+    "lib/fonts/mathjax_sansserif-bold.woff",
+    "lib/fonts/mathjax_sansserif-italic.woff",
+    "lib/fonts/mathjax_script-regular.woff",
+    "lib/fonts/mathjax_typewriter-regular.woff",
+    "lib/fonts/mathjax_vector-regular.woff",
+    "lib/fonts/mathjax_vector-bold.woff",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/theme.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/supported-plugins.css",
+    "lib/styles/main-styles.css",
+    "lib/styles/snippets.css"
+  ],
+  "fileInfo": {
+    "01、通用基础/01、计算机基础/assets/04、Unix IO 模型/img-20240316_211809.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 480157,
+      "exportedPath": "01、通用基础/01、计算机基础/assets/04、unix-io-模型/img-20240316_211809.png",
+      "dependencies": []
+    },
+    "01、通用基础/01、计算机基础/assets/04、Unix IO 模型/img-20240316_211906.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 280597,
+      "exportedPath": "01、通用基础/01、计算机基础/assets/04、unix-io-模型/img-20240316_211906.png",
+      "dependencies": []
+    },
+    "01、通用基础/01、计算机基础/assets/04、Unix IO 模型/img-20240316_212152.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 221728,
+      "exportedPath": "01、通用基础/01、计算机基础/assets/04、unix-io-模型/img-20240316_212152.png",
+      "dependencies": []
+    },
+    "01、通用基础/01、计算机基础/01、计算机硬件.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/01、计算机基础/01、计算机硬件.html",
+      "dependencies": []
+    },
+    "01、通用基础/01、计算机基础/02、操作系统.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 1498,
+      "exportedPath": "01、通用基础/01、计算机基础/02、操作系统.html",
+      "dependencies": []
+    },
+    "01、通用基础/01、计算机基础/03、通用概念.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 4045,
+      "exportedPath": "01、通用基础/01、计算机基础/03、通用概念.html",
+      "dependencies": []
+    },
+    "01、通用基础/01、计算机基础/04、Unix IO 模型.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 1662,
+      "exportedPath": "01、通用基础/01、计算机基础/04、unix-io-模型.html",
+      "dependencies": [
+        "01、通用基础/01、计算机基础/assets/04、unix-io-模型/img-20240316_211906.png",
+        "01、通用基础/01、计算机基础/assets/04、unix-io-模型/img-20240316_211906.png",
+        "01、通用基础/01、计算机基础/assets/04、unix-io-模型/img-20240316_212152.png",
+        "01、通用基础/01、计算机基础/assets/04、unix-io-模型/img-20240316_212152.png"
+      ]
+    },
+    "01、通用基础/01、计算机基础/Linux常见命令.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/01、计算机基础/linux常见命令.html",
+      "dependencies": []
+    },
+    "01、通用基础/01、计算机基础/Linux日志查询详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/01、计算机基础/linux日志查询详解.html",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_193956.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 184335,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_193956.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_194139.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 117045,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_194139.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_201000.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 173282,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_201000.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_210221.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 436997,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_210221.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_212633.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 238706,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_212633.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_212820.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 308698,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_212820.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/6、网络协议 - HTTP 协议详解/img-20240304_215954.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 59295,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/6、网络协议-http-协议详解/img-20240304_215954.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_213216.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 29014,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213216.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_213416.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 12714,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213416.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_213913.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 8412,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213913.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_213919.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 15928,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213919.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_214021.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 15015,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214021.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_214200.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 8293,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214200.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_214212.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 12779,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214212.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_214245.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 11632,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214245.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_214312.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 52091,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214312.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入URL 到页面加载过程详解/img-20240304_214326.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 41303,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214326.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/1、计算机网络基础部分梳理.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/02、计算机网络/1、计算机网络基础部分梳理.html",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/2、七层网络协议.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 21206,
+      "exportedPath": "01、通用基础/02、计算机网络/2、七层网络协议.html",
+      "dependencies": [
+        "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_194139.png",
+        "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_194139.png",
+        "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_212633.png",
+        "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_212633.png",
+        "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_201000.png",
+        "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_201000.png",
+        "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_210221.png",
+        "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_210221.png",
+        "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_212820.png",
+        "01、通用基础/02、计算机网络/assets/2、七层网络协议/img-20240304_212820.png"
+      ]
+    },
+    "01、通用基础/02、计算机网络/3、网络协议 - IP 相关协议详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/02、计算机网络/3、网络协议-ip-相关协议详解.html",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/4、网络协议 - TCP 协议详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/02、计算机网络/4、网络协议-tcp-协议详解.html",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/5、网络协议 - UDP 协议详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/02、计算机网络/5、网络协议-udp-协议详解.html",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/6、网络协议 - HTTP 协议详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 36362,
+      "exportedPath": "01、通用基础/02、计算机网络/6、网络协议-http-协议详解.html",
+      "dependencies": [
+        "01、通用基础/02、计算机网络/assets/6、网络协议-http-协议详解/img-20240304_215954.png",
+        "01、通用基础/02、计算机网络/assets/6、网络协议-http-协议详解/img-20240304_215954.png"
+      ]
+    },
+    "01、通用基础/02、计算机网络/7、网络协议 - DNS 相关详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/02、计算机网络/7、网络协议-dns-相关详解.html",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/8、输入URL 到页面加载过程详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 13521,
+      "exportedPath": "01、通用基础/02、计算机网络/8、输入url-到页面加载过程详解.html",
+      "dependencies": [
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213216.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213216.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213416.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213416.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213913.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213913.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213919.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213919.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214021.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214021.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214200.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214200.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214212.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214212.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214245.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214245.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214312.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214312.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214326.png",
+        "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214326.png"
+      ]
+    },
+    "01、通用基础/02、计算机网络/9、工具-netstat查看服务及监听端口详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 11117,
+      "exportedPath": "01、通用基础/02、计算机网络/9、工具-netstat查看服务及监听端口详解.html",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/10、工具-网络抓包神器 tcpdump 使用详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/02、计算机网络/10、工具-网络抓包神器-tcpdump-使用详解.html",
+      "dependencies": []
+    },
+    "01、通用基础/04、数据结构算法/01、数据结构/01、线性表 - 数组和矩阵.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/04、数据结构算法/01、数据结构/01、线性表-数组和矩阵.html",
+      "dependencies": []
+    },
+    "01、通用基础/04、数据结构算法/01、数据结构/02、线性表 - 链表.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/04、数据结构算法/01、数据结构/02、线性表-链表.html",
+      "dependencies": []
+    },
+    "01、通用基础/04、数据结构算法/01、数据结构/03、线性表(散列) - 哈希表.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/04、数据结构算法/01、数据结构/03、线性表(散列)-哈希表.html",
+      "dependencies": []
+    },
+    "01、通用基础/04、数据结构算法/01、数据结构/03、DS-A 第一篇 基础数据结构.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 219373,
+      "exportedPath": "01、通用基础/04、数据结构算法/01、数据结构/03、ds-a-第一篇-基础数据结构.html",
+      "dependencies": []
+    },
+    "01、通用基础/04、数据结构算法/01、数据结构/04、线性表 - 栈和队列.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/04、数据结构算法/01、数据结构/04、线性表-栈和队列.html",
+      "dependencies": []
+    },
+    "01、通用基础/04、数据结构算法/01、数据结构/05、树 - 基础和Overview.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/04、数据结构算法/01、数据结构/05、树-基础和overview.html",
+      "dependencies": []
+    },
+    "01、通用基础/04、数据结构算法/02、算法/01、常见的排序算法.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 4182,
+      "exportedPath": "01、通用基础/04、数据结构算法/02、算法/01、常见的排序算法.html",
+      "dependencies": []
+    },
+    "01、通用基础/04、数据结构算法/03、其他领域算法/一致性hash.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 1,
+      "exportedPath": "01、通用基础/04、数据结构算法/03、其他领域算法/一致性hash.html",
+      "dependencies": []
+    },
+    "01、通用基础/04、数据结构算法/03、其他领域算法/Raft算法.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/04、数据结构算法/03、其他领域算法/raft算法.html",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/assets/02、UML-统一建模软件/img-20240311_205149.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 4060,
+      "exportedPath": "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205149.png",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/assets/02、UML-统一建模软件/img-20240311_205218.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 5023,
+      "exportedPath": "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205218.png",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/assets/02、UML-统一建模软件/img-20240311_205227.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 2967,
+      "exportedPath": "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205227.png",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/assets/02、UML-统一建模软件/img-20240311_205418.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 12541,
+      "exportedPath": "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205418.png",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/assets/02、UML-统一建模软件/img-20240311_205443.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 8372,
+      "exportedPath": "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205443.png",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/assets/02、UML-统一建模软件/img-20240311_205653.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 11928,
+      "exportedPath": "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205653.png",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/assets/02、UML-统一建模软件/img-20240311_205752.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 16610,
+      "exportedPath": "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205752.png",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/01、软件工程发展史.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/05、软件设计基础/01、软件工程发展史.html",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/02、UML-统一建模软件.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 6054,
+      "exportedPath": "01、通用基础/05、软件设计基础/02、uml-统一建模软件.html",
+      "dependencies": [
+        "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205149.png",
+        "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205149.png",
+        "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205218.png",
+        "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205218.png",
+        "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205227.png",
+        "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205227.png",
+        "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205418.png",
+        "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205418.png",
+        "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205443.png",
+        "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205443.png",
+        "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205653.png",
+        "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205653.png",
+        "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205752.png",
+        "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205752.png"
+      ]
+    },
+    "01、通用基础/05、软件设计基础/03、软件设计原则.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 21443,
+      "exportedPath": "01、通用基础/05、软件设计基础/03、软件设计原则.html",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/04、设计模式.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 17371,
+      "exportedPath": "01、通用基础/05、软件设计基础/04、设计模式.html",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/05、系统开发.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/05、软件设计基础/05、系统开发.html",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/06、立项到软件落地文档.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "01、通用基础/05、软件设计基础/06、立项到软件落地文档.html",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/07、main.go": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 267,
+      "exportedPath": "01、通用基础/05、软件设计基础/07、main.go",
+      "dependencies": []
+    },
+    "02、多编程语言/01、编程语言基础/01、编程语言对比.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "02、多编程语言/01、编程语言基础/01、编程语言对比.html",
+      "dependencies": []
+    },
+    "02、多编程语言/01、编程语言基础/02、语言通用.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 1189,
+      "exportedPath": "02、多编程语言/01、编程语言基础/02、语言通用.html",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240111_204742.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 81507,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240111_204742.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240111_213502.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 19642,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240111_213502.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_202244.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 119896,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_202244.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_202326.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 115435,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_202326.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_203318.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 17010,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_203318.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_203627.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 61219,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_203627.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_204040.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 74259,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_204040.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_210121.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 46743,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_210121.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_210518.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 9149,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_210518.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_211007.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 121421,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_211007.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_214047.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 41944,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214047.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_214101.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 32037,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214101.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240112_214319.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 53229,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214319.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_093823.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 32669,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_093823.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_095314.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 78297,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_095314.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_095458.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 78297,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_095458.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_102210.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 29021,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_102210.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_104300.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 29035,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_104300.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_141917.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 46300,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_141917.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_213221.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 11608,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_213221.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240113_213810.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 432975,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_213810.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240114_104008.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 9773,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240114_104008.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/assets/101、Go语言基础2/img-20240114_104359.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 19899,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240114_104359.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/00、★ Go语言基础 ★.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 109,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/00、★-go语言基础-★.html",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/01、走进Go.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 6433,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/01、走进go.html",
+      "dependencies": [
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240111_204742.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240111_204742.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_202244.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_202244.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_202326.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_202326.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_203627.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_203627.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_203318.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_203318.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_211007.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_211007.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_102210.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_102210.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_210121.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_210121.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_210518.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_210518.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240111_213502.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240111_213502.png"
+      ]
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/02、Go 基础语法.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 57113,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/02、go-基础语法.html",
+      "dependencies": [
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214047.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214047.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214101.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214101.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214319.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214319.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_093823.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_093823.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_095314.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_095314.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_104300.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_104300.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240114_104359.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240114_104359.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240114_104008.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240114_104008.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_141917.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_141917.png"
+      ]
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/03、函数与过程.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 34480,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/03、函数与过程.html",
+      "dependencies": [
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_213810.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_213810.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_213221.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_213221.png"
+      ]
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/04、数据结构和处理.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 23403,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/04、数据结构和处理.html",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/05、面向对象.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 28472,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/05、面向对象.html",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/06、异常处理.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 4014,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/06、异常处理.html",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/07、包管理.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 13114,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/07、包管理.html",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/100、Go语言基础.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 69861,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/100、go语言基础.html",
+      "dependencies": []
+    },
+    "02、多编程语言/03、Go语言/01、Go语言基础/101、Go语言基础2.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 151925,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/101、go语言基础2.html",
+      "dependencies": [
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214047.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214047.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214101.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214101.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214319.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214319.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_093823.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_093823.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_095314.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_095314.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_104300.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_104300.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240114_104359.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240114_104359.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240114_104008.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240114_104008.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_141917.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_141917.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_213810.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_213810.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_213221.png",
+        "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_213221.png"
+      ]
+    },
+    "03、Java核心/04、Jvm 相关/JVM-内存结构.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 50244,
+      "exportedPath": "03、java核心/04、jvm-相关/jvm-内存结构.html",
+      "dependencies": []
+    },
+    "03、Java核心/05、Java 版本和特性/Java8/assets/01、函数编程/img-20240127_103306.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 61851,
+      "exportedPath": "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_103306.png",
+      "dependencies": []
+    },
+    "03、Java核心/05、Java 版本和特性/Java8/assets/01、函数编程/img-20240127_110053.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 56472,
+      "exportedPath": "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_110053.png",
+      "dependencies": []
+    },
+    "03、Java核心/05、Java 版本和特性/Java8/assets/01、函数编程/img-20240127_110820.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 69287,
+      "exportedPath": "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_110820.png",
+      "dependencies": []
+    },
+    "03、Java核心/05、Java 版本和特性/Java8/assets/01、函数编程/img-20240128_103832.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 90310,
+      "exportedPath": "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240128_103832.png",
+      "dependencies": []
+    },
+    "03、Java核心/05、Java 版本和特性/Java8/assets/01、函数编程/img-20240128_114739.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 72666,
+      "exportedPath": "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240128_114739.png",
+      "dependencies": []
+    },
+    "03、Java核心/05、Java 版本和特性/Java8/01、函数编程.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 44789,
+      "exportedPath": "03、java核心/05、java-版本和特性/java8/01、函数编程.html",
+      "dependencies": [
+        "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240128_114739.png",
+        "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240128_114739.png",
+        "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240128_103832.png",
+        "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240128_103832.png",
+        "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_103306.png",
+        "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_103306.png",
+        "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_110053.png",
+        "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_110053.png",
+        "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_110820.png",
+        "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_110820.png"
+      ]
+    },
+    "03、Java核心/05、Java 版本和特性/Java8/02、默认方法.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 7331,
+      "exportedPath": "03、java核心/05、java-版本和特性/java8/02、默认方法.html",
+      "dependencies": []
+    },
+    "03、Java核心/05、Java 版本和特性/Java8/03、Optional类深度解析.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 12643,
+      "exportedPath": "03、java核心/05、java-版本和特性/java8/03、optional类深度解析.html",
+      "dependencies": []
+    },
+    "03、Java核心/05、Java 版本和特性/Java8/Java8新特性.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 79354,
+      "exportedPath": "03、java核心/05、java-版本和特性/java8/java8新特性.html",
+      "dependencies": []
+    },
+    "03、Java核心/05、Java 版本和特性/00、Java-LST版本.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 1,
+      "exportedPath": "03、java核心/05、java-版本和特性/00、java-lst版本.html",
+      "dependencies": []
+    },
+    "04、数据库/01、MySql/MySQL.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 69702,
+      "exportedPath": "04、数据库/01、mysql/mysql.html",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_200522.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 4399,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200522.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_200545.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 14373,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200545.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_200754.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 13282,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200754.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_201125.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 35077,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_201125.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_201954.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 21628,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_201954.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_202631.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 141713,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_202631.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_203055.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 40097,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203055.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_203237.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 71766,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203237.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_203447.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 33559,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203447.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_204825.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 94729,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204825.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_204845.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 201283,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204845.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_204954.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 66503,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204954.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_205019.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 67652,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_205019.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_205437.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 52966,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_205437.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_210433.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 31221,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_210433.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_210936.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 119970,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_210936.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_211000.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 95264,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211000.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_211130.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 15961,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211130.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/02、Redis 的安装说明/img-20240314_211158.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 22598,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211158.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/04、Redis 的 Java 客户端/img-20240317_093601.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 89501,
+      "exportedPath": "04、数据库/02、redis/assets/04、redis-的-java-客户端/img-20240317_093601.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/04、Redis 的 Java 客户端/img-20240317_093735.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 74881,
+      "exportedPath": "04、数据库/02、redis/assets/04、redis-的-java-客户端/img-20240317_093735.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240315_210729.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 25251,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_210729.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240315_212409.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 584613,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_212409.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240315_214448.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 858490,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_214448.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_091542.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 1117473,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_091542.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_094029.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 723742,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094029.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_094131.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 27256,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094131.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_094358.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 1213179,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094358.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_094541.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 36748,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094541.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_101040.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 1309581,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_101040.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_101519.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 188027,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_101519.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_102846.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 357326,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_102846.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/05、持久化：RDB和AOF机制详解/img-20240316_102906.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 320532,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_102906.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/06、高可用：主从复制详解/img-20240316_112111.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 72391,
+      "exportedPath": "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112111.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/06、高可用：主从复制详解/img-20240316_112157.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 80314,
+      "exportedPath": "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112157.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/06、高可用：主从复制详解/img-20240316_112513.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 85251,
+      "exportedPath": "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112513.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/06、高可用：主从复制详解/img-20240316_112913.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 203442,
+      "exportedPath": "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112913.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/06、高可用：主从复制详解/img-20240316_113651.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 103306,
+      "exportedPath": "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113651.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/06、高可用：主从复制详解/img-20240316_113846.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 51671,
+      "exportedPath": "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113846.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/06、高可用：主从复制详解/img-20240316_113907.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 59038,
+      "exportedPath": "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113907.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/07、高可用：哨兵机制（Redis Sentinel）详解/img-20240316_115425.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 204408,
+      "exportedPath": "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_115425.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/07、高可用：哨兵机制（Redis Sentinel）详解/img-20240316_153130.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 43006,
+      "exportedPath": "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_153130.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/07、高可用：哨兵机制（Redis Sentinel）详解/img-20240316_153246.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 533021,
+      "exportedPath": "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_153246.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/07、高可用：哨兵机制（Redis Sentinel）详解/img-20240316_154049.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 49466,
+      "exportedPath": "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_154049.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_154508.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 73122,
+      "exportedPath": "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_154508.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_164951.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 35073,
+      "exportedPath": "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_164951.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_165837.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 43782,
+      "exportedPath": "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_165837.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_194503.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 49466,
+      "exportedPath": "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194503.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_194517.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 77562,
+      "exportedPath": "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194517.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_194631.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 84028,
+      "exportedPath": "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194631.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/08、高可拓展：分片技术（Redis Cluster）详解/img-20240316_195202.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 21578,
+      "exportedPath": "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_195202.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_213544.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 52419,
+      "exportedPath": "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_213544.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_213936.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 35381,
+      "exportedPath": "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_213936.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_213945.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 32545,
+      "exportedPath": "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_213945.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_214619.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 140769,
+      "exportedPath": "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_214619.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_214840.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 200735,
+      "exportedPath": "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_214840.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_215130.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 35327,
+      "exportedPath": "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_215130.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_215141.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 20178,
+      "exportedPath": "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_215141.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/assets/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染/img-20240316_215143.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 20178,
+      "exportedPath": "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_215143.png",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/00、 ★ Redis 总览 ★.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "04、数据库/02、redis/00、-★-redis-总览-★.html",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/01、Redis 概念和基础.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 5531,
+      "exportedPath": "04、数据库/02、redis/01、redis-概念和基础.html",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/02、Redis 的安装说明.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 13381,
+      "exportedPath": "04、数据库/02、redis/02、redis-的安装说明.html",
+      "dependencies": [
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200522.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200522.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200545.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200545.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200754.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200754.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_201125.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_201125.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_201954.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_201954.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_202631.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_202631.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203055.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203055.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203237.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203237.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203447.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203447.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204825.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204825.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204845.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204845.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204954.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204954.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_205019.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_205019.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_205437.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_205437.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_210433.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_210433.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_210936.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_210936.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211000.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211000.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211130.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211130.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211158.png",
+        "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211158.png"
+      ]
+    },
+    "04、数据库/02、Redis/03、常见命令&数据类型.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 49356,
+      "exportedPath": "04、数据库/02、redis/03、常见命令&数据类型.html",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/04、Redis 的 Java 客户端.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 4251,
+      "exportedPath": "04、数据库/02、redis/04、redis-的-java-客户端.html",
+      "dependencies": [
+        "04、数据库/02、redis/assets/04、redis-的-java-客户端/img-20240317_093601.png",
+        "04、数据库/02、redis/assets/04、redis-的-java-客户端/img-20240317_093601.png",
+        "04、数据库/02、redis/assets/04、redis-的-java-客户端/img-20240317_093735.png",
+        "04、数据库/02、redis/assets/04、redis-的-java-客户端/img-20240317_093735.png"
+      ]
+    },
+    "04、数据库/02、Redis/05、持久化：RDB和AOF机制详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 21567,
+      "exportedPath": "04、数据库/02、redis/05、持久化：rdb和aof机制详解.html",
+      "dependencies": [
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_210729.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_210729.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_101519.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_101519.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_212409.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_212409.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_214448.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_214448.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_091542.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_091542.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094029.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094029.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094131.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094131.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_102906.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_102906.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094358.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094358.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094541.png",
+        "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094541.png"
+      ]
+    },
+    "04、数据库/02、Redis/06、高可用：主从复制详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 16186,
+      "exportedPath": "04、数据库/02、redis/06、高可用：主从复制详解.html",
+      "dependencies": [
+        "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112111.png",
+        "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112111.png",
+        "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112913.png",
+        "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112913.png",
+        "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113651.png",
+        "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113651.png",
+        "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113846.png",
+        "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113846.png",
+        "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113907.png",
+        "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113907.png",
+        "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112513.png",
+        "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112513.png"
+      ]
+    },
+    "04、数据库/02、Redis/07、高可用：哨兵机制（Redis Sentinel）详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 6471,
+      "exportedPath": "04、数据库/02、redis/07、高可用：哨兵机制（redis-sentinel）详解.html",
+      "dependencies": [
+        "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_115425.png",
+        "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_115425.png",
+        "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_153246.png",
+        "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_153246.png",
+        "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_153130.png",
+        "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_153130.png",
+        "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_154049.png",
+        "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_154049.png"
+      ]
+    },
+    "04、数据库/02、Redis/08、高可拓展：分片技术（Redis Cluster）详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 23338,
+      "exportedPath": "04、数据库/02、redis/08、高可拓展：分片技术（redis-cluster）详解.html",
+      "dependencies": [
+        "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_154508.png",
+        "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_154508.png",
+        "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194517.png",
+        "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194517.png",
+        "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194503.png",
+        "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194503.png",
+        "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194631.png",
+        "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194631.png",
+        "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_195202.png",
+        "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_195202.png",
+        "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_165837.png",
+        "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_165837.png"
+      ]
+    },
+    "04、数据库/02、Redis/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 12960,
+      "exportedPath": "04、数据库/02、redis/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染.html",
+      "dependencies": [
+        "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_214619.png",
+        "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_214619.png",
+        "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_214840.png",
+        "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_214840.png",
+        "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_215143.png",
+        "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_215143.png",
+        "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_215130.png",
+        "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_215130.png"
+      ]
+    },
+    "04、数据库/02、Redis/10、Redis 监控详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 38334,
+      "exportedPath": "04、数据库/02、redis/10、redis-监控详解.html",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/11、Redis 性能调优.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 133,
+      "exportedPath": "04、数据库/02、redis/11、redis-性能调优.html",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/12、底层原理：数据结构.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "04、数据库/02、redis/12、底层原理：数据结构.html",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/13、底层原理：网络模型.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "04、数据库/02、redis/13、底层原理：网络模型.html",
+      "dependencies": []
+    },
+    "04、数据库/02、Redis/100、 ★ Redis面试题汇总 ★.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 5031,
+      "exportedPath": "04、数据库/02、redis/100、-★-redis面试题汇总-★.html",
+      "dependencies": []
+    },
+    "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_195642.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 33054,
+      "exportedPath": "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_195642.png",
+      "dependencies": []
+    },
+    "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_201605.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 262210,
+      "exportedPath": "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_201605.png",
+      "dependencies": []
+    },
+    "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_201811.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 140963,
+      "exportedPath": "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_201811.png",
+      "dependencies": []
+    },
+    "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_202107.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 130580,
+      "exportedPath": "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_202107.png",
+      "dependencies": []
+    },
+    "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_203147.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 177430,
+      "exportedPath": "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_203147.png",
+      "dependencies": []
+    },
+    "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_204209.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 260874,
+      "exportedPath": "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_204209.png",
+      "dependencies": []
+    },
+    "06、架构设计/02、分布式系统/00、常见词汇.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 383,
+      "exportedPath": "06、架构设计/02、分布式系统/00、常见词汇.html",
+      "dependencies": []
+    },
+    "06、架构设计/02、分布式系统/01、限流.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 13506,
+      "exportedPath": "06、架构设计/02、分布式系统/01、限流.html",
+      "dependencies": [
+        "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_201605.png",
+        "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_201605.png",
+        "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_201811.png",
+        "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_201811.png",
+        "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_202107.png",
+        "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_202107.png",
+        "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_203147.png",
+        "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_203147.png",
+        "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_204209.png",
+        "06、架构设计/02、分布式系统/assets/01、限流/img-20240125_204209.png"
+      ]
+    },
+    "06、架构设计/03、微服务架构/SpringBoot/0.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 477,
+      "exportedPath": "06、架构设计/03、微服务架构/springboot/0.html",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、Docker/assets/01、虚拟化Dorcker/img-20240310_151555.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 218789,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/assets/01、虚拟化dorcker/img-20240310_151555.png",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、Docker/assets/03、Docker基本命令/img-20240310_155608.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 388488,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_155608.png",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、Docker/assets/03、Docker基本命令/img-20240310_160337.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 360603,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_160337.png",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、Docker/assets/03、Docker基本命令/img-20240310_161103.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 171054,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_161103.png",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、Docker/01、虚拟化Dorcker.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 11866,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/01、虚拟化dorcker.html",
+      "dependencies": [
+        "07、云原生相关/01、容器化、编排/01、docker/assets/01、虚拟化dorcker/img-20240310_151555.png",
+        "07、云原生相关/01、容器化、编排/01、docker/assets/01、虚拟化dorcker/img-20240310_151555.png"
+      ]
+    },
+    "07、云原生相关/01、容器化、编排/01、Docker/02、Docker基本概念和安装.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 10677,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/02、docker基本概念和安装.html",
+      "dependencies": [
+        "lib/media/img-20240310_154211.png",
+        "lib/media/img-20240310_154211.png"
+      ]
+    },
+    "07、云原生相关/01、容器化、编排/01、Docker/03、Docker基本命令.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 18276,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/03、docker基本命令.html",
+      "dependencies": [
+        "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_155608.png",
+        "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_155608.png",
+        "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_160337.png",
+        "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_160337.png",
+        "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_161103.png",
+        "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_161103.png"
+      ]
+    },
+    "07、云原生相关/01、容器化、编排/01、Docker/04、Web应用实例.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 3,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/04、web应用实例.html",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、Docker/05、Docker网络使用和配置.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/05、docker网络使用和配置.html",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、Docker/06、Docker数据卷和数据管理.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/06、docker数据卷和数据管理.html",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、Docker/07、Dockerfile详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/07、dockerfile详解.html",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、Docker/08、DockerCompose详解.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/08、dockercompose详解.html",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、Docker/09、Docker底层实现.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/09、docker底层实现.html",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、Docker/10、Docker安全相关.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/10、docker安全相关.html",
+      "dependencies": []
+    },
+    "07、云原生相关/assets/02、Docker基本概念和安装/img-20240310_154211.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 87559,
+      "exportedPath": "07、云原生相关/assets/02、docker基本概念和安装/img-20240310_154211.png",
+      "dependencies": []
+    },
+    "09、职场求职/01、简历面试/01、个人简历和面试.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 13965,
+      "exportedPath": "09、职场求职/01、简历面试/01、个人简历和面试.html",
+      "dependencies": []
+    },
+    "09、职场求职/01、简历面试/03、面试通用问题汇总.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 3,
+      "exportedPath": "09、职场求职/01、简历面试/03、面试通用问题汇总.html",
+      "dependencies": []
+    },
+    "09、职场求职/02、企业和员工/02、公司企业和员工.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "09、职场求职/02、企业和员工/02、公司企业和员工.html",
+      "dependencies": []
+    },
+    "09、职场求职/03、项目和业务/assets/04、一些项目术语/img-20240302_152236.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 136905,
+      "exportedPath": "09、职场求职/03、项目和业务/assets/04、一些项目术语/img-20240302_152236.png",
+      "dependencies": []
+    },
+    "09、职场求职/03、项目和业务/assets/04、一些项目术语/img-20240302_152648.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 247292,
+      "exportedPath": "09、职场求职/03、项目和业务/assets/04、一些项目术语/img-20240302_152648.png",
+      "dependencies": []
+    },
+    "09、职场求职/03、项目和业务/04、一些项目术语.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 3997,
+      "exportedPath": "09、职场求职/03、项目和业务/04、一些项目术语.html",
+      "dependencies": [
+        "09、职场求职/03、项目和业务/assets/04、一些项目术语/img-20240302_152236.png",
+        "09、职场求职/03、项目和业务/assets/04、一些项目术语/img-20240302_152236.png",
+        "09、职场求职/03、项目和业务/assets/04、一些项目术语/img-20240302_152648.png",
+        "09、职场求职/03、项目和业务/assets/04、一些项目术语/img-20240302_152648.png"
+      ]
+    },
+    "11、常用工具/git/images/git/image-安装完成.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 16144,
+      "exportedPath": "11、常用工具/git/images/git/image-安装完成.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-查看克隆仓库的日志.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 30976,
+      "exportedPath": "11、常用工具/git/images/git/image-查看克隆仓库的日志.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-查看提交结果历史.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 25658,
+      "exportedPath": "11、常用工具/git/images/git/image-查看提交结果历史.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-查看push结果.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 29092,
+      "exportedPath": "11、常用工具/git/images/git/image-查看push结果.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-冲突提示.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 13253,
+      "exportedPath": "11、常用工具/git/images/git/image-冲突提示.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-初始化本地仓库.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 54066,
+      "exportedPath": "11、常用工具/git/images/git/image-初始化本地仓库.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-处理冲突.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 135521,
+      "exportedPath": "11、常用工具/git/images/git/image-处理冲突.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-创建分支.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 16943,
+      "exportedPath": "11、常用工具/git/images/git/image-创建分支.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-方便的创建.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 85505,
+      "exportedPath": "11、常用工具/git/images/git/image-方便的创建.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-分支规范.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 142085,
+      "exportedPath": "11、常用工具/git/images/git/image-分支规范.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-合并或更新远端.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 48858,
+      "exportedPath": "11、常用工具/git/images/git/image-合并或更新远端.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-回退上一版本.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 34482,
+      "exportedPath": "11、常用工具/git/images/git/image-回退上一版本.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-进行抓取.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 46842,
+      "exportedPath": "11、常用工具/git/images/git/image-进行抓取.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-设置远端仓库.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 60384,
+      "exportedPath": "11、常用工具/git/images/git/image-设置远端仓库.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-输入远端地址.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 15444,
+      "exportedPath": "11、常用工具/git/images/git/image-输入远端地址.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-提交本地仓库.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 174715,
+      "exportedPath": "11、常用工具/git/images/git/image-提交本地仓库.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-提交仓库查看日志.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 35757,
+      "exportedPath": "11、常用工具/git/images/git/image-提交仓库查看日志.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-推送到远程仓库.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 71570,
+      "exportedPath": "11、常用工具/git/images/git/image-推送到远程仓库.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-文件修改.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 24851,
+      "exportedPath": "11、常用工具/git/images/git/image-文件修改.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-新建仓库.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 60400,
+      "exportedPath": "11、常用工具/git/images/git/image-新建仓库.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-新建file04提交.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 120874,
+      "exportedPath": "11、常用工具/git/images/git/image-新建file04提交.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-新克隆的结果.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 16305,
+      "exportedPath": "11、常用工具/git/images/git/image-新克隆的结果.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-选择项目.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 25806,
+      "exportedPath": "11、常用工具/git/images/git/image-选择项目.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-再次回退.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 23458,
+      "exportedPath": "11、常用工具/git/images/git/image-再次回退.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-bashrc.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 9015,
+      "exportedPath": "11、常用工具/git/images/git/image-bashrc.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-bashrc-content.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 14064,
+      "exportedPath": "11、常用工具/git/images/git/image-bashrc-content.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-branch.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 116874,
+      "exportedPath": "11、常用工具/git/images/git/image-branch.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-checkout-dev.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 29154,
+      "exportedPath": "11、常用工具/git/images/git/image-checkout-dev.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-deal-merge.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 53354,
+      "exportedPath": "11、常用工具/git/images/git/image-deal-merge.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-delete-dev01.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 30015,
+      "exportedPath": "11、常用工具/git/images/git/image-delete-dev01.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-delete-dev02.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 31120,
+      "exportedPath": "11、常用工具/git/images/git/image-delete-dev02.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 38041,
+      "exportedPath": "11、常用工具/git/images/git/image-git.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-文件状态.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 23596,
+      "exportedPath": "11、常用工具/git/images/git/image-git-文件状态.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-add.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 33217,
+      "exportedPath": "11、常用工具/git/images/git/image-git-add.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-branch.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 65117,
+      "exportedPath": "11、常用工具/git/images/git/image-git-branch.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-branch-result.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 16773,
+      "exportedPath": "11、常用工具/git/images/git/image-git-branch-result.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-breach-vv.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 11122,
+      "exportedPath": "11、常用工具/git/images/git/image-git-breach-vv.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-checkout.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 24843,
+      "exportedPath": "11、常用工具/git/images/git/image-git-checkout.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-checkout-b.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 25655,
+      "exportedPath": "11、常用工具/git/images/git/image-git-checkout-b.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-clone.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 22733,
+      "exportedPath": "11、常用工具/git/images/git/image-git-clone.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-commit.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 22653,
+      "exportedPath": "11、常用工具/git/images/git/image-git-commit.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-init.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 28942,
+      "exportedPath": "11、常用工具/git/images/git/image-git-init.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-log.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 15259,
+      "exportedPath": "11、常用工具/git/images/git/image-git-log.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-push-origin.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 34631,
+      "exportedPath": "11、常用工具/git/images/git/image-git-push-origin.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-remote.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 6729,
+      "exportedPath": "11、常用工具/git/images/git/image-git-remote.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-remote-add-origin.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 13040,
+      "exportedPath": "11、常用工具/git/images/git/image-git-remote-add-origin.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git-status.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 46262,
+      "exportedPath": "11、常用工具/git/images/git/image-git-status.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-git流程.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 91463,
+      "exportedPath": "11、常用工具/git/images/git/image-git流程.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-master-to-remote-master.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 29668,
+      "exportedPath": "11、常用工具/git/images/git/image-master-to-remote-master.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-master-update-file01.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 44585,
+      "exportedPath": "11、常用工具/git/images/git/image-master-update-file01.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-merge-dev01.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 64735,
+      "exportedPath": "11、常用工具/git/images/git/image-merge-dev01.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-merge-dev2master.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 12652,
+      "exportedPath": "11、常用工具/git/images/git/image-merge-dev2master.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-merge-file-content.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 24192,
+      "exportedPath": "11、常用工具/git/images/git/image-merge-file-content.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-newfile03.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 19480,
+      "exportedPath": "11、常用工具/git/images/git/image-newfile03.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-remote-merge.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 32171,
+      "exportedPath": "11、常用工具/git/images/git/image-remote-merge.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-ssh地址.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 35647,
+      "exportedPath": "11、常用工具/git/images/git/image-ssh地址.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-SVN.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 33928,
+      "exportedPath": "11、常用工具/git/images/git/image-svn.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-test-git-fetch.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 57762,
+      "exportedPath": "11、常用工具/git/images/git/image-test-git-fetch.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-update-file01.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 40309,
+      "exportedPath": "11、常用工具/git/images/git/image-update-file01.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/images/git/image-work.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 39877,
+      "exportedPath": "11、常用工具/git/images/git/image-work.png",
+      "dependencies": []
+    },
+    "11、常用工具/git/git.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 22869,
+      "exportedPath": "11、常用工具/git/git.html",
+      "dependencies": []
+    },
+    "11、常用工具/maven.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 0,
+      "exportedPath": "11、常用工具/maven.html",
+      "dependencies": []
+    },
+    "README.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 12374,
+      "exportedPath": "readme.html",
+      "dependencies": []
+    },
+    "TOdo.md": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 46,
+      "exportedPath": "todo.html",
+      "dependencies": []
+    },
+    "01、通用基础/01、计算机基础/assets/04、unix-io-模型/img-20240316_211906.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 280597,
+      "exportedPath": "01、通用基础/01、计算机基础/assets/04、unix-io-模型/img-20240316_211906.png",
+      "dependencies": []
+    },
+    "01、通用基础/01、计算机基础/assets/04、unix-io-模型/img-20240316_212152.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 221728,
+      "exportedPath": "01、通用基础/01、计算机基础/assets/04、unix-io-模型/img-20240316_212152.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/6、网络协议-http-协议详解/img-20240304_215954.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 59295,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/6、网络协议-http-协议详解/img-20240304_215954.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213216.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 29014,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213216.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213416.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 12714,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213416.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213913.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 8412,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213913.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213919.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 15928,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_213919.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214021.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 15015,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214021.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214200.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 8293,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214200.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214212.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 12779,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214212.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214245.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 11632,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214245.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214312.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 52091,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214312.png",
+      "dependencies": []
+    },
+    "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214326.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 41303,
+      "exportedPath": "01、通用基础/02、计算机网络/assets/8、输入url-到页面加载过程详解/img-20240304_214326.png",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205149.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 4060,
+      "exportedPath": "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205149.png",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205218.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 5023,
+      "exportedPath": "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205218.png",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205227.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 2967,
+      "exportedPath": "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205227.png",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205418.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 12541,
+      "exportedPath": "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205418.png",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205443.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 8372,
+      "exportedPath": "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205443.png",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205653.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 11928,
+      "exportedPath": "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205653.png",
+      "dependencies": []
+    },
+    "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205752.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 16610,
+      "exportedPath": "01、通用基础/05、软件设计基础/assets/02、uml-统一建模软件/img-20240311_205752.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240111_204742.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 81507,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240111_204742.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_202244.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 119896,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_202244.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_202326.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 115435,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_202326.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_203627.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 61219,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_203627.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_203318.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 17010,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_203318.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_211007.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 121421,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_211007.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_102210.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 29021,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_102210.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_210121.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 46743,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_210121.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_210518.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 9149,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_210518.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240111_213502.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 19642,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240111_213502.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214047.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 41944,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214047.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214101.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 32037,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214101.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214319.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 53229,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240112_214319.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_093823.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 32669,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_093823.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_095314.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 78297,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_095314.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_104300.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 29035,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_104300.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240114_104359.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 19899,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240114_104359.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240114_104008.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 9773,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240114_104008.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_141917.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 46300,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_141917.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_213810.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 432975,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_213810.png",
+      "dependencies": []
+    },
+    "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_213221.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 11608,
+      "exportedPath": "02、多编程语言/03、go语言/01、go语言基础/assets/101、go语言基础2/img-20240113_213221.png",
+      "dependencies": []
+    },
+    "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240128_114739.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 72666,
+      "exportedPath": "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240128_114739.png",
+      "dependencies": []
+    },
+    "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240128_103832.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 90310,
+      "exportedPath": "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240128_103832.png",
+      "dependencies": []
+    },
+    "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_103306.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 61851,
+      "exportedPath": "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_103306.png",
+      "dependencies": []
+    },
+    "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_110053.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 56472,
+      "exportedPath": "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_110053.png",
+      "dependencies": []
+    },
+    "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_110820.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 69287,
+      "exportedPath": "03、java核心/05、java-版本和特性/java8/assets/01、函数编程/img-20240127_110820.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200522.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 4399,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200522.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200545.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 14373,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200545.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200754.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 13282,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_200754.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_201125.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 35077,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_201125.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_201954.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 21628,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_201954.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_202631.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 141713,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_202631.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203055.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 40097,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203055.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203237.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 71766,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203237.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203447.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 33559,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_203447.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204825.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 94729,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204825.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204845.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 201283,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204845.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204954.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 66503,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_204954.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_205019.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 67652,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_205019.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_205437.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 52966,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_205437.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_210433.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 31221,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_210433.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_210936.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 119970,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_210936.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211000.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 95264,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211000.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211130.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 15961,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211130.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211158.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 22598,
+      "exportedPath": "04、数据库/02、redis/assets/02、redis-的安装说明/img-20240314_211158.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/04、redis-的-java-客户端/img-20240317_093601.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 89501,
+      "exportedPath": "04、数据库/02、redis/assets/04、redis-的-java-客户端/img-20240317_093601.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/04、redis-的-java-客户端/img-20240317_093735.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 74881,
+      "exportedPath": "04、数据库/02、redis/assets/04、redis-的-java-客户端/img-20240317_093735.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_210729.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 25251,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_210729.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_101519.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 188027,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_101519.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_212409.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 584613,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_212409.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_214448.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 858490,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_214448.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_091542.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 1117473,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_091542.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094029.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 723742,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094029.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094131.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 27256,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094131.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_102906.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 320532,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_102906.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094358.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 1213179,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094358.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094541.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 36748,
+      "exportedPath": "04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240316_094541.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112111.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 72391,
+      "exportedPath": "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112111.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112913.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 203442,
+      "exportedPath": "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112913.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113651.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 103306,
+      "exportedPath": "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113651.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113846.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 51671,
+      "exportedPath": "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113846.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113907.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 59038,
+      "exportedPath": "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_113907.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112513.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 85251,
+      "exportedPath": "04、数据库/02、redis/assets/06、高可用：主从复制详解/img-20240316_112513.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_115425.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 204408,
+      "exportedPath": "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_115425.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_153246.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 533021,
+      "exportedPath": "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_153246.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_153130.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 43006,
+      "exportedPath": "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_153130.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_154049.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 49466,
+      "exportedPath": "04、数据库/02、redis/assets/07、高可用：哨兵机制（redis-sentinel）详解/img-20240316_154049.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_154508.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 73122,
+      "exportedPath": "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_154508.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194517.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 77562,
+      "exportedPath": "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194517.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194503.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 49466,
+      "exportedPath": "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194503.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194631.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 84028,
+      "exportedPath": "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_194631.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_195202.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 21578,
+      "exportedPath": "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_195202.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_165837.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 43782,
+      "exportedPath": "04、数据库/02、redis/assets/08、高可拓展：分片技术（redis-cluster）详解/img-20240316_165837.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_214619.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 140769,
+      "exportedPath": "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_214619.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_214840.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 200735,
+      "exportedPath": "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_214840.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_215143.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 20178,
+      "exportedPath": "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_215143.png",
+      "dependencies": []
+    },
+    "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_215130.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 35327,
+      "exportedPath": "04、数据库/02、redis/assets/09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染/img-20240316_215130.png",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、docker/assets/01、虚拟化dorcker/img-20240310_151555.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 218789,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/assets/01、虚拟化dorcker/img-20240310_151555.png",
+      "dependencies": []
+    },
+    "lib/media/img-20240310_154211.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 87559,
+      "exportedPath": "lib/media/img-20240310_154211.png",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_155608.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 388488,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_155608.png",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_160337.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 360603,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_160337.png",
+      "dependencies": []
+    },
+    "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_161103.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 171054,
+      "exportedPath": "07、云原生相关/01、容器化、编排/01、docker/assets/03、docker基本命令/img-20240310_161103.png",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.wasm": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 23377,
+      "exportedPath": "lib/scripts/graph-wasm.wasm",
+      "dependencies": []
+    },
+    "lib/fonts/94f2f163d4b698242fef.otf": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 66800,
+      "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
+      "dependencies": []
+    },
+    "lib/fonts/72505e6a122c6acd5471.woff2": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 104232,
+      "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/2d5198822ab091ce4305.woff2": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 104332,
+      "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 98868,
+      "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cb10ffd7684cd9836a05.woff2": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 106876,
+      "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/b5f0f109bc88052d4000.woff2": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 105804,
+      "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cbe0ae49c52c920fd563.woff2": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 106108,
+      "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/535a6cf662596b3bd6a6.woff2": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 111708,
+      "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/70cc7ff27245e82ad414.ttf": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 192740,
+      "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/454577c22304619db035.ttf": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 161376,
+      "exportedPath": "lib/fonts/454577c22304619db035.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/52ac8f3034507f1d9e53.ttf": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 191568,
+      "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/05b618077343fbbd92b7.ttf": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 155288,
+      "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 7876,
+      "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+      "dependencies": []
+    },
+    "lib/media/874d8b8e340f75575caa.svg": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 317,
+      "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_zero.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 1368,
+      "exportedPath": "lib/fonts/mathjax_zero.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-regular.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 34160,
+      "exportedPath": "lib/fonts/mathjax_main-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-bold.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 34464,
+      "exportedPath": "lib/fonts/mathjax_main-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_math-italic.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 19360,
+      "exportedPath": "lib/fonts/mathjax_math-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-italic.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 20832,
+      "exportedPath": "lib/fonts/mathjax_main-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_math-bolditalic.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 19776,
+      "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size1-regular.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 5792,
+      "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size2-regular.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 5464,
+      "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size3-regular.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 3244,
+      "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size4-regular.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 5148,
+      "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_ams-regular.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 40808,
+      "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_calligraphic-regular.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 9600,
+      "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_calligraphic-bold.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 9908,
+      "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_fraktur-regular.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 21480,
+      "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_fraktur-bold.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 22340,
+      "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-regular.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 12660,
+      "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-bold.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 15944,
+      "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-italic.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 14628,
+      "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_script-regular.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 11852,
+      "exportedPath": "lib/fonts/mathjax_script-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_typewriter-regular.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 17604,
+      "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_vector-regular.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 1136,
+      "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_vector-bold.woff": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 1116,
+      "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
+      "dependencies": []
+    },
+    "lib/html/file-tree.html": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 144499,
+      "exportedPath": "lib/html/file-tree.html",
+      "dependencies": []
+    },
+    "lib/scripts/webpage.js": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 47290,
+      "exportedPath": "lib/scripts/webpage.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-view.js": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 15519,
+      "exportedPath": "lib/scripts/graph-view.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.js": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 14021,
+      "exportedPath": "lib/scripts/graph-wasm.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-render-worker.js": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 5179,
+      "exportedPath": "lib/scripts/graph-render-worker.js",
+      "dependencies": []
+    },
+    "lib/scripts/tinycolor.js": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 29832,
+      "exportedPath": "lib/scripts/tinycolor.js",
+      "dependencies": []
+    },
+    "lib/scripts/pixi.js": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 449509,
+      "exportedPath": "lib/scripts/pixi.js",
+      "dependencies": []
+    },
+    "lib/scripts/minisearch.js": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 29422,
+      "exportedPath": "lib/scripts/minisearch.js",
+      "dependencies": []
+    },
+    "lib/media/favicon.png": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 1105,
+      "exportedPath": "lib/media/favicon.png",
+      "dependencies": []
+    },
+    "lib/scripts/graph-data.js": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 5270,
+      "exportedPath": "lib/scripts/graph-data.js",
+      "dependencies": []
+    },
+    "lib/styles/obsidian.css": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 157356,
+      "exportedPath": "lib/styles/obsidian.css",
+      "dependencies": []
+    },
+    "lib/styles/theme.css": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 767189,
+      "exportedPath": "lib/styles/theme.css",
+      "dependencies": []
+    },
+    "lib/styles/global-variable-styles.css": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 412,
+      "exportedPath": "lib/styles/global-variable-styles.css",
+      "dependencies": []
+    },
+    "lib/styles/supported-plugins.css": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 79,
+      "exportedPath": "lib/styles/supported-plugins.css",
+      "dependencies": []
+    },
+    "lib/styles/main-styles.css": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 23130,
+      "exportedPath": "lib/styles/main-styles.css",
+      "dependencies": []
+    },
+    "lib/styles/snippets.css": {
+      "modifiedTime": 1710641143113,
+      "sourceSize": 18511,
+      "exportedPath": "lib/styles/snippets.css",
+      "dependencies": []
+    }
+  }
+}

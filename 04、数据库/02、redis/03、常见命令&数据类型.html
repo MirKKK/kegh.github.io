@@ -1,0 +1,1245 @@
+<!DOCTYPE html> <html><head>
+		<title>03、常见命令&amp;数据类型</title>
+		<base href="..\../">
+		<meta id="root-path" root-path="..\../">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+		<meta charset="UTF-8">
+		<meta name="description" content="Java知识体系构建 - 03、常见命令&amp;数据类型">
+		<meta property="og:title" content="03、常见命令&amp;数据类型">
+		<meta property="og:description" content="Java知识体系构建 - 03、常见命令&amp;数据类型">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="04、数据库/02、redis/03、常见命令&amp;数据类型.html">
+		<meta property="og:image" content="undefined">
+		<meta property="og:site_name" content="Java知识体系构建">
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="lib/rss.xml"><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.png"><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em;font-weight:600}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(let t=0;t<e.length;t++){let o=e[t],l=o.getAttribute("src");try{const e=await fetch(l);if(!e.ok){console.log("Could not include file: "+l),o?.remove();continue}let t=await e.text(),n=document.createRange().createContextualFragment(t),i=Array.from(n.children);for(let e of i)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);o.before(n),o.remove(),console.log("Included file: "+l)}catch(e){o?.remove(),console.log("Could not include file: "+l,e);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="stylesheet" href="lib/styles/theme.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/supported-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/supported-plugins.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript><link rel="preload" href="lib/styles/snippets.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/snippets.css"></noscript></head><body class="publish css-settings-manager theme-dark show-inline-title background-settings-workplace-theme-dark-in-the-sky notebook-liked-markdown-page-grid-notebook-1 layout-style-options-default bt-default-unordered-list default-ol-list-marker list-no-border bt-connected-indent-hover bt-colorful-connected-indent-hover folder-icons remove-arrow bt-toggle-colorful-folder folder-colorful-six table-width-100 tag-default admonition-bg-color-same style-options-for-admonition-plugin style-options-for-buttons-plugin dataview-list-style-pacman quiet-outline-optimize code-theme-bt-default mute-code-indent-line code-line-number whole-code-wrap"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles">mjx-container[jax=CHTML]{line-height:0}mjx-container [space="1"]{margin-left:.111em}mjx-container [space="2"]{margin-left:.167em}mjx-container [space="3"]{margin-left:.222em}mjx-container [space="4"]{margin-left:.278em}mjx-container [space="5"]{margin-left:.333em}mjx-container [rspace="1"]{margin-right:.111em}mjx-container [rspace="2"]{margin-right:.167em}mjx-container [rspace="3"]{margin-right:.222em}mjx-container [rspace="4"]{margin-right:.278em}mjx-container [rspace="5"]{margin-right:.333em}mjx-container [size="s"]{font-size:70.7%}mjx-container [size=ss]{font-size:50%}mjx-container [size=Tn]{font-size:60%}mjx-container [size=sm]{font-size:85%}mjx-container [size=lg]{font-size:120%}mjx-container [size=Lg]{font-size:144%}mjx-container [size=LG]{font-size:173%}mjx-container [size=hg]{font-size:207%}mjx-container [size=HG]{font-size:249%}mjx-container [width=full]{width:100%}mjx-box{display:inline-block}mjx-block{display:block}mjx-itable{display:inline-table}mjx-row{display:table-row}mjx-row>*{display:table-cell}mjx-mtext{display:inline-block;text-align:left}mjx-mstyle{display:inline-block}mjx-merror{display:inline-block;color:red;background-color:#ff0}mjx-mphantom{visibility:hidden}mjx-assistive-mml{top:0;left:0;clip:rect(1px,1px,1px,1px);user-select:none;position:absolute!important;padding:1px 0 0!important;border:0!important;display:block!important;width:auto!important;overflow:hidden!important}mjx-assistive-mml[display=block]{width:100%!important}mjx-math{display:inline-block;text-align:left;line-height:0;text-indent:0;font-style:normal;font-weight:400;font-size:100%;letter-spacing:normal;border-collapse:collapse;overflow-wrap:normal;word-spacing:normal;white-space:nowrap;direction:ltr;padding:1px 0}mjx-container[jax=CHTML][display=true]{display:block;text-align:center;margin:1em 0}mjx-container[jax=CHTML][display=true][width=full]{display:flex}mjx-container[jax=CHTML][display=true] mjx-math{padding:0}mjx-container[jax=CHTML][justify=left]{text-align:left}mjx-container[jax=CHTML][justify=right]{text-align:right}mjx-mi{display:inline-block;text-align:left}mjx-c{display:inline-block}mjx-utext{display:inline-block;padding:.75em 0 .2em}mjx-mo{display:inline-block;text-align:left}mjx-stretchy-h{display:inline-table;width:100%}mjx-stretchy-h>*{display:table-cell;width:0}mjx-stretchy-h>*>mjx-c{display:inline-block;transform:scaleX(1)}mjx-stretchy-h>*>mjx-c::before{display:inline-block;width:initial}mjx-stretchy-h>mjx-ext{overflow:clip visible;width:100%}mjx-stretchy-h>mjx-ext>mjx-c::before{transform:scaleX(500)}mjx-stretchy-h>mjx-ext>mjx-c{width:0}mjx-stretchy-h>mjx-beg>mjx-c{margin-right:-.1em}mjx-stretchy-h>mjx-end>mjx-c{margin-left:-.1em}mjx-stretchy-v{display:inline-block}mjx-stretchy-v>*{display:block}mjx-stretchy-v>mjx-beg{height:0}mjx-stretchy-v>mjx-end>mjx-c{display:block}mjx-stretchy-v>*>mjx-c{transform:scaleY(1);transform-origin:left center;overflow:hidden}mjx-stretchy-v>mjx-ext{display:block;height:100%;box-sizing:border-box;border:0 solid transparent;overflow:visible clip}mjx-stretchy-v>mjx-ext>mjx-c::before{width:initial;box-sizing:border-box}mjx-stretchy-v>mjx-ext>mjx-c{transform:scaleY(500) translateY(.075em);overflow:visible}mjx-mark{display:inline-block;height:0}mjx-mn{display:inline-block;text-align:left}mjx-msub{display:inline-block;text-align:left}mjx-texatom{display:inline-block;text-align:left}mjx-mfrac{display:inline-block;text-align:left}mjx-frac{display:inline-block;vertical-align:.17em;padding:0 .22em}mjx-frac[type="d"]{vertical-align:.04em}mjx-frac[delims]{padding:0 .1em}mjx-frac[atop]{padding:0 .12em}mjx-frac[atop][delims]{padding:0}mjx-dtable{display:inline-table;width:100%}mjx-dtable>*{font-size:2000%}mjx-dbox{display:block;font-size:5%}mjx-num{display:block;text-align:center}mjx-den{display:block;text-align:center}mjx-mfrac[bevelled]>mjx-num{display:inline-block}mjx-mfrac[bevelled]>mjx-den{display:inline-block}mjx-den[align=right],mjx-num[align=right]{text-align:right}mjx-den[align=left],mjx-num[align=left]{text-align:left}mjx-nstrut{display:inline-block;height:.054em;width:0;vertical-align:-.054em}mjx-nstrut[type="d"]{height:.217em;vertical-align:-.217em}mjx-dstrut{display:inline-block;height:.505em;width:0}mjx-dstrut[type="d"]{height:.726em}mjx-line{display:block;box-sizing:border-box;min-height:1px;height:.06em;border-top:.06em solid;margin:.06em -.1em;overflow:hidden}mjx-line[type="d"]{margin:.18em -.1em}mjx-mrow{display:inline-block;text-align:left}mjx-msup{display:inline-block;text-align:left}mjx-mtable{display:inline-block;text-align:center;vertical-align:.25em;position:relative;box-sizing:border-box;border-spacing:0px;border-collapse:collapse}mjx-mstyle[size="s"] mjx-mtable{vertical-align:.354em}mjx-labels{position:absolute;left:0;top:0}mjx-table{display:inline-block;vertical-align:-.5ex;box-sizing:border-box}mjx-table>mjx-itable{vertical-align:middle;text-align:left;box-sizing:border-box}mjx-labels>mjx-itable{position:absolute;top:0}mjx-mtable[justify=left]{text-align:left}mjx-mtable[justify=right]{text-align:right}mjx-mtable[justify=left][side=left]{padding-right:0!important}mjx-mtable[justify=left][side=right]{padding-left:0!important}mjx-mtable[justify=right][side=left]{padding-right:0!important}mjx-mtable[justify=right][side=right]{padding-left:0!important}mjx-mtable[align]{vertical-align:baseline}mjx-mtable[align=top]>mjx-table{vertical-align:top}mjx-mtable[align=bottom]>mjx-table{vertical-align:bottom}mjx-mtable[side=right] mjx-labels{min-width:100%}mjx-mtr{display:table-row;text-align:left}mjx-mtr[rowalign=top]>mjx-mtd{vertical-align:top}mjx-mtr[rowalign=center]>mjx-mtd{vertical-align:middle}mjx-mtr[rowalign=bottom]>mjx-mtd{vertical-align:bottom}mjx-mtr[rowalign=baseline]>mjx-mtd{vertical-align:baseline}mjx-mtr[rowalign=axis]>mjx-mtd{vertical-align:.25em}mjx-mtd{display:table-cell;text-align:center;padding:.215em .4em}mjx-mtd:first-child{padding-left:0}mjx-mtd:last-child{padding-right:0}mjx-mtable>*>mjx-itable>:first-child>mjx-mtd{padding-top:0}mjx-mtable>*>mjx-itable>:last-child>mjx-mtd{padding-bottom:0}mjx-tstrut{display:inline-block;height:1em;vertical-align:-.25em}mjx-labels[align=left]>mjx-mtr>mjx-mtd{text-align:left}mjx-labels[align=right]>mjx-mtr>mjx-mtd{text-align:right}mjx-mtd[extra]{padding:0}mjx-mtd[rowalign=top]{vertical-align:top}mjx-mtd[rowalign=center]{vertical-align:middle}mjx-mtd[rowalign=bottom]{vertical-align:bottom}mjx-mtd[rowalign=baseline]{vertical-align:baseline}mjx-mtd[rowalign=axis]{vertical-align:.25em}mjx-msqrt{display:inline-block;text-align:left}mjx-root{display:inline-block;white-space:nowrap}mjx-surd{display:inline-block;vertical-align:top}mjx-sqrt{display:inline-block;padding-top:.07em}mjx-sqrt>mjx-box{border-top:.07em solid}mjx-sqrt.mjx-tall>mjx-box{padding-left:.3em;margin-left:-.3em}mjx-munderover{display:inline-block;text-align:left}mjx-munderover:not([limits=false]){padding-top:.1em}mjx-munderover:not([limits=false])>*{display:block}mjx-msubsup{display:inline-block;text-align:left}mjx-script{display:inline-block;padding-right:.05em;padding-left:.033em}mjx-script>mjx-spacer{display:block}mjx-mspace{display:inline-block;text-align:left}mjx-c::before{display:block;width:0}.MJX-TEX{font-family:MJXZERO,MJXTEX}.TEX-B{font-family:MJXZERO,MJXTEX-B}.TEX-I{font-family:MJXZERO,MJXTEX-I}.TEX-MI{font-family:MJXZERO,MJXTEX-MI}.TEX-BI{font-family:MJXZERO,MJXTEX-BI}.TEX-S1{font-family:MJXZERO,MJXTEX-S1}.TEX-S2{font-family:MJXZERO,MJXTEX-S2}.TEX-S3{font-family:MJXZERO,MJXTEX-S3}.TEX-S4{font-family:MJXZERO,MJXTEX-S4}.TEX-A{font-family:MJXZERO,MJXTEX-A}.TEX-C{font-family:MJXZERO,MJXTEX-C}.TEX-CB{font-family:MJXZERO,MJXTEX-CB}.TEX-FR{font-family:MJXZERO,MJXTEX-FR}.TEX-FRB{font-family:MJXZERO,MJXTEX-FRB}.TEX-SS{font-family:MJXZERO,MJXTEX-SS}.TEX-SSB{font-family:MJXZERO,MJXTEX-SSB}.TEX-SSI{font-family:MJXZERO,MJXTEX-SSI}.TEX-SC{font-family:MJXZERO,MJXTEX-SC}.TEX-T{font-family:MJXZERO,MJXTEX-T}.TEX-V{font-family:MJXZERO,MJXTEX-V}.TEX-VB{font-family:MJXZERO,MJXTEX-VB}mjx-stretchy-h mjx-c,mjx-stretchy-v mjx-c{font-family:MJXZERO,MJXTEX-S1,MJXTEX-S4,MJXTEX,MJXTEX-A!important}@font-face{font-family:MJXZERO;src:url("lib/fonts/mathjax_zero.woff") format("woff")}@font-face{font-family:MJXTEX;src:url("lib/fonts/mathjax_main-regular.woff") format("woff")}@font-face{font-family:MJXTEX-B;src:url("lib/fonts/mathjax_main-bold.woff") format("woff")}@font-face{font-family:MJXTEX-I;src:url("lib/fonts/mathjax_math-italic.woff") format("woff")}@font-face{font-family:MJXTEX-MI;src:url("lib/fonts/mathjax_main-italic.woff") format("woff")}@font-face{font-family:MJXTEX-BI;src:url("lib/fonts/mathjax_math-bolditalic.woff") format("woff")}@font-face{font-family:MJXTEX-S1;src:url("lib/fonts/mathjax_size1-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S2;src:url("lib/fonts/mathjax_size2-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S3;src:url("lib/fonts/mathjax_size3-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S4;src:url("lib/fonts/mathjax_size4-regular.woff") format("woff")}@font-face{font-family:MJXTEX-A;src:url("lib/fonts/mathjax_ams-regular.woff") format("woff")}@font-face{font-family:MJXTEX-C;src:url("lib/fonts/mathjax_calligraphic-regular.woff") format("woff")}@font-face{font-family:MJXTEX-CB;src:url("lib/fonts/mathjax_calligraphic-bold.woff") format("woff")}@font-face{font-family:MJXTEX-FR;src:url("lib/fonts/mathjax_fraktur-regular.woff") format("woff")}@font-face{font-family:MJXTEX-FRB;src:url("lib/fonts/mathjax_fraktur-bold.woff") format("woff")}@font-face{font-family:MJXTEX-SS;src:url("lib/fonts/mathjax_sansserif-regular.woff") format("woff")}@font-face{font-family:MJXTEX-SSB;src:url("lib/fonts/mathjax_sansserif-bold.woff") format("woff")}@font-face{font-family:MJXTEX-SSI;src:url("lib/fonts/mathjax_sansserif-italic.woff") format("woff")}@font-face{font-family:MJXTEX-SC;src:url("lib/fonts/mathjax_script-regular.woff") format("woff")}@font-face{font-family:MJXTEX-T;src:url("lib/fonts/mathjax_typewriter-regular.woff") format("woff")}@font-face{font-family:MJXTEX-V;src:url("lib/fonts/mathjax_vector-regular.woff") format("woff")}@font-face{font-family:MJXTEX-VB;src:url("lib/fonts/mathjax_vector-bold.woff") format("woff")}mjx-stretchy-v.mjx-c7B mjx-beg mjx-c::before{content:"⎧";padding:.899em .889em .01em 0}mjx-stretchy-v.mjx-c7B mjx-ext mjx-c::before{content:"⎪";width:.889em}mjx-stretchy-v.mjx-c7B mjx-end mjx-c::before{content:"⎩";padding:.01em .889em .899em 0}mjx-stretchy-v.mjx-c7B mjx-mid mjx-c::before{content:"⎨";padding:1.16em .889em .66em 0}mjx-stretchy-v.mjx-c7B>mjx-mid{margin-top:-.91em;margin-bottom:-.91em}mjx-stretchy-v.mjx-c7B>mjx-end{margin-top:-.909em}mjx-stretchy-v.mjx-c7B>mjx-ext{height:50%;border-top-width:.879em;border-bottom-width:.879em}mjx-c.mjx-c1D434.TEX-I::before{padding:.716em .75em 0 0;content:"A"}mjx-c.mjx-c1D461.TEX-I::before{padding:.626em .361em .011em 0;content:"t"}mjx-c.mjx-c1D44E.TEX-I::before{padding:.441em .529em .01em 0;content:"a"}mjx-c.mjx-c1D45F.TEX-I::before{padding:.442em .451em .011em 0;content:"r"}mjx-c.mjx-c1D454.TEX-I::before{padding:.442em .477em .205em 0;content:"g"}mjx-c.mjx-c1D452.TEX-I::before{padding:.442em .466em .011em 0;content:"e"}mjx-c.mjx-c2212::before{padding:.583em .778em .082em 0;content:"−"}mjx-c.mjx-c31::before{padding:.666em .5em 0 0;content:"1"}mjx-c.mjx-c1D45B.TEX-I::before{padding:.442em .6em .011em 0;content:"n"}mjx-c.mjx-c30::before{padding:.666em .5em .022em 0;content:"0"}mjx-c.mjx-c2264::before{padding:.636em .778em .138em 0;content:"≤"}mjx-c.mjx-c32::before{padding:.666em .5em 0 0;content:"2"}mjx-c.mjx-c22EF::before{padding:.31em 1.172em 0 0;content:"⋯"}mjx-c.mjx-c1D456.TEX-I::before{padding:.661em .345em .011em 0;content:"i"}mjx-c.mjx-c3D::before{padding:.583em .778em .082em 0;content:"="}mjx-c.mjx-c1D457.TEX-I::before{padding:.661em .412em .204em 0;content:"j"}mjx-c.mjx-c3E::before{padding:.54em .778em .04em 0;content:">"}mjx-c.mjx-c1D45A.TEX-I::before{padding:.442em .878em .011em 0;content:"m"}mjx-c.mjx-c1D453.TEX-I::before{padding:.705em .55em .205em 0;content:"f"}mjx-c.mjx-c1D459.TEX-I::before{padding:.694em .298em .011em 0;content:"l"}mjx-c.mjx-c1D45C.TEX-I::before{padding:.441em .485em .011em 0;content:"o"}mjx-c.mjx-c28::before{padding:.75em .389em .25em 0;content:"("}mjx-c.mjx-c2B::before{padding:.583em .778em .082em 0;content:"+"}mjx-c.mjx-c29::before{padding:.75em .389em .25em 0;content:")"}mjx-c.mjx-c3C::before{padding:.54em .778em .04em 0;content:"<"}mjx-c.mjx-c2C::before{padding:.121em .278em .194em 0;content:","}mjx-c.mjx-c5B::before{padding:.75em .278em .25em 0;content:"["}mjx-c.mjx-c2E::before{padding:.12em .278em 0 0;content:"."}mjx-c.mjx-c210E.TEX-I::before{padding:.694em .576em .011em 0;content:"h"}mjx-c.mjx-c5D::before{padding:.75em .278em .25em 0;content:"]"}mjx-c.mjx-c34::before{padding:.677em .5em 0 0;content:"4"}mjx-c.mjx-c2217::before{padding:.465em .5em 0 0;content:"∗"}mjx-c.mjx-c35::before{padding:.666em .5em .022em 0;content:"5"}mjx-c.mjx-c1D447.TEX-I::before{padding:.677em .704em 0 0;content:"T"}mjx-c.mjx-c33::before{padding:.665em .5em .022em 0;content:"3"}mjx-c.mjx-c6C::before{padding:.694em .278em 0 0;content:"l"}mjx-c.mjx-c6F::before{padding:.448em .5em .01em 0;content:"o"}mjx-c.mjx-c67::before{padding:.453em .5em .206em 0;content:"g"}mjx-c.mjx-c2061::before{padding:0;content:""}mjx-c.mjx-c39::before{padding:.666em .5em .022em 0;content:"9"}mjx-c.mjx-c1D442.TEX-I::before{padding:.704em .763em .022em 0;content:"O"}mjx-c.mjx-c1D450.TEX-I::before{padding:.442em .433em .011em 0;content:"c"}mjx-c.mjx-c21::before{padding:.716em .278em 0 0;content:"!"}mjx-c.mjx-c3A9::before{padding:.704em .722em 0 0;content:"Ω"}mjx-c.mjx-c398::before{padding:.705em .778em .022em 0;content:"Θ"}mjx-c.mjx-c36::before{padding:.666em .5em .022em 0;content:"6"}mjx-c.mjx-c37::before{padding:.676em .5em .022em 0;content:"7"}mjx-c.mjx-c1D465.TEX-I::before{padding:.442em .572em .011em 0;content:"x"}mjx-c.mjx-c1D460.TEX-I::before{padding:.442em .469em .01em 0;content:"s"}mjx-c.mjx-c221E::before{padding:.442em 1em .011em 0;content:"∞"}mjx-c.mjx-c1D435.TEX-I::before{padding:.683em .759em 0 0;content:"B"}mjx-c.mjx-c1D451.TEX-I::before{padding:.694em .52em .01em 0;content:"d"}mjx-c.mjx-c1D467.TEX-I::before{padding:.442em .465em .011em 0;content:"z"}mjx-c.mjx-c1D462.TEX-I::before{padding:.442em .572em .011em 0;content:"u"}mjx-c.mjx-c1D44F.TEX-I::before{padding:.694em .429em .011em 0;content:"b"}mjx-c.mjx-c38::before{padding:.666em .5em .022em 0;content:"8"}mjx-c.mjx-c1D466.TEX-I::before{padding:.442em .49em .205em 0;content:"y"}mjx-c.mjx-c7B.TEX-S3::before{padding:1.45em .75em .949em 0;content:"{"}mjx-c.mjx-c2260::before{padding:.716em .778em .215em 0;content:"≠"}mjx-c.mjx-c22C5::before{padding:.31em .278em 0 0;content:"⋅"}mjx-c.mjx-c221A::before{padding:.8em .853em .2em 0;content:"√"}mjx-c.mjx-c3F::before{padding:.705em .472em 0 0;content:"?"}mjx-c.mjx-cA0::before{padding:0 .25em 0 0;content:" "}mjx-c.mjx-c7C::before{padding:.75em .278em .249em 0;content:"|"}mjx-c.mjx-c25::before{padding:.75em .833em .056em 0;content:"%"}mjx-c.mjx-c1D45D.TEX-I::before{padding:.442em .503em .194em 0;content:"p"}mjx-c.mjx-c1D443.TEX-I::before{padding:.683em .751em 0 0;content:"P"}mjx-c.mjx-c1D463.TEX-I::before{padding:.443em .485em .011em 0;content:"v"}mjx-c.mjx-c2265::before{padding:.636em .778em .138em 0;content:"≥"}mjx-c.mjx-c1D436.TEX-I::before{padding:.705em .76em .022em 0;content:"C"}mjx-c.mjx-c2F::before{padding:.75em .5em .25em 0;content:"/"}mjx-c.mjx-c2211.TEX-S2::before{padding:.95em 1.444em .45em 0;content:"∑"}mjx-c.mjx-c2248::before{padding:.483em .778em 0 0;content:"≈"}mjx-c.mjx-c2261::before{padding:.464em .778em 0 0;content:"≡"}mjx-c.mjx-c221A.TEX-S1::before{padding:.85em 1.02em .35em 0;content:"√"}mjx-c.mjx-c24::before{padding:.75em .5em .056em 0;content:"$"}mjx-c.mjx-c1D458.TEX-I::before{padding:.694em .521em .011em 0;content:"k"}mjx-c.mjx-c2192::before{padding:.511em 1em .011em 0;content:"→"}mjx-c.mjx-c21A6::before{padding:.511em 1em .011em 0;content:"↦"}mjx-c.mjx-c223C::before{padding:.367em .778em 0 0;content:"∼"}</style><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="03、常见命令&amp;数据类型"><p>03、常见命令&amp;数据类型</p></h1><div class="heading-wrapper"><h2 data-heading="一、Redis 数据结构简介" class="heading" id="一、Redis_数据结构简介"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>一、Redis 数据结构简介</h2><div class="heading-children"><div><p>首先对 redis 来说，所有的 key（键）都是字符串。我们在谈基础数据结构时，讨论的是存储值的数据类型，主要包括常见的5种数据类型，分别是：String、List、Set、Zset、Hash。</p></div><div style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th>结构类型</th>
+<th>结构存储的值</th>
+<th>结构的读写能力</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>String字符串</strong></td>
+<td>可以是字符串、整数或浮点数</td>
+<td>对整个字符串或字符串的一部分进行操作；对整数或浮点数进行自增或自减操作；</td>
+</tr>
+<tr>
+<td><strong>List列表</strong></td>
+<td>一个链表，链表上的每个节点都包含一个字符串</td>
+<td>对链表的两端进行push和pop操作，读取单个或多个元素；根据值查找或删除元素；</td>
+</tr>
+<tr>
+<td><strong>Set集合</strong></td>
+<td>包含字符串的无序集合</td>
+<td>字符串的集合，包含基础的方法有看是否存在添加、获取、删除；还包含计算交集、并集、差集等</td>
+</tr>
+<tr>
+<td><strong>Hash散列</strong></td>
+<td>包含键值对的无序散列表</td>
+<td>包含方法有添加、获取、删除单个元素</td>
+</tr>
+<tr>
+<td><strong>Zset有序集合</strong></td>
+<td>和散列一样，用于存储键值对</td>
+<td>字符串成员与浮点数分数之间的有序映射；元素的排列顺序由分数的大小决定；包含方法有添加、获取、删除单个元素以及根据分值范围或成员来获取元素</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="heading-wrapper"><h2 data-heading="二、通用命令" class="heading" id="二、通用命令"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>二、通用命令</h2><div class="heading-children"><div><ul>
+<li data-line="0">KEYS pattern：查看复合模版的所有 keys, 不建议在生产坏境下使用</li>
+<li data-line="1">DEL key：删除一个指定的 key</li>
+<li data-line="2">EXISTS key：判断 key 是否存在</li>
+<li data-line="3">EXPIRE key seconds：给一个 key 设置过期时间单位是秒</li>
+<li data-line="4">TTL key：查看指定 key 的剩余有效时间。-1 表示当前 key 没有设置有效时间，-2 表示当前 key 不存在</li>
+<li data-line="5">PERSIST key：持久化指定 key</li>
+<li data-line="6">TYPE key：查看指定 key 的类型</li>
+<li data-line="7">MOVE key num：移动指定 key 到指定数据库</li>
+<li data-line="8">RANDOMKEY：随即返回库中的一个 key</li>
+</ul></div><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded">127.0.0.1:6379&gt; select 0
+OK
+127.0.0.1:6379&gt; set k1 v1
+OK
+127.0.0.1:6379&gt; get k1
+"v1"
+127.0.0.1:6379&gt; exists k1
+(integer) 1
+127.0.0.1:6379&gt; exists k2
+(integer) 0
+127.0.0.1:6379&gt; expire k1 10
+(integer) 1
+127.0.0.1:6379&gt; ttl k1
+(integer) 7
+127.0.0.1:6379&gt; persist k1
+(integer) 1
+127.0.0.1:6379&gt; ttl k1
+(integer) -1
+127.0.0.1:6379&gt; type k1
+string
+</code><button class="copy-code-button">复制</button></pre></div></div></div><div class="heading-wrapper"><h2 data-heading="三、5 种基本类型" class="heading" id="三、5_种基本类型"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>三、5 种基本类型</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="一）String 字符串" class="heading" id="一）String_字符串"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>一）String 字符串</h3><div class="heading-children"><div><p>String类型是二进制安全的，意思是 redis 的 string 可以包含任何数据。如数字，字符串，jpg图片或者序列化的对象。</p></div><div class="heading-wrapper"><h4 data-heading="❈　原理" class="heading" id="❈　原理"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　原理</h4><div class="heading-children"><div><p>Redis 中的 String 是动态字符串，内部结构类似 ArrayList。采用预分配冗余空间的方式减少内存的频繁分配。</p></div><div><p>内部为字符串分配的实际空间一般高于字符串长度，当字符串长度 &lt;1MB 时，扩容方式是加倍 也就是原来的两倍。当字符串长度&gt; 1 MB 时，一次扩容 1 MB，直到<strong>最大 512 MB</strong></p></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　命令使用" class="heading" id="❈　命令使用"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　命令使用</h4><div class="heading-children"><div style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>简述</th>
+<th>使用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>获取存储在给定键中的值</td>
+<td>GET key</td>
+</tr>
+<tr>
+<td>MGET</td>
+<td>获取多个存储在给定键中的值</td>
+<td>MGET key1 key2</td>
+</tr>
+<tr>
+<td>SET</td>
+<td>设置存储在给定键中的值</td>
+<td>SET key value</td>
+</tr>
+<tr>
+<td>MSET</td>
+<td>设置多个存储在给定键中的值</td>
+<td>MSET key1 value1 key2 value2</td>
+</tr>
+<tr>
+<td>SETNX</td>
+<td>如果不存在即设置值</td>
+<td>SETNX key value</td>
+</tr>
+<tr>
+<td>SETEX</td>
+<td>设置值的同时设置过期时间</td>
+<td>SETEX key seconds value</td>
+</tr>
+<tr>
+<td>DEL</td>
+<td>删除存储在给定键中的值</td>
+<td>DEL name</td>
+</tr>
+<tr>
+<td>INCR</td>
+<td>将键存储的值加1</td>
+<td>INCR key</td>
+</tr>
+<tr>
+<td>DECR</td>
+<td>将键存储的值减1</td>
+<td>DECR key</td>
+</tr>
+<tr>
+<td>INCRBY</td>
+<td>将键存储的值加上整数</td>
+<td>INCRBY key amount</td>
+</tr>
+<tr>
+<td>DECRBY</td>
+<td>将键存储的值减去整数</td>
+<td>DECRBY key amount</td>
+</tr>
+<tr>
+<td>APEEND</td>
+<td>字符串后添加内容</td>
+<td>APEEND key value</td>
+</tr>
+<tr>
+<td>STRLEN</td>
+<td>获取字符串长度</td>
+<td>STRLEN key</td>
+</tr>
+<tr>
+<td>GETRANGE</td>
+<td>获取字符串指定索引范围的内容</td>
+<td>GETRANGE key start end</td>
+</tr>
+<tr>
+<td>SETRANGE</td>
+<td>设置字符串指定偏移量开始处插入值</td>
+<td>SETRANGE key offset value</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　命令执行" class="heading" id="❈　命令执行"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　命令执行</h4><div class="heading-children"><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded">SET key value:设置key的值
+127.0.0.1:6379&gt; set id 42022220018718
+OK
+
+GET key:获取key的值
+127.0.0.1:6379&gt; get id
+"42022220018718"
+
+DEL key:删除指定key
+127.0.0.1:6379&gt; del id
+(integer) 1
+
+GETSET key value:修改key的值 并返回原来得到值
+127.0.0.1:6379&gt; getset id 420222200102058719
+"420222200102058718"
+
+setex key seconds value:给指定key值赋值的同时，设置该key的有效时间
+127.0.0.1:6379&gt; setex house 50 三室一厅
+OK
+127.0.0.1:6379&gt; ttl house
+(integer) 41
+
+setnx house value:设置key值，如果key已存在，则不存储
+127.0.0.1:6379&gt; setnx name chen-zikang
+(integer) 0
+127.0.0.1:6379&gt; setnx house 三室一厅
+(integer) 1
+
+mget key [key...]:同时获取多个key值
+127.0.0.1:6379&gt; mget name sex age
+1) "chen-zi-kang"
+2) "aman"
+3) "18"
+
+mset key value [key value...]：同时设置多个key值
+127.0.0.1:6379&gt; mset hieght 170cm weight 110
+OK
+
+msetnx key value [key value...]： 同时设置多个key值，如已经存在，则不存储 ，这是一个原子操作。
+127.0.0.1:6379&gt; msetnx hieght 170cm money 100000
+(integer) 0
+
+append key value:在该key值的后边加上value
+127.0.0.1:6379&gt; append name is-a-good-boy
+(integer) 25
+
+strlen key:返回这个key值得长度
+127.0.0.1:6379&gt; strlen name
+(integer) 25
+
+getrange key begin end: 获取该key值  索引从begin到end的字符串  包头包尾
+127.0.0.1:6379&gt; set name czk-is-handsame
+OK
+127.0.0.1:6379&gt; getrange name 0 10
+"czk-is-hand"
+
+setrange key offset value : 修改offset位以后的 value值
+127.0.0.1:6379&gt; setrange name 10 man
+(integer) 15
+127.0.0.1:6379&gt; get name
+"czk-is-hanmanme"
+</code><button class="copy-code-button">复制</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　实战场景" class="heading" id="❈　实战场景"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　实战场景</h4><div class="heading-children"><div><ul>
+<li data-line="0"><strong>缓存</strong>： 经典使用场景，把常用信息，字符串，图片或者视频等信息放到redis中，redis作为缓存层，mysql做持久化层，降低mysql的读写压力。</li>
+<li data-line="1"><strong>计数器</strong>：redis是单线程模型，一个命令执行完才会执行下一个，同时数据可以一步落地到其他的数据源。</li>
+<li data-line="2"><strong>session</strong>：常见方案spring session + redis实现session共享</li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h3 data-heading="二）List 列表" class="heading" id="二）List_列表"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>二）List 列表</h3><div class="heading-children"><div><p>redis 的列表是一个字符链表，内部结构类似 LinkedList。left，right 都可以添加。<br>
+如果键不在，则创建新链表，如果已存在则新加内容。<br>
+如果当前链表没有值，则该链表也会自动删除。<br>
+redis 的列表最多可存储 2^32-1 个元素（4294967295，每个列表可以存储 40 多亿个元素）</p></div><div class="heading-wrapper"><h4 data-heading="❈　原理" class="heading" id="❈　原理"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　原理</h4><div class="heading-children"><div><p>底层是一个快速链表（quickList）的结构，在列表元素较少时，使用内存存储压缩列表 ziplist。当元素数量较多时，改成 quickList，也就是将多个 zipList 串起来使用，以减少内存的碎片化。</p></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　命令使用" class="heading" id="❈　命令使用"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　命令使用</h4><div class="heading-children"><div style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>简述</th>
+<th>使用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RPUSH</td>
+<td>将给定值推入到列表右端</td>
+<td>RPUSH key value</td>
+</tr>
+<tr>
+<td>LPUSH</td>
+<td>将给定值推入到列表左端</td>
+<td>LPUSH key value</td>
+</tr>
+<tr>
+<td>RPOP</td>
+<td>从列表的右端弹出一个值，并返回被弹出的值</td>
+<td>RPOP key</td>
+</tr>
+<tr>
+<td>LPOP</td>
+<td>从列表的左端弹出一个值，并返回被弹出的值</td>
+<td>LPOP key</td>
+</tr>
+<tr>
+<td>LRANGE</td>
+<td>获取列表在给定范围上的所有值</td>
+<td>LRANGE key 0 -1</td>
+</tr>
+<tr>
+<td>LINDEX</td>
+<td>通过索引获取列表中的元素。你也可以使用负数下标，以 -1 表示列表的最后一个元素， -2 表示列表的倒数第二个元素，以此类推。</td>
+<td>LINDEX key index</td>
+</tr>
+<tr>
+<td>LINSERT</td>
+<td>在某一个旧元素值的前边或后边插入一个新的值</td>
+<td>LINSERT key before/after old_value new_value</td>
+</tr>
+<tr>
+<td>LLEN</td>
+<td>获取链表长度</td>
+<td>LLEN key</td>
+</tr>
+</tbody>
+</table></div><div><p>使用列表的技巧:</p></div><div><ul>
+<li data-line="0">lpush+lpop=Stack(栈)</li>
+<li data-line="1">lpush+rpop=Queue（队列）</li>
+<li data-line="2">lpush+ltrim=Capped Collection（有限集合）</li>
+<li data-line="3">lpush+brpop=Message Queue（消息队列）</li>
+</ul></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　命令执行" class="heading" id="❈　命令执行"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　命令执行</h4><div class="heading-children"><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded">lpush key value : 从头部（左边）压进（新增）一个新元素
+127.0.0.1:6379&gt; lpush list1 v1 v2 v3 v4 v5
+(integer) 5
+
+rpush key value : 从尾部（右边）压进（新增）一个新元素
+rpush list1 v6
+(integer) 6
+
+lpop key value : 从头部（左边）弹出（删除）一个元素并返回
+127.0.0.1:6379&gt; lpop list1
+"v5"
+
+rpop key value : 从尾部（右边）弹出（删除）一个元素并返回
+127.0.0.1:6379&gt; rpop list1
+"v1"
+
+lset key index value : 修改索引号为index的元素的值为value
+127.0.0.1:6379&gt; lset list1 4 v7
+OK
+
+lrem key count value : 删除count个元素值为value
+127.0.0.1:6379&gt; lrem list1 0 v0
+(integer) 1
+
+linsert key before/after old_value new_value : 在某一个旧元素值的前边或后边插入一个新的值
+127.0.0.1:6379&gt; linsert list1 before v7 v6
+(integer) 6
+
+lindex key index : 查询当前list中索引为index的值
+127.0.0.1:6379&gt; lindex list1 5
+"v6"
+
+lrange key start end : 遍历list的所有元素并显示
+127.0.0.1:6379&gt; lrange list1 0 -1
+1) "v3"
+2) "v4"
+3) "v5"
+4) "v6"
+5) "v7"
+
+ltrim key start end : 截取list从stater到end位置的值并保留
+127.0.0.1:6379&gt; ltrim list1 2 6
+OK
+
+llen key : 返回一个list的元素个数 
+127.0.0.1:6379&gt; llen list1
+(integer) 5著作权归https://pdai.tech所有。 链接：&lt;https://pdai.tech/md/db/nosql-redis/db-redis-data-types.html&gt;
+</code><button class="copy-code-button">复制</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　实战场景" class="heading" id="❈　实战场景"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　实战场景</h4><div class="heading-children"><div><ul>
+<li data-line="0"><strong>微博TimeLine</strong>: 有人发布微博，用lpush加入时间轴，展示新的列表信息。</li>
+<li data-line="1"><strong>消息队列</strong></li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h3 data-heading="三）Set 集合" class="heading" id="三）Set_集合"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>三）Set 集合</h3><div class="heading-children"><div><p>Redis 的集合是 String 类型的无序不重复的元素集，同时提供交集、并集、差集等操作，集合中最大的成员数为 2^32-1（40 多亿）。Redis 中集合是通过哈希表实现的，所以添加，删除，查找的复杂度都是 O (1)。</p></div><div class="heading-wrapper"><h4 data-heading="❈　原理" class="heading" id="❈　原理"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　原理</h4><div class="heading-children"><div><p>​ 类似 HashSet, 也是通过哈希表实现的，相当于所有的 value 都为空。通过计算 hash 的方式来快速排重，也是 set 能提供判断一个成员是否在集合内的原因</p></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　命令使用" class="heading" id="❈　命令使用"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　命令使用</h4><div class="heading-children"><div style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>简述</th>
+<th>使用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sadd</td>
+<td>向集合添加一个或多个成员</td>
+<td>SADD key value</td>
+</tr>
+<tr>
+<td>scard</td>
+<td>获取集合的成员数</td>
+<td>SCARD key</td>
+</tr>
+<tr>
+<td>smembers</td>
+<td>返回集合中的所有成员</td>
+<td>SMEMBERS key member</td>
+</tr>
+<tr>
+<td>sismember</td>
+<td>判断 member 元素是否是集合 key 的成员</td>
+<td>SISMEMBER key member</td>
+</tr>
+<tr>
+<td>srandmember</td>
+<td>随机返回 count 个成员</td>
+<td>SRANDMEMBER key count</td>
+</tr>
+<tr>
+<td>smove</td>
+<td>移动 source 中的成员 member 到 destination 中</td>
+<td>SMOVE sourse destination member</td>
+</tr>
+<tr>
+<td>sdiff</td>
+<td>返回 key 1 与 key 2 的差集</td>
+<td>SDIFF key 1 key 2 [key 3…]</td>
+</tr>
+<tr>
+<td>sinter</td>
+<td>返回 key 1 与 key 2 的交集</td>
+<td>SINTER key 1 key 2 [key 3…]</td>
+</tr>
+<tr>
+<td>sunion</td>
+<td>返回 key 1 与 key 2 的交集</td>
+<td>SUNION key 1 key 2 [key 3…]</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　命令执行" class="heading" id="❈　命令执行"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　命令执行</h4><div class="heading-children"><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded">sadd key member [member...] : 添加set集合的member
+127.0.0.1:6379&gt; sadd set1 value1 value2 value3
+(integer) 3
+
+srem key member [member...] : 删除set集合中的member
+127.0.0.1:6379&gt; srem set1 value1
+(integer) 1
+
+spop key [count] : 随机弹出count个member  
+127.0.0.1:6379&gt; spop set1 1
+1) "menber2"
+
+scard key : 获取set的成员个数 
+127.0.0.1:6379&gt; scard set2
+(integer) 2
+
+smembers key :  获取set的所有成员
+127.0.0.1:6379&gt; smembers set2
+1) "value3"
+2) "member1"
+
+sismember key member : 判断member是否是set中的成员
+127.0.0.1:6379&gt; sismember set1 member1
+(integer) 1
+
+srandmember key count : 随机返回count个成员
+127.0.0.1:6379&gt; srandmember set1 1
+(integer) 1
+
+smove sourse destination member : 移动source中的成员member到destination中
+127.0.0.1:6379&gt; smove set1 set2  member1 
+(integer) 1
+
+sdiff key1 key2 [key3...] : 返回key1与key2的差集
+127.0.0.1:6379&gt; sdiff set2 set1
+1) "value3"
+
+sinter key1 key2 [key3...] : 返回key1与key2的交集
+127.0.0.1:6379&gt; sinter set1 set2
+1) "member1"
+
+sunion key1 key2 [key3...] : 返回key1与key2的交集
+127.0.0.1:6379&gt; sunion set2 set1
+1) "value3"
+2) "value1"
+3) "menber3"
+4) "member1"
+5) "member2"
+</code><button class="copy-code-button">复制</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　实战场景" class="heading" id="❈　实战场景"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　实战场景</h4><div class="heading-children"><div><ul>
+<li data-line="0"><strong>标签</strong>（tag）,给用户添加标签，或者用户给消息添加标签，这样有同一标签或者类似标签的可以给推荐关注的事或者关注的人。</li>
+<li data-line="1"><strong>点赞，或点踩，收藏等</strong>，可以放到set中实</li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h3 data-heading="四）Hash 散列" class="heading" id="四）Hash_散列"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>四）Hash 散列</h3><div class="heading-children"><div><p>Redis hash 是一个 string 类型的 field（字段） 和 value（值） 的映射表，hash 特别适合用于存储对象。</p></div><div class="heading-wrapper"><h4 data-heading="❈　原理" class="heading" id="❈　原理"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　原理</h4><div class="heading-children"><div><p>​底层的实现结构，与 HashMap 一样，是 “数组 + 链表” 的二维结构，第一维 hash 的数据位置碰撞时，将碰撞元素用链表串接起来，不同的是，redis 字典的值只能是字符串，而且两者的 rehash 方式不同。Java 的 hashmap 是一次全部 rehash，耗时较高，redis 为了提高性能，采用渐进式 rehash 策略。具体方式为，同时保留新旧两个 hash 结构，然后逐步搬迁，最后取代。</p></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　命令使用" class="heading" id="❈　命令使用"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　命令使用</h4><div class="heading-children"><div style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>简述</th>
+<th>使用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hset</td>
+<td>添加键值对</td>
+<td>HSET hash-key sub-key1 value1</td>
+</tr>
+<tr>
+<td>hget</td>
+<td>获取指定散列键的值</td>
+<td>HGET hash-key key1</td>
+</tr>
+<tr>
+<td>hgetall</td>
+<td>获取散列中包含的所有键值对</td>
+<td>HGETALL hash-key</td>
+</tr>
+<tr>
+<td>hdel</td>
+<td>如果给定键存在于散列中，那么就移除这个键</td>
+<td>HDEL hash-key sub-key1</td>
+</tr>
+<tr>
+<td>hkeys</td>
+<td>获取散列中包含的所有键</td>
+<td>HKEYS hash-key</td>
+</tr>
+<tr>
+<td>hvals</td>
+<td>获取散列中包含的所有值</td>
+<td>HVALS hash-key</td>
+</tr>
+<tr>
+<td>hexists</td>
+<td>判断 hash 中是否存在 field 值</td>
+<td>HEXISTS key field</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　命令执行" class="heading" id="❈　命令执行"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　命令执行</h4><div class="heading-children"><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded">hset key field value : 给hash设置field和value
+127.0.0.1:6379&gt; hset hash1 k1 v1
+(integer) 1
+
+hget  key field : 获取hash中健值为field的值
+127.0.0.1:6379&gt; hget hash1 k1
+"v1"
+
+hmset key field value [field value...] : 同时给hash设置多个field和value
+127.0.0.1:6379&gt; hmset hash1 k2 v2 k3 v3 k4 v4
+OK
+
+hmget key field [field...] : 同时获取hash中多个健值为field的值
+127.0.0.1:6379&gt; hmget hash1 k1 k2 k3 k4
+1) "v1"
+2) "v2"
+3) "v3"
+4) "v4"
+
+hsetnx key field value : 判断hash中是否存在 该field值，不存在则添加
+127.0.0.1:6379&gt; hsetnx hash1 k5 v5
+(integer) 1
+
+hgetall key : 获取hash中所有的field和value的值
+127.0.0.1:6379&gt; hgetall hash1
+ 1) "k3"
+ 2) "v3"
+ 3) "k4"
+ 4) "v4"
+ 5) "k5"
+ 6) "v5"
+ 7) "k1"
+ 8) "3"
+ 9) "k2"
+10) "81.83635"
+
+hkeys key : 获取hash中所有的field的值
+127.0.0.1:6379&gt; hkeys hash1
+1) "k3"
+2) "k4"
+3) "k5"
+
+hvals key : 获取hash中所有value的值
+127.0.0.1:6379&gt; hvals hash1
+1) "v3"
+2) "v4"
+3) "v5"
+
+hexists key field : 判断hash中是否存在field值 
+127.0.0.1:6379&gt; hexists hash1 k1
+(integer) 1
+
+hlen key : 获取hash中键值对的个数
+127.0.0.1:6379&gt; hlen hash1
+(integer) 5
+
+hincrby key field increment : 设置hash中field属性自增，前提是整数，自增步长为increment
+127.0.0.1:6379&gt; hincrby hash1 k2 10
+(integer) 10
+
+hincrbyfloat key field increment : 设置hash中field属性自增 ，可以是小数，自增步长为increment
+127.0.0.1:6379&gt; hincrbyfloat hash1 k2 10.1
+"40.1"
+</code><button class="copy-code-button">复制</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　实战场景" class="heading" id="❈　实战场景"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　实战场景</h4><div class="heading-children"><div><ul>
+<li data-line="0"><strong>缓存</strong>： 能直观，相比string更节省空间，的维护缓存信息，如用户信息，视频信息等。</li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h3 data-heading="五）Zset 有序集合" class="heading" id="五）Zset_有序集合"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>五）Zset 有序集合</h3><div class="heading-children"><div><blockquote>
+<p>Redis 有序集合和集合一样也是 string 类型元素的集合，且不允许重复的成员。不同的是每个元素都会关联一个 double 类型的分数。Redis 正是通过分数来为集合中的成员进行从小到大的排序。Zset 的成员是唯一的，但分数是可以重复的。</p>
+</blockquote></div><div class="heading-wrapper"><h4 data-heading="❈　原理" class="heading" id="❈　原理"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　原理</h4><div class="heading-children"><div><p>压缩列表 (ziplist): ziplist 是为了提高存储效率而设计的一种特殊编码的双向链表。它可以存储字符串或者整数，存储整数时是采用整数的二进制而不是字符串形式存储。它能在 O (1) 的时间复杂度下完成 list 两端的 push 和 pop 操作。但是因为每次操作都需要重新分配 ziplist 的内存，所以实际复杂度和 ziplist 的内存使用量相关</p></div><div><p>跳跃表（zSkiplist): 跳跃表的性能可以保证在查找，删除，添加等操作的时候在对数期望时间内完成，这个性能是可以和平衡树来相比较的，而且在实现方面比平衡树要优雅，这是采用跳跃表的主要原因。跳跃表的复杂度是 O (log (n))。</p></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　命令使用" class="heading" id="❈　命令使用"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　命令使用</h4><div class="heading-children"><div style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>简述</th>
+<th>使用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zadd</td>
+<td>将一个带有给定分值的成员添加到有序集合里面</td>
+<td>ZADD zset-key 178 member1</td>
+</tr>
+<tr>
+<td>zrange</td>
+<td>根据元素在有序集合中所处的位置，从有序集合中获取多个元素</td>
+<td>ZRANGE zset-key 0-1 withccores</td>
+</tr>
+<tr>
+<td>zrem</td>
+<td>如果给定元素成员存在于有序集合中，那么就移除这个元素</td>
+<td>ZREM zset-key member1</td>
+</tr>
+<tr>
+<td>zrangebyscore</td>
+<td>获取指定范围内分数的所有成员 （升序） withscores 表示带上分数，limit 表示分页</td>
+<td>Zrangebyscore key min max [withscores] [limit offset count]</td>
+</tr>
+<tr>
+<td>zcard</td>
+<td>获取 zset 成员个数</td>
+<td>ZCARD key</td>
+</tr>
+<tr>
+<td>zcount</td>
+<td>获取 zset 在指定分数范围内的成员个数，“（” 左括号表示闭区间</td>
+<td>Zcount key min max</td>
+</tr>
+<tr>
+<td>zrank</td>
+<td>获取 zset 中成员 member 的排名（升序）</td>
+<td>Zrank key member</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　命令执行" class="heading" id="❈　命令执行"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　命令执行</h4><div class="heading-children"><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded">zadd key score member [score member...]:添加zset集合新的成员分数和成员。
+127.0.0.1:6379&gt; zadd k1 10 c1 20 c2 30 c3 40 c4 50 c5 60 c6 70 c7 80 c8 90 c9 
+(integer) 9
+
+zrem key member [member...]:删除zset中的成员member
+127.0.0.1:6379&gt; zrem zset key1
+(integer) 1
+
+zrange key start stop [withscores]:遍历zset，获取所有成员 ，若加上withscores，则分数被同时返回
+127.0.0.1:6379&gt; zrange k1 0 -1
+1) "c1"
+2) "c2"
+3) "c3"
+4) "c4"
+5) "c5"
+6) "c6"
+7) "c7"
+8) "c8"
+9) "c9"
+
+zrangebyscore key min max [withscores] [limit offset count] : 获取指定范围内分数的所有成员 （升序） withscores表示带上分数，limit表示分页
+127.0.0.1:6379&gt; zrevrangebyscore k1 50 (10
+1) "c5"
+2) "c4"
+3) "c3"
+4) "c2"
+
+zcard key:获取zset成员个数
+127.0.0.1:6379&gt;zcard k1
+(integer)8
+zcount key min max :获取zset在指定分数范围内的成员个数,“（”左括号表示闭区间
+127.0.0.1:6379&gt; zcount k1 0 (60
+(integer) 5
+
+zrank key member : 获取zset中成员member的排名（升序）
+127.0.0.1:6379&gt; zvrank k1 c9
+(integer) 8
+
+zrevrank key member:获取zset中成员member的排名（降序）
+127.0.0.1:6379&gt; zrevrank k1 c9
+(integer) 0
+
+zrevrange key [withscores]: 获取zset中所有的成员（降序）
+127.0.0.1:6379&gt; zrevrange k1 0 -1
+1) "c9"
+2) "c8"
+3) "c7"
+4) "c6"
+5) "c5"
+6) "c4"
+7) "c3"
+8) "c2"
+9) "c1"
+</code><button class="copy-code-button">复制</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　实战场景" class="heading" id="❈　实战场景"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　实战场景</h4><div class="heading-children"><div><ul>
+<li data-line="0">排行榜：有序集合经典使用场景。例如小说视频等网站需要对用户上传的小说视频做排行榜，榜单可以按照用户关注数，更新时间，字数等打分，做排行。</li>
+</ul></div></div></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="四、三种特殊类型" class="heading" id="四、三种特殊类型"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>四、三种特殊类型</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="一）HyperLogLogs（基数统计）" class="heading" id="一）HyperLogLogs（基数统计）"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>一）HyperLogLogs（基数统计）</h3><div class="heading-children"><div class="heading-wrapper"><h4 data-heading="1、什么是基数？" class="heading" id="1、什么是基数？"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>1、什么是基数？</h4><div class="heading-children"><div><p>举个例子，A = {1, 2, 3, 4, 5}， B = {3, 5, 6, 7, 9}；那么基数（不重复的元素）= 1, 2, 4, 6, 7, 9； （允许容错，即可以接受一定误差）</p></div></div></div><div class="heading-wrapper"><h4 data-heading="2、HyperLogLogs 基数统计用来解决什么问题？" class="heading" id="2、HyperLogLogs_基数统计用来解决什么问题？"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>2、HyperLogLogs 基数统计用来解决什么问题？</h4><div class="heading-children"><div><p>这个结构可以非常省内存的去统计各种计数，比如注册 IP 数、每日访问 IP 数、页面实时 UV、在线用户数，共同好友数等。</p></div></div></div><div class="heading-wrapper"><h4 data-heading="3、它的优势体现在哪？" class="heading" id="3、它的优势体现在哪？"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>3、它的优势体现在哪？</h4><div class="heading-children"><div><p>一个大型的网站，每天 IP 比如有 100 万，粗算一个 IP 消耗 15 字节，那么 100 万个 IP 就是 15 M。而 HyperLogLog 在 Redis 中每个键占用的内容都是 12 K，理论存储近似接近 2^64 个值，不管存储的内容是什么，它一个基于基数估算的算法，只能比较准确的估算出基数，可以使用少量固定的内存去存储并识别集合中的唯一元素。而且这个估算的基数并不一定准确，是一个带有 0.81% 标准错误的近似值（对于可以接受一定容错的业务场景，比如 IP 数统计，UV 等，是可以忽略不计的）。</p></div></div></div><div class="heading-wrapper"><h4 data-heading="4、相关命令使用" class="heading" id="4、相关命令使用"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>4、相关命令使用</h4><div class="heading-children"><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded">127.0.0.1:6379&gt; pfadd key1 a b c d e f g h i	# 创建第一组元素
+(integer) 1
+127.0.0.1:6379&gt; pfcount key1					# 统计元素的基数数量
+(integer) 9
+127.0.0.1:6379&gt; pfadd key2 c j k l m e g a		# 创建第二组元素
+(integer) 1
+127.0.0.1:6379&gt; pfcount key2
+(integer) 8
+127.0.0.1:6379&gt; pfmerge key3 key1 key2			# 合并两组：key1 key2 -&gt; key3 并集
+OK
+127.0.0.1:6379&gt; pfcount key3
+(integer) 13
+</code><button class="copy-code-button">复制</button></pre></div></div></div></div></div><div class="heading-wrapper"><h3 data-heading="二）Bitmap （位存储）" class="heading" id="二）Bitmap_（位存储）"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>二）Bitmap （位存储）</h3><div class="heading-children"><div><p>Bitmap 即位图数据结构，都是操作二进制位来进行记录，只有 0 和 1 两个状态。</p></div><div class="heading-wrapper"><h4 data-heading="1、用来解决什么问题？" class="heading" id="1、用来解决什么问题？"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>1、用来解决什么问题？</h4><div class="heading-children"><div><p>比如：统计用户信息，活跃，不活跃！ 登录，未登录！ 打卡，不打卡！ 两个状态的，都可以使用 Bitmaps！</p></div><div><p>如果存储一年的打卡状态需要多少内存呢？ 365 天 = 365 bit 1 字节 = 8 bit 46 个字节左右！</p></div></div></div><div class="heading-wrapper"><h4 data-heading="2、相关命令使用" class="heading" id="2、相关命令使用"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>2、相关命令使用</h4><div class="heading-children"><div><p>使用 bitmap 来记录周一到周日的打卡！ 周一：1 周二：0 周三：0 周四：1 ……</p></div><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded">127.0.0.1:6379&gt; setbit sign 0 1
+(integer) 0
+127.0.0.1:6379&gt; setbit sign 1 1
+(integer) 0
+127.0.0.1:6379&gt; setbit sign 2 0
+(integer) 0
+127.0.0.1:6379&gt; setbit sign 3 1
+(integer) 0
+127.0.0.1:6379&gt; setbit sign 4 0
+(integer) 0
+127.0.0.1:6379&gt; setbit sign 5 0
+(integer) 0
+127.0.0.1:6379&gt; setbit sign 6 1
+(integer) 0
+</code><button class="copy-code-button">复制</button></pre></div><div><p>查看某一天是否有打卡！</p></div><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded">127.0.0.1:6379&gt; getbit sign 3
+(integer) 1
+127.0.0.1:6379&gt; getbit sign 5
+(integer) 0
+</code><button class="copy-code-button">复制</button></pre></div><div><p>统计操作，统计打卡的天数！</p></div><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded">127.0.0.1:6379&gt; bitcount sign # 统计这周的打卡记录，就可以看到是否有全勤！
+(integer) 3
+</code><button class="copy-code-button">复制</button></pre></div></div></div></div></div><div class="heading-wrapper"><h3 data-heading="三）geospatial (地理位置)" class="heading" id="三）geospatial_(地理位置)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>三）geospatial (地理位置)</h3><div class="heading-children"><div class="heading-wrapper"><h4 data-heading="1、Geoadd" class="heading" id="1、Geoadd"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>1、Geoadd</h4><div class="heading-children"><div><p>添加地理位置</p></div><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded">127.0.0.1:6379&gt; geoadd china:city 118.76 32.04 manjing 112.55 37.86 taiyuan 123.43 41.80 shenyang
+(integer) 3
+127.0.0.1:6379&gt; geoadd china:city 144.05 22.52 shengzhen 120.16 30.24 hangzhou 108.96 34.26 xian
+(integer) 3
+</code><button class="copy-code-button">复制</button></pre></div><div><p>两级无法直接添加，我们一般会下载城市数据(这个网址可以查询 GEO： <a data-tooltip-position="top" aria-label="http://www.jsons.cn/lngcode)%EF%BC%81" rel="noopener" class="external-link" href="http://www.jsons.cn/lngcode)%EF%BC%81" target="_blank">http://www.jsons.cn/lngcode)！</a></p></div><div><ul>
+<li data-line="0">有效的经度从-180度到180度。</li>
+<li data-line="1">有效的纬度从-85.05112878度到85.05112878度。</li>
+</ul></div><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded"># 当坐标位置超出上述指定范围时，该命令将会返回一个错误。
+127.0.0.1:6379&gt; geoadd china:city 39.90 116.40 beijin
+(error) ERR invalid longitude,latitude pair 39.900000,116.400000 
+</code><button class="copy-code-button">复制</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="2、Geopos" class="heading" id="2、Geopos"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>2、Geopos</h4><div class="heading-children"><div><p>获取指定的成员的经度和纬度</p></div><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded">127.0.0.1:6379&gt; geopos china:city taiyuan manjing
+1) 1) "112.54999905824661255"
+   1) "37.86000073876942196"
+2) 1) "118.75999957323074341"
+   1) "32.03999960287850968"
+</code><button class="copy-code-button">复制</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="3、Geodist" class="heading" id="3、Geodist"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>3、Geodist</h4><div class="heading-children"><div><p>如果不存在，返回空</p></div><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded">127.0.0.1:6379&gt; geodist china:city taiyuan shenyang m
+"1026439.1070"
+127.0.0.1:6379&gt; geodist china:city taiyuan shenyang km
+"1026.4391" 
+</code><button class="copy-code-button">复制</button></pre></div><div><p>单位如下</p></div><div><ul>
+<li data-line="0">M</li>
+<li data-line="1">Km</li>
+<li data-line="2">Mi 英里</li>
+<li data-line="3">Ft 英尺</li>
+</ul></div></div></div><div class="heading-wrapper"><h4 data-heading="4、georadius" class="heading" id="4、georadius"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>4、georadius</h4><div class="heading-children"><div><blockquote>
+<p>附近的人 ==&gt; 获得所有附近的人的地址, 定位, 通过半径来查询</p>
+</blockquote></div><div><p>获得指定数量的人</p></div><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded">#以 100,30 这个坐标为中心, 寻找半径为1000km的城市
+127.0.0.1:6379&gt; georadius china:city 110 30 1000 km			
+1) "xian"
+2) "hangzhou"
+3) "manjing"
+4) "taiyuan"
+127.0.0.1:6379&gt; georadius china:city 110 30 500 km
+1) "xian"
+127.0.0.1:6379&gt; georadius china:city 110 30 500 km withdist
+1) 1) "xian"
+   2) "483.8340"
+127.0.0.1:6379&gt; georadius china:city 110 30 1000 km withcoord withdist count 2
+1) 1) "xian"
+   2) "483.8340"
+   3) 1) "108.96000176668167114"
+      2) "34.25999964418929977"
+2) 1) "manjing"
+   2) "864.9816"
+   3) 1) "118.75999957323074341"
+      2) "32.03999960287850968"
+</code><button class="copy-code-button">复制</button></pre></div><div><p>参数 key 经度 纬度 半径 单位 [显示结果的经度和纬度] [显示结果的距离] [显示的结果的数量]</p></div></div></div><div class="heading-wrapper"><h4 data-heading="5、georadiusbymember" class="heading" id="5、georadiusbymember"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>5、georadiusbymember</h4><div class="heading-children"><div><blockquote>
+<p>显示与指定成员一定半径范围内的其他成员</p>
+</blockquote></div><div><pre><code>127.0.0.1:6379&gt; georadiusbymember china:city taiyuan 1000 km
+1) "manjing"
+2) "taiyuan"
+3) "xian"
+127.0.0.1:6379&gt; georadiusbymember china:city taiyuan 1000 km withcoord withdist count 2
+1) 1) "taiyuan"
+   2) "0.0000"
+   3) 1) "112.54999905824661255"
+      2) "37.86000073876942196"
+2) 1) "xian"
+   2) "514.2264"
+   3) 1) "108.96000176668167114"
+      2) "34.25999964418929977"
+</code><button class="copy-code-button">复制</button></pre></div><div><p>参数与 georadius 一样</p></div></div></div><div class="heading-wrapper"><h4 data-heading="6、geohash(较少使用)" class="heading" id="6、geohash(较少使用)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>6、geohash(较少使用)</h4><div class="heading-children"><div><blockquote>
+<p>该命令返回11个字符的hash字符串</p>
+</blockquote></div><div><pre><code>127.0.0.1:6379&gt; geohash china:city taiyuan shenyang
+1) "ww8p3hhqmp0"
+2) "wxrvb9qyxk0"
+</code><button class="copy-code-button">复制</button></pre></div><div><p>将二维的经纬度转换为一维的字符串, 如果两个字符串越接近, 则距离越近</p></div></div></div><div class="heading-wrapper"><h4 data-heading="❈　底层" class="heading" id="❈　底层"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>❈　底层</h4><div class="heading-children"><div><blockquote>
+<p>geo底层的实现原理实际上就是Zset, 我们可以通过Zset命令来操作geo</p>
+</blockquote></div><div><pre><code>127.0.0.1:6379&gt; type china:city
+zset
+</code><button class="copy-code-button">复制</button></pre></div><div><p>查看全部元素 删除指定的元素</p></div><div><pre><code>127.0.0.1:6379&gt; zrange china:city 0 -1 withscores
+ 1) "xian"
+ 2) "4040115445396757"
+ 3) "hangzhou"
+ 4) "4054133997236782"
+ 5) "manjing"
+ 6) "4066006694128997"
+ 7) "taiyuan"
+ 8) "4068216047500484"
+ 9) "shenyang"
+1)  "4072519231994779"
+2)  "shengzhen"
+3)  "4154606886655324"
+127.0.0.1:6379&gt; zrem china:city manjing
+(integer) 1
+127.0.0.1:6379&gt; zrange china:city 0 -1
+1) "xian"
+2) "hangzhou"
+3) "taiyuan"
+4) "shenyang"
+5) "shengzhen"
+</code><button class="copy-code-button">复制</button></pre></div></div></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="五、Stream" class="heading" id="五、Stream"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>五、Stream</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="为什么会设计Stream" class="heading" id="为什么会设计Stream"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>为什么会设计Stream</h3><div class="heading-children"><div><blockquote>
+<p>Redis5.0 中还增加了一个数据结构Stream，从字面上看是流类型，但其实从功能上看，应该是Redis对消息队列（MQ，Message Queue）的完善实现。</p>
+</blockquote></div><div><p>用过Redis做消息队列的都了解，基于Reids的消息队列实现有很多种，例如：</p></div><div><ul>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>PUB/SUB，订阅/发布模式</strong>
+<ul>
+<li data-line="1">但是发布订阅模式是无法持久化的，如果出现网络断开、Redis 宕机等，消息就会被丢弃；</li>
+</ul>
+</li>
+<li data-line="2"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>基于<strong>List LPUSH+BRPOP</strong> 或者 <strong>基于Sorted-Set</strong>的实现
+<ul>
+<li data-line="3">支持了持久化，但是不支持多播，分组消费等</li>
+</ul>
+</li>
+</ul></div><div><p>为什么上面的结构无法满足广泛的MQ场景？ 这里便引出一个核心的问题：如果我们期望设计一种数据结构来实现消息队列，最重要的就是要理解<strong>设计一个消息队列需要考虑什么</strong>？初步的我们很容易想到</p></div><div><ul>
+<li data-line="0">消息的生产</li>
+<li data-line="1"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>消息的消费
+<ul>
+<li data-line="2">单播和多播（多对多）</li>
+<li data-line="3">阻塞和非阻塞读取</li>
+</ul>
+</li>
+<li data-line="4">消息有序性</li>
+<li data-line="5">消息的持久化</li>
+</ul></div><div><p><strong>我们不妨看看Redis考虑了哪些设计</strong>？</p></div><div><ul>
+<li data-line="0">消息ID的序列化生成</li>
+<li data-line="1">消息遍历</li>
+<li data-line="2">消息的阻塞和非阻塞读取</li>
+<li data-line="3">消息的分组消费</li>
+<li data-line="4">未完成消息的处理</li>
+<li data-line="5">消息队列监控</li>
+<li data-line="6">...</li>
+</ul></div><div><blockquote>
+<p>这也是我们需要理解Stream的点，但是结合上面的图，我们也应该理解Redis Stream也是一种超轻量MQ并没有完全实现消息队列所有设计要点，这决定着它适用的场景。</p>
+</blockquote></div></div></div><div class="heading-wrapper"><h3 data-heading="Stream详解" class="heading" id="Stream详解"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Stream详解</h3><div class="heading-children"><div><blockquote>
+<p>经过梳理总结，我认为从以下几个大的方面去理解Stream是比较合适的，总结如下：@pdai</p>
+</blockquote></div><div><ul>
+<li data-line="0">Stream的结构设计</li>
+<li data-line="1"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>生产和消费
+<ul>
+<li data-line="2">基本的增删查改</li>
+<li data-line="3">单一消费者的消费</li>
+<li data-line="4">消费组的消费</li>
+</ul>
+</li>
+<li data-line="5">监控状态</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="Stream的结构" class="heading" id="Stream的结构"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Stream的结构</h3><div class="heading-children"><div><p>每个 Stream 都有唯一的名称，它就是 Redis 的 key，在我们首次使用 xadd 指令追加消息时自动创建。</p></div><div><p></p><div src="/images/db/redis/db-redis-stream-2.png" class="internal-embed is-loaded file-embed mod-empty-attachment">“/images/db/redis/db-redis-stream-2.png” could not be found.</div><p></p></div><div><p>上图解析：</p></div><div><ul>
+<li data-line="0"><code>Consumer Group</code> ：消费组，使用 XGROUP CREATE 命令创建，一个消费组有多个消费者(Consumer), 这些消费者之间是竞争关系。</li>
+<li data-line="1"><code>last_delivered_id</code> ：游标，每个消费组会有个游标 last_delivered_id，任意一个消费者读取了消息都会使游标 last_delivered_id 往前移动。</li>
+<li data-line="2"><code>pending_ids</code> ：消费者(Consumer)的状态变量，作用是维护消费者的未确认的 id。 pending_ids 记录了当前已经被客户端读取的消息，但是还没有 <code>ack</code> (Acknowledge character：确认字符）。如果客户端没有ack，这个变量里面的消息ID会越来越多，一旦某个消息被ack，它就开始减少。这个pending_ids变量在Redis官方被称之为PEL，也就是Pending Entries List，这是一个很核心的数据结构，它用来确保客户端至少消费了消息一次，而不会在网络传输的中途丢失了没处理。</li>
+</ul></div><div><p>此外我们还需要理解两点：</p></div><div><ul>
+<li data-line="0"><code>消息ID</code>: 消息ID的形式是timestampInMillis-sequence，例如1527846880572-5，它表示当前的消息在毫米时间戳1527846880572时产生，并且是该毫秒内产生的第5条消息。消息ID可以由服务器自动生成，也可以由客户端自己指定，但是形式必须是整数-整数，而且必须是后面加入的消息的ID要大于前面的消息ID。</li>
+<li data-line="1"><code>消息内容</code>: 消息内容就是键值对，形如hash结构的键值对，这没什么特别之处。</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="增删改查" class="heading" id="增删改查"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>增删改查</h3><div class="heading-children"><div><p>消息队列相关命令：</p></div><div><ul>
+<li data-line="0">XADD - 添加消息到末尾</li>
+<li data-line="1">XTRIM - 对流进行修剪，限制长度</li>
+<li data-line="2">XDEL - 删除消息</li>
+<li data-line="3">XLEN - 获取流包含的元素数量，即消息长度</li>
+<li data-line="4">XRANGE - 获取消息列表，会自动过滤已经删除的消息</li>
+<li data-line="5">XREVRANGE - 反向获取消息列表，ID 从大到小</li>
+<li data-line="6">XREAD - 以阻塞或非阻塞方式获取消息列表</li>
+</ul></div><div><pre><code># *号表示服务器自动生成ID，后面顺序跟着一堆key/value
+127.0.0.1:6379&gt; xadd codehole * name laoqian age 30  #  名字叫laoqian，年龄30岁
+1527849609889-0  # 生成的消息ID
+127.0.0.1:6379&gt; xadd codehole * name xiaoyu age 29
+1527849629172-0
+127.0.0.1:6379&gt; xadd codehole * name xiaoqian age 1
+1527849637634-0
+127.0.0.1:6379&gt; xlen codehole
+(integer) 3
+127.0.0.1:6379&gt; xrange codehole - +  # -表示最小值, +表示最大值
+127.0.0.1:6379&gt; xrange codehole - +
+1) 1) 1527849609889-0
+   1) 1) "name"
+      1) "laoqian"
+      2) "age"
+      3) "30"
+2) 1) 1527849629172-0
+   1) 1) "name"
+      1) "xiaoyu"
+      2) "age"
+      3) "29"
+3) 1) 1527849637634-0
+   1) 1) "name"
+      1) "xiaoqian"
+      2) "age"
+      3) "1"
+127.0.0.1:6379&gt; xrange codehole 1527849629172-0 +  # 指定最小消息ID的列表
+1) 1) 1527849629172-0
+   2) 1) "name"
+      2) "xiaoyu"
+      3) "age"
+      4) "29"
+2) 1) 1527849637634-0
+   2) 1) "name"
+      2) "xiaoqian"
+      3) "age"
+      4) "1"
+127.0.0.1:6379&gt; xrange codehole - 1527849629172-0  # 指定最大消息ID的列表
+1) 1) 1527849609889-0
+   2) 1) "name"
+      2) "laoqian"
+      3) "age"
+      4) "30"
+2) 1) 1527849629172-0
+   2) 1) "name"
+      2) "xiaoyu"
+      3) "age"
+      4) "29"
+127.0.0.1:6379&gt; xdel codehole 1527849609889-0
+(integer) 1
+127.0.0.1:6379&gt; xlen codehole  # 长度不受影响
+(integer) 3
+127.0.0.1:6379&gt; xrange codehole - +  # 被删除的消息没了
+1) 1) 1527849629172-0
+   2) 1) "name"
+      2) "xiaoyu"
+      3) "age"
+      4) "29"
+2) 1) 1527849637634-0
+   2) 1) "name"
+      2) "xiaoqian"
+      3) "age"
+      4) "1"
+127.0.0.1:6379&gt; del codehole  # 删除整个Stream
+(integer) 1
+</code><button class="copy-code-button">复制</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="独立消费" class="heading" id="独立消费"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>独立消费</h3><div class="heading-children"><div><p>我们可以在不定义消费组的情况下进行Stream消息的独立消费，当Stream没有新消息时，甚至可以阻塞等待。Redis设计了一个单独的消费指令xread，可以将Stream当成普通的消息队列(list)来使用。使用xread时，我们可以完全忽略消费组(Consumer Group)的存在，就好比Stream就是一个普通的列表(list)。</p></div><div><pre><code># 从Stream头部读取两条消息
+127.0.0.1:6379&gt; xread count 2 streams codehole 0-0
+1) 1) "codehole"
+   2) 1) 1) 1527851486781-0
+         2) 1) "name"
+            2) "laoqian"
+            3) "age"
+            4) "30"
+      2) 1) 1527851493405-0
+         2) 1) "name"
+            2) "yurui"
+            3) "age"
+            4) "29"
+# 从Stream尾部读取一条消息，毫无疑问，这里不会返回任何消息
+127.0.0.1:6379&gt; xread count 1 streams codehole $
+(nil)
+# 从尾部阻塞等待新消息到来，下面的指令会堵住，直到新消息到来
+127.0.0.1:6379&gt; xread block 0 count 1 streams codehole $
+# 我们从新打开一个窗口，在这个窗口往Stream里塞消息
+127.0.0.1:6379&gt; xadd codehole * name youming age 60
+1527852774092-0
+# 再切换到前面的窗口，我们可以看到阻塞解除了，返回了新的消息内容
+# 而且还显示了一个等待时间，这里我们等待了93s
+127.0.0.1:6379&gt; xread block 0 count 1 streams codehole $
+1) 1) "codehole"
+   2) 1) 1) 1527852774092-0
+         2) 1) "name"
+            2) "youming"
+            3) "age"
+            4) "60"
+(93.11s)
+</code><button class="copy-code-button">复制</button></pre></div><div><p>客户端如果想要使用xread进行顺序消费，一定要记住当前消费到哪里了，也就是返回的消息ID。下次继续调用xread时，将上次返回的最后一个消息ID作为参数传递进去，就可以继续消费后续的消息。</p></div><div><p>block 0表示永远阻塞，直到消息到来，block 1000表示阻塞1s，如果1s内没有任何消息到来，就返回nil</p></div><div><pre><code>127.0.0.1:6379&gt; xread block 1000 count 1 streams codehole $
+(nil)
+(1.07s)
+</code><button class="copy-code-button">复制</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="消费组消费" class="heading" id="消费组消费"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>消费组消费</h3><div class="heading-children"><div><ul>
+<li data-line="0"><strong>消费组消费图</strong></li>
+</ul></div><div><p></p><div src="/images/db/redis/db-redis-stream-3.png" class="internal-embed is-loaded file-embed mod-empty-attachment">“/images/db/redis/db-redis-stream-3.png” could not be found.</div><p></p></div><div><ul>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>相关命令：
+<ul>
+<li data-line="2">XGROUP CREATE - 创建消费者组</li>
+<li data-line="3">XREADGROUP GROUP - 读取消费者组中的消息</li>
+<li data-line="4">XACK - 将消息标记为"已处理"</li>
+<li data-line="5">XGROUP SETID - 为消费者组设置新的最后递送消息ID</li>
+<li data-line="6">XGROUP DELCONSUMER - 删除消费者</li>
+<li data-line="7">XGROUP DESTROY - 删除消费者组</li>
+<li data-line="8">XPENDING - 显示待处理消息的相关信息</li>
+<li data-line="9">XCLAIM - 转移消息的归属权</li>
+<li data-line="10">XINFO - 查看流和消费者组的相关信息；</li>
+<li data-line="11">XINFO GROUPS - 打印消费者组的信息；</li>
+<li data-line="12">XINFO STREAM - 打印流信息</li>
+</ul>
+</li>
+<li data-line="13"><strong>创建消费组</strong><br>
+</li>
+</ul></div><div><p>Stream通过xgroup create指令创建消费组(Consumer Group)，需要传递起始消息ID参数用来初始化last_delivered_id变量。</p></div><div><pre><code>127.0.0.1:6379&gt; xgroup create codehole cg1 0-0  #  表示从头开始消费
+OK
+# $表示从尾部开始消费，只接受新消息，当前Stream消息会全部忽略
+127.0.0.1:6379&gt; xgroup create codehole cg2 $
+OK
+127.0.0.1:6379&gt; xinfo stream codehole  # 获取Stream信息
+ 1) length
+ 2) (integer) 3  # 共3个消息
+ 3) radix-tree-keys
+ 4) (integer) 1
+ 5) radix-tree-nodes
+ 6) (integer) 2
+ 7) groups
+ 8) (integer) 2  # 两个消费组
+ 9) first-entry  # 第一个消息
+10) 1) 1527851486781-0
+    2) 1) "name"
+       2) "laoqian"
+       3) "age"
+       4) "30"
+11) last-entry  # 最后一个消息
+12) 1) 1527851498956-0
+    2) 1) "name"
+       2) "xiaoqian"
+       3) "age"
+       4) "1"
+127.0.0.1:6379&gt; xinfo groups codehole  # 获取Stream的消费组信息
+1) 1) name
+   2) "cg1"
+   3) consumers
+   4) (integer) 0  # 该消费组还没有消费者
+   5) pending
+   6) (integer) 0  # 该消费组没有正在处理的消息
+2) 1) name
+   2) "cg2"
+   3) consumers  # 该消费组还没有消费者
+   4) (integer) 0
+   5) pending
+   6) (integer) 0  # 该消费组没有正在处理的消息
+</code><button class="copy-code-button">复制</button></pre></div><div><ul>
+<li data-line="0"><strong>消费组消费</strong></li>
+</ul></div><div><p>Stream提供了xreadgroup指令可以进行消费组的组内消费，需要提供消费组名称、消费者名称和起始消息ID。它同xread一样，也可以阻塞等待新消息。读到新消息后，对应的消息ID就会进入消费者的PEL(正在处理的消息)结构里，客户端处理完毕后使用xack指令通知服务器，本条消息已经处理完毕，该消息ID就会从PEL中移除。</p></div><div><pre><code># &gt;号表示从当前消费组的last_delivered_id后面开始读
+# 每当消费者读取一条消息，last_delivered_id变量就会前进
+127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 count 1 streams codehole &gt;
+1) 1) "codehole"
+   2) 1) 1) 1527851486781-0
+         2) 1) "name"
+            2) "laoqian"
+            3) "age"
+            4) "30"
+127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 count 1 streams codehole &gt;
+1) 1) "codehole"
+   2) 1) 1) 1527851493405-0
+         2) 1) "name"
+            2) "yurui"
+            3) "age"
+            4) "29"
+127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 count 2 streams codehole &gt;
+1) 1) "codehole"
+   2) 1) 1) 1527851498956-0
+         2) 1) "name"
+            2) "xiaoqian"
+            3) "age"
+            4) "1"
+      2) 1) 1527852774092-0
+         2) 1) "name"
+            2) "youming"
+            3) "age"
+            4) "60"
+# 再继续读取，就没有新消息了
+127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 count 1 streams codehole &gt;
+(nil)
+# 那就阻塞等待吧
+127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 block 0 count 1 streams codehole &gt;
+# 开启另一个窗口，往里塞消息
+127.0.0.1:6379&gt; xadd codehole * name lanying age 61
+1527854062442-0
+# 回到前一个窗口，发现阻塞解除，收到新消息了
+127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 block 0 count 1 streams codehole &gt;
+1) 1) "codehole"
+   2) 1) 1) 1527854062442-0
+         2) 1) "name"
+            2) "lanying"
+            3) "age"
+            4) "61"
+(36.54s)
+127.0.0.1:6379&gt; xinfo groups codehole  # 观察消费组信息
+1) 1) name
+   2) "cg1"
+   3) consumers
+   4) (integer) 1  # 一个消费者
+   5) pending
+   6) (integer) 5  # 共5条正在处理的信息还有没有ack
+2) 1) name
+   2) "cg2"
+   3) consumers
+   4) (integer) 0  # 消费组cg2没有任何变化，因为前面我们一直在操纵cg1
+   5) pending
+   6) (integer) 0
+# 如果同一个消费组有多个消费者，我们可以通过xinfo consumers指令观察每个消费者的状态
+127.0.0.1:6379&gt; xinfo consumers codehole cg1  # 目前还有1个消费者
+1) 1) name
+   2) "c1"
+   3) pending
+   4) (integer) 5  # 共5条待处理消息
+   5) idle
+   6) (integer) 418715  # 空闲了多长时间ms没有读取消息了
+# 接下来我们ack一条消息
+127.0.0.1:6379&gt; xack codehole cg1 1527851486781-0
+(integer) 1
+127.0.0.1:6379&gt; xinfo consumers codehole cg1
+1) 1) name
+   2) "c1"
+   3) pending
+   4) (integer) 4  # 变成了5条
+   5) idle
+   6) (integer) 668504
+# 下面ack所有消息
+127.0.0.1:6379&gt; xack codehole cg1 1527851493405-0 1527851498956-0 1527852774092-0 1527854062442-0
+(integer) 4
+127.0.0.1:6379&gt; xinfo consumers codehole cg1
+1) 1) name
+   2) "c1"
+   3) pending
+   4) (integer) 0  # pel空了
+   5) idle
+   6) (integer) 745505
+</code><button class="copy-code-button">复制</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="信息监控" class="heading" id="信息监控"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>信息监控</h3><div class="heading-children"><div><p>Stream提供了XINFO来实现对服务器信息的监控，可以查询：</p></div><div><ul>
+<li data-line="0">查看队列信息</li>
+</ul></div><div><pre><code>127.0.0.1:6379&gt; Xinfo stream mq
+ 1) "length"
+ 2) (integer) 7
+ 3) "radix-tree-keys"
+ 4) (integer) 1
+ 5) "radix-tree-nodes"
+ 6) (integer) 2
+ 7) "groups"
+ 8) (integer) 1
+ 9) "last-generated-id"
+10) "1553585533795-9"
+11) "first-entry"
+12) 1) "1553585533795-3"
+    2) 1) "msg"
+       2) "4"
+13) "last-entry"
+14) 1) "1553585533795-9"
+    2) 1) "msg"
+       2) "10"
+</code><button class="copy-code-button">复制</button></pre></div><div><ul>
+<li data-line="0">消费组信息</li>
+</ul></div><div><pre><code>127.0.0.1:6379&gt; Xinfo groups mq
+1) 1) "name"
+   2) "mqGroup"
+   3) "consumers"
+   4) (integer) 3
+   5) "pending"
+   6) (integer) 3
+   7) "last-delivered-id"
+   8) "1553585533795-4"
+</code><button class="copy-code-button">复制</button></pre></div><div><ul>
+<li data-line="0">消费者组成员信息</li>
+</ul></div><div><pre><code>127.0.0.1:6379&gt; XINFO CONSUMERS mq mqGroup
+1) 1) "name"
+   2) "consumerA"
+   3) "pending"
+   4) (integer) 1
+   5) "idle"
+   6) (integer) 18949894
+2) 1) "name"
+   2) "consumerB"
+   3) "pending"
+   4) (integer) 1
+   5) "idle"
+   6) (integer) 3092719
+3) 1) "name"
+   2) "consumerC"
+   3) "pending"
+   4) (integer) 1
+   5) "idle"
+   6) (integer) 23683256
+</code><button class="copy-code-button">复制</button></pre></div><div><p>至此，消息队列的操作说明大体结束！</p></div></div></div><div class="heading-wrapper"><h3 data-heading="更深入理解" class="heading" id="更深入理解"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>更深入理解</h3><div class="heading-children"><div><blockquote>
+<p>我们结合MQ中常见问题，看Redis是如何解决的，来进一步理解Redis。</p>
+</blockquote></div><div class="heading-wrapper"><h5 data-heading="[#](#stream用在什么样场景) Stream用在什么样场景" class="heading" id="[#](#stream用在什么样场景)_Stream用在什么样场景"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="internal-link" data-href="#stream用在什么样场景" href="#stream用在什么样场景" target="_self" rel="noopener">#</a> Stream用在什么样场景</h5><div class="heading-children"><div><p>可用作时通信等，大数据分析，异地数据备份等</p></div><div><p></p><div src="/images/db/redis/db-redis-stream-4.png" class="internal-embed is-loaded file-embed mod-empty-attachment">“/images/db/redis/db-redis-stream-4.png” could not be found.</div><p></p></div><div><p>客户端可以平滑扩展，提高处理能力</p></div><div><p></p><div src="/images/db/redis/db-redis-stream-5.png" class="internal-embed is-loaded file-embed mod-empty-attachment">“/images/db/redis/db-redis-stream-5.png” could not be found.</div><p></p></div></div></div><div class="heading-wrapper"><h5 data-heading="[#](#消息id的设计是否考虑了时间回拨的问题) 消息ID的设计是否考虑了时间回拨的问题？" class="heading" id="[#](#消息id的设计是否考虑了时间回拨的问题)_消息ID的设计是否考虑了时间回拨的问题？"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="internal-link" data-href="#消息id的设计是否考虑了时间回拨的问题" href="#消息id的设计是否考虑了时间回拨的问题" target="_self" rel="noopener">#</a> 消息ID的设计是否考虑了时间回拨的问题？</h5><div class="heading-children"><div><blockquote>
+<p>在 <a class="internal-link" data-href="/md/algorithm/alg-domain-id-snowflake.html" href="/md/algorithm/alg-domain-id-snowflake.html" target="_self" rel="noopener">分布式算法 - ID算法</a>设计中, 一个常见的问题就是时间回拨问题，那么Redis的消息ID设计中是否考虑到这个问题呢？</p>
+</blockquote></div><div><p>XADD生成的1553439850328-0，就是Redis生成的消息ID，由两部分组成:<strong>时间戳-序号</strong>。时间戳是毫秒级单位，是生成消息的Redis服务器时间，它是个64位整型（int64）。序号是在这个毫秒时间点内的消息序号，它也是个64位整型。</p></div><div><p>可以通过multi批处理，来验证序号的递增：</p></div><div><pre><code>127.0.0.1:6379&gt; MULTI
+OK
+127.0.0.1:6379&gt; XADD memberMessage * msg one
+QUEUED
+127.0.0.1:6379&gt; XADD memberMessage * msg two
+QUEUED
+127.0.0.1:6379&gt; XADD memberMessage * msg three
+QUEUED
+127.0.0.1:6379&gt; XADD memberMessage * msg four
+QUEUED
+127.0.0.1:6379&gt; XADD memberMessage * msg five
+QUEUED
+127.0.0.1:6379&gt; EXEC
+1) "1553441006884-0"
+2) "1553441006884-1"
+3) "1553441006884-2"
+4) "1553441006884-3"
+5) "1553441006884-4"
+</code><button class="copy-code-button">复制</button></pre></div><div><p>由于一个redis命令的执行很快，所以可以看到在同一时间戳内，是通过序号递增来表示消息的。</p></div><div><p>为了保证消息是有序的，因此Redis生成的ID是单调递增有序的。由于ID中包含时间戳部分，为了避免服务器时间错误而带来的问题（例如服务器时间延后了），Redis的每个Stream类型数据都维护一个latest_generated_id属性，用于记录最后一个消息的ID。<strong>若发现当前时间戳退后（小于latest_generated_id所记录的），则采用时间戳不变而序号递增的方案来作为新消息ID</strong>（这也是序号为什么使用int64的原因，保证有足够多的的序号），从而保证ID的单调递增性质。</p></div><div><p>强烈建议使用Redis的方案生成消息ID，因为这种时间戳+序号的单调递增的ID方案，几乎可以满足你全部的需求。但同时，记住ID是支持自定义的，别忘了！</p></div></div></div><div class="heading-wrapper"><h5 data-heading="[#](#消费者崩溃带来的会不会消息丢失问题) 消费者崩溃带来的会不会消息丢失问题?" class="heading" id="[#](#消费者崩溃带来的会不会消息丢失问题)_消费者崩溃带来的会不会消息丢失问题?"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="internal-link" data-href="#消费者崩溃带来的会不会消息丢失问题" href="#消费者崩溃带来的会不会消息丢失问题" target="_self" rel="noopener">#</a> 消费者崩溃带来的会不会消息丢失问题?</h5><div class="heading-children"><div><p>为了解决组内消息读取但处理期间消费者崩溃带来的消息丢失问题，STREAM 设计了 Pending 列表，用于记录读取但并未处理完毕的消息。命令XPENDIING 用来获消费组或消费内消费者的未处理完毕的消息。演示如下：</p></div><div><pre><code>127.0.0.1:6379&gt; XPENDING mq mqGroup # mpGroup的Pending情况
+1) (integer) 5 # 5个已读取但未处理的消息
+2) "1553585533795-0" # 起始ID
+3) "1553585533795-4" # 结束ID
+4) 1) 1) "consumerA" # 消费者A有3个
+      2) "3"
+   2) 1) "consumerB" # 消费者B有1个
+      2) "1"
+   3) 1) "consumerC" # 消费者C有1个
+      2) "1"
+
+127.0.0.1:6379&gt; XPENDING mq mqGroup - + 10 # 使用 start end count 选项可以获取详细信息
+1) 1) "1553585533795-0" # 消息ID
+   2) "consumerA" # 消费者
+   3) (integer) 1654355 # 从读取到现在经历了1654355ms，IDLE
+   4) (integer) 5 # 消息被读取了5次，delivery counter
+2) 1) "1553585533795-1"
+   2) "consumerA"
+   3) (integer) 1654355
+   4) (integer) 4
+# 共5个，余下3个省略 ...
+
+127.0.0.1:6379&gt; XPENDING mq mqGroup - + 10 consumerA # 在加上消费者参数，获取具体某个消费者的Pending列表
+1) 1) "1553585533795-0"
+   2) "consumerA"
+   3) (integer) 1641083
+   4) (integer) 5
+# 共3个，余下2个省略 ...
+</code><button class="copy-code-button">复制</button></pre></div><div><p>每个Pending的消息有4个属性：</p></div><div><ul>
+<li data-line="0">消息ID</li>
+<li data-line="1">所属消费者</li>
+<li data-line="2">IDLE，已读取时长</li>
+<li data-line="3">delivery counter，消息被读取次数</li>
+</ul></div><div><p>上面的结果我们可以看到，我们之前读取的消息，都被记录在Pending列表中，说明全部读到的消息都没有处理，仅仅是读取了。那如何表示消费者处理完毕了消息呢？使用命令 XACK 完成告知消息处理完成，演示如下：</p></div><div><pre><code>127.0.0.1:6379&gt; XACK mq mqGroup 1553585533795-0 # 通知消息处理结束，用消息ID标识
+(integer) 1
+
+127.0.0.1:6379&gt; XPENDING mq mqGroup # 再次查看Pending列表
+1) (integer) 4 # 已读取但未处理的消息已经变为4个
+2) "1553585533795-1"
+3) "1553585533795-4"
+4) 1) 1) "consumerA" # 消费者A，还有2个消息处理
+      2) "2"
+   2) 1) "consumerB"
+      2) "1"
+   3) 1) "consumerC"
+      2) "1"
+127.0.0.1:6379&gt;
+</code><button class="copy-code-button">复制</button></pre></div><div><p>有了这样一个Pending机制，就意味着在某个消费者读取消息但未处理后，消息是不会丢失的。等待消费者再次上线后，可以读取该Pending列表，就可以继续处理该消息了，保证消息的有序和不丢失。</p></div></div></div><div class="heading-wrapper"><h5 data-heading="[#](#消费者彻底宕机后如何转移给其它消费者处理) 消费者彻底宕机后如何转移给其它消费者处理？" class="heading" id="[#](#消费者彻底宕机后如何转移给其它消费者处理)_消费者彻底宕机后如何转移给其它消费者处理？"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="internal-link" data-href="#消费者彻底宕机后如何转移给其它消费者处理" href="#消费者彻底宕机后如何转移给其它消费者处理" target="_self" rel="noopener">#</a> 消费者彻底宕机后如何转移给其它消费者处理？</h5><div class="heading-children"><div><blockquote>
+<p>还有一个问题，就是若某个消费者宕机之后，没有办法再上线了，那么就需要将该消费者Pending的消息，转义给其他的消费者处理，就是消息转移。</p>
+</blockquote></div><div><p>消息转移的操作时将某个消息转移到自己的Pending列表中。使用语法XCLAIM来实现，需要设置组、转移的目标消费者和消息ID，同时需要提供IDLE（已被读取时长），只有超过这个时长，才能被转移。演示如下：</p></div><div><pre><code># 当前属于消费者A的消息1553585533795-1，已经15907,787ms未处理了
+127.0.0.1:6379&gt; XPENDING mq mqGroup - + 10
+1) 1) "1553585533795-1"
+   2) "consumerA"
+   3) (integer) 15907787
+   4) (integer) 4
+
+# 转移超过3600s的消息1553585533795-1到消费者B的Pending列表
+127.0.0.1:6379&gt; XCLAIM mq mqGroup consumerB 3600000 1553585533795-1
+1) 1) "1553585533795-1"
+   2) 1) "msg"
+      2) "2"
+
+# 消息1553585533795-1已经转移到消费者B的Pending中。
+127.0.0.1:6379&gt; XPENDING mq mqGroup - + 10
+1) 1) "1553585533795-1"
+   2) "consumerB"
+   3) (integer) 84404 # 注意IDLE，被重置了
+   4) (integer) 5 # 注意，读取次数也累加了1次
+</code><button class="copy-code-button">复制</button></pre></div><div><p>以上代码，完成了一次消息转移。转移除了要指定ID外，还需要指定IDLE，保证是长时间未处理的才被转移。被转移的消息的IDLE会被重置，用以保证不会被重复转移，以为可能会出现将过期的消息同时转移给多个消费者的并发操作，设置了IDLE，则可以避免后面的转移不会成功，因为IDLE不满足条件。例如下面的连续两条转移，第二条不会成功。</p></div><div><pre><code>127.0.0.1:6379&gt; XCLAIM mq mqGroup consumerB 3600000 1553585533795-1
+127.0.0.1:6379&gt; XCLAIM mq mqGroup consumerC 3600000 1553585533795-1
+</code><button class="copy-code-button">复制</button></pre></div><div><p>这就是消息转移。至此我们使用了一个Pending消息的ID，所属消费者和IDLE的属性，还有一个属性就是消息被读取次数，delivery counter，该属性的作用由于统计消息被读取的次数，包括被转移也算。这个属性主要用在判定是否为错误数据上。</p></div></div></div><div class="heading-wrapper"><h5 data-heading="[#](#坏消息问题-dead-letter-死信问题) 坏消息问题，Dead Letter，死信问题" class="heading" id="[#](#坏消息问题-dead-letter-死信问题)_坏消息问题，Dead_Letter，死信问题"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="internal-link" data-href="#坏消息问题-dead-letter-死信问题" href="#坏消息问题-dead-letter-死信问题" target="_self" rel="noopener">#</a> 坏消息问题，Dead Letter，死信问题</h5><div class="heading-children"><div><p>正如上面所说，如果某个消息，不能被消费者处理，也就是不能被XACK，这是要长时间处于Pending列表中，即使被反复的转移给各个消费者也是如此。此时该消息的delivery counter就会累加（上一节的例子可以看到），当累加到某个我们预设的临界值时，我们就认为是坏消息（也叫死信，DeadLetter，无法投递的消息），由于有了判定条件，我们将坏消息处理掉即可，删除即可。删除一个消息，使用XDEL语法，演示如下：</p></div><div><pre><code># 删除队列中的消息
+127.0.0.1:6379&gt; XDEL mq 1553585533795-1
+(integer) 1
+# 查看队列中再无此消息
+127.0.0.1:6379&gt; XRANGE mq - +
+1) 1) "1553585533795-0"
+   2) 1) "msg"
+      2) "1"
+2) 1) "1553585533795-2"
+   2) 1) "msg"
+      2) "3"
+</code><button class="copy-code-button">复制</button></pre></div><div><p>注意本例中，并没有删除Pending中的消息因此你查看Pending，消息还会在。可以执行XACK标识其处理完毕！</p></div></div></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="▶　参考文章" class="heading" id="▶　参考文章"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>▶　参考文章</h2><div class="heading-children"><div><p><a rel="noopener" class="external-link" href="http://blog.czk.pub/post/4e38cf26.html#%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8-1" target="_blank">http://blog.czk.pub/post/4e38cf26.html#%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8-1</a></p></div><div class="mod-footer"></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div class="tree-container mod-root nav-folder tree-item outline-tree" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-scroll-area tree-item-children nav-folder-children"><div class="tree-item mod-tree-folder nav-folder mod-collapsible is-collapsed" style="display: none;"></div><div class="tree-item" data-depth="1"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#03、常见命令&amp;数据类型"><div class="tree-item-contents heading-link" heading-name="03、常见命令&amp;数据类型"><span class="tree-item-title">03、常见命令&amp;数据类型</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="2"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#一、Redis_数据结构简介"><div class="tree-item-contents heading-link" heading-name="一、Redis 数据结构简介"><span class="tree-item-title">一、Redis 数据结构简介</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#二、通用命令"><div class="tree-item-contents heading-link" heading-name="二、通用命令"><span class="tree-item-title">二、通用命令</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#三、5_种基本类型"><div class="tree-item-contents heading-link" heading-name="三、5 种基本类型"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">三、5 种基本类型</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#一）String_字符串"><div class="tree-item-contents heading-link" heading-name="一）String 字符串"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">一）String 字符串</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　原理"><div class="tree-item-contents heading-link" heading-name="❈　原理"><span class="tree-item-title">❈　原理</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　命令使用"><div class="tree-item-contents heading-link" heading-name="❈　命令使用"><span class="tree-item-title">❈　命令使用</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　命令执行"><div class="tree-item-contents heading-link" heading-name="❈　命令执行"><span class="tree-item-title">❈　命令执行</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　实战场景"><div class="tree-item-contents heading-link" heading-name="❈　实战场景"><span class="tree-item-title">❈　实战场景</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#二）List_列表"><div class="tree-item-contents heading-link" heading-name="二）List 列表"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">二）List 列表</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　原理"><div class="tree-item-contents heading-link" heading-name="❈　原理"><span class="tree-item-title">❈　原理</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　命令使用"><div class="tree-item-contents heading-link" heading-name="❈　命令使用"><span class="tree-item-title">❈　命令使用</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　命令执行"><div class="tree-item-contents heading-link" heading-name="❈　命令执行"><span class="tree-item-title">❈　命令执行</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　实战场景"><div class="tree-item-contents heading-link" heading-name="❈　实战场景"><span class="tree-item-title">❈　实战场景</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#三）Set_集合"><div class="tree-item-contents heading-link" heading-name="三）Set 集合"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">三）Set 集合</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　原理"><div class="tree-item-contents heading-link" heading-name="❈　原理"><span class="tree-item-title">❈　原理</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　命令使用"><div class="tree-item-contents heading-link" heading-name="❈　命令使用"><span class="tree-item-title">❈　命令使用</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　命令执行"><div class="tree-item-contents heading-link" heading-name="❈　命令执行"><span class="tree-item-title">❈　命令执行</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　实战场景"><div class="tree-item-contents heading-link" heading-name="❈　实战场景"><span class="tree-item-title">❈　实战场景</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#四）Hash_散列"><div class="tree-item-contents heading-link" heading-name="四）Hash 散列"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">四）Hash 散列</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　原理"><div class="tree-item-contents heading-link" heading-name="❈　原理"><span class="tree-item-title">❈　原理</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　命令使用"><div class="tree-item-contents heading-link" heading-name="❈　命令使用"><span class="tree-item-title">❈　命令使用</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　命令执行"><div class="tree-item-contents heading-link" heading-name="❈　命令执行"><span class="tree-item-title">❈　命令执行</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　实战场景"><div class="tree-item-contents heading-link" heading-name="❈　实战场景"><span class="tree-item-title">❈　实战场景</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#五）Zset_有序集合"><div class="tree-item-contents heading-link" heading-name="五）Zset 有序集合"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">五）Zset 有序集合</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　原理"><div class="tree-item-contents heading-link" heading-name="❈　原理"><span class="tree-item-title">❈　原理</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　命令使用"><div class="tree-item-contents heading-link" heading-name="❈　命令使用"><span class="tree-item-title">❈　命令使用</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　命令执行"><div class="tree-item-contents heading-link" heading-name="❈　命令执行"><span class="tree-item-title">❈　命令执行</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　实战场景"><div class="tree-item-contents heading-link" heading-name="❈　实战场景"><span class="tree-item-title">❈　实战场景</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#四、三种特殊类型"><div class="tree-item-contents heading-link" heading-name="四、三种特殊类型"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">四、三种特殊类型</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#一）HyperLogLogs（基数统计）"><div class="tree-item-contents heading-link" heading-name="一）HyperLogLogs（基数统计）"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">一）HyperLogLogs（基数统计）</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#1、什么是基数？"><div class="tree-item-contents heading-link" heading-name="1、什么是基数？"><span class="tree-item-title">1、什么是基数？</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#2、HyperLogLogs_基数统计用来解决什么问题？"><div class="tree-item-contents heading-link" heading-name="2、HyperLogLogs 基数统计用来解决什么问题？"><span class="tree-item-title">2、HyperLogLogs 基数统计用来解决什么问题？</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#3、它的优势体现在哪？"><div class="tree-item-contents heading-link" heading-name="3、它的优势体现在哪？"><span class="tree-item-title">3、它的优势体现在哪？</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#4、相关命令使用"><div class="tree-item-contents heading-link" heading-name="4、相关命令使用"><span class="tree-item-title">4、相关命令使用</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#二）Bitmap_（位存储）"><div class="tree-item-contents heading-link" heading-name="二）Bitmap （位存储）"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">二）Bitmap （位存储）</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#1、用来解决什么问题？"><div class="tree-item-contents heading-link" heading-name="1、用来解决什么问题？"><span class="tree-item-title">1、用来解决什么问题？</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#2、相关命令使用"><div class="tree-item-contents heading-link" heading-name="2、相关命令使用"><span class="tree-item-title">2、相关命令使用</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#三）geospatial_(地理位置)"><div class="tree-item-contents heading-link" heading-name="三）geospatial (地理位置)"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">三）geospatial (地理位置)</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#1、Geoadd"><div class="tree-item-contents heading-link" heading-name="1、Geoadd"><span class="tree-item-title">1、Geoadd</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#2、Geopos"><div class="tree-item-contents heading-link" heading-name="2、Geopos"><span class="tree-item-title">2、Geopos</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#3、Geodist"><div class="tree-item-contents heading-link" heading-name="3、Geodist"><span class="tree-item-title">3、Geodist</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#4、georadius"><div class="tree-item-contents heading-link" heading-name="4、georadius"><span class="tree-item-title">4、georadius</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#5、georadiusbymember"><div class="tree-item-contents heading-link" heading-name="5、georadiusbymember"><span class="tree-item-title">5、georadiusbymember</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#6、geohash(较少使用)"><div class="tree-item-contents heading-link" heading-name="6、geohash(较少使用)"><span class="tree-item-title">6、geohash(较少使用)</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#❈　底层"><div class="tree-item-contents heading-link" heading-name="❈　底层"><span class="tree-item-title">❈　底层</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#五、Stream"><div class="tree-item-contents heading-link" heading-name="五、Stream"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">五、Stream</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#为什么会设计Stream"><div class="tree-item-contents heading-link" heading-name="为什么会设计Stream"><span class="tree-item-title">为什么会设计Stream</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#Stream详解"><div class="tree-item-contents heading-link" heading-name="Stream详解"><span class="tree-item-title">Stream详解</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#Stream的结构"><div class="tree-item-contents heading-link" heading-name="Stream的结构"><span class="tree-item-title">Stream的结构</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#增删改查"><div class="tree-item-contents heading-link" heading-name="增删改查"><span class="tree-item-title">增删改查</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#独立消费"><div class="tree-item-contents heading-link" heading-name="独立消费"><span class="tree-item-title">独立消费</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#消费组消费"><div class="tree-item-contents heading-link" heading-name="消费组消费"><span class="tree-item-title">消费组消费</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#信息监控"><div class="tree-item-contents heading-link" heading-name="信息监控"><span class="tree-item-title">信息监控</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#更深入理解"><div class="tree-item-contents heading-link" heading-name="更深入理解"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">更深入理解</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="5"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#[#](#stream用在什么样场景)_Stream用在什么样场景"><div class="tree-item-contents heading-link" heading-name="[#](#stream用在什么样场景) Stream用在什么样场景"><span class="tree-item-title"><a class="internal-link" data-href="#stream用在什么样场景" href="#stream用在什么样场景" target="_blank" rel="noopener">#</a> Stream用在什么样场景</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#[#](#消息id的设计是否考虑了时间回拨的问题)_消息ID的设计是否考虑了时间回拨的问题？"><div class="tree-item-contents heading-link" heading-name="[#](#消息id的设计是否考虑了时间回拨的问题) 消息ID的设计是否考虑了时间回拨的问题？"><span class="tree-item-title"><a class="internal-link" data-href="#消息id的设计是否考虑了时间回拨的问题" href="#消息id的设计是否考虑了时间回拨的问题" target="_blank" rel="noopener">#</a> 消息ID的设计是否考虑了时间回拨的问题？</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#[#](#消费者崩溃带来的会不会消息丢失问题)_消费者崩溃带来的会不会消息丢失问题?"><div class="tree-item-contents heading-link" heading-name="[#](#消费者崩溃带来的会不会消息丢失问题) 消费者崩溃带来的会不会消息丢失问题?"><span class="tree-item-title"><a class="internal-link" data-href="#消费者崩溃带来的会不会消息丢失问题" href="#消费者崩溃带来的会不会消息丢失问题" target="_blank" rel="noopener">#</a> 消费者崩溃带来的会不会消息丢失问题?</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#[#](#消费者彻底宕机后如何转移给其它消费者处理)_消费者彻底宕机后如何转移给其它消费者处理？"><div class="tree-item-contents heading-link" heading-name="[#](#消费者彻底宕机后如何转移给其它消费者处理) 消费者彻底宕机后如何转移给其它消费者处理？"><span class="tree-item-title"><a class="internal-link" data-href="#消费者彻底宕机后如何转移给其它消费者处理" href="#消费者彻底宕机后如何转移给其它消费者处理" target="_blank" rel="noopener">#</a> 消费者彻底宕机后如何转移给其它消费者处理？</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#[#](#坏消息问题-dead-letter-死信问题)_坏消息问题，Dead_Letter，死信问题"><div class="tree-item-contents heading-link" heading-name="[#](#坏消息问题-dead-letter-死信问题) 坏消息问题，Dead Letter，死信问题"><span class="tree-item-title"><a class="internal-link" data-href="#坏消息问题-dead-letter-死信问题" href="#坏消息问题-dead-letter-死信问题" target="_blank" rel="noopener">#</a> 坏消息问题，Dead Letter，死信问题</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="04、数据库\02、redis\03、常见命令&amp;数据类型.html#▶　参考文章"><div class="tree-item-contents heading-link" heading-name="▶　参考文章"><span class="tree-item-title">▶　参考文章</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>
