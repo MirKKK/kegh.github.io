@@ -844,71 +844,84 @@ zset
 <li data-line="4">XRANGE - 获取消息列表，会自动过滤已经删除的消息</li>
 <li data-line="5">XREVRANGE - 反向获取消息列表，ID 从大到小</li>
 <li data-line="6">XREAD - 以阻塞或非阻塞方式获取消息列表</li>
-</ul></div><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded"># *号表示服务器自动生成ID，后面顺序跟着一堆key/value
-127.0.0.1:6379&gt; xadd codehole * name laoqian age 30  #  名字叫laoqian，年龄30岁
-1527849609889-0  # 生成的消息ID
-127.0.0.1:6379&gt; xadd codehole * name xiaoyu age 29
-1527849629172-0
-127.0.0.1:6379&gt; xadd codehole * name xiaoqian age 1
-1527849637634-0
-127.0.0.1:6379&gt; xlen codehole
-(integer) 3
-127.0.0.1:6379&gt; xrange codehole - +  # -表示最小值, +表示最大值
-127.0.0.1:6379&gt; xrange codehole - +
-1) 1) 1527849609889-0
-   1) 1) "name"
-      1) "laoqian"
-      2) "age"
-      3) "30"
-2) 1) 1527849629172-0
-   1) 1) "name"
-      1) "xiaoyu"
-      2) "age"
-      3) "29"
-3) 1) 1527849637634-0
-   1) 1) "name"
-      1) "xiaoqian"
-      2) "age"
-      3) "1"
-127.0.0.1:6379&gt; xrange codehole 1527849629172-0 +  # 指定最小消息ID的列表
-1) 1) 1527849629172-0
-   2) 1) "name"
-      2) "xiaoyu"
-      3) "age"
-      4) "29"
-2) 1) 1527849637634-0
-   2) 1) "name"
-      2) "xiaoqian"
-      3) "age"
-      4) "1"
-127.0.0.1:6379&gt; xrange codehole - 1527849629172-0  # 指定最大消息ID的列表
-1) 1) 1527849609889-0
-   2) 1) "name"
-      2) "laoqian"
-      3) "age"
-      4) "30"
-2) 1) 1527849629172-0
-   2) 1) "name"
-      2) "xiaoyu"
-      3) "age"
-      4) "29"
-127.0.0.1:6379&gt; xdel codehole 1527849609889-0
-(integer) 1
-127.0.0.1:6379&gt; xlen codehole  # 长度不受影响
-(integer) 3
-127.0.0.1:6379&gt; xrange codehole - +  # 被删除的消息没了
-1) 1) 1527849629172-0
-   2) 1) "name"
-      2) "xiaoyu"
-      3) "age"
-      4) "29"
-2) 1) 1527849637634-0
-   2) 1) "name"
-      2) "xiaoqian"
-      3) "age"
-      4) "1"
-127.0.0.1:6379&gt; del codehole  # 删除整个Stream
-(integer) 1
+</ul></div><div><pre class="language-shell" tabindex="0"><code class="language-shell is-loaded"><span class="token comment"># *号表示服务器自动生成ID，后面顺序跟着一堆key/value</span>
+
+<span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> xadd codehole * name laoqian age <span class="token number">30</span>  <span class="token comment">#  名字叫laoqian，年龄30岁</span>
+<span class="token number">1527849609889</span>-0  <span class="token comment"># 生成的消息ID</span>
+<span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> xadd codehole * name xiaoyu age <span class="token number">29</span>
+<span class="token number">1527849629172</span>-0
+<span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> xadd codehole * name xiaoqian age <span class="token number">1</span>
+<span class="token number">1527849637634</span>-0
+
+<span class="token comment">#  获取长度</span>
+<span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> xlen codehole
+<span class="token punctuation">(</span>integer<span class="token punctuation">)</span> <span class="token number">3</span>
+
+<span class="token comment"># -表示最小值, +表示最大值</span>
+<span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> xrange codehole - +  
+<span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1527849609889</span>-0
+   <span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">"name"</span>
+      <span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">"laoqian"</span>
+      <span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">"age"</span>
+      <span class="token number">3</span><span class="token punctuation">)</span> <span class="token string">"30"</span>
+<span class="token number">2</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1527849629172</span>-0
+   <span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">"name"</span>
+      <span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">"xiaoyu"</span>
+      <span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">"age"</span>
+      <span class="token number">3</span><span class="token punctuation">)</span> <span class="token string">"29"</span>
+<span class="token number">3</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1527849637634</span>-0
+   <span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">"name"</span>
+      <span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">"xiaoqian"</span>
+      <span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">"age"</span>
+      <span class="token number">3</span><span class="token punctuation">)</span> <span class="token string">"1"</span>
+
+<span class="token comment"># 指定最小消息ID的列表 到 后面所有</span>
+<span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> xrange codehole <span class="token number">1527849629172</span>-0 +  <span class="token comment"># 指定最小消息ID的列表</span>
+<span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1527849629172</span>-0
+   <span class="token number">2</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">"name"</span>
+      <span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">"xiaoyu"</span>
+      <span class="token number">3</span><span class="token punctuation">)</span> <span class="token string">"age"</span>
+      <span class="token number">4</span><span class="token punctuation">)</span> <span class="token string">"29"</span>
+<span class="token number">2</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1527849637634</span>-0
+   <span class="token number">2</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">"name"</span>
+      <span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">"xiaoqian"</span>
+      <span class="token number">3</span><span class="token punctuation">)</span> <span class="token string">"age"</span>
+      <span class="token number">4</span><span class="token punctuation">)</span> <span class="token string">"1"</span>
+
+<span class="token comment"># 指定当前  到 最大消息ID的列表</span>
+<span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> xrange codehole - <span class="token number">1527849629172</span>-0 
+<span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1527849609889</span>-0
+   <span class="token number">2</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">"name"</span>
+      <span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">"laoqian"</span>
+      <span class="token number">3</span><span class="token punctuation">)</span> <span class="token string">"age"</span>
+      <span class="token number">4</span><span class="token punctuation">)</span> <span class="token string">"30"</span>
+<span class="token number">2</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1527849629172</span>-0
+   <span class="token number">2</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">"name"</span>
+      <span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">"xiaoyu"</span>
+      <span class="token number">3</span><span class="token punctuation">)</span> <span class="token string">"age"</span>
+      <span class="token number">4</span><span class="token punctuation">)</span> <span class="token string">"29"</span>
+
+ <span class="token comment"># 删除一个小希</span>
+<span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> xdel codehole <span class="token number">1527849609889</span>-0
+<span class="token punctuation">(</span>integer<span class="token punctuation">)</span> <span class="token number">1</span>
+<span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> xlen codehole  <span class="token comment"># 长度不受影响</span>
+<span class="token punctuation">(</span>integer<span class="token punctuation">)</span> <span class="token number">3</span>
+
+<span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> xrange codehole - +  <span class="token comment"># 被删除的消息没了</span>
+<span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1527849629172</span>-0
+   <span class="token number">2</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">"name"</span>
+      <span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">"xiaoyu"</span>
+      <span class="token number">3</span><span class="token punctuation">)</span> <span class="token string">"age"</span>
+      <span class="token number">4</span><span class="token punctuation">)</span> <span class="token string">"29"</span>
+<span class="token number">2</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token number">1527849637634</span>-0
+   <span class="token number">2</span><span class="token punctuation">)</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">"name"</span>
+      <span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">"xiaoqian"</span>
+      <span class="token number">3</span><span class="token punctuation">)</span> <span class="token string">"age"</span>
+      <span class="token number">4</span><span class="token punctuation">)</span> <span class="token string">"1"</span>
+
+<span class="token comment"># 删除整个Stream</span>
+<span class="token number">127.0</span>.0.1:637<span class="token operator"><span class="token file-descriptor important">9</span>&gt;</span> del codehole 
+<span class="token punctuation">(</span>integer<span class="token punctuation">)</span> <span class="token number">1</span>
 </code><button class="copy-code-button">复制</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="3、独立消费" class="heading" id="3、独立消费"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>3、独立消费</h4><div class="heading-children"><div><p>我们可以在不定义消费组的情况下进行Stream消息的独立消费，当Stream没有新消息时，甚至可以阻塞等待。Redis设计了一个单独的消费指令xread，可以将Stream当成普通的消息队列(list)来使用。使用xread时，我们可以完全忽略消费组(Consumer Group)的存在，就好比Stream就是一个普通的列表(list)。</p></div><div><pre class="language-sh" tabindex="0"><code class="language-sh is-loaded"># 从Stream头部读取两条消息
 127.0.0.1:6379&gt; xread count 2 streams codehole 0-0
 1) 1) "codehole"
@@ -922,14 +935,18 @@ zset
             2) "yurui"
             3) "age"
             4) "29"
+
 # 从Stream尾部读取一条消息，毫无疑问，这里不会返回任何消息
 127.0.0.1:6379&gt; xread count 1 streams codehole $
 (nil)
+
 # 从尾部阻塞等待新消息到来，下面的指令会堵住，直到新消息到来
 127.0.0.1:6379&gt; xread block 0 count 1 streams codehole $
+
 # 我们从新打开一个窗口，在这个窗口往Stream里塞消息
 127.0.0.1:6379&gt; xadd codehole * name youming age 60
 1527852774092-0
+
 # 再切换到前面的窗口，我们可以看到阻塞解除了，返回了新的消息内容
 # 而且还显示了一个等待时间，这里我们等待了93s
 127.0.0.1:6379&gt; xread block 0 count 1 streams codehole $
@@ -1013,6 +1030,7 @@ OK
             2) "laoqian"
             3) "age"
             4) "30"
+
 127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 count 1 streams codehole &gt;
 1) 1) "codehole"
    2) 1) 1) 1527851493405-0
@@ -1020,6 +1038,7 @@ OK
             2) "yurui"
             3) "age"
             4) "29"
+
 127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 count 2 streams codehole &gt;
 1) 1) "codehole"
    2) 1) 1) 1527851498956-0
@@ -1032,14 +1051,18 @@ OK
             2) "youming"
             3) "age"
             4) "60"
+
 # 再继续读取，就没有新消息了
 127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 count 1 streams codehole &gt;
 (nil)
+
 # 那就阻塞等待吧
 127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 block 0 count 1 streams codehole &gt;
+
 # 开启另一个窗口，往里塞消息
 127.0.0.1:6379&gt; xadd codehole * name lanying age 61
 1527854062442-0
+
 # 回到前一个窗口，发现阻塞解除，收到新消息了
 127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 block 0 count 1 streams codehole &gt;
 1) 1) "codehole"
@@ -1049,6 +1072,7 @@ OK
             3) "age"
             4) "61"
 (36.54s)
+
 127.0.0.1:6379&gt; xinfo groups codehole  # 观察消费组信息
 1) 1) name
    2) "cg1"
@@ -1062,6 +1086,7 @@ OK
    4) (integer) 0  # 消费组cg2没有任何变化，因为前面我们一直在操纵cg1
    5) pending
    6) (integer) 0
+
 # 如果同一个消费组有多个消费者，我们可以通过xinfo consumers指令观察每个消费者的状态
 127.0.0.1:6379&gt; xinfo consumers codehole cg1  # 目前还有1个消费者
 1) 1) name
@@ -1070,6 +1095,7 @@ OK
    4) (integer) 5  # 共5条待处理消息
    5) idle
    6) (integer) 418715  # 空闲了多长时间ms没有读取消息了
+
 # 接下来我们ack一条消息
 127.0.0.1:6379&gt; xack codehole cg1 1527851486781-0
 (integer) 1
@@ -1080,6 +1106,7 @@ OK
    4) (integer) 4  # 变成了5条
    5) idle
    6) (integer) 668504
+
 # 下面ack所有消息
 127.0.0.1:6379&gt; xack codehole cg1 1527851493405-0 1527851498956-0 1527852774092-0 1527854062442-0
 (integer) 4

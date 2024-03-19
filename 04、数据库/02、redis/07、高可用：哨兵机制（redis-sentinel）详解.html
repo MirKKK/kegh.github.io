@@ -48,8 +48,7 @@
 </li>
 </ul></div><div><p>以 3 个哨兵为例，假设此时的 quorum 设置为 2，那么，任何一个想成为 Leader 的哨兵只要拿到 2 张赞成票，就可以了。</p></div><div><blockquote>
 <p>这里很多人会搞混 <strong>判定客观下线</strong> 和 <strong>是否能够主从切换（用到选举机制）</strong> 两个概念，我们再看一个例子。</p>
-<p>Redis 1 主 4 从，5 个哨兵，哨兵配置 quorum 为 2，如果 3 个哨兵故障，当主库宕机时，哨兵能否判断主库“客观下线”？能否自动切换？</p>
-</blockquote></div><div><p>经过实际测试：<br>
+</blockquote></div><div><p>Redis 1 主 4 从，5 个哨兵，哨兵配置 quorum 为 2，如果 3 个哨兵故障，当主库宕机时，哨兵能否判断主库“客观下线”？能否自动切换？</p></div><div><p>经过实际测试：<br>
 1、哨兵集群可以判定主库“主观下线”。由于 quorum=2，所以当一个哨兵判断主库“主观下线”后，询问另外一个哨兵后也会得到同样的结果，2 个哨兵都判定“主观下线”，达到了 quorum 的值，因此，<strong>哨兵集群可以判定主库为“客观下线”</strong>。</p></div><div><p>2、<strong>但哨兵不能完成主从切换</strong>。哨兵标记主库“客观下线后”，在选举“哨兵领导者”时，一个哨兵必须拿到超过多数的选票 (5/2+1=3 票)。但目前只有 2 个哨兵活着，无论怎么投票，一个哨兵最多只能拿到 2 票，永远无法达到 <code>N/2+1</code> 选票的结果。</p></div></div></div><div class="heading-wrapper"><h3 data-heading="六）新主库的选出" class="heading" id="六）新主库的选出"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>六）新主库的选出</h3><div class="heading-children"><div><blockquote>
 <p>主库既然判定客观下线了，那么如何从剩余的从库中选择一个新的主库呢？</p>
 </blockquote></div><div><ul>

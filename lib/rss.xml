@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Java知识体系构建]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Java知识体系构建</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 17 Mar 2024 14:08:30 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 17 Mar 2024 14:06:51 GMT</pubDate><copyright><![CDATA[kegh]]></copyright><ttl>60</ttl><dc:creator>kegh</dc:creator><item><title><![CDATA[01、计算机硬件]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Java知识体系构建]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Java知识体系构建</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 19 Mar 2024 14:01:31 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 19 Mar 2024 13:59:52 GMT</pubDate><copyright><![CDATA[kegh]]></copyright><ttl>60</ttl><dc:creator>kegh</dc:creator><item><title><![CDATA[01、计算机硬件]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\01、计算机基础\01、计算机硬件.html</link><guid isPermaLink="false">01、通用基础/01、计算机基础/01、计算机硬件.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:45 GMT</pubDate></item><item><title><![CDATA[02、操作系统]]></title><description><![CDATA[ 
  <br><br>--Microsoft 公司推出的操作系统。（在 windows 之前的操作系统）<br>
 --DOS 是英文"Disk Operating System"的缩写, 其中文含意是"磁盘操作系统".<br>
@@ -51,8 +51,7 @@ Del 后面如果接的是文件夹/目录：那么删除的就是这个文件夹
 十进制 14：<br>【6】八进制转换为十六进制：<br>把十进制当做一个中转站：<br>八进制---》十进制---》十六进制<br>实际上根本不用自己转换这么麻烦：我们可以直接用系统中提供给我们的计算器：<br><br>UTF-8 和 Unicode 有何区别？<br>Unicode 与 ASCII 类似，都是一种字符集。<br>字符集为每个字符分配一个唯一的 ID，我们使用到的所有字符在 Unicode 字符集中都有一个唯一的 ID，例如 a 在 Unicode 与 ASCII 中的编码都是 97。汉字“你”在 Unicode 中的编码为 20320，在不同国家的字符集中，字符所对应的 ID 也会不同。而无论任何情况下，Unicode 中的字符的 ID 都是不会变化的。<br>UTF-8 是编码规则，将 Unicode 中字符的 ID 以某种方式进行编码，UTF-8 的是一种变长编码规则，从 1 到 4 个字节不等。编码规则如下：<br>
 <br>0 xxxxxx 表示文字符号 0～127，兼容 ASCII 字符集。
 <br>从 128 到 0 x 10 ffff 表示其他字符。
-<br>根据这个规则，拉丁文语系的字符编码一般情况下每个字符占用一个字节，而中文每个字符占用 3 个字节。<br>广义的 Unicode 指的是一个标准，它定义了字符集及编码规则，即 Unicode 字符集和 UTF-8、UTF-16 编码等。]]></description><link>01、通用基础\01、计算机基础\03、通用概念.html</link><guid isPermaLink="false">01、通用基础/01、计算机基础/03、通用概念.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:45 GMT</pubDate></item><item><title><![CDATA[04、Unix IO 模型]]></title><description><![CDATA[ 
- <br><br><br>服务器大多都采用 Linux 系统，这里我们以 Linux 为例来讲解:<br>Ubuntu 和 Centos 都是 Linux 的发行版，发行版可以看成对 linux 包了一层壳，任何 Linux 发行版，其系统内核都是 Linux 。我们的应用都需要通过 Linux 内核与硬件交互。<br>用户的应用，比如 redis ，mysql 等其实是没有办法去执行访问我们操作系统的硬件的，所以我们可以通过发行版的系统去访问内核，再通过内核去访问计算机硬件。<br>​ 计算机硬件包括，如 cpu，内存，网卡等等，内核（通过寻址空间）可以操作硬件的，但是内核需要不同设备的驱动，有了这些驱动之后，内核就可以去对计算机硬件去进行内存管理，文件系统的管理，进程的管理等。<br><img src="\01、通用基础\01、计算机基础\assets\04、unix-io-模型\img-20240316_211906.png"><br>​ 我们想要用户的应用来访问，计算机就必须要通过对外暴露的一些接口，才能访问到，从而简介的实现对内核的操控，但是内核本身上来说也是一个应用，所以他本身也需要一些内存，cpu 等设备资源，用户应用本身也在消耗这些资源，如果不加任何限制，用户去操作随意的去操作我们的资源，就有可能导致一些冲突，甚至有可能导致我们的系统出现无法运行的问题，因此我们需要把用户和内核隔离开。<br><br><br><br><img src="\01、通用基础\01、计算机基础\assets\04、unix-io-模型\img-20240316_212152.png">]]></description><link>01、通用基础\01、计算机基础\04、unix-io-模型.html</link><guid isPermaLink="false">01、通用基础/01、计算机基础/04、Unix IO 模型.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sat, 16 Mar 2024 13:22:15 GMT</pubDate><enclosure url="01、通用基础\01、计算机基础\assets\04、unix-io-模型\img-20240316_211906.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;01、通用基础\01、计算机基础\assets\04、unix-io-模型\img-20240316_211906.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Linux常见命令]]></title><description><![CDATA[ 
+<br>根据这个规则，拉丁文语系的字符编码一般情况下每个字符占用一个字节，而中文每个字符占用 3 个字节。<br>广义的 Unicode 指的是一个标准，它定义了字符集及编码规则，即 Unicode 字符集和 UTF-8、UTF-16 编码等。]]></description><link>01、通用基础\01、计算机基础\03、通用概念.html</link><guid isPermaLink="false">01、通用基础/01、计算机基础/03、通用概念.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:45 GMT</pubDate></item><item><title><![CDATA[Linux常见命令]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\01、计算机基础\linux常见命令.html</link><guid isPermaLink="false">01、通用基础/01、计算机基础/Linux常见命令.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Fri, 15 Mar 2024 12:17:41 GMT</pubDate></item><item><title><![CDATA[Linux日志查询详解]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\01、计算机基础\linux日志查询详解.html</link><guid isPermaLink="false">01、通用基础/01、计算机基础/Linux日志查询详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Fri, 15 Mar 2024 12:17:49 GMT</pubDate></item><item><title><![CDATA[1、计算机网络基础部分梳理]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\02、计算机网络\1、计算机网络基础部分梳理.html</link><guid isPermaLink="false">01、通用基础/02、计算机网络/1、计算机网络基础部分梳理.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:45 GMT</pubDate></item><item><title><![CDATA[2、七层网络协议]]></title><description><![CDATA[ 
@@ -620,12 +619,12 @@ netstat -ant |awk '/:80/{split($5,ip,”:”);++A[ip[1]]}END{for(i in A) print A
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\02、线性表-链表.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/02、线性表 - 链表.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:44 GMT</pubDate></item><item><title><![CDATA[03、线性表(散列) - 哈希表]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\03、线性表(散列)-哈希表.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/03、线性表(散列) - 哈希表.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:43 GMT</pubDate></item><item><title><![CDATA[一. 初识算法]]></title><description><![CDATA[ 
  <br><br><br>定义<br>在数学和计算机科学领域，算法是一系列有限的严谨指令，通常用于解决一类特定问题或执行计算<br>
-In mathematics and computer science, an algorithm (/ˈælɡərɪðəm/) is a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation.<a href="\#fn-1-9b56881e3c9ebcd0" class="footnote-link" target="_self" rel="noopener">[1]</a>
-<br>Introduction to Algorithm<a href="\#fn-2-9b56881e3c9ebcd0" class="footnote-link" target="_self" rel="noopener">[2]</a><br>不正式的说，算法就是任何定义优良的计算过程：接收一些值作为输入，在有限的时间内，产生一些值作为输出。<br>
+In mathematics and computer science, an algorithm (/ˈælɡərɪðəm/) is a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation.<a href="\#fn-1-0c440cad6e1463bc" class="footnote-link" target="_self" rel="noopener">[1]</a>
+<br>Introduction to Algorithm<a href="\#fn-2-0c440cad6e1463bc" class="footnote-link" target="_self" rel="noopener">[2]</a><br>不正式的说，算法就是任何定义优良的计算过程：接收一些值作为输入，在有限的时间内，产生一些值作为输出。<br>
 Informally, an algorithm is any well-defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output in a finite amount of time.
 <br><br>定义<br>在计算机科学领域，数据结构是一种数据组织、管理和存储格式，通常被选择用来高效访问数据<br>
 In computer science, a data structure is a data organization, management, and storage format that is usually chosen for efficient access to data
-<br>Introduction to Algorithm<a href="\#fn-2-9b56881e3c9ebcd0" class="footnote-link" target="_self" rel="noopener">[2-1]</a><br>数据结构是一种存储和组织数据的方式，旨在便于访问和修改<br>
+<br>Introduction to Algorithm<a href="\#fn-2-0c440cad6e1463bc" class="footnote-link" target="_self" rel="noopener">[2-1]</a><br>数据结构是一种存储和组织数据的方式，旨在便于访问和修改<br>
 A data structure is a way to store and organize data in order to facilitate access and modifications
 <br>接下来我们通过对一个非常著名的二分查找算法的讲解来认识一下算法<br><br>二分查找算法也称折半查找，是一种非常高效的工作于有序数组的查找算法。后续的课程中还会学习更多的查找算法，但在此之前，不妨用它作为入门。<br><br>需求：在有序数组  内，查找值 <br>
 <br>如果找到返回索引
@@ -752,7 +751,7 @@ return -1，执行一次
 <br>
 为了对  进行化简，应当抓住主要矛盾，找到一个变化趋势与之相近的表示法
 
-<br>大  表示法<a href="\#fn-4-9b56881e3c9ebcd0" class="footnote-link" target="_self" rel="noopener">[4]</a><br>“.\imgs\image-20221108103846566.png” could not be found.<br>其中<br>
+<br>大  表示法<a href="\#fn-4-0c440cad6e1463bc" class="footnote-link" target="_self" rel="noopener">[4]</a><br>“.\imgs\image-20221108103846566.png” could not be found.<br>其中<br>
 <br> 都为一个常数
 <br> 是实际执行代码行数与 n 的函数
 <br> 是经过化简，变化趋势与  一致的 n 的函数
@@ -962,7 +961,7 @@ In computer science, an array is a data structure consisting of a collection of 
 <br>8 字节 markword
 <br>4 字节 class 指针（压缩 class 指针的情况）
 <br>4 字节 数组大小（决定了数组最大容量是 ）
-<br>数组元素 + 对齐字节（java 中所有对象大小都是 8 字节的整数倍<a href="\#fn-5-9b56881e3c9ebcd0" class="footnote-link" target="_self" rel="noopener">[5]</a>，不足的要用对齐字节补足）
+<br>数组元素 + 对齐字节（java 中所有对象大小都是 8 字节的整数倍<a href="\#fn-5-0c440cad6e1463bc" class="footnote-link" target="_self" rel="noopener">[5]</a>，不足的要用对齐字节补足）
 <br>例如<br>int[] array = {1, 2, 3, 4, 5};
 复制<br>的大小为 40 个字节，组成如下<br>8 + 4 + 4 + 5*4 + 4(alignment)
 复制<br>随机访问性能<br>即根据索引查找元素，时间复杂度是 <br><br>java 版本<br>public class DynamicArray implements Iterable&lt;Integer&gt; {
@@ -1185,7 +1184,7 @@ I/O 读写时同样可以体现局部性原理
 <br>代码位置：openjdk\src\hotspot\share\oops\arrayOop.hpp
 <br>只不过此检查代码，不需要由程序员自己来调用，JVM 会帮我们调用<br><br><br>定义<br>在计算机科学中，链表是数据元素的线性集合，其每个元素都指向下一个元素，元素存储上并不连续<br>
 In computer science, a linked list is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. 
-<br>可以分类为<a href="\#fn-6-9b56881e3c9ebcd0" class="footnote-link" target="_self" rel="noopener">[6]</a><br>
+<br>可以分类为<a href="\#fn-6-0c440cad6e1463bc" class="footnote-link" target="_self" rel="noopener">[6]</a><br>
 <br>单向链表，每个元素只知道其下一个元素是谁
 <br>“.\imgs\image-20221110083407176.png” could not be found.<br>
 <br>双向链表，每个元素知道其上一个元素和下一个元素
@@ -1847,10 +1846,10 @@ void f(Node node = 1) {
 
 <br>
 
-<br>更多 Fibonacci 参考<a href="\#fn-7-9b56881e3c9ebcd0" class="footnote-link" target="_self" rel="noopener">[7]</a><a href="\#fn-8-9b56881e3c9ebcd0" class="footnote-link" target="_self" rel="noopener">[8]</a><a href="\#fn-9-9b56881e3c9ebcd0" class="footnote-link" target="_self" rel="noopener">[9]</a>
+<br>更多 Fibonacci 参考<a href="\#fn-7-0c440cad6e1463bc" class="footnote-link" target="_self" rel="noopener">[7]</a><a href="\#fn-8-0c440cad6e1463bc" class="footnote-link" target="_self" rel="noopener">[8]</a><a href="\#fn-9-0c440cad6e1463bc" class="footnote-link" target="_self" rel="noopener">[9]</a>
 <br>以上时间复杂度分析，未考虑大数相加的因素
 
-<br>变体1 - 兔子问题<a href="\#fn-7-9b56881e3c9ebcd0" class="footnote-link" target="_self" rel="noopener">[7-1]</a><br>“imgs/image-20221110155655827.png” could not be found.<br>
+<br>变体1 - 兔子问题<a href="\#fn-7-0c440cad6e1463bc" class="footnote-link" target="_self" rel="noopener">[7-1]</a><br>“imgs/image-20221110155655827.png” could not be found.<br>
 <br>第一个月，有一对未成熟的兔子（黑色，注意图中个头较小）
 <br>第二个月，它们成熟
 <br>第三个月，它们能产下一对新的小兔子（蓝色）
@@ -1952,7 +1951,7 @@ public static int f(int[] cache, int n) {
 }
 复制<br>
 <br>最后一步执行的是加法
-<br>一些语言<a href="\#fn-10-9b56881e3c9ebcd0" class="footnote-link" target="_self" rel="noopener">[10]</a>的编译器能够对尾调用做优化，例如<br>function a() {
+<br>一些语言<a href="\#fn-10-0c440cad6e1463bc" class="footnote-link" target="_self" rel="noopener">[10]</a>的编译器能够对尾调用做优化，例如<br>function a() {
     // 做前面的事
     return b() 
 }
@@ -5079,7 +5078,7 @@ private ListNode middle(ListNode head) {
     }
     return true;
 }
-复制<br><br>本题以及下题，实际是 Floyd's Tortoise and Hare Algorithm （Floyd 龟兔赛跑算法）<a href="\#fn-15-9b56881e3c9ebcd0" class="footnote-link" target="_self" rel="noopener">[15]</a><br>
+复制<br><br>本题以及下题，实际是 Floyd's Tortoise and Hare Algorithm （Floyd 龟兔赛跑算法）<a href="\#fn-15-0c440cad6e1463bc" class="footnote-link" target="_self" rel="noopener">[15]</a><br>
 除了 Floyd 判环算法外，还有其它的判环算法，详见 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Cycle_detection" target="_blank">https://en.wikipedia.org/wiki/Cycle_detection</a>
 <br><img style="zoom: 50%;" alt="image-20221229190646563" src="\imgs\image-20221229190646563.png" referrerpolicy="no-referrer"><br>如果链表上存在环，那么在环上以不同速度前进的两个指针必定会在某个时刻相遇。算法分为两个阶段<br>阶段1<br>
 <br>龟一次走一步，兔子一次走两步
@@ -6660,21 +6659,21 @@ public TreeNode constructExpressionTree(String[] tokens) {
 <br><a data-tooltip-position="top" aria-label="https://link.zhihu.com/?target=https%3A//leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/" rel="noopener" class="external-link" href="https://link.zhihu.com/?target=https%3A//leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/" target="_blank">114. Flatten Binary Tree to Linked List (二叉树展开为链表)</a>, Medium, 877 likes
 <br>
 <br>
-<br><a data-tooltip-position="top" aria-label="https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://www.merriam-webster.com/dictionary/algorithm" target="_blank">"Definition of ALGORITHM"</a>. Merriam-Webster Online Dictionary. <a data-tooltip-position="top" aria-label="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" target="_blank">Archived</a> from the original on February 14, 2020. Retrieved November 14, 2019.<a href="\#fnref-1-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Introduction to Algorithm 中文译作《算法导论》<a href="\#fnref-2-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-2-1-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>主要参考文档 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank">https://en.wikipedia.org/wiki/Binary_search_algorithm</a><a href="\#fnref-3-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>图片及概念均摘自 Introduction to Algorithm 4th，3.1节，3.2 节<a href="\#fnref-4-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>jdk 版本有关，64 位 jdk，按 8 字节对齐<a href="\#fnref-5-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>图片引用自 wikipedia linkedlist 条目，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Linked_list" target="_blank">https://en.wikipedia.org/wiki/Linked_list</a><a href="\#fnref-6-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Fibonacci 介绍：<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank">https://en.wikipedia.org/wiki/Fibonacci_number</a><a href="\#fnref-7-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-7-1-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br><a data-tooltip-position="top" aria-label="https://zhuanlan.zhihu.com/p/165877869" rel="noopener" class="external-link" href="https://zhuanlan.zhihu.com/p/165877869" target="_blank">几种计算Fibonacci数列算法的时间复杂度比较 - 知乎 (zhihu.com)</a><a href="\#fnref-8-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>几种斐波那契数列算法比较 <a data-tooltip-position="top" aria-label="https://www.nayuki.io/page/fast-fibonacci-algorithms" rel="noopener" class="external-link" href="https://www.nayuki.io/page/fast-fibonacci-algorithms" target="_blank">Fast Fibonacci algorithms (nayuki.io)</a><a href="\#fnref-9-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>我知道的有 C++，Scala<a href="\#fnref-10-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>与主定理类似的还有 Akra–Bazzi method，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method" target="_blank">https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method</a><a href="\#fnref-11-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Josephus problem 主要参考 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Josephus_problem" target="_blank">https://en.wikipedia.org/wiki/Josephus_problem</a><a href="\#fnref-12-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>汉诺塔图片资料均来自 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">https://en.wikipedia.org/wiki/Tower_of_Hanoi</a><a href="\#fnref-13-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>也称为 Pascal's triangle <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Pascal%27s_triangle" target="_blank">https://en.wikipedia.org/wiki/Pascal%27s_triangle</a><a href="\#fnref-14-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>龟兔赛跑动画来自于 <a data-tooltip-position="top" aria-label="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" rel="noopener" class="external-link" href="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" target="_blank">Floyd's Hare and Tortoise Algorithm Demo - One Step! Code (onestepcode.com)</a><a href="\#fnref-15-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br><a data-tooltip-position="top" aria-label="https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://www.merriam-webster.com/dictionary/algorithm" target="_blank">"Definition of ALGORITHM"</a>. Merriam-Webster Online Dictionary. <a data-tooltip-position="top" aria-label="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" rel="noopener" class="external-link" href="https://web.archive.org/web/20200214074446/https://www.merriam-webster.com/dictionary/algorithm" target="_blank">Archived</a> from the original on February 14, 2020. Retrieved November 14, 2019.<a href="\#fnref-1-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Introduction to Algorithm 中文译作《算法导论》<a href="\#fnref-2-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-2-1-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>主要参考文档 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank">https://en.wikipedia.org/wiki/Binary_search_algorithm</a><a href="\#fnref-3-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>图片及概念均摘自 Introduction to Algorithm 4th，3.1节，3.2 节<a href="\#fnref-4-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>jdk 版本有关，64 位 jdk，按 8 字节对齐<a href="\#fnref-5-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>图片引用自 wikipedia linkedlist 条目，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Linked_list" target="_blank">https://en.wikipedia.org/wiki/Linked_list</a><a href="\#fnref-6-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Fibonacci 介绍：<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank">https://en.wikipedia.org/wiki/Fibonacci_number</a><a href="\#fnref-7-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a><a href="\#fnref-7-1-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br><a data-tooltip-position="top" aria-label="https://zhuanlan.zhihu.com/p/165877869" rel="noopener" class="external-link" href="https://zhuanlan.zhihu.com/p/165877869" target="_blank">几种计算Fibonacci数列算法的时间复杂度比较 - 知乎 (zhihu.com)</a><a href="\#fnref-8-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>几种斐波那契数列算法比较 <a data-tooltip-position="top" aria-label="https://www.nayuki.io/page/fast-fibonacci-algorithms" rel="noopener" class="external-link" href="https://www.nayuki.io/page/fast-fibonacci-algorithms" target="_blank">Fast Fibonacci algorithms (nayuki.io)</a><a href="\#fnref-9-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>我知道的有 C++，Scala<a href="\#fnref-10-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>与主定理类似的还有 Akra–Bazzi method，<a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method" target="_blank">https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_method</a><a href="\#fnref-11-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Josephus problem 主要参考 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Josephus_problem" target="_blank">https://en.wikipedia.org/wiki/Josephus_problem</a><a href="\#fnref-12-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>汉诺塔图片资料均来自 <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">https://en.wikipedia.org/wiki/Tower_of_Hanoi</a><a href="\#fnref-13-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>也称为 Pascal's triangle <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/Pascal%27s_triangle" target="_blank">https://en.wikipedia.org/wiki/Pascal%27s_triangle</a><a href="\#fnref-14-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>龟兔赛跑动画来自于 <a data-tooltip-position="top" aria-label="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" rel="noopener" class="external-link" href="https://onestepcode.com/floyd-hare-tortoise-algorithm-demo/" target="_blank">Floyd's Hare and Tortoise Algorithm Demo - One Step! Code (onestepcode.com)</a><a href="\#fnref-15-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\03、ds-a-第一篇-基础数据结构.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/03、DS-A 第一篇 基础数据结构.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:44 GMT</pubDate><enclosure url="imgs\image-20221108095747933.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;imgs\image-20221108095747933.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[04、线性表 - 栈和队列]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\04、线性表-栈和队列.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/04、线性表 - 栈和队列.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:44 GMT</pubDate></item><item><title><![CDATA[05、树 - 基础和Overview]]></title><description><![CDATA[ 
  ]]></description><link>01、通用基础\04、数据结构算法\01、数据结构\05、树-基础和overview.html</link><guid isPermaLink="false">01、通用基础/04、数据结构算法/01、数据结构/05、树 - 基础和Overview.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:43 GMT</pubDate></item><item><title><![CDATA[★ 常见排序算法 ★]]></title><description><![CDATA[ 
@@ -15881,7 +15880,57 @@ func main()  {
 	}
 }
 
-复制<br><br><br><br>同一个文件中定义了两个同名的函数分别在不同操作系统下实现，Go语言会根据当前编译的操作系统自动选择相应的函数实现，不需要开发者手动指定。<br>此外，还可以使用// +build标记来指定不同平台编译的文件，这种方式更加灵活，但需要手动编写标记，具体可查看Go语言官方文档的相关说明。<br><br><a data-tooltip-position="top" aria-label="https://www.baidu.com/link?url=Wb3BbPlZndKfQHAPSOSdebvled1c5jjF1wdwB9EbRw-hq1gk--Qz0L7GlBXh3W9WI3BJjLCzouluCGGLK-P74_&amp;wd=&amp;eqid=c155631e000330a20000000665aba15d" rel="noopener" class="external-link" href="https://www.baidu.com/link?url=Wb3BbPlZndKfQHAPSOSdebvled1c5jjF1wdwB9EbRw-hq1gk--Qz0L7GlBXh3W9WI3BJjLCzouluCGGLK-P74_&amp;wd=&amp;eqid=c155631e000330a20000000665aba15d" target="_blank">笔记来源</a>]]></description><link>02、多编程语言\03、go语言\01、go语言基础\101、go语言基础2.html</link><guid isPermaLink="false">02、多编程语言/03、Go语言/01、Go语言基础/101、Go语言基础2.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:44 GMT</pubDate><enclosure url="02、多编程语言\03、go语言\01、go语言基础\assets\101、go语言基础2\img-20240112_214047.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;02、多编程语言\03、go语言\01、go语言基础\assets\101、go语言基础2\img-20240112_214047.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[JVM-内存结构]]></title><description><![CDATA[ 
+复制<br><br><br><br>同一个文件中定义了两个同名的函数分别在不同操作系统下实现，Go语言会根据当前编译的操作系统自动选择相应的函数实现，不需要开发者手动指定。<br>此外，还可以使用// +build标记来指定不同平台编译的文件，这种方式更加灵活，但需要手动编写标记，具体可查看Go语言官方文档的相关说明。<br><br><a data-tooltip-position="top" aria-label="https://www.baidu.com/link?url=Wb3BbPlZndKfQHAPSOSdebvled1c5jjF1wdwB9EbRw-hq1gk--Qz0L7GlBXh3W9WI3BJjLCzouluCGGLK-P74_&amp;wd=&amp;eqid=c155631e000330a20000000665aba15d" rel="noopener" class="external-link" href="https://www.baidu.com/link?url=Wb3BbPlZndKfQHAPSOSdebvled1c5jjF1wdwB9EbRw-hq1gk--Qz0L7GlBXh3W9WI3BJjLCzouluCGGLK-P74_&amp;wd=&amp;eqid=c155631e000330a20000000665aba15d" target="_blank">笔记来源</a>]]></description><link>02、多编程语言\03、go语言\01、go语言基础\101、go语言基础2.html</link><guid isPermaLink="false">02、多编程语言/03、Go语言/01、Go语言基础/101、Go语言基础2.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:44 GMT</pubDate><enclosure url="02、多编程语言\03、go语言\01、go语言基础\assets\101、go语言基础2\img-20240112_214047.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;02、多编程语言\03、go语言\01、go语言基础\assets\101、go语言基础2\img-20240112_214047.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[04、Unix IO 模型]]></title><description><![CDATA[ 
+ <br><br><br>服务器大多都采用 Linux 系统，这里我们以 Linux 为例来讲解:<br>Ubuntu 和 Centos 都是 Linux 的发行版，发行版可以看成对 linux 包了一层壳，任何 Linux 发行版，其系统内核都是 Linux 。我们的应用都需要通过 Linux 内核与硬件交互。<br>用户的应用，比如 redis ，mysql 等其实是没有办法去执行访问我们操作系统的硬件的，所以我们可以通过发行版的系统去访问内核，再通过内核去访问计算机硬件。<br>​ 计算机硬件包括，如 cpu，内存，网卡等等，内核（通过寻址空间）可以操作硬件的，但是内核需要不同设备的驱动，有了这些驱动之后，内核就可以去对计算机硬件去进行内存管理，文件系统的管理，进程的管理等。<br><img src="\03、java核心\03、java-io相关\assets\04、unix-io-模型\img-20240316_211906.png"><br>​ 我们想要用户的应用来访问，计算机就必须要通过对外暴露的一些接口，才能访问到，从而简介的实现对内核的操控，但是内核本身上来说也是一个应用，所以他本身也需要一些内存，cpu 等设备资源，用户应用本身也在消耗这些资源，如果不加任何限制，用户去操作随意的去操作我们的资源，就有可能导致一些冲突，甚至有可能导致我们的系统出现无法运行的问题，因此我们需要把用户和内核隔离开。<br><br><img src="\03、java核心\03、java-io相关\assets\04、unix-io-模型\img-20240319_211256.png"><br><br><br>应用进程被阻塞，直到数据复制到应用进程缓冲区中才返回。<br>应该注意到，在阻塞的过程中，其它程序还可以执行，因此阻塞不意味着整个操作系统都被阻塞。因为其他程序还可以执行，因此不消耗 CPU 时间，这种模型的执行效率会比较高。<br>下图中，recvfrom 用于接收 Socket 传来的数据，并复制到应用进程的缓冲区 buf 中。这里把 recvfrom () 当成系统调用。<br><img alt="assets/04、Unix IO 模型/img-20240319_211434.png" src="\03、java核心\03、java-io相关\assets\04、unix-io-模型\img-20240319_211434.png" style="width: 675px; max-width: 100%;"><br><img alt="assets/04、Unix IO 模型/img-20240319_211412.png" src="\03、java核心\03、java-io相关\assets\04、unix-io-模型\img-20240319_211412.png" style="width: 775px; max-width: 100%;"><br>阶段一：<br>
+<br>用户进程尝试读取数据（比如网卡数据）
+<br>此时数据尚未到达，内核需要等待数据
+<br>此时用户进程也处于阻塞状态
+<br>阶段二：<br>
+<br>数据到达并拷贝到内核缓冲区，代表已就绪
+<br>将内核数据拷贝到用户缓冲区
+<br>拷贝过程中，用户进程依然阻塞等待
+<br>拷贝完成，用户进程解除阻塞，处理数据
+<br>可以看到，阻塞 IO 模型中，用户进程在两个阶段都是阻塞状态。<br><br>应用进程执行系统调用之后，内核返回一个错误码。应用进程可以继续执行，但是需要不断的执行系统调用来获知 I/O 是否完成，这种方式称为轮询(polling)。<br><img alt="assets/04、Unix IO 模型/img-20240319_211539.png" src="\03、java核心\03、java-io相关\assets\04、unix-io-模型\img-20240319_211539.png" style="width: 775px; max-width: 100%;"><br>阶段一：<br>
+<br>用户进程尝试读取数据（比如网卡数据）
+<br>此时数据尚未到达，内核需要等待数据
+<br>返回异常给用户进程
+<br>用户进程拿到error后，再次尝试读取
+<br>循环往复，直到数据就绪
+<br>阶段二：<br>
+<br>将内核数据拷贝到用户缓冲区
+<br>拷贝过程中，用户进程依然阻塞等待
+<br>拷贝完成，用户进程解除阻塞，处理数据
+<br>可以看到，非阻塞IO模型中，用户进程在第一个阶段是非阻塞，第二个阶段是阻塞状态。虽然是非阻塞，但性能并没有得到提高。而且忙等机制会导致CPU空转，CPU使用率暴增。
+<br>由于 CPU 要处理更多的系统调用，因此这种模型是比较低效的。<br><br>如果没有 I/O 复用，那么每一个 Socket 连接都需要创建一个线程去处理。如果同时有几万个连接，那么就需要创建相同数量的线程。并且相比于多进程和多线程技术，I/O 复用不需要进程线程创建和切换的开销，系统开销更小。<br>它可以让单个进程具有处理多个 I/O 事件的能力。又被称为 Event Driven I/O，即事件驱动 I/O。<br>文件描述符（File Descriptor）：简称 FD，是一个从 0 开始的无符号整数，用来关联 Linux 中的一个文件。在 Linux 中，一切皆文件，例如常规文件、视频、硬件设备等，当然也包括网络套接字（Socket）。<br>通过 FD，我们的网络模型可以利用一个线程监听多个 FD，并在某个 FD 可读、可写时得到通知，从而避免无效的等待，充分利用 CPU 资源。 <br><img alt="assets/04、Unix IO 模型/img-20240319_212511.png" src="\03、java核心\03、java-io相关\assets\04、unix-io-模型\img-20240319_212511.png" style="width: 850px; max-width: 100%;"><br>阶段一：<br>
+<br>用户进程调用select，指定要监听的FD集合
+<br>核监听FD对应的多个socket
+<br>任意一个或多个socket数据就绪则返回readable
+<br>此过程中用户进程阻塞
+<br>阶段二：<br>
+<br>用户进程找到就绪的socket
+<br>依次调用recvfrom读取数据
+<br>内核将数据拷贝到用户空间
+<br>用户进程处理数据
+<br>IO多路复用是利用单个线程来同时监听多个FD，并在某个FD可读、可写时得到通知，从而避免无效的等待，充分利用CPU资源。不过监听FD的方式、通知的方式又有多种实现，常见的有：<br>
+<br>select
+<br>poll
+<br>epoll
+<br>其中select和pool相当于是当被监听的数据准备好之后，他会把你监听的FD整个数据都发给你，你需要到整个FD中去找，哪些是处理好了的，需要通过遍历的方式，所以性能也并不是那么好<br>而epoll，则相当于内核准备好了之后，他会把准备好的数据，直接发给你，咱们就省去了遍历的动作<br><br><img alt="assets/04、Unix IO 模型/img-20240319_212804.png" src="\03、java核心\03、java-io相关\assets\04、unix-io-模型\img-20240319_212804.png" style="width: 500px; max-width: 100%;"><br>应用场景<br>select 的 timeout 参数精度为 1ns，而 poll 和 epoll 为 1ms，因此 select 更加适用于实时要求更高的场景，比如核反应堆的控制。<br>select 可移植性更好，几乎被所有主流平台所支持。<br><br>应用场景<br>poll 没有最大描述符数量的限制，如果平台支持并且对实时性要求不高，应该使用 poll 而不是 select。<br>需要同时监控小于 1000 个描述符，就没有必要使用 epoll，因为这个应用场景下并不能体现 epoll 的优势。<br>需要监控的描述符状态变化多，而且都是非常短暂的，也没有必要使用 epoll。因为 epoll 中的所有描述符都存储在内核中，造成每次需要对描述符的状态改变都需要通过 epoll_ctl() 进行系统调用，频繁系统调用降低效率。并且epoll 的描述符存储在内核，不容易调试。<br><br><a rel="noopener" class="external-link" href="http://www.cnblogs.com/Airgity/p/16742319.html" target="_blank">http://www.cnblogs.com/Airgity/p/16742319.html</a><br><a rel="noopener" class="external-link" href="https://blog.csdn.net/TiankkTT/article/details/131149697" target="_blank">https://blog.csdn.net/TiankkTT/article/details/131149697</a><br><a rel="noopener" class="external-link" href="http://blog.czk.pub/post/8e58a56a.html#%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8-IO-%E7%9A%84%E5%AE%9E%E7%8E%B0" target="_blank">http://blog.czk.pub/post/8e58a56a.html#%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8-IO-%E7%9A%84%E5%AE%9E%E7%8E%B0</a><br><img alt="assets/04、Unix IO 模型/img-20240319_212945.png" src="\03、java核心\03、java-io相关\assets\04、unix-io-模型\img-20240319_212945.png" style="width: 525px; max-width: 100%;"><br>epoll 的描述符事件有两种触发模式: LT(level trigger)和 ET(edge trigger)。<br><br>当 epoll_wait() 检测到描述符事件到达时，将此事件通知进程，进程可以不立即处理该事件，下次调用 epoll_wait() 会再次通知进程。是默认的一种模式，并且同时支持 Blocking 和 No-Blocking。<br><br>和 LT 模式不同的是，通知之后进程必须立即处理事件，下次再调用 epoll_wait() 时不会再得到事件到达的通知。<br>很大程度上减少了 epoll 事件被重复触发的次数，因此效率要比 LT 模式高。只支持 No-Blocking，以避免由于一个文件句柄的阻塞读/阻塞写操作把处理多个文件描述符的任务饿死<br>应用场景<br>只需要运行在 Linux 平台上，并且有非常大量的描述符需要同时轮询，而且这些连接最好是长连接。<br><br>信号驱动IO是与内核建立SIGIO的信号关联并设置回调，当内核有FD就绪时，会发出SIGIO信号通知用户，期间用户应用可以执行其它业务，无需阻塞等待。<br><img alt="assets/04、Unix IO 模型/img-20240319_213413.png" src="\03、java核心\03、java-io相关\assets\04、unix-io-模型\img-20240319_213413.png" style="width: 750px; max-width: 100%;"><br>阶段一：<br>
+<br>用户进程调用 sigaction，注册信号处理函数
+<br>内核返回成功，开始监听 FD
+<br>用户进程不阻塞等待，可以执行其它业务
+<br>当内核数据就绪后，回调用户进程的 SIGIO 处理函数
+<br>阶段二：<br>
+<br>收到 SIGIO 回调信号
+<br>调用 recvfrom，读取
+<br>内核将数据拷贝到用户空间
+<br>用户进程处理数据
+<br><br>不仅是用户态在试图读取数据后，不阻塞，而且当内核的数据准备完成后，也不会阻塞。<br>信号驱动 I/O 与异步 I/O  的区别在于：<br>
+信号驱动 I/O 的信号是通知应用进程可以开始 I/O<br>
+而异步 I/O 的信号直接通知应用进程 I/O 完成！<br><img alt="assets/04、Unix IO 模型/img-20240319_213433.png" src="\03、java核心\03、java-io相关\assets\04、unix-io-模型\img-20240319_213433.png" style="width: 850px; max-width: 100%;"><br><br><br>
+<br>同步 I/O: 应用进程在调用 recvfrom 操作时会阻塞。
+<br>异步 I/O: 不会阻塞。
+<br>阻塞式 I/O、非阻塞式 I/O、I/O 复用和信号驱动 I/O 都是同步 I/O，虽然非阻塞式 I/O 和信号驱动 I/O 在等待数据阶段不会阻塞，但是在之后的将数据从内核复制到应用进程这个操作会阻塞。<br><br><img src="\03、java核心\03、java-io相关\assets\04、unix-io-模型\img-20240316_212152.png">]]></description><link>03、java核心\03、java-io相关\04、unix-io-模型.html</link><guid isPermaLink="false">03、Java核心/03、Java IO相关/04、Unix IO 模型.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Tue, 19 Mar 2024 13:58:54 GMT</pubDate><enclosure url="03、java核心\03、java-io相关\assets\04、unix-io-模型\img-20240316_211906.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;03、java核心\03、java-io相关\assets\04、unix-io-模型\img-20240316_211906.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[JVM-内存结构]]></title><description><![CDATA[ 
  <br><br>下图是 JVM 整体架构，中间部分就是 Java 虚拟机定义的各种运行时数据区（内存机构）。<br><img style="zoom:50%;" alt="jvm-framework" src="\.pic-JVM-内存结构\0082zybply1gc6fz21n8kj30u00wpn5v.jpg" referrerpolicy="no-referrer"><br><br>程序计数寄存器（Program Counter Register），Register 的命名源于 CPU 的寄存器，寄存器存储指令相关的线程信息，CPU 只有把数据装载到寄存器才能够运行。<br>JVM 中的 PC 寄存器是对物理 PC 寄存器的一种抽象模拟。<br>程序计数器是一块较小的内存空间，可以看作是当前线程所执行的字节码的行号指示器。<br><br>PC 寄存器用来存储指向下一条指令的地址，即将要执行的指令代码。由执行引擎读取下一条指令。<br>“./.pic-JVM-内存结构/0082zybply1gc5kmznm1sj31m50u0wph.jpg” could not be found.<br>（分析：进入class文件所在目录，执行 javap -v xx.class 反解析（或者通过 IDEA 插件 Jclasslib 直接查看，上图），可以看到当前类对应的Code区（汇编指令）、本地变量表、异常表和代码行偏移量映射表、常量池等信息。）<br><br>记录当前线程的执行地址<br>CPU需要不停的切换各个线程，切换回来以后，必然会导致经常中断或恢复原位继续执行。JVM的字节码解释器就需要通过改变PC寄存器的值来明确下一条应该执行什么样的字节码指令。<br>线程私有<br>每个线程都分配了一个PC寄存器，每个线程都独立计算，不会互相影响。<br>
 相关总结如下：
 <br>
@@ -19315,8 +19364,8 @@ GROUP BY table_schema;
 <br>避免缓存击穿。（数据库没有就需要命中的数据，导致 Redis 一直没有数据，而一直命中数据库。）
 <br>数据的实时性相对会差一点。
 <br>2、方案二：插入数据时，同时写入Redis。<br>适用：字典表、数据量不大的数据存储。<br>
-数据实时性强，但是开发时不便于统一处理。<br><br>利用 Redis 的 expire 命令设置一个键的生存时间，到时间后 Redis 会删除它。<br>可以运用在限时的优惠活动信息、手机验证码等业务场景。 <br><br>Redis  使用 incrby 命令可以实现原子性的递增。<br>可以运用于高并发的秒杀活动、分布式序列号的生成、具体业务还体现在比如限制一个手机号发多少条短信、一个接口一分钟限制多少请求、一个接口一天限制调用多少次等等。<br><br>利用 Redis 的 setnx 命令（set if not exists），如果不存在则成功设置缓存同时返回 1，否则返回 0 。<br>一般服务器是集群的，定时任务可能在两台机器上都会运行，所以在定时任务中首先通过 setnx 设置一个 lock，如果成功设置则执行，如果没有成功设置，则表明该定时任务已执行。<br>结合具体业务，可以给这个 lock 加一个过期时间，如 30 分钟执行一次的定时任务，那么这个过期时间设置为小于 30 分钟的时间，这个与定时任务的周期以及定时任务执行消耗时间相关。<br>在分布式锁的场景中，主要用在比如秒杀系统等。<br><br>提供 Keyspace Notifications 功能，允许客户订阅 Pub/Sub 频道，以便以某种方式接收影响 Redis 数据集的事件。<br>比如在订单生产后我们占用了库存，10 分钟后去检验用户是否真正购买，如果没有购买将该单据设置无效，同时还原库存。<br>
-在订单生产时，设置一个 key，同时设置 10 分钟后过期，我们在后台实现一个监听器，监听 key 的实效，监听到 key 失效时将后续逻辑加上。<br>当然也可以利用 RocketMQ 等消息中间件的延迟队列服务实现该需求。<br><br>借助 Redis 的 SortedSet 进行热点数据的排序，而关系型数据库在排行榜方面查询速度普遍偏慢。<br>比如点赞排行榜，做一个 SortedSet, 然后以用户的 openid 作为上面的 username, 以用户的点赞数作为上面的 score, 然后针对每个用户做一个 hash, 通过 zrangebyscore 就可以按照点赞数获取排行榜，然后再根据 username 获取用户的 hash 信息，这个当时在实际运用中性能体验也蛮不错的。<br><br>Redis 利用集合的一些命令，比如求交集、并集、差集等。<br>在微博应用中，每个用户关注的人存在一个集合中，就很容易实现求两个人的共同好友功能。<br><br>由于 Redis 有 list push 和 list pop 这样的命令，所以能够很方便的执行队列操作。<br><br>
+数据实时性强，但是开发时不便于统一处理。<br><br>Redis  使用 incrby 命令可以实现原子性的递增。<br>可以运用于高并发的秒杀活动、分布式序列号的生成、具体业务还体现在比如限制一个手机号发多少条短信、一个接口一分钟限制多少请求、一个接口一天限制调用多少次等等。<br><br>利用 Redis 的 setnx 命令（set if not exists），如果不存在则成功设置缓存同时返回 1，否则返回 0 。<br>一般服务器是集群的，定时任务可能在两台机器上都会运行，所以在定时任务中首先通过 setnx 设置一个 lock，如果成功设置则执行，如果没有成功设置，则表明该定时任务已执行。<br>结合具体业务，可以给这个 lock 加一个过期时间，如 30 分钟执行一次的定时任务，那么这个过期时间设置为小于 30 分钟的时间，这个与定时任务的周期以及定时任务执行消耗时间相关。<br>在分布式锁的场景中，主要用在比如秒杀系统等。<br><br>利用 Redis 的 expire 命令设置一个键的生存时间，到时间后 Redis 会删除它。<br>可以运用在限时的优惠活动信息、手机验证码等业务场景。 <br><br>提供 Keyspace Notifications 功能，允许客户订阅 Pub/Sub 频道，以便以某种方式接收影响 Redis 数据集的事件。<br>比如在订单生产后我们占用了库存，10 分钟后去检验用户是否真正购买，如果没有购买将该单据设置无效，同时还原库存。<br>
+在订单生产时，设置一个 key，同时设置 10 分钟后过期，我们在后台实现一个监听器，监听 key 的实效，监听到 key 失效时将后续逻辑加上。<br>当然也可以利用 RocketMQ 等消息中间件的延迟队列服务实现该需求。<br><br>由于 Redis 有 list push 和 list pop 这样的命令，所以能够很方便的执行队列操作。<br><br>Redis 利用集合的一些命令，比如求交集、并集、差集等。<br>在微博应用中，每个用户关注的人存在一个集合中，就很容易实现求两个人的共同好友功能。<br><br>借助 Redis 的 SortedSet 进行热点数据的排序，而关系型数据库在排行榜方面查询速度普遍偏慢。<br>比如点赞排行榜，做一个 SortedSet, 然后以用户的 openid 作为上面的 username, 以用户的点赞数作为上面的 score, 然后针对每个用户做一个 hash, 通过 zrangebyscore 就可以按照点赞数获取排行榜，然后再根据 username 获取用户的 hash 信息，这个当时在实际运用中性能体验也蛮不错的。<br><br>
 <br>
 <a data-tooltip-position="top" aria-label="http://redis.io/" rel="noopener" class="external-link" href="http://redis.io/" target="_blank">Redis 官网</a>:
 
@@ -19326,7 +19375,7 @@ GROUP BY table_schema;
 <br>
 <a data-tooltip-position="top" aria-label="http://redis.io/download" rel="noopener" class="external-link" href="http://redis.io/download" target="_blank">Redis 下载</a>
 
-]]></description><link>04、数据库\02、redis\01、redis-概念和基础.html</link><guid isPermaLink="false">04、数据库/02、Redis/01、Redis 概念和基础.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 06:33:34 GMT</pubDate></item><item><title><![CDATA[02、Redis 的安装说明]]></title><description><![CDATA[ 
+]]></description><link>04、数据库\02、redis\01、redis-概念和基础.html</link><guid isPermaLink="false">04、数据库/02、Redis/01、Redis 概念和基础.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 18 Mar 2024 11:41:18 GMT</pubDate></item><item><title><![CDATA[02、Redis 的安装说明]]></title><description><![CDATA[ 
  <br>本章是基于 CentOS 7 下的 Redis 集群教程，包括：<br>
 <br>单机安装 Redis
 <br>Redis 主从
@@ -20041,16 +20090,20 @@ Redis5.0 中还增加了一个数据结构Stream，从字面上看是流类型�
 <br>XREVRANGE - 反向获取消息列表，ID 从大到小
 <br>XREAD - 以阻塞或非阻塞方式获取消息列表
 <br># *号表示服务器自动生成ID，后面顺序跟着一堆key/value
+
 127.0.0.1:6379&gt; xadd codehole * name laoqian age 30  #  名字叫laoqian，年龄30岁
 1527849609889-0  # 生成的消息ID
 127.0.0.1:6379&gt; xadd codehole * name xiaoyu age 29
 1527849629172-0
 127.0.0.1:6379&gt; xadd codehole * name xiaoqian age 1
 1527849637634-0
+
+#  获取长度
 127.0.0.1:6379&gt; xlen codehole
 (integer) 3
-127.0.0.1:6379&gt; xrange codehole - +  # -表示最小值, +表示最大值
-127.0.0.1:6379&gt; xrange codehole - +
+
+# -表示最小值, +表示最大值
+127.0.0.1:6379&gt; xrange codehole - +  
 1) 1) 1527849609889-0
    1) 1) "name"
       1) "laoqian"
@@ -20066,6 +20119,8 @@ Redis5.0 中还增加了一个数据结构Stream，从字面上看是流类型�
       1) "xiaoqian"
       2) "age"
       3) "1"
+
+# 指定最小消息ID的列表 到 后面所有
 127.0.0.1:6379&gt; xrange codehole 1527849629172-0 +  # 指定最小消息ID的列表
 1) 1) 1527849629172-0
    2) 1) "name"
@@ -20077,7 +20132,9 @@ Redis5.0 中还增加了一个数据结构Stream，从字面上看是流类型�
       2) "xiaoqian"
       3) "age"
       4) "1"
-127.0.0.1:6379&gt; xrange codehole - 1527849629172-0  # 指定最大消息ID的列表
+
+# 指定当前  到 最大消息ID的列表
+127.0.0.1:6379&gt; xrange codehole - 1527849629172-0 
 1) 1) 1527849609889-0
    2) 1) "name"
       2) "laoqian"
@@ -20088,10 +20145,13 @@ Redis5.0 中还增加了一个数据结构Stream，从字面上看是流类型�
       2) "xiaoyu"
       3) "age"
       4) "29"
+
+ # 删除一个小希
 127.0.0.1:6379&gt; xdel codehole 1527849609889-0
 (integer) 1
 127.0.0.1:6379&gt; xlen codehole  # 长度不受影响
 (integer) 3
+
 127.0.0.1:6379&gt; xrange codehole - +  # 被删除的消息没了
 1) 1) 1527849629172-0
    2) 1) "name"
@@ -20103,7 +20163,9 @@ Redis5.0 中还增加了一个数据结构Stream，从字面上看是流类型�
       2) "xiaoqian"
       3) "age"
       4) "1"
-127.0.0.1:6379&gt; del codehole  # 删除整个Stream
+
+# 删除整个Stream
+127.0.0.1:6379&gt; del codehole 
 (integer) 1
 复制<br><br>我们可以在不定义消费组的情况下进行Stream消息的独立消费，当Stream没有新消息时，甚至可以阻塞等待。Redis设计了一个单独的消费指令xread，可以将Stream当成普通的消息队列(list)来使用。使用xread时，我们可以完全忽略消费组(Consumer Group)的存在，就好比Stream就是一个普通的列表(list)。<br># 从Stream头部读取两条消息
 127.0.0.1:6379&gt; xread count 2 streams codehole 0-0
@@ -20118,14 +20180,18 @@ Redis5.0 中还增加了一个数据结构Stream，从字面上看是流类型�
             2) "yurui"
             3) "age"
             4) "29"
+
 # 从Stream尾部读取一条消息，毫无疑问，这里不会返回任何消息
 127.0.0.1:6379&gt; xread count 1 streams codehole $
 (nil)
+
 # 从尾部阻塞等待新消息到来，下面的指令会堵住，直到新消息到来
 127.0.0.1:6379&gt; xread block 0 count 1 streams codehole $
+
 # 我们从新打开一个窗口，在这个窗口往Stream里塞消息
 127.0.0.1:6379&gt; xadd codehole * name youming age 60
 1527852774092-0
+
 # 再切换到前面的窗口，我们可以看到阻塞解除了，返回了新的消息内容
 # 而且还显示了一个等待时间，这里我们等待了93s
 127.0.0.1:6379&gt; xread block 0 count 1 streams codehole $
@@ -20209,6 +20275,7 @@ OK
             2) "laoqian"
             3) "age"
             4) "30"
+
 127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 count 1 streams codehole &gt;
 1) 1) "codehole"
    2) 1) 1) 1527851493405-0
@@ -20216,6 +20283,7 @@ OK
             2) "yurui"
             3) "age"
             4) "29"
+
 127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 count 2 streams codehole &gt;
 1) 1) "codehole"
    2) 1) 1) 1527851498956-0
@@ -20228,14 +20296,18 @@ OK
             2) "youming"
             3) "age"
             4) "60"
+
 # 再继续读取，就没有新消息了
 127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 count 1 streams codehole &gt;
 (nil)
+
 # 那就阻塞等待吧
 127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 block 0 count 1 streams codehole &gt;
+
 # 开启另一个窗口，往里塞消息
 127.0.0.1:6379&gt; xadd codehole * name lanying age 61
 1527854062442-0
+
 # 回到前一个窗口，发现阻塞解除，收到新消息了
 127.0.0.1:6379&gt; xreadgroup GROUP cg1 c1 block 0 count 1 streams codehole &gt;
 1) 1) "codehole"
@@ -20245,6 +20317,7 @@ OK
             3) "age"
             4) "61"
 (36.54s)
+
 127.0.0.1:6379&gt; xinfo groups codehole  # 观察消费组信息
 1) 1) name
    2) "cg1"
@@ -20258,6 +20331,7 @@ OK
    4) (integer) 0  # 消费组cg2没有任何变化，因为前面我们一直在操纵cg1
    5) pending
    6) (integer) 0
+
 # 如果同一个消费组有多个消费者，我们可以通过xinfo consumers指令观察每个消费者的状态
 127.0.0.1:6379&gt; xinfo consumers codehole cg1  # 目前还有1个消费者
 1) 1) name
@@ -20266,6 +20340,7 @@ OK
    4) (integer) 5  # 共5条待处理消息
    5) idle
    6) (integer) 418715  # 空闲了多长时间ms没有读取消息了
+
 # 接下来我们ack一条消息
 127.0.0.1:6379&gt; xack codehole cg1 1527851486781-0
 (integer) 1
@@ -20276,6 +20351,7 @@ OK
    4) (integer) 4  # 变成了5条
    5) idle
    6) (integer) 668504
+
 # 下面ack所有消息
 127.0.0.1:6379&gt; xack codehole cg1 1527851493405-0 1527851498956-0 1527852774092-0 1527854062442-0
 (integer) 4
@@ -20448,7 +20524,7 @@ QUEUED
 <br><a rel="noopener" class="external-link" href="https://www.runoob.com/redis/redis-stream.html" target="_blank">https://www.runoob.com/redis/redis-stream.html</a>
 <br><a rel="noopener" class="external-link" href="https://www.zhihu.com/question/279540635" target="_blank">https://www.zhihu.com/question/279540635</a>
 <br><a rel="noopener" class="external-link" href="https://zhuanlan.zhihu.com/p/60501638" target="_blank">https://zhuanlan.zhihu.com/p/60501638</a>
-]]></description><link>04、数据库\02、redis\03、常见命令&amp;数据类型.html</link><guid isPermaLink="false">04、数据库/02、Redis/03、常见命令&amp;数据类型.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 08:32:57 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\03、常见命令&amp;数据类型\img-20240317_162235.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\03、常见命令&amp;数据类型\img-20240317_162235.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[04、Redis 的 Java 客户端]]></title><description><![CDATA[ 
+]]></description><link>04、数据库\02、redis\03、常见命令&amp;数据类型.html</link><guid isPermaLink="false">04、数据库/02、Redis/03、常见命令&amp;数据类型.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 18 Mar 2024 11:47:13 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\03、常见命令&amp;数据类型\img-20240317_162235.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\03、常见命令&amp;数据类型\img-20240317_162235.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[04、Redis 的 Java 客户端]]></title><description><![CDATA[ 
  <br>在 Redis 官网中提供了各种语言的客户端，地址： <a rel="noopener" class="external-link" href="https://redis.io/docs/clients/" target="_blank">https://redis.io/docs/clients/</a><br>
 <img alt="assets/04、Redis 的 Java 客户端/img-20240317_093601.png" src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_093601.png" style="width: 725px; max-width: 100%;"><br>
 其中 Java 客户端也包含很多：<br><img alt="assets/04、Redis 的 Java 客户端/img-20240317_093735.png" src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_093735.png" style="width: 700px; max-width: 100%;"><br>标记为 ❤ 的就是推荐使用的 java 客户端，包括：<br>
@@ -20729,7 +20805,7 @@ public class StringRedisTemplateTest {
         }
     }
 }
-复制<br><img src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_165131.png">]]></description><link>04、数据库\02、redis\04、redis-的-java-客户端.html</link><guid isPermaLink="false">04、数据库/02、Redis/04、Redis 的 Java 客户端.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 08:56:18 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_093601.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_093601.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[05、持久化：RDB和AOF机制详解]]></title><description><![CDATA[ 
+复制<br><img src="\04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_165131.png">]]></description><link>04、数据库\02、redis\04、redis-的-java-客户端.html</link><guid isPermaLink="false">04、数据库/02、Redis/04、Redis 的 Java 客户端.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 18 Mar 2024 11:47:38 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_093601.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\04、redis-的-java-客户端\img-20240317_093601.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[05、持久化：RDB和AOF机制详解]]></title><description><![CDATA[ 
  <br><br>Redis 是个基于内存的数据库。那服务一旦宕机，内存中的数据将全部丢失。<br>通常的解决方案是从后端数据库恢复这些数据，但后端数据库有性能瓶颈，如果是大数据量的恢复：<br>
 1、会对数据库带来巨大的压力。<br>
 2、数据库的性能不如Redis。导致程序响应慢。所以对Redis来说，实现数据的持久化，避免从后端数据库中恢复数据，是至关重要的。<br><br>RDB 就是 Redis DataBase 的缩写，中文名为快照/内存快照，RDB 持久化是把当前进程数据生成快照保存到磁盘上的过程，由于是某一时刻的快照，那么快照中的值要早于或者等于内存中的值。<br>
@@ -20742,7 +20818,7 @@ public class StringRedisTemplateTest {
 <br>主进程判断当前是否已经存在正在执行的子进程，如果存在，那么主进程直接返回；
 <br>如果不存在正在执行的子进程，那么就fork一个新的子进程进行持久化数据，fork过程是阻塞的，fork操作完成后主进程即可执行其他操作；
 <br>子进程先将数据写入到临时的rdb文件中，待快照数据写入完成后再原子替换旧的rdb文件；
-<br>同时发送信号给主进程，通知主进程rdb持久化完成，主进程更新相关的统计信息（info Persitence下的rdb_*相关选项）。
+<br>同时发送信号给主进程，通知主进程rdb持久化完成，主进程更新相关的统计信息（info Persitence下的 rdb_* 相关选项）。
 <br><img src="\04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_210729.png"><br><br>在以下4种情况时会自动触发：<br>❶ redis.conf 中配置 save m n，即在 m 秒内有 n 次修改时，自动触发 bgsave 生成 rdb 文件；<br>
 ❷ 主从复制时，从节点要从主节点进行全量复制时也会触发 bgsave 操作，生成当时的快照发送到从节点；<br>
 ❸ 执行 debug reload 命令重新加载 redis 时也会触发 bgsave 操作；（争议，"DEBUG RELOAD"命令被认为是调试命令）<br>
@@ -20787,7 +20863,7 @@ rdbchecksum yes
 <br>很简单，在没有将数据全部写入到磁盘前，这次快照操作都不算成功。如果出现了服务崩溃的情况，将以上一次完整的RDB快照文件作为恢复内存数据的参考。在快照操作过程中不能影响上一次的备份数据。Redis服务会在磁盘上创建一个临时文件进行数据操作，待操作成功后才会用这个临时文件替换掉上一次的备份。<br>
 可以每秒做一次快照吗？
 <br>如果频繁地执行全量快照，也会带来两方面的开销：<br>
-<br>一方面，频繁将全量数据写入磁盘，会给磁盘带来很大压力，多个快照竞争有限的磁盘带宽，前一个快照还没有做完，后一个又开始做了，容易造成恶性循环。
+<br>频繁将全量数据写入磁盘，会给磁盘带来很大压力，多个快照竞争有限的磁盘带宽，前一个快照还没有做完，后一个又开始做了，容易造成恶性循环。
 <br>另一方面，bgsave 子进程需要通过 fork 操作从主线程创建出来。虽然，子进程在创建后不会再阻塞主线程，但是，fork 这个创建过程本身会阻塞主线程，而且主线程的内存越大，阻塞时间越长。如果频繁 fork 出 bgsave 子进程，这就会频繁阻塞主线程了。
 <br>那么，有什么其他好方法吗？此时，我们可以做增量快照，也就是AOF持久化，是指做了一次全量快照后，后续的快照只对修改的数据进行快照记录，这样可以避免每次全量快照的开销。这个比较好理解。<br><br>
 <br>
@@ -20809,7 +20885,7 @@ rdbchecksum yes
 <br>针对 RDB 不适合实时持久化的问题，Redis 提供了 AOF 持久化方式来解。<br><br>Append Only file（追加文件），日志里记录的是 Redis 收到的每一条命令，这些命令是以文本形式保存。<br><br>日志采用写后日志，先写内存，后写日志。<br>
 PS: 大多数的数据库采用的是写前日志（WAL），例如 MySQL，通过写前日志和两阶段提交，实现数据和逻辑的一致性。
 <br><img alt="assets/05、持久化：RDB和AOF机制详解/img-20240315_212409.png" src="\04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_212409.png" style="width: 550px; max-width: 100%;"><br>采用后写日志有两方面好处：<br>
-<br>避免额外的检查开销：Redis 在向 AOF 里面记录日志的时候，并不会先去对这些命令进行语法检查。所以，如果先记日志再执行命令的话，日志中就有可能记录了错误的命令，Redis 在使用日志恢复数据时，就可能会出错。
+<br>避免额外的检查开销：如果先记日志再执行命令的话，日志中就有可能记录了错误的命令，Redis 在使用日志恢复数据时，就可能会出错。Redis 在向 AOF 里面记录日志的时候，并不会先去对这些命令进行语法检查。
 <br>不会阻塞当前的写操作
 <br>但这种方式存在潜在风险：<br>
 <br>
@@ -20894,18 +20970,21 @@ AOF会记录每个写命令到AOF文件，随着时间越来越长，AOF文件�
 <br>如果aof存在，那么就去加载aof文件，加载成功的话redis重启成功，如果aof文件加载失败，那么会打印日志表示启动失败，此时可以去修复aof文件后重新启动；
 <br>若aof文件不存在，那么redis就会转而去加载rdb文件，如果rdb文件不存在，redis直接启动成功；
 <br>如果rdb文件存在就会去加载rdb文件恢复数据，如加载失败则打印日志提示启动失败，如加载成功，那么redis重启成功，且使用rdb文件恢复数据；
-<br>那么为什么会优先加载AOF呢？因为AOF保存的数据更完整，通过上面的分析我们知道AOF基本上最多损失1s的数据。<br><br>通过上面的分析，我们都知道RDB的快照、AOF的重写都需要fork，这是一个重量级操作，会对Redis造成阻塞。因此为了不影响Redis主进程响应，我们需要尽可能降低阻塞。<br>
-<br>降低fork的频率，比如可以手动来触发RDB生成快照、与AOF重写；
-<br>控制Redis最大使用内存，防止fork耗时过长；
-<br>使用更牛逼的硬件；
-<br>合理配置Linux的内存分配策略，避免因为物理内存不足导致fork失败。
-<br>在线上我们到底该怎么做？我提供一些自己的实践经验。<br>
-<br>如果Redis中的数据并不是特别敏感或者可以通过其它方式重写生成数据，可以关闭持久化，如果丢失数据可以通过其它途径补回；
-<br>自己制定策略定期检查Redis的情况，然后可以手动触发备份、重写数据；
-<br>单机如果部署多个实例，要防止多个机器同时运行持久化、重写操作，防止出现内存、CPU、IO资源竞争，让持久化变为串行；
-<br>可以加入主从机器，利用一台从机器进行备份处理，其它机器正常响应客户端的命令；
-<br>RDB持久化与AOF持久化可以同时存在，配合使用。
-]]></description><link>04、数据库\02、redis\05、持久化：rdb和aof机制详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/05、持久化：RDB和AOF机制详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 09:05:39 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_210729.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_210729.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[06、高可用：主从复制详解]]></title><description><![CDATA[ 
+<br>那么为什么会优先加载AOF呢？因为AOF保存的数据更完整，通过上面的分析我们知道AOF基本上最多损失1s的数据。<br><br>通过上面的分析，我们都知道RDB的快照、AOF的重写都需要fork，这是一个重量级操作，会对Redis造成阻塞。因此为了不影响Redis主进程响应，我们需要尽可能降低阻塞。<br>内存如何控制分配：<br>
+<br>更好的硬件
+<br>合理配置 Linux 的内存分配策略，避免因为物理内存不足导致 fork 失败
+<br>控制单个 Redis 实例内存上限，如 4 G 或 8 G。可以加快 fork 的速度、减少主从同步、数据迁移压力（可以单机部署多台 redis 实例）
+<br>物理机部署多个 Redis 实例，要防止同时运行持久化、重写操作，防止资源竞争，尝试让持久化变为串行；
+<br>不要与 CPU 内存密集型应用（ES）、高硬盘负载（数据库、消息队列）应用一起部署。
+<br>线上备份怎么做最优：<br>
+<br>用来做缓存的 Redis 关闭持久化，数据不敏感或可以通过其它方式重写生成数据；
+<br>脚本或程序定期触发备份、重写数据（制定策略定期检查 Redis 的情况）；
+<br>主从机器，让从机器进行备份处理；
+<br>4.0 以上让 RDB 与 AOF 持久化同时存在，结合使用。
+<br>使用 AOF 持久化时：<br>
+<br>设置合理的 rewrite 阈值，避免频繁的 bgrewrite
+<br>配置 no-appendfsync-on-rewrite = yes，禁止在 rewrite 期间做 aof，避免因 AOF 引起的阻塞。简单说就是，禁止在重写期间 fsync 刷盘
+]]></description><link>04、数据库\02、redis\05、持久化：rdb和aof机制详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/05、持久化：RDB和AOF机制详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 18 Mar 2024 13:14:56 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_210729.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\05、持久化：rdb和aof机制详解\img-20240315_210729.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[06、高可用：主从复制详解]]></title><description><![CDATA[ 
  <br><br>
 主从复制，是指将一台 Redis 服务器的数据，复制到其他的 Redis 服务器。前者称为主节点(master)，后者称为从节点(slave)；<br>
 数据的复制是单向的，主 ==&gt; 从
@@ -20931,10 +21010,11 @@ AOF会记录每个写命令到AOF文件，随着时间越来越长，AOF文件�
 复制<br>
 <br>全量复制的三个阶段<br>
 <img src="\04、数据库\02、redis\assets\06、高可用：主从复制详解\img-20240316_112913.png">
-<br>第一阶段是主从库间建立连接、协商同步的过程，主要是为全量复制做准备。在这一步，从库和主库建立起连接，并告诉主库即将进行同步，主库确认回复后，主从库间就可以开始同步了。<br>从库给主库发送 psync 命令，表示要进行数据同步，主库根据这个命令的参数来启动复制。psync 命令包含了主库的 runID 和复制进度 offset 两个参数。<br>
+<br>第一阶段是主从库间建立连接、协商同步的过程，主要是为全量复制做准备。<br>从库和主库建立起连接，并告诉主库即将进行同步，主库确认回复后，主从库间就可以开始同步了。<br>从库给主库发送 psync 命令，表示要进行数据同步，主库根据这个命令的参数来启动复制。psync 命令包含了主库的 runID 和复制进度 offset 两个参数。<br>
 <br>replica ID（也称为runID）是每个 Redis 实例启动时生成的一个唯一标识符，用来唯一标记该实例。当从库和主库第一次复制时，由于从库不知道主库的replica ID，因此将其设为"?"。
 <br>offset表示复制的进度，对于第一次复制来说，它被设为-1以表示初始状态。主库收到psync命令后，会用FULLRESYNC响应命令携带两个参数：主库的replica ID和当前的复制进度offset，返回给从库。从库在接收到响应后会记录下这两个参数。
-<br>FULLRESYNC 响应表示第一次复制采用的全量复制，也就是说，主库会把当前所有的数据都复制给从库。<br>第二阶段，主库将所有数据同步给从库。从库收到数据后，在本地完成数据加载。这个过程依赖于内存快照生成的 RDB 文件。<br>主库执行 bgsave 命令，生成 RDB 文件，接着将文件发给从库。从库接收到 RDB 文件后，会先清空当前数据库，然后加载 RDB 文件。这是因为从库在通过 replicaof 命令开始和主库同步前，可能保存了其他数据。为了避免之前数据的影响，从库需要先把当前数据库清空。在主库将数据同步给从库的过程中，主库不会被阻塞，仍然可以正常接收请求。否则，Redis 的服务就被中断了。但是，这些请求中的写操作并没有记录到刚刚生成的 RDB 文件中。为了保证主从库的数据一致性，主库会在内存中用专门的 replication buffer，记录 RDB 文件生成后收到的所有写操作。<br>第三个阶段，主库会把第二阶段执行过程中新收到的写命令，再发送给从库。具体的操作是，当主库完成 RDB 文件发送后，就会把此时 replication buffer 中的修改操作发给从库，从库再重新执行这些操作。这样一来，主从库就实现同步了。<br><br>
+<br>FULLRESYNC 响应表示第一次复制采用的全量复制，也就是说，主库会把当前所有的数据都复制给从库。<br>第二阶段，主库将所有数据同步给从库。从库收到数据后，在本地完成数据加载。这个过程依赖于内存快照生成的 RDB 文件。<br>主库执行 bgsave 命令，生成 RDB 文件，接着将文件发给从库。<br>
+从库接收到 RDB 文件后，会先清空当前数据库，然后加载 RDB 文件。这是因为从库在通过 replicaof 命令开始和主库同步前，可能保存了其他数据。为了避免之前数据的影响，从库需要先把当前数据库清空。<br>在主库将数据同步给从库的过程中，主库不会被阻塞，仍然可以正常接收请求。<br>第三个阶段，主库会把第二阶段执行过程中新收到的写命令，再发送给从库。<br>新的请求中的写操作并没有记录到刚刚生成的 RDB 文件中。为了保证主从库的数据一致性，主库会在内存中用专门的 replication buffer，记录 RDB 文件生成后收到的所有写操作。<br>当主库完成 RDB 文件发送后，就会把此时 replication buffer 中的修改操作发给从库，从库再重新执行这些操作。这样一来，主从库就实现同步了。<br><br>
 在 Redis 2.8 版本引入了增量复制。
 <br>
 <br>为什么会设计增量复制？
@@ -20955,20 +21035,31 @@ AOF会记录每个写命令到AOF文件，随着时间越来越长，AOF文件�
 <br>这时出现了一个崩溃，但Redis具有自动重启系统，重启了进程，因为关闭了持久化，节点重启后只有一个空的数据集。
 <br>节点B和C从节点A进行复制，现在节点A是空的，所以节点B和C上的复制数据也会被删除。
 <br>当在高可用系统中使用Redis Sentinel，关闭了主服务器的持久化，并且允许自动重启，这种情况是很危险的。比如主服务器可能在很短的时间就完成了重启，以至于Sentinel都无法检测到这次失败，那么上面说的这种失败的情况就发生了。
-<br>如果数据比较重要，并且在使用主从复制时关闭了主服务器持久化功能的场景中，都应该禁止实例自动重启。<br><br>1、RDB文件内容是经过压缩的二进制数据（不同数据类型数据做了针对性优化），文件很小。而AOF文件记录的是每一次写操作的命令，写操作越多文件会变得很大，其中还包括很多对同一个key的多次冗余操作。在主从全量数据同步时，传输RDB文件可以尽量降低对主库机器网络带宽的消耗，从库在加载RDB文件时，一是文件小，读取整个文件的速度会很快，二是因为RDB文件存储的都是二进制数据，从库直接按照RDB协议解析还原数据即可，速度会非常快，而AOF需要依次重放每个写命令，这个过程会经历冗长的处理逻辑，恢复速度相比RDB会慢得多，所以使用RDB进行主从全量复制的成本最低。<br>2、假设要使用AOF做全量复制，意味着必须打开AOF功能，打开AOF就要选择文件刷盘的策略，选择不当会严重影响Redis性能。而RDB只有在需要定时备份和主从全量复制数据时才会触发生成一次快照。而在很多丢失数据不敏感的业务场景，其实是不需要开启AOF的。<br><br>Redis 默认是磁盘复制，但是如果使用比较低速的磁盘，这种操作会给主服务器带来较大的压力。Redis从2.8.18版本开始尝试支持无磁盘的复制。使用这种设置时，子进程直接将RDB通过网络发送给从服务器，不使用磁盘作为中间存储。<br>无磁盘复制模式：master创建一个新进程直接dump RDB到slave的socket，不经过主进程，不经过硬盘。适用于disk较慢，并且网络较快的时候。<br>使用repl-diskless-sync配置参数来启动无磁盘复制。<br>使用repl-diskless-sync-delay 参数来配置传输开始的延迟时间；master等待一个repl-diskless-sync-delay的秒数，如果没slave来的话，就直接传，后来的得排队等了; 否则就可以一起传。<br><br>通过分析主从库间第一次数据同步的过程，你可以看到，一次全量复制中，对于主库来说，需要完成两个耗时的操作：生成 RDB 文件和传输 RDB 文件。<br>如果从库数量很多，而且都要和主库进行全量复制的话，就会导致主库忙于 fork 子进程生成 RDB 文件，进行数据全量复制。fork 这个操作会阻塞主线程处理正常请求，从而导致主库响应应用程序的请求速度变慢。此外，传输 RDB 文件也会占用主库的网络带宽，同样会给主库的资源使用带来压力。那么，有没有好的解决方法可以分担主库压力呢？<br>其实是有的，这就是“主 - 从 - 从”模式。<br>在刚才介绍的主从库模式中，所有的从库都是和主库连接，所有的全量复制也都是和主库进行的。现在，我们可以通过“主 - 从 - 从”模式将主库生成 RDB 和传输 RDB 的压力，以级联的方式分散到从库上。<br>简单来说，我们在部署主从集群的时候，可以手动选择一个从库（比如选择内存资源配置较高的从库），用于级联其他的从库。然后，我们可以再选择一些从库（例如三分之一的从库），在这些从库上执行如下命令，让它们和刚才所选的从库，建立起主从关系。<br>replicaof 所选从库的IP 6379
-复制<br>这样一来，这些从库就会知道，在进行同步时，不用再和主库进行交互了，只要和级联的从库进行写操作同步就行了，这就可以减轻主库上的压力，如下图所示：<br><img alt="assets/06、高可用：主从复制详解/img-20240316_112513.png" src="\04、数据库\02、redis\assets\06、高可用：主从复制详解\img-20240316_112513.png" style="width: 875px; max-width: 100%;"><br>级联的“主-从-从”模式好了，到这里，我们了解了主从库间通过全量复制实现数据同步的过程，以及通过“主 - 从 - 从”模式分担主库压力的方式。那么，一旦主从库完成了全量复制，它们之间就会一直维护一个网络连接，主库会通过这个连接将后续陆续收到的命令操作再同步给从库，这个过程也称为基于长连接的命令传播，可以避免频繁建立连接的开销。<br><br>在主从复制基础上实现的读写分离，可以实现Redis的读负载均衡：由主节点提供写服务，由一个或多个从节点提供读服务（多个从节点既可以提高数据冗余程度，也可以最大化读负载能力）；在读负载较大的应用场景下，可以大大提高Redis服务器的并发量。下面介绍在使用Redis读写分离时，需要注意的问题。<br>
+<br>如果数据比较重要，并且在使用主从复制时关闭了主服务器持久化功能的场景中，都应该禁止实例自动重启。<br><br>选择 RDB 的原因：<br>1）RDB文件内容是经过压缩的二进制数据（不同数据类型数据做了针对性优化），文件很小，降低对主库机器网络带宽的消耗，按照 RDB 协议解析还原速度快。<br>2）RDB 只有在需要定时备份和主从全量复制数据时才会触发生成一次快照。<br>不选 AOF 的原因：<br>1）打开 AOF 功能，打开 AOF 就要选择文件刷盘的策略，选择不当会严重影响 Redis 性能。而在很多丢失数据不敏感的业务场景，其实是不需要开启 AOF 的。<br>2）AOF 文件记录的是每一次写操作的命令，写操作越多文件就越大，其中还包括很多对同一个 key 的多次冗余操作。<br>3）即使重写过的 AOF，复制依次重放每个写命令，也会经历冗长的处理逻辑。<br><br>Redis 默认是磁盘复制，但是如果使用比较低速的磁盘，这种操作会给主服务器带来较大的压力。Redis从2.8.18版本开始尝试支持无磁盘的复制。使用这种设置时，子进程直接将RDB通过网络发送给从服务器，不使用磁盘作为中间存储。<br>无磁盘复制模式：master创建一个新进程直接dump RDB到slave的socket，不经过主进程，不经过硬盘。适用于disk较慢，并且网络较快的时候。<br>使用repl-diskless-sync配置参数来启动无磁盘复制。<br>使用repl-diskless-sync-delay 参数来配置传输开始的延迟时间；master等待一个repl-diskless-sync-delay的秒数，如果没slave来的话，就直接传，后来的得排队等了; 否则就可以一起传。<br><br>一次全量复制中，对于主库来说，需要完成两个耗时的操作：生成 RDB 文件和传输 RDB 文件。<br>如果从库数量很多，而且都要和主库进行全量复制的话，就会导致主库忙于 fork 子进程生成 RDB 文件，进行数据全量复制。fork 这个操作会阻塞主线程处理正常请求，从而导致主库响应应用程序的请求速度变慢。此外，传输 RDB 文件也会占用主库的网络带宽，同样会给主库的资源使用带来压力。<br>可以通过“主 - 从 - 从”模式将主库生成 RDB 和传输 RDB 的压力，以级联的方式分散到从库上。<br>在部署主从集群的时候，可以手动选择一个从库（比如选择内存资源配置较高的从库），用于级联其他的从库。<br>replicaof 所选从库的IP 6379
+复制<br>如下图所示：<br><img alt="assets/06、高可用：主从复制详解/img-20240316_112513.png" src="\04、数据库\02、redis\assets\06、高可用：主从复制详解\img-20240316_112513.png" style="width: 875px; max-width: 100%;"><br>一旦主从库完成了全量复制，它们之间就会一直维护一个网络连接，主库会通过这个连接将后续陆续收到的命令操作再同步给从库，这个过程也称为基于长连接的命令传播，可以避免频繁建立连接的开销。<br><br>在主从复制基础上实现的读写分离，可以实现Redis的读负载均衡：由主节点提供写服务，由一个或多个从节点提供读服务（多个从节点既可以提高数据冗余程度，也可以最大化读负载能力）；在读负载较大的应用场景下，可以大大提高Redis服务器的并发量。<br>但在使用Redis读写分离时，需要注意一些问题。<br>
 <br>延迟与不一致问题
-<br>前面已经讲到，由于主从复制的命令传播是异步的，延迟与数据的不一致不可避免。如果应用对数据不一致的接受程度程度较低，可能的优化措施包括：优化主从节点之间的网络环境（如在同机房部署）；监控主从节点延迟（通过offset）判断，如果从节点延迟过大，通知应用不再通过该从节点读取数据；使用集群同时扩展写负载和读负载等。<br>在命令传播阶段以外的其他情况下，从节点的数据不一致可能更加严重，例如连接在数据同步阶段，或从节点失去与主节点的连接时等。从节点的slave-serve-stale-data参数便与此有关：它控制这种情况下从节点的表现；如果为yes（默认值），则从节点仍能够响应客户端的命令，如果为no，则从节点只能响应info、slaveof等少数命令。该参数的设置与应用对数据一致性的要求有关；如果对数据一致性要求很高，则应设置为no。<br>
+<br>由于主从复制的命令传播是异步的，延迟与数据的不一致不可避免。<br>
+如果应用对数据不一致的接受程度程度较低，可能的优化措施包括：<br>
+<br>优化主从节点之间的网络环境（如在同机房部署）；
+<br>监控主从节点延迟（通过offset）判断，如果从节点延迟过大，通知应用不再通过该从节点读取数据；
+<br>使用集群同时扩展写负载和读负载等。
+<br>在命令传播阶段以外的其他情况下，从节点的数据不一致可能更加严重，例如连接在数据同步阶段，或从节点失去与主节点的连接时等。<br>
+从节点的 slave-serve-stale-data  参数便与此有关：它控制这种情况下从节点的表现；<br>1）值为 yes（默认值），则从节点仍能够响应客户端的命令<br>
+2）值为 no，则从节点只能响应info、slaveof等少数命令。如果对数据一致性要求很高，则应设置为 no。<br>
 <br>数据过期问题
 <br>在单机版Redis中，存在两种删除策略：<br>
 <br>惰性删除：服务器不会主动删除数据，只有当客户端查询某个数据时，服务器判断该数据是否过期，如果过期则删除。
 <br>定期删除：服务器执行定时任务删除过期数据，但是考虑到内存和CPU的折中（删除会释放内存，但是频繁的删除操作对CPU不友好），该删除的频率和执行时间都受到了限制。
 <br>在主从复制场景下，为了主从节点的数据一致性，从节点不会主动删除数据，而是由主节点控制从节点中过期数据的删除。由于主节点的惰性删除和定期删除策略，都不能保证主节点及时对过期数据执行删除操作，因此，当客户端通过Redis从节点读取数据时，很容易读取到已经过期的数据。<br>Redis 3.2中，从节点在读取数据时，增加了对数据是否过期的判断：如果该数据已过期，则不返回给客户端；将Redis升级到3.2可以解决数据过期问题。<br>
 <br>故障切换问题
-<br>在没有使用哨兵的读写分离场景下，应用针对读和写分别连接不同的Redis节点；当主节点或从节点出现问题而发生更改时，需要及时修改应用程序读写Redis数据的连接；连接的切换可以手动进行，或者自己写监控程序进行切换，但前者响应慢、容易出错，后者实现复杂，成本都不算低。<br>
+<br>在没有使用哨兵的读写分离场景下，应用针对读和写分别连接不同的Redis节点；<br>
+当主节点或从节点出现问题而发生更改时，需要及时修改应用程序读写Redis数据的连接；<br>
+连接的切换可以手动进行，或者自己写监控程序进行切换，但前者响应慢、容易出错，后者实现复杂，成本都不算低。<br>
 <br>总结
-<br>在使用读写分离之前，可以考虑其他方法增加 Redis 的读负载能力：如尽量优化主节点（减少慢查询、减少持久化等其他情况带来的阻塞等）提高负载能力；<br>
-使用Redis集群同时提高读负载能力和写负载能力等。如果使用读写分离，可以使用哨兵，使主从节点的故障切换尽可能自动化，并减少对应用程序的侵入。<br>]]></description><link>04、数据库\02、redis\06、高可用：主从复制详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/06、高可用：主从复制详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 09:06:04 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\06、高可用：主从复制详解\img-20240316_112111.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\06、高可用：主从复制详解\img-20240316_112111.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[07、高可用：哨兵机制（Redis Sentinel）详解]]></title><description><![CDATA[ 
+<br>在使用读写分离之前，可以考虑其他方法增加 Redis 的读负载能力：<br>
+如尽量优化主节点（减少慢查询、减少持久化等其他情况带来的阻塞等）提高负载能力；<br>哨兵：<br>
+如果使用读写分离，可以使用哨兵，使主从节点的故障切换尽可能自动化，并减少对应用程序的侵入。<br>集群：<br>
+同时提高读负载能力和写负载能力等。<br>]]></description><link>04、数据库\02、redis\06、高可用：主从复制详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/06、高可用：主从复制详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 18 Mar 2024 12:37:32 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\06、高可用：主从复制详解\img-20240316_112111.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\06、高可用：主从复制详解\img-20240316_112111.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[07、高可用：哨兵机制（Redis Sentinel）详解]]></title><description><![CDATA[ 
  <br><br>
 slave 节点宕机恢复后可以找 master 节点同步数据，那 master 节点宕机怎么办?
 <br>只有主从，没有哨兵的情况下：<br>
@@ -21006,8 +21097,7 @@ slave 节点宕机恢复后可以找 master 节点同步数据，那 master 节�
 
 <br>以 3 个哨兵为例，假设此时的 quorum 设置为 2，那么，任何一个想成为 Leader 的哨兵只要拿到 2 张赞成票，就可以了。<br>
 这里很多人会搞混 判定客观下线 和 是否能够主从切换（用到选举机制） 两个概念，我们再看一个例子。
-Redis 1 主 4 从，5 个哨兵，哨兵配置 quorum 为 2，如果 3 个哨兵故障，当主库宕机时，哨兵能否判断主库“客观下线”？能否自动切换？
-<br>经过实际测试：<br>
+<br>Redis 1 主 4 从，5 个哨兵，哨兵配置 quorum 为 2，如果 3 个哨兵故障，当主库宕机时，哨兵能否判断主库“客观下线”？能否自动切换？<br>经过实际测试：<br>
 1、哨兵集群可以判定主库“主观下线”。由于 quorum=2，所以当一个哨兵判断主库“主观下线”后，询问另外一个哨兵后也会得到同样的结果，2 个哨兵都判定“主观下线”，达到了 quorum 的值，因此，哨兵集群可以判定主库为“客观下线”。<br>2、但哨兵不能完成主从切换。哨兵标记主库“客观下线后”，在选举“哨兵领导者”时，一个哨兵必须拿到超过多数的选票 (5/2+1=3 票)。但目前只有 2 个哨兵活着，无论怎么投票，一个哨兵最多只能拿到 2 票，永远无法达到 N/2+1 选票的结果。<br><br>
 主库既然判定客观下线了，那么如何从剩余的从库中选择一个新的主库呢？
 <br>
@@ -21042,11 +21132,11 @@ public LettuceClientConfigurationBuilderCustomizer clientConfigurationBuilderCus
 <br>MASTER_PREFERRED：优先从 master 节点读取，master 不可用才读取 replica
 <br>REPLICA：从 slave（replica）节点读取
 <br>REPLICA _PREFERRED：优先从 slave（replica）节点读取，所有的 slave 都不可用才读取 master
-]]></description><link>04、数据库\02、redis\07、高可用：哨兵机制（redis-sentinel）详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/07、高可用：哨兵机制（Redis Sentinel）详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 09:21:01 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\07、高可用：哨兵机制（redis-sentinel）详解\img-20240316_115425.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\07、高可用：哨兵机制（redis-sentinel）详解\img-20240316_115425.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[08、高可拓展：分片技术（Redis Cluster）详解]]></title><description><![CDATA[ 
+]]></description><link>04、数据库\02、redis\07、高可用：哨兵机制（redis-sentinel）详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/07、高可用：哨兵机制（Redis Sentinel）详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 18 Mar 2024 12:41:39 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\07、高可用：哨兵机制（redis-sentinel）详解\img-20240316_115425.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\07、高可用：哨兵机制（redis-sentinel）详解\img-20240316_115425.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[08、高可拓展：分片技术（Redis Cluster）详解]]></title><description><![CDATA[ 
  <br><br>
 Redis-cluster是一种服务器Sharding技术，Redis3.0以后版本正式提供支持。
 <br><br>高性能可线性扩展至最多1000节点。集群中没有代理，（集群节点间）使用异步复制，没有归并操作(merge operations on values)<br>
-<br>高性能: 集群中没有代理，使用异步复制，系统避免了值的合并操作，以维持性能和简单性。
+<br>高性能：集群中没有代理，使用异步复制，系统避免了值的合并操作，以维持性能和简单性。
 <br>高扩展：可以扩展到最多 1000 个节点，能处理更多的操作并存储更多的数据。
 <br>高可用：当多数主节点可用时，即使少数主节点不可用，Redis 集群总是可用的。此外，通过副本迁移技术，没有副本节点的主节点可以从有多个副本的主节点那里获得一个新副本，以确保可用性。
 <br>写入安全：Redis 集群试图使用最大努力原则保留对主节点的所有写操作。然而，在故障转移过程中存在一个小的时间窗口，在此期间确认的写操作可能会丢失。
@@ -21205,7 +21295,7 @@ Redis Cluster是如何进行扩容和缩容的呢？
 复制<br>4）命令通知集群槽位 10 已经迁移到节点 B。<br>redis-cli --cluster setslot 10 node &lt;target-node-id&gt;
 复制<br><br>缩容的大致过程与扩容一致，需要判断下线的节点是否是主节点，以及主节点上是否有槽。<br>若主节点上有槽，需要将槽迁移到集群中其他主节点，槽迁移完成之后，需要向其他节点广播该节点准备下线（cluster forget nodeId）。最后需要将该下线主节点的从节点指向其他主节点，当然最好是先将从节点下线。<br><br>
 通过几个例子，再深入理解Redis Cluster
-<br><br>我们知道一致性hash算法是2的16次方，为什么hash slot是2的14次方呢？<br>Redis 集群通过在心跳包中使用一个2K 大小的 bitmap 来有效地传递包含16384个槽的状态信息。<br>在redis节点发送心跳包时需要把所有的槽放到这个心跳包里，以便让节点知道当前集群信息，16384=16k，在发送心跳包时使用char进行bitmap压缩后是2k（2  8 (8 bit)  1024(1k) = 16K），也就是说使用2k的空间创建了16k的槽数。<br>虽然使用CRC16算法最多可以分配65535（2^16-1）个槽位，65535=65k，压缩后就是8k（8  8 (8 bit)  1024(1k) =65K），也就是说需要需要8k的心跳包，作者认为这样做不太值得；并且一般情况下一个redis集群不会有超过1000个master节点，所以16k的槽位是个比较合适的选择。<br><br>在集群模式下，所有的publish命令都会向所有节点（包括从节点）进行广播，造成每条publish数据都会在集群内所有节点传播一次，加重了带宽负担，对于在有大量节点的集群中频繁使用pub，会严重消耗带宽，不建议使用。（虽然官网上讲有时候可以使用Bloom过滤器或其他算法进行优化的）<br>]]></description><link>04、数据库\02、redis\08、高可拓展：分片技术（redis-cluster）详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/08、高可拓展：分片技术（Redis Cluster）详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 09:22:25 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\08、高可拓展：分片技术（redis-cluster）详解\img-20240316_154508.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\08、高可拓展：分片技术（redis-cluster）详解\img-20240316_154508.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染]]></title><description><![CDATA[ 
+<br><br>我们知道一致性hash算法是2的16次方，为什么hash slot是2的14次方呢？<br>Redis 集群通过在心跳包中使用一个2K 大小的 bitmap 来有效地传递包含16384个槽的状态信息。<br>在redis节点发送心跳包时需要把所有的槽放到这个心跳包里，以便让节点知道当前集群信息，16384=16k，在发送心跳包时使用char进行bitmap压缩后是2k（2  8 (8 bit)  1024(1k) = 16K），也就是说使用2k的空间创建了16k的槽数。<br>虽然使用CRC16算法最多可以分配65535（2^16-1）个槽位，65535=65k，压缩后就是8k（8  8 (8 bit)  1024(1k) =65K），也就是说需要需要8k的心跳包，作者认为这样做不太值得；并且一般情况下一个redis集群不会有超过1000个master节点，所以16k的槽位是个比较合适的选择。<br><br>在集群模式下，所有的publish命令都会向所有节点（包括从节点）进行广播，造成每条publish数据都会在集群内所有节点传播一次，加重了带宽负担，对于在有大量节点的集群中频繁使用pub，会严重消耗带宽，不建议使用。（虽然官网上讲有时候可以使用Bloom过滤器或其他算法进行优化的）<br>]]></description><link>04、数据库\02、redis\08、高可拓展：分片技术（redis-cluster）详解.html</link><guid isPermaLink="false">04、数据库/02、Redis/08、高可拓展：分片技术（Redis Cluster）详解.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 18 Mar 2024 12:53:46 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\08、高可拓展：分片技术（redis-cluster）详解\img-20240316_154508.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\08、高可拓展：分片技术（redis-cluster）详解\img-20240316_154508.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染]]></title><description><![CDATA[ 
  <br>在高并发的业务场景下，数据库大多数情况都是用户并发访问最薄弱的环节。所以，就需要使用redis做一个缓冲操作，让请求先访问到redis，而不是直接访问Mysql等数据库。这样可以大大缓解数据库的压力。<br>当缓存库出现时，必须要考虑如下问题：<br>
 <br>缓存穿透
 <br>缓存穿击
@@ -21290,7 +21380,7 @@ Write Behind Caching Pattern ：调用者只操作缓存，其他线程去异步
 <br>1）数据操作主要分为两大块：<br>
 <br>一个是全量（将全部数据一次写入到 redis）
 <br>一个是增量（实时更新）
-<br>这里说的是增量，指的是 mysql 的 update、insert、delate 变更数据。 <br>2）读取 binlog 后分析，利用消息队列，推送更新各台的 redis 缓存数据。<br>这样一旦MySQL中产生了新的写入、更新、删除等操作，就可以把binlog相关的消息推送至Redis，Redis再根据binlog中的记录，对Redis进行更新。<br>其实这种机制，很类似MySQL的主从备份机制，因为MySQL的主备也是通过binlog来实现的数据一致性。<br>这里可以结合使用 canal(阿里的一款开源框架)，通过该框架可以对 MySQL 的 binlog 进行订阅，而 canal 正是模仿了 mysql 的 slave 数据库的备份请求，使得 Redis 的数据更新达到了相同的效果。 <br>当然，这里的消息推送工具你也可以采用别的第三方：kafka、rabbitMQ 等来实现推送更新 Redis。 ]]></description><link>04、数据库\02、redis\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染.html</link><guid isPermaLink="false">04、数据库/02、Redis/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 09:22:54 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染\img-20240316_214619.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染\img-20240316_214619.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[10、Redis 监控详解]]></title><description><![CDATA[ 
+<br>这里说的是增量，指的是 mysql 的 update、insert、delate 变更数据。 <br>2）读取 binlog 后分析，利用消息队列，推送更新各台的 redis 缓存数据。<br>这样一旦MySQL中产生了新的写入、更新、删除等操作，就可以把binlog相关的消息推送至Redis，Redis再根据binlog中的记录，对Redis进行更新。<br>其实这种机制，很类似MySQL的主从备份机制，因为MySQL的主备也是通过binlog来实现的数据一致性。<br>这里可以结合使用 canal(阿里的一款开源框架)，通过该框架可以对 MySQL 的 binlog 进行订阅，而 canal 正是模仿了 mysql 的 slave 数据库的备份请求，使得 Redis 的数据更新达到了相同的效果。 <br>当然，这里的消息推送工具你也可以采用别的第三方：kafka、rabbitMQ 等来实现推送更新 Redis。 ]]></description><link>04、数据库\02、redis\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染.html</link><guid isPermaLink="false">04、数据库/02、Redis/09、缓存问题：一致性, 穿击, 穿透, 雪崩, 污染.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 18 Mar 2024 12:51:06 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染\img-20240316_214619.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\09、缓存问题：一致性,-穿击,-穿透,-雪崩,-污染\img-20240316_214619.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[10、Redis 监控详解]]></title><description><![CDATA[ 
  <br><br>
 如果只是想简单看一下Redis的负载情况的话，完全可以用它提供的一些命令来完成。
 <br><br>Redis提供的INFO命令不仅能够查看实时的吞吐量(ops/sec)，还能看到一些有用的运行时信息。<br>
@@ -21788,7 +21878,7 @@ void testPipeline() {
     long e = System.currentTimeMillis();
     System.out.println("time: " + (e - b));
 }
-复制<br><br>如 MSET 或 Pipeline 这样的批处理需要在一次请求中携带多条命令，而此时如果 Redis 是一个集群，那批处理命令的多个 key 必须落在一个插槽中，否则就会导致执行失败。大家可以想一想这样的要求其实很难实现，因为我们在批处理时，可能一次要插入很多条数据，这些数据很有可能不会都落在相同的节点上，这就会导致报错了。<br>第一种方案：串行执行，所以这种方式没有什么意义，当然，执行起来就很简单了，缺点就是耗时过久。<br>第二种方案：串行 slot，简单来说，就是执行前，客户端先计算一下对应的 key 的 slot ，一样 slot 的 key 就放到一个组里边，不同的，就放到不同的组里边，然后对每个组执行 pipeline 的批处理，他就能串行执行各个组的命令，这种做法比第一种方法耗时要少，但是缺点呢，相对来说复杂一点，所以这种方案还需要优化一下<br>第三种方案：并行 slot，相较于第二种方案，在分组完成后串行执行，第三种方案，就变成了并行执行各个命令，所以他的耗时就非常短，但是实现呢，也更加复杂。<br>第四种：hash_tag，redis 计算 key 的 slot 的时候，其实是根据 key 的有效部分来计算的，通过这种方式就能一次处理所有的 key，这种方式耗时最短，实现也简单，但是如果通过操作 key 的有效部分，那么就会导致所有的 key 都落在一个节点上，产生数据倾斜的问题，所以我们推荐使用第三种方式。<br>串行化代码实现<br>public class JedisClusterTest {
+复制<br><br>如 MSET 或 Pipeline 这样的批处理需要在一次请求中携带多条命令，而此时如果 Redis 是一个集群，那批处理命令的多个 key 必须落在一个插槽中，否则就会导致执行失败。大家可以想一想这样的要求其实很难实现，因为我们在批处理时，可能一次要插入很多条数据，这些数据很有可能不会都落在相同的节点上，这就会导致报错了。<br><img src="\04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240318_210458.png"><br>第一种方案：串行执行，所以这种方式没有什么意义，当然，执行起来就很简单了，缺点就是耗时过久。<br>第二种方案：串行 slot，简单来说，就是执行前，客户端先计算一下对应的 key 的 slot ，一样 slot 的 key 就放到一个组里边，不同的，就放到不同的组里边，然后对每个组执行 pipeline 的批处理，他就能串行执行各个组的命令，这种做法比第一种方法耗时要少，但是缺点呢，相对来说复杂一点，所以这种方案还需要优化一下<br>第三种方案：并行 slot，相较于第二种方案，在分组完成后串行执行，第三种方案，就变成了并行执行各个命令，所以他的耗时就非常短，但是实现呢，也更加复杂。<br>第四种：hash_tag，redis 计算 key 的 slot 的时候，其实是根据 key 的有效部分来计算的，通过这种方式就能一次处理所有的 key，这种方式耗时最短，实现也简单，但是如果通过操作 key 的有效部分，那么就会导致所有的 key 都落在一个节点上，产生数据倾斜的问题，所以我们推荐使用第三种方式。<br>串行化代码实现<br>public class JedisClusterTest {
 
     private JedisCluster jedisCluster;
 
@@ -21860,18 +21950,55 @@ void testPipeline() {
      List&lt;String&gt; strings = stringRedisTemplate.opsForValue().multiGet(Arrays.asList("name", "age", "sex"));
      strings.forEach(System.out::println);
  }
-复制<br><br><br>Redis 的持久化虽然可以保证数据安全，但也会带来很多额外的开销。<br>因此持久化请遵循下列建议：<br>
-<br>用来做缓存的 Redis 实例尽量不要开启持久化功能
-<br>建议关闭 RDB 持久化功能，使用 AOF 持久化
-<br>利用脚本定期在 slave 节点做 RDB，实现数据备份
+复制<br><br><br>Redis 的持久化虽然可以保证数据安全，但也会带来很多额外的开销。<br>因此持久化请遵循下列建议：<br><br><br><br>通过上面的分析，我们都知道RDB的快照、AOF的重写都需要fork，这是一个重量级操作，会对Redis造成阻塞。因此为了不影响Redis主进程响应，我们需要尽可能降低阻塞。<br>内存如何控制分配：<br>
+<br>更好的硬件
+<br>合理配置 Linux 的内存分配策略，避免因为物理内存不足导致 fork 失败
+<br>控制单个 Redis 实例内存上限，如 4 G 或 8 G。可以加快 fork 的速度、减少主从同步、数据迁移压力（可以单机部署多台 redis 实例）
+<br>物理机部署多个 Redis 实例，要防止同时运行持久化、重写操作，防止资源竞争，尝试让持久化变为串行；
+<br>不要与 CPU 内存密集型应用（ES）、高硬盘负载（数据库、消息队列）应用一起部署。
+<br>线上备份怎么做最优：<br>
+<br>用来做缓存的 Redis 关闭持久化，数据不敏感或可以通过其它方式重写生成数据；
+<br>脚本或程序定期触发备份、重写数据（制定策略定期检查 Redis 的情况）；
+<br>主从机器，让从机器进行备份处理；
+<br>4.0 以上让 RDB 与 AOF 持久化同时存在，结合使用。
+<br>使用 AOF 持久化时：<br>
 <br>设置合理的 rewrite 阈值，避免频繁的 bgrewrite
 <br>配置 no-appendfsync-on-rewrite = yes，禁止在 rewrite 期间做 aof，避免因 AOF 引起的阻塞。简单说就是，禁止在重写期间 fsync 刷盘
-<br><br>
-<br>Redis 实例的物理机要预留足够内存，应对 fork 和 rewrite
-<br>单个 Redis 实例内存上限不要太大，例如 4 G 或 8 G。可以加快 fork 的速度、减少主从同步、数据迁移压力（可以单机部署多台 redis 实例）
-<br>不要与 CPU 密集型应用部署在一起
-<br>不要与高硬盘负载应用一起部署。例如：数据库、消息队列
-<br><br><a rel="noopener" class="external-link" href="http://blog.czk.pub/post/f5781547.html#%E9%9B%86%E7%BE%A4%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96" target="_blank">http://blog.czk.pub/post/f5781547.html#%E9%9B%86%E7%BE%A4%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96</a><br><br>针对 Redis 变慢的场景，本文将协助排查，并给出高效的解决方案。<br><br>发现业务服务 API 响应延迟变长，首先你需要先排查服务内部，究竟是哪个环节拖慢了整个服务。<br>在服务内部集成链路追踪，也就是在服务访问外部依赖的出入口，记录下每次请求外部依赖的响应延时。<br><img src="\04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_204104.png"><br>发现确实是操作 Redis 的这条链路耗时变长了，此刻才需要把焦点关注在业务服务到 Redis 这条链路上。<br><br>基准性能就是指 Redis 在一台负载正常的机器上，最大的响应延迟和平均响应延迟的值。<br>Redis 在不同的软硬件环境下，它的性能是各不相同的，所以不能参考其他性能。<br>
+<br><br>单体 Redis（主从 Redis）已经能达到万级别的 QPS，并且也具备很强的高可用特性。<br>
+如果主从能满足业务需求的情况下，尽量不搭建 Redis 集群。<br>Lua 和事务都是要保证原子性问题，如果你的 key 不在一个节点，那么是无法保证 lua 的执行和事务的特性的，所以在集群模式是没有办法执行 lua 和事务的。<br><br>安全可以说是服务器端一个非常重要的话题，如果安全出现了问题，那么一旦这个漏洞被一些坏人知道了之后，并且进行攻击，那么这就会给咱们的系统带来很多的损失，所以我们这节课就来解决这个问题。<br>Redis 会绑定在 0.0.0. 0:6379，这样将会将 Redis 服务暴露到公网上，而 Redis 如果没有做身份认证，会出现严重的安全漏洞.<br>
+漏洞重现方式： <a rel="noopener" class="external-link" href="https://cloud.tencent.com/developer/article/1039000" target="_blank">https://cloud.tencent.com/developer/article/1039000</a><br>为什么会出现不需要密码也能够登录呢，主要是 Redis 考虑到每次登录都比较麻烦，所以 Redis 就有一种 ssh 免秘钥登录的方式，生成一对公钥和私钥，私钥放在本地，公钥放在 redis 端，当我们登录时服务器，再登录时候，他会去解析公钥和私钥，如果没有问题，则不需要利用 redis 的登录也能访问，这种做法本身也很常见，但是这里有一个前提，前提就是公钥必须保存在服务器上，才行，但是 Redis 的漏洞在于在不登录的情况下，也能把秘钥送到 Linux 服务器，从而产生漏洞<br>漏洞出现的核心的原因有以下几点：<br>
+<br>Redis 未设置密码
+<br>利用了 Redis 的 config set 命令动态修改 Redis 配置
+<br>使用了 Root 账号权限启动 Redis
+<br>为了避免这样的漏洞，这里给出一些建议：、<br>
+<br>Redis 一定要设置密码
+<br>禁止线上使用下面命令：keys、flushall、flushdb、config set 等命令。可以利用 rename-command 禁用。
+<br>Bind：限制网卡，禁止外网网卡访问
+<br>开启防火墙
+<br>不要使用 Root 账户启动 Redis
+<br>尽量不使用默认的端口
+<br># 将 FLUSHALL 命令重命名为空字符串,使其无法被调用
+rename-command FLUSHALL ""
+
+# 将 CONFIG 命令重命名为空字符串,防止修改配置
+rename-command CONFIG ""
+
+# 将 DEBUG 命令重命名为空字符串,防止调试级别的命令被误用
+rename-command DEBUG ""
+
+# 你也可以将其重命名为其他命令
+rename-command SHUTDOWN MOCK_SHUTDOWN
+
+rename-command FLUSHALL "" 
+rename-command FLUSHDB ""
+rename-command KEYS *
+
+复制<br><br>如果有几个 slot 不能使用，那么此时整个集群都不能用了！<br>其实最重要的是可用性，所以需要把配置 Cluster-require-full-coverage  修改成 no，即有 slot 不能使用时，Redis 集群还是可以对外提供服务。<br><br>集群中节点越多，集群状态信息数据量也越大，10 个节点的相关信息可能达到 1 kb。<br>
+此时每次集群互通需要的带宽会非常高，这样会导致集群中大量的带宽都会被 ping 信息所占用。<br>解决途径：<br>
+<br>避免大集群，集群节点数不要太多，最好少于 1000，如果业务庞大，则建立多个集群。
+<br>避免在单个物理机中运行太多 Redis 实例
+<br>配置合适的 cluster-node-timeout 值
+<br><br>针对 Redis 变慢的场景，本文将协助排查，并给出高效的解决方案。<br><br>发现业务服务 API 响应延迟变长，首先你需要先排查服务内部，究竟是哪个环节拖慢了整个服务。<br>在服务内部集成链路追踪，也就是在服务访问外部依赖的出入口，记录下每次请求外部依赖的响应延时。<br><img src="\04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_204104.png"><br>发现确实是操作 Redis 的这条链路耗时变长了，此刻才需要把焦点关注在业务服务到 Redis 这条链路上。<br><br>基准性能就是指 Redis 在一台负载正常的机器上，最大的响应延迟和平均响应延迟的值。<br>Redis 在不同的软硬件环境下，它的性能是各不相同的，所以不能参考其他性能。<br>
 例如：我的机器配置比较低，当延迟为 2ms 时，我就认为 Redis 变慢了，但是如果你的硬件配置比较高，那么在你的运行环境下，可能延迟是 0.5ms 时就可以认为 Redis 变慢了。<br>
 <br>在 Redis 服务器上测试实例的响应延迟情况：
 <br>$ redis-cli -h 127.0.0.1 -p 6379 --intrinsic-latency 60
@@ -21918,18 +22045,19 @@ CONFIG SET slowlog-max-len 500
    4) 1) "GET"
       2) "user_info:1000"
 ...
-复制<br>通过查看慢日志，我们就可以知道在什么时间点，执行了哪些命令比较耗时。<br><br>如果你的应用程序执行的 Redis 命令有以下特点，那么有可能会导致操作延迟变大：<br>
-<br>经常使用 O(N) 以上复杂度的命令，例如 SORT、SUNION、ZUNIONSTORE 聚合类命令
-<br>使用 O(N) 复杂度的命令，但 N 的值非常大
-<br>第一种情况导致变慢的原因在于，Redis 在操作内存数据时，时间复杂度过高，要花费更多的 CPU 资源。<br>第二种情况导致变慢的原因在于，Redis 一次需要返回给客户端的数据过多，更多时间花费在数据协议的组装和网络传输过程中。<br>另外，我们还可以从资源使用率层面来分析，如果你的应用程序操作 Redis 的 OPS 不是很大，但 Redis 实例的 CPU 使用率却很高，那么很有可能是使用了复杂度过高的命令导致的。<br>除此之外，我们都知道，Redis 是单线程处理客户端请求的，如果你经常使用以上命令，那么当 Redis 处理客户端请求时，一旦前面某个命令发生耗时，就会导致后面的请求发生排队，对于客户端来说，响应延迟也会变长。<br><img src="\04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_205043.png"><br>以下方法优化你的业务：<br>
+复制<br>通过查看慢日志，我们就可以知道在什么时间点，执行了哪些命令比较耗时。<br><br><br><br>○　成因危害<br>如果你的应用程序执行的 Redis 命令有以下特点，那么有可能会导致操作延迟变大：<br>
+<br>经常使用 O (N) 以上复杂度的命令，例如 SORT、SUNION、ZUNIONSTORE 聚合类命令
+<br>使用 O (N) 复杂度的命令，但 N 的值非常大
+<br>Redis 是单线程处理客户端请求的，如果经常使用以上命令，当 Redis 处理客户端请求时复杂命令发生耗时，就会导致后面的请求发生排队，对于客户端来说，响应延迟会变长。<br>1）Redis 在操作内存数据时，时间复杂度过高，要花费更多的 CPU 资源。<br>
+2）Redis 一次需要返回给客户端的数据过多，更多时间花费在数据协议的组装和网络传输过程中。<br>○　问题排查<br>可以从资源使用率层面来分析，如果你的应用程序操作 Redis 的 OPS 不是很大，但 Redis 实例的 CPU 使用率却很高，那么很有可能是使用了复杂度过高的命令导致的。<br><img src="\04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_205043.png"><br>○　优化方案<br>
 <br>尽量不使用 O(N) 以上复杂度过高的命令，对于数据的聚合操作，放在客户端做
 <br>执行 O(N) 命令，保证 N 尽量的小（推荐 N &lt;= 300），每次获取尽量少的数据，让 Redis 可以及时处理返回
-<br><br>Bigkey 导致 Redis 在创建（分配内存）、删除（释放内存）时，都会很耗时。<br><br>1）网络阻塞<br>
+<br><br>○　成因危害<br>Bigkey 导致 Redis 在创建（分配内存）、删除（释放内存）时，都会很耗时。<br>1）网络阻塞<br>
 对 BigKey 执行读请求时，少量的 QPS 就可能导致带宽使用率被占满，导致 Redis 实例，乃至所在物理机变慢<br>2）数据倾斜<br>
 BigKey 所在的 Redis 实例内存使用率远超其他实例，无法使数据分片的内存资源达到均衡<br>3）Redis 阻塞<br>
 对元素较多的 hash、list、zset 等做运算会耗时较旧，使主线程被阻塞<br>4）CPU 压力<br>
 对 BigKey 的数据序列化和反序列化会导致 CPU 的使用率飙升，影响 Redis 实例和本机其它应用<br>5）其他<br>
-bigkey 在分片集群模式下，对于数据的迁移也有性能影响，数据过期、数据淘汰、透明大页等都会受到 bigkey 的影响。<br><br>Redis 提供了扫描 bigkey 的命令，输出结果是以类型维度展示的：<br>$ redis-cli -h 127.0.0.1 -p 6379 --bigkeys -i 0.01
+bigkey 在分片集群模式下，对于数据的迁移也有性能影响，数据过期、数据淘汰、透明大页等都会受到 bigkey 的影响。<br>○　问题排查<br>Redis 提供了扫描 bigkey 的命令，输出结果是以类型维度展示的：<br>$ redis-cli -h 127.0.0.1 -p 6379 --bigkeys -i 0.01
  
 ...
 -------- summary -------
@@ -21951,30 +22079,604 @@ Biggest   zset found 'myzset:2704' has 42 members
 复制<br>返回的结果：<br>
 <br>每种数据类型所占用的最大内存 / 拥有最多元素的 key 。
 <br>每种数据类型在整个实例中的占比和平均大小 / 元素数量。
-<br>这个命令的原理： Redis 在内部执行了 SCAN 命令，遍历整个实例中所有的 key，针对 key 的类型，分别执行 STRLEN、LLEN、HLEN、SCARD、ZCARD 命令，来获取 String 类型的长度、容器类型（List、Hash、Set、ZSet）的元素个数。<br><br>但执行这个命令时，要注意 2 个问题：<br>1、对线上实例进行 bigkey 扫描时，Redis 的 OPS 会突增，为了降低扫描过程中对 Redis 的影响，最好控制一下扫描的频率，指定 -i 参数即可，它表示扫描过程中每次扫描后休息的时间间隔，单位是秒<br>2、扫描结果中，对于容器类型（List、Hash、Set、ZSet）的 key，只能扫描出元素最多的 key。但一个 key 的元素多，不一定表示占用内存也多，你还需要根据业务情况，进一步评估内存占用情况<br>
+<br>这个命令的原理： Redis 在内部执行了 SCAN 命令，遍历整个实例中所有的 key，针对 key 的类型，分别执行 STRLEN、LLEN、HLEN、SCARD、ZCARD 命令，来获取 String 类型的长度、容器类型（List、Hash、Set、ZSet）的元素个数。<br>执行这个命令时，要注意 2 个问题：<br>1、对线上实例进行 bigkey 扫描时，Redis 的 OPS 会突增，为了降低扫描过程中对 Redis 的影响，最好控制一下扫描的频率，指定 -i 参数即可，它表示扫描过程中每次扫描后休息的时间间隔，单位是秒<br>2、扫描结果中，对于容器类型（List、Hash、Set、ZSet）的 key，只能扫描出元素最多的 key。但一个 key 的元素多，不一定表示占用内存也多，你还需要根据业务情况，进一步评估内存占用情况<br>
 建议在控制台或者业务逻辑中加入扫描逻辑，在低业务时段采用 SCAN 扫描，可以排查出更详细的信息，而非仅关键时刻的扫描。
-<br><br>有两点可以优化：<br>1）业务应用尽量避免写入 bigkey<br>
+<br>○　优化方案<br>有两点可以优化：<br>1）业务应用尽量避免写入 bigkey<br>
 2）如果你使用的 Redis 是 4.0 以上版本，用 UNLINK 命令替代 DEL，此命令可以把释放 key 内存的操作，放到后台线程中去执行，从而降低对 Redis 的影响<br>
-如果你使用的 Redis 是 6.0 以上版本，可以开启 lazy-free 机制（lazyfree-lazy-user-del = yes），在执行 DEL 命令时，释放内存也会放到后台线程中执行<br>即便可以使用方案 2，也不建议你在实例中存入 bigkey。因为 bigkey 在很多场景下，依旧会产生性能问题。<br><br>平时在操作 Redis 时，并没有延迟很大的情况发生，变慢的时间点很有规律，例如某个整点，或者每间隔多久就会发生一波延迟。<br>业务代码中是否存在设置大量 key 集中过期的情况，在这个时间点访问 Redis 时，就可能会导致延时变大。<br><br>Redis 的过期数据采用被动过期 + 主动过期两种策略：<br>
+如果你使用的 Redis 是 6.0 以上版本，可以开启 lazy-free 机制（lazyfree-lazy-user-del = yes），在执行 DEL 命令时，释放内存也会放到后台线程中执行<br>即便可以使用方案 2，也不建议你在实例中存入 bigkey。因为 bigkey 在很多场景下，依旧会产生性能问题。<br><br>○　成因危害<br>平时在操作 Redis 时，并没有延迟很大的情况发生，变慢的时间点很有规律，例如某个整点，或者每间隔多久就会发生一波延迟。<br>
+业务代码中是否存在设置大量 key 集中过期的情况，在这个时间点访问 Redis 时，就可能会导致延时变大。<br>Redis 的过期数据采用被动过期 + 主动过期两种策略：<br>
 <br>被动过期：只有当访问某个 key 时，才判断这个 key 是否已过期，如果已过期，则从实例中删除
 <br>主动过期：Redis 内部维护了一个定时任务，默认每隔 100 毫秒（1秒10次）就会从全局的过期哈希表中随机取出 20 个 key，然后删除其中过期的 key，如果过期 key 的比例超过了 25%，则继续重复此过程，直到过期 key 的比例下降到 25% 以下，或者这次任务的执行耗时超过了 25 毫秒，才会退出循环
-<br>这个主动过期 key 的定时任务，是在 Redis 主线程中执行的。<br><br>在执行主动过期的过程中，出现了需要大量删除过期 key 的情况，此时应用程序在访问 Redis 时，必须要等待这个过期任务执行结束，Redis 才可以服务这个客户端请求。此时就会出现，应用访问 Redis 延时变大。<br>如果此时需要过期删除的是一个 bigkey，那么这个耗时会更久。而且，这个操作延迟的命令并不会记录在慢日志中。<br>因为慢日志中只记录一个命令真正操作内存数据的耗时，而 Redis 主动删除过期 key 的逻辑，是在命令真正执行之前执行的。<br>慢日志中没有操作耗时的命令，但应用程序却感知到了延迟变大，其实时间都花费在了删除过期 key 上，这种情况我们需要尤为注意。<br><br>需要检查你的业务代码，是否存在集中过期 key 的逻辑。<br>一般集中过期使用的是 expireat / pexpireat 命令，你需要在代码中搜索这个关键字。<br>排查代码后，如果确实存在集中过期 key 的逻辑存在，但这种逻辑又是业务所必须的，那此时如何优化，同时又不对 Redis 有性能影响呢？<br><br>一般有两种方案来规避这个问题：<br>
+<br>这个主动过期 key 的定时任务，是在 Redis 主线程中执行的。<br>○　问题排查<br>在执行主动过期的过程中，出现了需要大量删除过期 key 的情况，此时应用程序在访问 Redis 时，必须要等待这个过期任务执行结束，Redis 才可以服务这个客户端请求。此时就会出现，应用访问 Redis 延时变大。<br>如果此时需要过期删除的是一个 bigkey，那么这个耗时会更久。而且，这个操作延迟的命令并不会记录在慢日志中。<br>因为慢日志中只记录一个命令真正操作内存数据的耗时，而 Redis 主动删除过期 key 的逻辑，是在命令真正执行之前执行的。<br>慢日志中没有操作耗时的命令，但应用程序却感知到了延迟变大，其实时间都花费在了删除过期 key 上，这种情况我们需要尤为注意。<br>○　优化方案<br>
 <br>集中过期 key 增加一个随机过期时间，把集中过期的时间打散，降低 Redis 清理过期 key 的压力
 <br>如果你使用的 Redis 是 4.0 以上版本，可以开启 lazy-free 机制，当删除过期 key 时，把释放内存的操作放到后台线程中执行，避免阻塞主线程
-<br>第一种方案，在设置 key 的过期时间时，增加一个随机时间，伪代码可以这么写：<br># 在过期时间点之后的 5 分钟内随机过期掉
+<br>1）代码调整<br>需要检查你的业务代码，是否存在集中过期 key 的逻辑。<br>一般集中过期使用的是 expireat / pexpireat 命令，你需要在代码中搜索这个关键字。<br>排查代码后，如果确实存在集中过期 key 的逻辑存在，但这种逻辑又是业务所必须的，那此时如何优化，同时又不对 Redis 有性能影响呢？<br>在设置 key 的过期时间时，增加一个随机时间，伪代码可以这么写：<br># 在过期时间点之后的 5 分钟内随机过期掉
 redis.expireat(key, expire_time + random(300))
-复制<br>这样一来，Redis 在处理过期时，不会因为集中删除过多的 key 导致压力过大，从而避免阻塞主线程。<br>第二种方案，Redis 4.0 以上版本，开启 lazy-free 机制：<br># 释放过期 key 的内存，放到后台线程执行
+复制<br>这样一来，Redis 在处理过期时，不会因为集中删除过多的 key 导致压力过大，从而避免阻塞主线程。<br>2）修改配置<br>第二种方案，Redis 4.0 以上版本，开启 lazy-free 机制：<br># 释放过期 key 的内存，放到后台线程执行
 lazyfree-lazy-expire yes
-复制<br>另外，除了业务层面的优化和修改配置之外，你还可以通过运维手段及时发现这种情况。<br>运维层面，需要把 Redis 的各项运行状态数据监控起来，在 Redis 上执行 INFO 命令就可以拿到这个实例所有的运行状态数据。<br>在这里我们需要重点关注 expired_keys 这一项，它代表整个实例到目前为止，累计删除过期 key 的数量。<br>你需要把这个指标监控起来，当这个指标在很短时间内出现了突增，需要及时报警出来，然后与业务应用报慢的时间点进行对比分析，确认时间是否一致，如果一致，则可以确认确实是因为集中过期 key 导致的延迟变大。<br>
-<br>CPU 相关：使用复杂度过高命令、数据的持久化，都与耗费过多的 CPU 资源有关
-<br>内存相关：bigkey 内存的申请和释放、数据过期、数据淘汰、碎片整理、内存大页、内存写时复制都与内存息息相关
-<br>磁盘相关：数据持久化、AOF 刷盘策略，也会受到磁盘的影响
-<br>网络相关：短连接、实例流量过载、网络流量过载，也会降低 Redis 性能
-<br>计算机系统：CPU 结构、内存分配，都属于最基础的计算机系统知识
-<br>操作系统：写时复制、内存大页、Swap、CPU 绑定，都属于操作系统层面的知识
-]]></description><link>04、数据库\02、redis\11、redis-最佳实践&amp;性能调优.html</link><guid isPermaLink="false">04、数据库/02、Redis/11、Redis 最佳实践&amp;性能调优.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sun, 17 Mar 2024 14:06:38 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_212716.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_212716.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[12、底层原理：数据结构]]></title><description><![CDATA[ 
- ]]></description><link>04、数据库\02、redis\12、底层原理：数据结构.html</link><guid isPermaLink="false">04、数据库/02、Redis/12、底层原理：数据结构.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:45 GMT</pubDate></item><item><title><![CDATA[13、底层原理：网络模型]]></title><description><![CDATA[ 
- ]]></description><link>04、数据库\02、redis\13、底层原理：网络模型.html</link><guid isPermaLink="false">04、数据库/02、Redis/13、底层原理：网络模型.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:45 GMT</pubDate></item><item><title><![CDATA[100、 ★ Redis面试题汇总 ★]]></title><description><![CDATA[ 
+复制<br>3）增强监控<br>运维层面，需要把 Redis 的各项运行状态数据监控起来，在 Redis 上执行 INFO 命令就可以拿到这个实例所有的运行状态数据。<br>这里重点关注 expired_keys 这一项，它代表整个实例到目前为止，累计删除过期 key 的数量。<br>当这个指标在很短时间内出现了突增，需要及时报警出来，然后与业务应用报慢的时间点进行对比分析，确认时间是否一致，如果一致，则可以确认确实是因为集中过期 key 导致的延迟变大。<br><br>业务应用，应使用长连接操作 Redis，避免频繁的短连接。<br>频繁的短连接会导致 Redis 大量时间耗费在连接的建立和释放上，TCP 的三次握手和四次挥手同样也会增加访问延迟。<br><br><br>○　成因危害<br>
+为了保证 Redis 数据的安全性，我们可能会开启后台定时 RDB 和 AOF rewrite 功能。但如果你发现，操作 Redis 延迟变大，<br>
+都发生在 Redis 后台 RDB 和 AOF rewrite 期间，那你就需要排查，在这期间有可能导致变慢的情况。
+<br>当 Redis 开启了后台 RDB 和 AOF rewrite 后，在执行时，它们都需要主进程创建出一个子进程进行数据的持久化。<br>主进程创建子进程，会调用操作系统提供的 fork 函数。<br>而 fork 在执行过程中，主进程需要拷贝自己的内存页表给子进程，如果这个实例很大，那么这个拷贝的过程也会比较耗时。<br>而且这个 fork 过程会消耗大量的 CPU 资源，在完成 fork 之前，整个 Redis 实例会被阻塞住，无法处理任何客户端请求。<br>如果此时你的 CPU 资源本来就很紧张，那么 fork 的耗时会更长，甚至达到秒级，这会严重影响 Redis 的性能。<br>○　问题排查<br>可以在 Redis 上执行 INFO 命令，查看 latest_fork_usec 项，单位微秒。<br># 上一次 fork 耗时，单位微秒
+latest_fork_usec:59477
+复制<br>这个时间就是主进程在 fork 子进程期间，整个实例阻塞无法处理客户端请求的时间。<br>如果你发现这个耗时很久，就要警惕起来了，这意味在这期间，你的整个 Redis 实例都处于不可用的状态。<br>除了数据持久化会生成 RDB 之外，当主从节点第一次建立数据同步时，主节点也创建子进程生成 RDB，然后发给从节点进行一次全量同步，所以，这个过程也会对 Redis 产生性能影响。<br><img src="\04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240318_213949.png"><br>○　优化方案<br>优化：<br>
+<br>控制 Redis 实例的内存：尽量在 10 G 以下，执行 fork 的耗时与实例大小有关，实例越大，耗时越久
+<br>合理配置数据持久化策略：在 slave 节点执行 RDB 备份，推荐在低峰期执行，而对于丢失数据不敏感的业务（例如把 Redis 当做纯缓存使用），可以关闭 AOF 和 AOF rewrite
+<br>Redis 实例不要部署在虚拟机上：fork 的耗时也与系统也有关，虚拟机比物理机耗时更久
+<br>降低主从库全量同步的概率：适当调大 repl-backlog-size 参数，避免主从全量同步
+<br><br>其实，关于数据持久化方面，还有影响 Redis 性能的因素，这次我们重点来看 AOF 数据持久化。<br>如果你的 AOF 配置不合理，还是有可能会导致性能问题。<br>当 Redis 开启 AOF 后，其工作原理如下：<br>
+<br>Redis 执行写命令后，把这个命令写入到 AOF 文件内存中（write 系统调用）
+<br>Redis 根据配置的 AOF 刷盘策略，把 AOF 内存数据刷到磁盘上（fsync 系统调用）
+<br>为了保证 AOF 文件数据的安全性，Redis 提供了 3 种刷盘机制：<br>
+<br>Appendfsync always：
+<br>Appendfsync no：
+<br>Appendfsync everysec：主线程每次写操作只写内存就返回，然后由后台线程每隔 1 秒执行一次刷盘操作（触发 fsync 系统调用），此方案对性能影响相对较小，但当 Redis 宕机时会丢失 1 秒的数据
+<br>○　成因危害<br>下面我们依次来分析，这几个机制对性能的影响。<br>1）always<br>虽然数据安全性最高，但Redis 每处理一次写操作，都会把这个命令写入到磁盘中才返回，整个过程都是在主线程执行的，这个过程必然会加重 Redis 写负担。<br>2）no<br>安全性也最低，性能影响最小。<br>
+如果你的 Redis 只用作纯缓存，对于数据丢失不敏感，采用配置 appendfsync no 也是可以的。
+<br>3）everysec<br>这个方案优势在于，Redis 主线程写完内存后就返回，具体的刷盘操作是放到后台线程中执行的，后台线程每隔 1 秒把内存中的数据刷到磁盘中。<br>但是这种方案还是存在导致 Redis 延迟变大的情况发生，甚至会阻塞整个 Redis。<br>当 Redis 后台线程在执行 AOF 文件刷盘时，如果此时磁盘的 IO 负载很高，那这个后台线程在执行刷盘操作（fsync 系统调用）时就会被阻塞住。<br>此时的主线程依旧会接收写请求，紧接着，主线程又需要把数据写到文件内存中（write 系统调用），但此时的后台子线程由于磁盘负载过高，导致 fsync 发生阻塞，迟迟不能返回，那主线程在执行 write 系统调用时，也会被阻塞住，直到后台线程 fsync 执行完成后，主线程执行 write 才能成功返回。<br><img src="\04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240319_204647.png"><br>尽管配置为 appendfsync everysec，也不能掉以轻心，要警惕磁盘压力过大导致的 Redis 有性能问题。<br>
+<br>子进程正在执行 AOF rewrite，这个过程会占用大量的磁盘 IO 资源（Redis 的 AOF 后台子线程刷盘操作，撞上了子进程 AOF rewrite！）
+<br>有其他应用程序在执行大量的写文件操作，也会占用磁盘 IO 资源
+<br>○　优化方案<br>Redis 提供了一个配置项，当子进程在 AOF rewrite 期间，可以让后台子线程不执行刷盘（不触发 fsync 系统调用）操作。<br>
+这相当于在 AOF rewrite 期间，临时把 appendfsync 设置为了 none，配置如下：<br># AOF rewrite 期间，AOF 后台子线程不进行刷盘操作
+# 相当于在这期间，临时把 appendfsync 设置为了 none
+no-appendfsync-on-rewrite yes
+复制<br>开启这个配置项，在 AOF rewrite 期间，如果实例发生宕机，那么此时会丢失更多的数据，性能和数据安全性，你需要权衡后进行选择。<br>如果占用磁盘资源的是其他应用程序，那就比较简单了，你需要定位到是哪个应用程序在大量写磁盘，然后把这个应用程序迁移到其他机器上执行就好了，避免对 Redis 产生影响。<br>当然，如果你对 Redis 的性能和数据安全都有很高的要求，那么我建议从硬件层面来优化，更换为 SSD 磁盘，提高磁盘的 IO 能力，保证 AOF 期间有充足的磁盘资源可以使用。<br><br><br>
+很多时候，我们在部署服务时，为了提高服务性能，降低应用程序在多个 CPU 核心之间的上下文切换带来的性能损耗，通常采用的方案是进程绑定 CPU 的方式提高性能。
+<br>但在部署 Redis 时，如果你需要绑定 CPU 来提高其性能，我建议你仔细斟酌后再做操作。<br>○　成因危害<br>一般现代的服务器会有多个 CPU，而每个 CPU 又包含多个物理核心，每个物理核心又分为多个逻辑核心，每个物理核下的逻辑核共用 L1/L2 Cache。<br>而 Redis Server 除了主线程服务客户端请求之外，还会创建子进程、子线程。<br>其中子进程用于数据持久化，而子线程用于执行一些比较耗时操作，例如异步释放 fd、异步 AOF 刷盘、异步 lazy-free 等等。<br>如果你把 Redis 进程只绑定了一个 CPU 逻辑核心上，那么当 Redis 在进行数据持久化时，fork 出的子进程会继承父进程的 CPU 使用偏好。<br>而此时的子进程会消耗大量的 CPU 资源进行数据持久化（把实例数据全部扫描出来需要耗费 CPU），这就会导致子进程会与主进程发生 CPU 争抢，进而影响到主进程服务客户端请求，访问延迟变大。<br>这就是 Redis 绑定 CPU 带来的性能问题。<br>○　优化方案<br>如果你确实想要绑定 CPU，可以优化的方案是，不要让 Redis 进程只绑定在一个 CPU 逻辑核上，而是绑定在多个逻辑核心上，而且，绑定的多个逻辑核心最好是同一个物理核心，这样它们还可以共用 L1/L2 Cache。<br>当然，即便我们把 Redis 绑定在多个逻辑核心上，也只能在一定程度上缓解主线程、子进程、后台线程在 CPU 资源上的竞争。<br>因为这些子进程、子线程还是会在这多个逻辑核心上进行切换，存在性能损耗。<br>如何再进一步优化？<br>可能你已经想到了，我们是否可以让主线程、子进程、后台线程，分别绑定在固定的 CPU 核心上，不让它们来回切换，这样一来，他们各自使用的 CPU 资源互不影响。<br>其实，这个方案 Redis 官方已经想到了。<br>Redis 在 6.0 版本已经推出了这个功能，我们可以通过以下配置，对主线程、后台线程、后台 RDB 进程、AOF rewrite 进程，绑定固定的 CPU 逻辑核心：<br># Redis Server 和 IO 线程绑定到 CPU核心 0,2,4,6
+server_cpulist 0-7:2
+ 
+# 后台子线程绑定到 CPU核心 1,3
+bio_cpulist 1,3
+ 
+# 后台 AOF rewrite 进程绑定到 CPU 核心 8,9,10,11
+aof_rewrite_cpulist 8-11
+ 
+# 后台 RDB 进程绑定到 CPU 核心 1,10,11
+# bgsave_cpulist 1,10-1
+复制<br>一般来说，Redis 的性能已经足够优秀，除非你对 Redis 的性能有更加严苛的要求，否则不建议你绑定 CPU。<br>绑定 CPU 需要你对计算机体系结构有非常清晰的了解，随意绑定 CPU 不仅不会提高性能，甚至有可能会带来相反的效果。<br><br>○　成因危害<br>实例内存达到上限，Redis 必须先从实例中踢出一部分数据，让整个实例的内存维持在 maxmemory 之下，然后才能把新数据写进来。<br>这个踢出旧数据的逻辑也是需要消耗时间的，而具体耗时的长短，要取决于你配置的淘汰策略：<br>
+<br>allkeys-lru：不管 key 是否设置了过期，淘汰最近最少访问的 key
+<br>volatile-lru：只淘汰最近最少访问、并设置了过期时间的 key
+<br>allkeys-random：不管 key 是否设置了过期，随机淘汰 key
+<br>volatile-random：只随机淘汰设置了过期时间的 key
+<br>allkeys-ttl：不管 key 是否设置了过期，淘汰即将过期的 key
+<br>noeviction：不淘汰任何 key，实例内存达到 maxmeory 后，再写入新数据直接返回错误
+<br>allkeys-lfu：不管 key 是否设置了过期，淘汰访问频率最低的 key（4.0+版本支持）
+<br>volatile-lfu：只淘汰访问频率最低、并设置了过期时间 key（4.0+版本支持）
+<br>一般最常使用的是 allkeys-lru 或  volatile-lru 淘汰策略：<br>
+每次从实例中随机取出一批 key（这个数量可配置），然后淘汰一个最少访问的 key，之后把剩下的 key 暂存到一个池子中，继续随机取一批 key，并与之前池子中的 key 比较，再淘汰一个最少访问的 key。以此往复，直到实例内存降到 maxmemory 之下。<br>○　问题排查<br>Redis 的淘汰数据的逻辑与删除过期 key 的一样，也是在命令真正执行之前执行的，也就是说它也会增加我们操作 Redis 的延迟，而且，写 OPS 越高，延迟也会越明显。<br>
+<img src="\04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240318_213604.png"><br>
+如果此时 Redis 实例中还存储了 bigkey，那么在淘汰删除 bigkey 释放内存时，耗时会更久。<br>○　优化方案<br>
+<br>避免存储 bigkey，降低释放内存的耗时
+<br>淘汰策略改为随机淘汰，随机淘汰比 LRU 要快很多（视业务情况调整）
+<br>拆分实例，把淘汰 key 的压力分摊到多个实例上
+<br>如果使用的是 Redis 4.0 以上版本，开启 layz-free 机制，把淘汰 key 释放内存的操作放到后台线程中执行（配置 lazyfree-lazy-eviction = yes）
+<br><br>什么是内存大页？<br>应用程序向操作系统申请内存时，是按内存页进行申请的，而常规的内存页大小是 4 KB。<br>Linux 内核从 2.6.38 开始，支持了内存大页机制，该机制允许应用程序以 2 MB 大小为单位，向操作系统申请内存。<br>应用程序每次向操作系统申请的内存单位变大了，但这也意味着申请内存的耗时变长。<br>○　成因危害<br>当 Redis 在执行后台 RDB 和 AOF rewrite 时，采用 fork 子进程的方式来处理。但主进程 fork 子进程后，此时的主进程依旧是可以接收写请求的，而进来的写请求，会采用 Copy On Write（写时复制）的方式操作内存数据。<br>也就是说，主进程一旦有数据需要修改，Redis 并不会直接修改现有内存中的数据，而是先将这块内存数据拷贝出来，再修改这块新内存的数据，这就是所谓的「写时复制」。<br>写时复制你也可以理解成，谁需要发生写操作，谁就需要先拷贝，再修改。<br>这样做的好处是，父进程有任何写操作，并不会影响子进程的数据持久化（子进程只持久化 fork 这一瞬间整个实例中的所有数据即可，不关心新的数据变更，因为子进程只需要一份内存快照，然后持久化到磁盘上）。<br>但是请注意，主进程在拷贝内存数据时，这个阶段就涉及到新内存的申请，如果此时操作系统开启了内存大页，那么在此期间，客户端即便只修改 10 B 的数据，Redis 在申请内存时也会以 2 MB 为单位向操作系统申请，申请内存的耗时变长，进而导致每个写请求的延迟增加，影响到 Redis 性能。<br>同样地，如果这个写请求操作的是一个 bigkey，那主进程在拷贝这个 bigkey 内存块时，一次申请的内存会更大，时间也会更久。可见，bigkey 在这里又一次影响到了性能。<br><img src="\04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240319_205517.png"><br>○　优化方案<br>关闭内存大页机制。<br>首先，你需要查看 Redis 机器是否开启了内存大页：<br>$ cat /sys/kernel/mm/transparent_hugepage/enabled
+[always] madvise never
+复制<br>如果输出选项是 always，就表示目前开启了内存大页机制，我们需要关掉它：<br>$ echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled
+复制<br>其实，操作系统提供的内存大页机制，其优势是，可以在一定程序上降低应用程序申请内存的次数。<br>但是对于 Redis 这种对性能和延迟极其敏感的数据库来说，希望 Redis 在每次申请内存时，耗时尽量短，所以不建议你在 Redis 机器上开启这个机制。<br><br>如果你发现 Redis 突然变得非常慢，每次的操作耗时都达到了几百毫秒甚至秒级，那此时你就需要检查 Redis 是否使用到了 Swap，在这种情况下 Redis 基本上已经无法提供高性能的服务了。<br>什么是 Swap？<br>操作系统为了缓解内存不足对应用程序的影响，允许把一部分内存中的数据换到磁盘上，以达到应用程序对内存使用的缓冲，这些内存数据被换到磁盘上的区域，就是 Swap。<br>○　成因危害<br>当内存中的数据被换到磁盘上后，Redis 再访问这些数据时，就需要从磁盘上读取，访问磁盘的速度要比访问内存慢几百倍！<br>尤其是针对 Redis 这种对性能要求极高、性能极其敏感的数据库来说，这个操作延时是无法接受的。<br>○　问题排查<br>可以通过以下方式来查看 Redis 进程是否使用到了 Swap：<br># 先找到 Redis 的进程 ID
+$ ps -aux | grep redis-server
+ 
+# 查看 Redis Swap 使用情况
+$ cat /proc/$pid/smaps | egrep '^(Swap|Size)'
+复制<br>输出结果如下：<br>Size:               1256 kB
+Swap:                  0 kB
+Size:                  4 kB
+Swap:                  0 kB
+Size:                132 kB
+Swap:                  0 kB
+Size:              63488 kB
+Swap:                  0 kB
+Size:                132 kB
+Swap:                  0 kB
+Size:              65404 kB
+Swap:                  0 kB
+Size:            1921024 kB
+Swap:                  0 kB
+...
+复制<br>这个结果会列出 Redis 进程的内存使用情况。<br>每一行 Size 表示 Redis 所用的一块内存大小，Size 下面的 Swap 就表示这块 Size 大小的内存，有多少数据已经被换到磁盘上了，如果这两个值相等，说明这块内存的数据都已经完全被换到磁盘上了。<br>如果只是少量数据被换到磁盘上，例如每一块 Swap 占对应 Size 的比例很小，那影响并不是很大。如果是几百兆甚至上 GB 的内存被换到了磁盘上，那么你就需要警惕了，这种情况 Redis 的性能肯定会急剧下降。<br>○　优化方案<br>
+<br>增加机器的内存，让 Redis 有足够的内存可以使用
+<br>整理内存空间，释放出足够的内存供 Redis 使用，然后释放 Redis 的 Swap，让 Redis 重新使用内存
+<br>释放 Redis 的 Swap 过程通常要重启实例，为了避免重启实例对业务的影响，一般会先进行主从切换，然后释放旧主节点的 Swap，重启旧主节点实例，待从库数据同步完成后，再进行主从切换即可。<br>可见，当 Redis 使用到 Swap 后，此时的 Redis 性能基本已达不到高性能的要求（你可以理解为武功被废），所以你也需要提前预防这种情况。<br>预防的办法就是，你需要对 Redis 机器的内存和 Swap 使用情况进行监控，在内存不足或使用到 Swap 时报警出来，及时处理。<br><br>
+○　成因危害
+<br> Redis 的数据都存储在内存中，当我们的应用程序频繁修改 Redis 中的数据时，会导致 Redis 产生内存碎片，内存碎片会降低 Redis 的内存使用率<br>○　问题排查<br>可以通过执行 INFO 命令，得到这个实例的内存碎片率：<br># Memory
+used_memory:5709194824
+used_memory_human:5.32G
+used_memory_rss:8264855552
+used_memory_rss_human:7.70G
+...
+mem_fragmentation_ratio:1.45
+复制<br>这个内存碎片率是怎么计算的？<br>很简单，mem_fragmentation_ratio = used_memory_rss / used_memory。<br>其中 used_memory 表示 Redis 存储数据的内存大小，而 used_memory_rss 表示操作系统实际分配给 Redis 进程的大小。<br>如果 mem_fragmentation_ratio &gt; 1.5，说明内存碎片率已经超过了 50%，这时我们就需要采取一些措施来降低内存碎片了。<br>○　优化方案<br>
+<br>如果你使用的是 Redis 4.0 以下版本，只能通过重启实例来解决
+<br>如果你使用的是 Redis 4.0 版本，它正好提供了自动碎片整理的功能，可以通过配置开启碎片自动整理
+<br>但开启内存碎片整理，它也有可能会导致 Redis 性能下降。<br>
+原因在于，Redis 的碎片整理工作是也在主线程中执行的，当其进行碎片整理时，必然会消耗 CPU 资源，产生更多的耗时，从而影响到客户端的请求。<br>Redis 碎片整理的参数配置如下：<br># 开启自动内存碎片整理（总开关）
+activedefrag yes
+ 
+# 内存使用 100MB 以下，不进行碎片整理
+active-defrag-ignore-bytes 100mb
+ 
+# 内存碎片率超过 10%，开始碎片整理
+active-defrag-threshold-lower 10
+# 内存碎片率超过 100%，尽最大努力碎片整理
+active-defrag-threshold-upper 100
+ 
+# 内存碎片整理占用 CPU 资源最小百分比
+active-defrag-cycle-min 1
+# 内存碎片整理占用 CPU 资源最大百分比
+active-defrag-cycle-max 25
+ 
+# 碎片整理期间，对于 List/Set/Hash/ZSet 类型元素一次 Scan 的数量
+active-defrag-max-scan-fields 1000
+复制<br>需要结合 Redis 机器的负载情况，以及应用程序可接受的延迟范围进行评估，合理调整碎片整理的参数，尽可能降低碎片整理期间对 Redis 的影响。<br><br><br>
+如果以上产生性能问题的场景，你都规避掉了，而且 Redis 也稳定运行了很长时间，但在某个时间点之后开始，操作 Redis 突然开始变慢了，而且一直持续下去，这种情况又是什么原因导致？
+<br>此时你需要排查一下 Redis 机器的网络带宽是否过载，是否存在某个实例把整个机器的网路带宽占满的情况。<br>网络带宽过载的情况下，服务器在 TCP 层和网络层就会出现数据包发送延迟、丢包等情况。<br>Redis 的高性能，除了操作内存之外，就在于网络 IO 了，如果网络 IO 存在瓶颈，那么也会严重影响 Redis 的性能。<br>如果确实出现这种情况，你需要及时确认占满网络带宽 Redis 实例，如果属于正常的业务访问，那就需要及时扩容或迁移实例了，避免因为这个实例流量过大，影响这个机器的其他实例。<br><br>最后需要提醒你的是，你的 Redis 机器最好专项专用，只用来部署 Redis 实例，不要部署其他应用程序，尽量给 Redis 提供一个相对「安静」的环境，避免其它程序占用 CPU、内存、磁盘资源，导致分配给 Redis 的资源不足而受到影响。<br><br>想提前预知 Redis 变慢的情况发生，必不可少的就是做好完善的监控。<br>监控其实就是对采集 Redis 的各项运行时指标，通常的做法是监控程序定时采集 Redis 的 INFO 信息，然后根据 INFO 信息中的状态数据做数据展示和报警。<br>这里我需要提醒你的是，在写一些监控脚本，或使用开源的监控组件时，也不能掉以轻心。<br>在写监控脚本访问 Redis 时，尽量采用长连接的方式采集状态信息，避免频繁短连接。同时，你还要注意控制访问 Redis 的频率，避免影响到业务请求。<br>在使用一些开源的监控组件时，最好了解一下这些组件的实现原理，以及正确配置这些组件，防止出现监控组件发生 Bug，导致短时大量操作 Redis，影响 Redis 性能的情况发生。<br>我们当时就发生过，DBA 在使用一些开源组件时，因为配置和使用问题，导致监控程序频繁地与 Redis 建立和断开连接，导致 Redis 响应变慢。<br><br>Redis 的性能问题，涉及到的知识点非常广，几乎涵盖了 CPU、内存、网络、甚至磁盘，同时还需要了解计算机的体系结构，以及操作系统的各种机制。<br>从使用角度来看：<br>
+<br>业务使用
+<br>持久化配置（磁盘）
+<br>CPU、内存
+<br>其他
+<br>从资源使用角度来看，包含的知识点如下：<br>
+<br>
+CPU 相关：使用复杂度过高命令、数据的持久化，都与耗费过多的 CPU 资源有关
+
+<br>
+内存相关：bigkey 内存的申请和释放、数据过期、数据淘汰、碎片整理、内存大页、内存写时复制都与内存息息相关
+
+<br>
+磁盘相关：数据持久化、AOF 刷盘策略，也会受到磁盘的影响
+
+<br>
+网络相关：短连接、实例流量过载、网络流量过载，也会降低 Redis 性能
+
+<br>
+计算机系统：CPU 结构、内存分配，都属于最基础的计算机系统知识
+
+<br>
+操作系统：写时复制、内存大页、Swap、CPU 绑定，都属于操作系统层面的知识
+
+<br>
+CPU 相关：使用复杂度过高命令、数据的持久化，都与耗费过多的 CPU 资源有关
+
+<br>
+内存相关：bigkey 内存的申请和释放、数据过期、数据淘汰、碎片整理、内存大页、内存写时复制都与内存息息相关
+
+<br>
+磁盘相关：数据持久化、AOF 刷盘策略，也会受到磁盘的影响
+
+<br>
+网络相关：短连接、实例流量过载、网络流量过载，也会降低 Redis 性能
+
+<br>
+计算机系统：CPU 结构、内存分配，都属于最基础的计算机系统知识
+
+<br>
+操作系统：写时复制、内存大页、Swap、CPU 绑定，都属于操作系统层面的知识
+
+]]></description><link>04、数据库\02、redis\11、redis-最佳实践&amp;性能调优.html</link><guid isPermaLink="false">04、数据库/02、Redis/11、Redis 最佳实践&amp;性能调优.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Tue, 19 Mar 2024 13:01:35 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_212716.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\11、redis-最佳实践&amp;性能调优\img-20240317_212716.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[12、底层原理：数据结构]]></title><description><![CDATA[ 
+ <br><br>在对对象机制（redisObject）有了初步认识之后，我们便可以继续理解如下的底层数据结构部分：<br>“/images/db/redis/db-redis-object-2-3.png” could not be found.<br>
+<br>简单动态字符串 - sds
+<br>压缩列表 - ZipList
+<br>快表 - QuickList
+<br>字典/哈希表 - Dict
+<br>整数集 - IntSet
+<br>跳表 - ZSkipList
+<br><br>
+Redis 是用 C 语言写的，但是对于Redis的字符串，却不是 C 语言中的字符串（即以空字符’\0’结尾的字符数组），它是自己构建了一种名为 简单动态字符串（simple dynamic string,SDS）的抽象类型，并将 SDS 作为 Redis的默认字符串表示。
+<br><br>
+这是一种用于存储二进制数据的一种结构, 具有动态扩容的特点. 其实现位于src/sds.h与src/sds.c中。
+<br>
+<br>SDS的总体概览如下图:
+<br>“/images/db/redis/db-redis-ds-x-3.png” could not be found.<br>其中sdshdr是头部, buf是真实存储用户数据的地方. 另外注意, 从命名上能看出来, 这个数据结构除了能存储二进制数据, 显然是用于设计作为字符串使用的, 所以在buf中, 用户数据后总跟着一个\0. 即图中 "数据" + "\0" 是为所谓的buf。<br>
+<br>如下是6.0源码中sds相关的结构：
+<br>“/images/db/redis/db-redis-ds-x-1.png” could not be found.<br>通过上图我们可以看到，SDS有五种不同的头部. 其中sdshdr5实际并未使用到. 所以实际上有四种不同的头部, 分别如下:<br>“/images/db/redis/db-redis-ds-x-2.png” could not be found.<br>其中：<br>
+<br>len 保存了SDS保存字符串的长度
+<br>buf[] 数组用来保存字符串的每个元素
+<br>alloc分别以uint8, uint16, uint32, uint64表示整个SDS, 除过头部与末尾的\0, 剩余的字节数.
+<br>flags 始终为一字节, 以低三位标示着头部的类型, 高5位未使用.
+<br><br>
+为什么不使用C语言字符串实现，而是使用 SDS呢？这样实现有什么好处？
+<br>
+<br>常数复杂度获取字符串长度
+<br>由于 len 属性的存在，我们获取 SDS 字符串的长度只需要读取 len 属性，时间复杂度为 O(1)。而对于 C 语言，获取字符串的长度通常是经过遍历计数来实现的，时间复杂度为 O(n)。通过 strlen key 命令可以获取 key 的字符串长度。<br>
+<br>杜绝缓冲区溢出
+<br>我们知道在 C 语言中使用 strcat 函数来进行两个字符串的拼接，一旦没有分配足够长度的内存空间，就会造成缓冲区溢出。而对于 SDS 数据类型，在进行字符修改的时候，会首先根据记录的 len 属性检查内存空间是否满足需求，如果不满足，会进行相应的空间扩展，然后在进行修改操作，所以不会出现缓冲区溢出。<br>
+<br>减少修改字符串的内存重新分配次数
+<br>C语言由于不记录字符串的长度，所以如果要修改字符串，必须要重新分配内存（先释放再申请），因为如果没有重新分配，字符串长度增大时会造成内存缓冲区溢出，字符串长度减小时会造成内存泄露。<br>而对于SDS，由于len属性和alloc属性的存在，对于修改字符串SDS实现了空间预分配和惰性空间释放两种策略：<br>1、空间预分配：对字符串进行空间扩展的时候，扩展的内存比实际需要的多，这样可以减少连续执行字符串增长操作所需的内存重分配次数。<br>2、惰性空间释放：对字符串进行缩短操作时，程序不立即使用内存重新分配来回收缩短后多余的字节，而是使用 alloc 属性将这些字节的数量记录下来，等待后续使用。（当然SDS也提供了相应的API，当我们有需要时，也可以手动释放这些未使用的空间。）<br>
+<br>二进制安全
+<br>因为C字符串以空字符作为字符串结束的标识，而对于一些二进制文件（如图片等），内容可能包括空字符串，因此C字符串无法正确存取；而所有 SDS 的API 都是以处理二进制的方式来处理 buf 里面的元素，并且 SDS 不是以空字符串来判断是否结束，而是以 len 属性表示的长度来判断字符串是否结束。<br>
+<br>兼容部分 C 字符串函数
+<br>虽然 SDS 是二进制安全的，但是一样遵从每个字符串都是以空字符串结尾的惯例，这样可以重用 C 语言库&lt;string.h&gt; 中的一部分函数。<br><br>当执行追加操作时，比如现在给key=‘Hello World’的字符串后追加‘ again!’则这时的len=18，free由0变成了18，此时的buf='Hello World again!\0....................'(.表示空格)，也就是buf的内存空间是18+18+1=37个字节，其中‘\0’占1个字节redis给字符串多分配了18个字节的预分配空间，所以下次还有append追加的时候，如果预分配空间足够，就无须在进行空间分配了。在当前版本中，当新字符串的长度小于1M时，redis会分配他们所需大小一倍的空间，当大于1M的时候，就为他们额外多分配1M的空间。<br>思考：这种分配策略会浪费内存资源吗？<br>答：执行过APPEND 命令的字符串会带有额外的预分配空间，这些预分配空间不会被释放，除非该字符串所对应的键被删除，或者等到关闭Redis 之后，再次启动时重新载入的字符串对象将不会有预分配空间。因为执行APPEND 命令的字符串键数量通常并不多，占用内存的体积通常也不大，所以这一般并不算什么问题。另一方面，如果执行APPEND 操作的键很多，而字符串的体积又很大的话，那可能就需要修改Redis 服务器，让它定时释放一些字符串键的预分配空间，从而更有效地使用内存。<br><br>redis的字符串表示为sds，而不是C字符串（以\0结尾的char*）， 它是Redis 底层所使用的字符串表示，它被用在几乎所有的Redis 模块中。可以看如下对比：<br>“/images/db/redis/redis-ds-2.png” could not be found.<br>一般来说，SDS 除了保存数据库中的字符串值以外，SDS 还可以作为缓冲区（buffer）：包括 AOF 模块中的AOF缓冲区以及客户端状态中的输入缓冲区。<br><br>
+ziplist是为了提高存储效率而设计的一种特殊编码的双向链表。它可以存储字符串或者整数，存储整数时是采用整数的二进制而不是字符串形式存储。它能在O(1)的时间复杂度下完成list两端的push和pop操作。但是因为每次操作都需要重新分配ziplist的内存，所以实际复杂度和ziplist的内存使用量相关。
+<br><br>先看下6.0中对应的源码和介绍<br>“/images/db/redis/db-redis-ds-x-5.png” could not be found.<br>整个ziplist在内存中的存储格式如下：<br>“/images/db/redis/db-redis-ds-x-6.png” could not be found.<br>
+<br>zlbytes字段的类型是uint32_t, 这个字段中存储的是整个ziplist所占用的内存的字节数
+<br>zltail字段的类型是uint32_t, 它指的是ziplist中最后一个entry的偏移量. 用于快速定位最后一个entry, 以快速完成pop等操作
+<br>zllen字段的类型是uint16_t, 它指的是整个ziplit中entry的数量. 这个值只占2bytes（16位）: 如果ziplist中entry的数目小于65535(2的16次方), 那么该字段中存储的就是实际entry的值. 若等于或超过65535, 那么该字段的值固定为65535, 但实际数量需要一个个entry的去遍历所有entry才能得到.
+<br>zlend是一个终止字节, 其值为全F, 即0xff. ziplist保证任何情况下, 一个entry的首字节都不会是255
+<br><br>那么entry是什么结构呢？<br>
+<br>先看下源码中相关介绍
+<br>“/images/db/redis/db-redis-ds-x-7.png” could not be found.<br>第一种情况：一般结构 &lt;prevlen&gt; &lt;encoding&gt; &lt;entry-data&gt;<br>prevlen：前一个entry的大小，编码方式见下文；<br>encoding：不同的情况下值不同，用于表示当前entry的类型和长度；<br>entry-data：真是用于存储entry表示的数据；<br>第二种情况：在entry中存储的是int类型时，encoding和entry-data会合并在encoding中表示，此时没有entry-data字段；<br>redis中，在存储数据时，会先尝试将string转换成int存储，节省空间；<br>此时entry结构：&lt;prevlen&gt; &lt;encoding&gt;<br>
+<br>prevlen编码
+<br>当前一个元素长度小于254（255用于zlend）的时候，prevlen长度为1个字节，值即为前一个entry的长度，如果长度大于等于254的时候，prevlen用5个字节表示，第一字节设置为254，后面4个字节存储一个小端的无符号整型，表示前一个entry的长度；<br>&lt;prevlen from 0 to 253&gt; &lt;encoding&gt; &lt;entry&gt;      //长度小于254结构
+0xFE &lt;4 bytes unsigned little endian prevlen&gt; &lt;encoding&gt; &lt;entry&gt;   //长度大于等于254
+复制<br>
+<br>encoding编码
+<br>encoding的长度和值根据保存的是int还是string，还有数据的长度而定；<br>前两位用来表示类型，当为“11”时，表示entry存储的是int类型，其它表示存储的是string；<br>存储string时：<br>|00pppppp| ：此时encoding长度为1个字节，该字节的后六位表示entry中存储的string长度，因为是6位，所以entry中存储的string长度不能超过63；<br>|01pppppp|qqqqqqqq| 此时encoding长度为两个字节；此时encoding的后14位用来存储string长度，长度不能超过16383；<br>|10000000|qqqqqqqq|rrrrrrrr|ssssssss|ttttttt| 此时encoding长度为5个字节，后面的4个字节用来表示encoding中存储的字符串长度，长度不能超过2^32 - 1;<br>存储int时：<br>|11000000| encoding为3个字节，后2个字节表示一个int16；<br>|11010000| encoding为5个字节，后4个字节表示一个int32;<br>|11100000| encoding 为9个字节，后8字节表示一个int64;<br>|11110000| encoding为4个字节，后3个字节表示一个有符号整型；<br>|11111110| encoding为2字节，后1个字节表示一个有符号整型；<br>|1111xxxx| encoding长度就只有1个字节，xxxx表示一个0 - 12的整数值；<br>|11111111| 还记得zlend么？<br>
+<br>源码中数据结构支撑
+<br>你可以看到为了操作上的简易实际还增加了几个属性<br>/* We use this function to receive information about a ziplist entry.
+ * Note that this is not how the data is actually encoded, is just what we
+ * get filled by a function in order to operate more easily. */
+typedef struct zlentry {
+    unsigned int prevrawlensize; /* Bytes used to encode the previous entry len*/
+    unsigned int prevrawlen;     /* Previous entry len. */
+    unsigned int lensize;        /* Bytes used to encode this entry type/len.
+                                    For example strings have a 1, 2 or 5 bytes
+                                    header. Integers always use a single byte.*/
+    unsigned int len;            /* Bytes used to represent the actual entry.
+                                    For strings this is just the string length
+                                    while for integers it is 1, 2, 3, 4, 8 or
+                                    0 (for 4 bit immediate) depending on the
+                                    number range. */
+    unsigned int headersize;     /* prevrawlensize + lensize. */
+    unsigned char encoding;      /* Set to ZIP_STR_* or ZIP_INT_* depending on
+                                    the entry encoding. However for 4 bits
+                                    immediate integers this can assume a range
+                                    of values and must be range-checked. */
+    unsigned char *p;            /* Pointer to the very start of the entry, that
+                                    is, this points to prev-entry-len field. */
+} zlentry;
+复制<br>
+<br>prevrawlensize表示 previous_entry_length字段的长度
+<br>prevrawlen表示 previous_entry_length字段存储的内容
+<br>lensize表示 encoding字段的长度
+<br>len表示数据内容长度
+<br>headersize 表示当前元素的首部长度，即previous_entry_length字段长度与encoding字段长度之和
+<br>encoding表示数据类型
+<br>p表示当前元素首地址
+<br><br>
+所以只有理解上面的Entry结构，我们才会真正理解ZipList为什么是特别节省内存的数据结构。@pdai
+<br>
+<br>ziplist节省内存是相对于普通的list来说的，如果是普通的数组，那么它每个元素占用的内存是一样的且取决于最大的那个元素（很明显它是需要预留空间的）；
+<br>所以ziplist在设计时就很容易想到要尽量让每个元素按照实际的内容大小存储，所以增加encoding字段，针对不同的encoding来细化存储大小；
+<br>这时候还需要解决的一个问题是遍历元素时如何定位下一个元素呢？在普通数组中每个元素定长，所以不需要考虑这个问题；但是ziplist中每个data占据的内存不一样，所以为了解决遍历，需要增加记录上一个元素的length，所以增加了prelen字段。
+<br>为什么我们去研究ziplist特别节省内存的数据结构？ 在实际应用中，大量存储字符串的优化是需要你对底层的数据结构有一定的理解的，而ziplist在场景优化的时候也被考虑采用的首选。<br><br>最后我们再看看它的一些缺点：<br>
+<br>ziplist也不预留内存空间, 并且在移除结点后, 也是立即缩容, 这代表每次写操作都会进行内存分配操作.
+<br>结点如果扩容, 导致结点占用的内存增长, 并且超过254字节的话, 可能会导致链式反应: 其后一个结点的entry.prevlen需要从一字节扩容至五字节. 最坏情况下, 第一个结点的扩容, 会导致整个ziplist表中的后续所有结点的entry.prevlen字段扩容. 虽然这个内存重分配的操作依然只会发生一次, 但代码中的时间复杂度是o(N)级别, 因为链式扩容只能一步一步的计算. 但这种情况的概率十分的小, 一般情况下链式扩容能连锁反映五六次就很不幸了. 之所以说这是一个蛋疼问题, 是因为, 这样的坏场景下, 其实时间复杂度并不高: 依次计算每个entry新的空间占用, 也就是o(N), 总体占用计算出来后, 只执行一次内存重分配, 与对应的memmove操作, 就可以了.
+<br><br>
+quicklist这个结构是Redis在3.2版本后新加的, 之前的版本是list(即linkedlist)， 用于String数据类型中。
+<br>它是一种以ziplist为结点的双端链表结构. 宏观上, quicklist是一个链表, 微观上, 链表中的每个结点都是一个ziplist。<br><br>
+<br>如下是6.0源码中quicklist相关的结构：
+<br>/* Node, quicklist, and Iterator are the only data structures used currently. */
+
+/* quicklistNode is a 32 byte struct describing a ziplist for a quicklist.
+ * We use bit fields keep the quicklistNode at 32 bytes.
+ * count: 16 bits, max 65536 (max zl bytes is 65k, so max count actually &lt; 32k).
+ * encoding: 2 bits, RAW=1, LZF=2.
+ * container: 2 bits, NONE=1, ZIPLIST=2.
+ * recompress: 1 bit, bool, true if node is temporarry decompressed for usage.
+ * attempted_compress: 1 bit, boolean, used for verifying during testing.
+ * extra: 10 bits, free for future use; pads out the remainder of 32 bits */
+typedef struct quicklistNode {
+    struct quicklistNode *prev;
+    struct quicklistNode *next;
+    unsigned char *zl;
+    unsigned int sz;             /* ziplist size in bytes */
+    unsigned int count : 16;     /* count of items in ziplist */
+    unsigned int encoding : 2;   /* RAW==1 or LZF==2 */
+    unsigned int container : 2;  /* NONE==1 or ZIPLIST==2 */
+    unsigned int recompress : 1; /* was this node previous compressed? */
+    unsigned int attempted_compress : 1; /* node can't compress; too small */
+    unsigned int extra : 10; /* more bits to steal for future usage */
+} quicklistNode;
+
+/* quicklistLZF is a 4+N byte struct holding 'sz' followed by 'compressed'.
+ * 'sz' is byte length of 'compressed' field.
+ * 'compressed' is LZF data with total (compressed) length 'sz'
+ * NOTE: uncompressed length is stored in quicklistNode-&gt;sz.
+ * When quicklistNode-&gt;zl is compressed, node-&gt;zl points to a quicklistLZF */
+typedef struct quicklistLZF {
+    unsigned int sz; /* LZF size in bytes*/
+    char compressed[];
+} quicklistLZF;
+
+/* Bookmarks are padded with realloc at the end of of the quicklist struct.
+ * They should only be used for very big lists if thousands of nodes were the
+ * excess memory usage is negligible, and there's a real need to iterate on them
+ * in portions.
+ * When not used, they don't add any memory overhead, but when used and then
+ * deleted, some overhead remains (to avoid resonance).
+ * The number of bookmarks used should be kept to minimum since it also adds
+ * overhead on node deletion (searching for a bookmark to update). */
+typedef struct quicklistBookmark {
+    quicklistNode *node;
+    char *name;
+} quicklistBookmark;
+
+
+/* quicklist is a 40 byte struct (on 64-bit systems) describing a quicklist.
+ * 'count' is the number of total entries.
+ * 'len' is the number of quicklist nodes.
+ * 'compress' is: -1 if compression disabled, otherwise it's the number
+ *                of quicklistNodes to leave uncompressed at ends of quicklist.
+ * 'fill' is the user-requested (or default) fill factor.
+ * 'bookmakrs are an optional feature that is used by realloc this struct,
+ *      so that they don't consume memory when not used. */
+typedef struct quicklist {
+    quicklistNode *head;
+    quicklistNode *tail;
+    unsigned long count;        /* total count of all entries in all ziplists */
+    unsigned long len;          /* number of quicklistNodes */
+    int fill : QL_FILL_BITS;              /* fill factor for individual nodes */
+    unsigned int compress : QL_COMP_BITS; /* depth of end nodes not to compress;0=off */
+    unsigned int bookmark_count: QL_BM_BITS;
+    quicklistBookmark bookmarks[];
+} quicklist;
+
+typedef struct quicklistIter {
+    const quicklist *quicklist;
+    quicklistNode *current;
+    unsigned char *zi;
+    long offset; /* offset in current ziplist */
+    int direction;
+} quicklistIter;
+
+typedef struct quicklistEntry {
+    const quicklist *quicklist;
+    quicklistNode *node;
+    unsigned char *zi;
+    unsigned char *value;
+    long long longval;
+    unsigned int sz;
+    int offset;
+} quicklistEntry;
+复制<br>这里定义了6个结构体:<br>
+<br>quicklistNode, 宏观上, quicklist是一个链表, 这个结构描述的就是链表中的结点. 它通过zl字段持有底层的ziplist. 简单来讲, 它描述了一个ziplist实例
+<br>quicklistLZF, ziplist是一段连续的内存, 用LZ4算法压缩后, 就可以包装成一个quicklistLZF结构. 是否压缩quicklist中的每个ziplist实例是一个可配置项. 若这个配置项是开启的, 那么quicklistNode.zl字段指向的就不是一个ziplist实例, 而是一个压缩后的quicklistLZF实例
+<br>quicklistBookmark, 在quicklist尾部增加的一个书签，它只有在大量节点的多余内存使用量可以忽略不计的情况且确实需要分批迭代它们，才会被使用。当不使用它们时，它们不会增加任何内存开销。
+<br>quicklist. 这就是一个双链表的定义. head, tail分别指向头尾指针. len代表链表中的结点. count指的是整个quicklist中的所有ziplist中的entry的数目. fill字段影响着每个链表结点中ziplist的最大占用空间, compress影响着是否要对每个ziplist以LZ4算法进行进一步压缩以更节省内存空间.
+<br>quicklistIter是一个迭代器
+<br>quicklistEntry是对ziplist中的entry概念的封装. quicklist作为一个封装良好的数据结构, 不希望使用者感知到其内部的实现, 所以需要把ziplist.entry的概念重新包装一下.
+<br><br>quicklist的内存布局图如下所示:<br>“/images/db/redis/db-redis-ds-x-4.png” could not be found.<br><br>下面是有关quicklist的更多额外信息:<br>
+<br>quicklist.fill的值影响着每个链表结点中, ziplist的长度.
+
+<br>当数值为负数时, 代表以字节数限制单个ziplist的最大长度. 具体为:
+<br>-1 不超过4kb
+<br>-2 不超过 8kb
+<br>-3 不超过 16kb
+<br>-4 不超过 32kb
+<br>-5 不超过 64kb
+<br>当数值为正数时, 代表以entry数目限制单个ziplist的长度. 值即为数目. 由于该字段仅占16位, 所以以entry数目限制ziplist的容量时, 最大值为2^15个
+
+
+<br>quicklist.compress的值影响着quicklistNode.zl字段指向的是原生的ziplist, 还是经过压缩包装后的quicklistLZF
+
+<br>0 表示不压缩, zl字段直接指向ziplist
+<br>1 表示quicklist的链表头尾结点不压缩, 其余结点的zl字段指向的是经过压缩后的quicklistLZF
+<br>2 表示quicklist的链表头两个, 与末两个结点不压缩, 其余结点的zl字段指向的是经过压缩后的quicklistLZF
+<br>以此类推, 最大值为2^16
+
+
+<br>quicklistNode.encoding字段, 以指示本链表结点所持有的ziplist是否经过了压缩. 1代表未压缩, 持有的是原生的ziplist, 2代表压缩过
+<br>quicklistNode.container字段指示的是每个链表结点所持有的数据类型是什么. 默认的实现是ziplist, 对应的该字段的值是2, 目前Redis没有提供其它实现. 所以实际上, 该字段的值恒为2
+<br>quicklistNode.recompress字段指示的是当前结点所持有的ziplist是否经过了解压. 如果该字段为1即代表之前被解压过, 且需要在下一次操作时重新压缩.
+<br>quicklist的具体实现代码篇幅很长, 这里就不贴代码片断了, 从内存布局上也能看出来, 由于每个结点持有的ziplist是有上限长度的, 所以在与操作时要考虑的分支情况比较多。<br>quicklist有自己的优点, 也有缺点, 对于使用者来说, 其使用体验类似于线性数据结构, list作为最传统的双链表, 结点通过指针持有数据, 指针字段会耗费大量内存. ziplist解决了耗费内存这个问题. 但引入了新的问题: 每次写操作整个ziplist的内存都需要重分配. quicklist在两者之间做了一个平衡. 并且使用者可以通过自定义quicklist.fill, 根据实际业务情况, 经验主义调参.<br><br>
+本质上就是哈希表, 这个在很多语言中都有，对于开发人员人员来说比较熟悉，这里就简单介绍下。
+<br><br>哈希表结构定义：<br>typedef struct dictht{
+    //哈希表数组
+    dictEntry **table;
+    //哈希表大小
+    unsigned long size;
+    //哈希表大小掩码，用于计算索引值
+    //总是等于 size-1
+    unsigned long sizemask;
+    //该哈希表已有节点的数量
+    unsigned long used;
+ 
+}dictht
+复制<br>哈希表是由数组 table 组成，table 中每个元素都是指向 dict.h/dictEntry 结构，dictEntry 结构定义如下：<br>typedef struct dictEntry{
+     //键
+     void *key;
+     //值
+     union{
+          void *val;
+          uint64_tu64;
+          int64_ts64;
+     }v;
+ 
+     //指向下一个哈希表节点，形成链表
+     struct dictEntry *next;
+}dictEntry
+复制<br>key 用来保存键，val 属性用来保存值，值可以是一个指针，也可以是uint64_t整数，也可以是int64_t整数。<br>注意这里还有一个指向下一个哈希表节点的指针，我们知道哈希表最大的问题是存在哈希冲突，如何解决哈希冲突，有开放地址法和链地址法。这里采用的便是链地址法，通过next这个指针可以将多个哈希值相同的键值对连接在一起，用来解决哈希冲突。<br>“/images/db/redis/db-redis-ds-x-13.png” could not be found.<br><br>
+<br>哈希算法：Redis计算哈希值和索引值方法如下：
+<br>#1、使用字典设置的哈希函数，计算键 key 的哈希值
+hash = dict-&gt;type-&gt;hashFunction(key);
+
+#2、使用哈希表的sizemask属性和第一步得到的哈希值，计算索引值
+index = hash &amp; dict-&gt;ht[x].sizemask;
+复制<br>
+<br>解决哈希冲突：这个问题上面我们介绍了，方法是链地址法。通过字典里面的 *next 指针指向下一个具有相同索引值的哈希表节点。<br>
+
+<br>扩容和收缩：当哈希表保存的键值对太多或者太少时，就要通过 rerehash(重新散列）来对哈希表进行相应的扩展或者收缩。具体步骤：<br>
+
+<br>1、如果执行扩展操作，会基于原哈希表创建一个大小等于 ht[0].used*2n 的哈希表（也就是每次扩展都是根据原哈希表已使用的空间扩大一倍创建另一个哈希表）。相反如果执行的是收缩操作，每次收缩是根据已使用空间缩小一倍创建一个新的哈希表。<br>2、重新利用上面的哈希算法，计算索引值，然后将键值对放到新的哈希表位置上。<br>3、所有键值对都迁徙完毕后，释放原哈希表的内存空间。<br>
+<br>触发扩容的条件：
+<br>1、服务器目前没有执行 BGSAVE 命令或者 BGREWRITEAOF 命令，并且负载因子大于等于1。<br>2、服务器目前正在执行 BGSAVE 命令或者 BGREWRITEAOF 命令，并且负载因子大于等于5。<br>ps：负载因子 = 哈希表已保存节点数量 / 哈希表大小。<br>
+<br>渐近式 rehash
+<br>什么叫渐进式 rehash？也就是说扩容和收缩操作不是一次性、集中式完成的，而是分多次、渐进式完成的。如果保存在Redis中的键值对只有几个几十个，那么 rehash 操作可以瞬间完成，但是如果键值对有几百万，几千万甚至几亿，那么要一次性的进行 rehash，势必会造成Redis一段时间内不能进行别的操作。所以Redis采用渐进式 rehash,这样在进行渐进式rehash期间，字典的删除查找更新等操作可能会在两个哈希表上进行，第一个哈希表没有找到，就会去第二个哈希表上进行查找。但是进行 增加操作，一定是在新的哈希表上进行的。<br><br>
+整数集合（intset）是集合类型的底层实现之一，当一个集合只包含整数值元素，并且这个集合的元素数量不多时，Redis 就会使用整数集合作为集合键的底层实现。
+<br><br>首先看源码结构<br>typedef struct intset {
+    uint32_t encoding;
+    uint32_t length;
+    int8_t contents[];
+} intset;
+复制<br>encoding 表示编码方式，的取值有三个：INTSET_ENC_INT16, INTSET_ENC_INT32, INTSET_ENC_INT64<br>length 代表其中存储的整数的个数<br>contents 指向实际存储数值的连续内存区域, 就是一个数组；整数集合的每个元素都是 contents 数组的一个数组项（item），各个项在数组中按值得大小从小到大有序排序，且数组中不包含任何重复项。（虽然 intset 结构将 contents 属性声明为 int8_t 类型的数组，但实际上 contents 数组并不保存任何 int8_t 类型的值，contents 数组的真正类型取决于 encoding 属性的值）<br><br>其内存布局如下图所示<br>“/images/db/redis/db-redis-ds-x-8.png” could not be found.<br>我们可以看到，content数组里面每个元素的数据类型是由encoding来决定的，那么如果原来的数据类型是int16, 当我们再插入一个int32类型的数据时怎么办呢？这就是下面要说的intset的升级。<br><br>当在一个int16类型的整数集合中插入一个int32类型的值，整个集合的所有元素都会转换成32类型。 整个过程有三步：<br>
+<br>根据新元素的类型（比如int32），扩展整数集合底层数组的空间大小，并为新元素分配空间。<br>
+
+<br>将底层数组现有的所有元素都转换成与新元素相同的类型， 并将类型转换后的元素放置到正确的位上， 而且在放置元素的过程中， 需要继续维持底层数组的有序性质不变。<br>
+
+<br>最后改变encoding的值，length+1。<br>
+
+<br>那么如果我们删除掉刚加入的int32类型时，会不会做一个降级操作呢？<br>不会。主要还是减少开销的权衡。<br><br>
+跳跃表结构在 Redis 中的运用场景只有一个，那就是作为有序列表 (Zset) 的使用。跳跃表的性能可以保证在查找，删除，添加等操作的时候在对数期望时间内完成，这个性能是可以和平衡树来相比较的，而且在实现方面比平衡树要优雅，这就是跳跃表的长处。跳跃表的缺点就是需要的存储空间比较大，属于利用空间来换取时间的数据结构。
+<br><br>
+跳跃表要解决什么问题呢？如果你一上来就去看它的实现，你很难理解设计的本质，所以先要看它的设计要解决什么问题。
+<br>对于于一个单链表来讲，即便链表中存储的数据是有序的，如果我们要想在其中查找某个数据，也只能从头到尾遍历链表。这样查找效率就会很低，时间复杂度会很高，是 O(n)。比如查找12，需要7次查找<br>“/images/db/redis/db-redis-ds-x-9.png” could not be found.<br>如果我们增加如下两级索引，那么它搜索次数就变成了3次<br>“/images/db/redis/db-redis-ds-x-10.png” could not be found.<br><br>redis跳跃表并没有在单独的类（比如skplist.c)中定义，而是其定义在server.h中, 如下:<br>/* ZSETs use a specialized version of Skiplists */
+typedef struct zskiplistNode {
+    sds ele;
+    double score;
+    struct zskiplistNode *backward;
+    struct zskiplistLevel {
+        struct zskiplistNode *forward;
+        unsigned int span;
+    } level[];
+} zskiplistNode;
+
+typedef struct zskiplist {
+    struct zskiplistNode *header, *tail;
+    unsigned long length;
+    int level;
+} zskiplist;
+复制<br>其内存布局如下图:<br>“/images/db/redis/db-redis-ds-x-11.png” could not be found.<br>zskiplist的核心设计要点<br>
+<br>头节点不持有任何数据, 且其level[]的长度为32
+<br>每个结点
+
+<br>ele字段，持有数据，是sds类型
+<br>score字段, 其标示着结点的得分, 结点之间凭借得分来判断先后顺序, 跳跃表中的结点按结点的得分升序排列.
+<br>backward指针, 这是原版跳跃表中所没有的. 该指针指向结点的前一个紧邻结点.
+<br>level字段, 用以记录所有结点(除过头节点外)；每个结点中最多持有32个zskiplistLevel结构. 实际数量在结点创建时, 按幂次定律随机生成(不超过32). 每个zskiplistLevel中有两个字段
+
+<br>forward字段指向比自己得分高的某个结点(不一定是紧邻的), 并且, 若当前zskiplistLevel实例在level[]中的索引为X, 则其forward字段指向的结点, 其level[]字段的容量至少是X+1. 这也是上图中, 为什么forward指针总是画的水平的原因.
+<br>span字段代表forward字段指向的结点, 距离当前结点的距离. 紧邻的两个结点之间的距离定义为1.
+
+
+
+
+<br><br>
+<br>为什么不是平衡树，先看下作者的回答
+<br><a rel="noopener" class="external-link" href="https://news.ycombinator.com/item?id=1171423" target="_blank">https://news.ycombinator.com/item?id=1171423</a><br>There are a few reasons:
+
+They are not very memory intensive. It's up to you basically. Changing parameters about the probability of a node to have a given number of levels will make then less memory intensive than btrees.
+A sorted set is often target of many ZRANGE or ZREVRANGE operations, that is, traversing the skip list as a linked list. With this operation the cache locality of skip lists is at least as good as with other kind of balanced trees.
+
+They are simpler to implement, debug, and so forth. For instance thanks to the skip list simplicity I received a patch (already in Redis master) with augmented skip lists implementing ZRANK in O(log(N)). It required little changes to the code.
+
+About the Append Only durability &amp; speed, I don't think it is a good idea to optimize Redis at cost of more code and more complexity for a use case that IMHO should be rare for the Redis target (fsync() at every command). Almost no one is using this feature even with ACID SQL databases, as the performance hint is big anyway.
+About threads: our experience shows that Redis is mostly I/O bound. I'm using threads to serve things from Virtual Memory. The long term solution to exploit all the cores, assuming your link is so fast that you can saturate a single core, is running multiple instances of Redis (no locks, almost fully scalable linearly with number of cores), and using the "Redis Cluster" solution that I plan to develop in the future.
+复制<br>简而言之就是实现简单且达到了类似效果。<br>
+<br>skiplist与平衡树、哈希表的比较
+<br>来源于：<a rel="noopener" class="external-link" href="https://www.jianshu.com/p/8ac45fd01548" target="_blank">https://www.jianshu.com/p/8ac45fd01548</a><br>skiplist和各种平衡树（如AVL、红黑树等）的元素是有序排列的，而哈希表不是有序的。因此，在哈希表上只能做单个key的查找，不适宜做范围查找。所谓范围查找，指的是查找那些大小在指定的两个值之间的所有节点。<br>在做范围查找的时候，平衡树比skiplist操作要复杂。在平衡树上，我们找到指定范围的小值之后，还需要以中序遍历的顺序继续寻找其它不超过大值的节点。如果不对平衡树进行一定的改造，这里的中序遍历并不容易实现。而在skiplist上进行范围查找就非常简单，只需要在找到小值之后，对第1层链表进行若干步的遍历就可以实现。<br>平衡树的插入和删除操作可能引发子树的调整，逻辑复杂，而skiplist的插入和删除只需要修改相邻节点的指针，操作简单又快速。<br>从内存占用上来说，skiplist比平衡树更灵活一些。一般来说，平衡树每个节点包含2个指针（分别指向左右子树），而skiplist每个节点包含的指针数目平均为1/(1-p)，具体取决于参数p的大小。如果像Redis里的实现一样，取p=1/4，那么平均每个节点包含1.33个指针，比平衡树更有优势。<br>查找单个key，skiplist和平衡树的时间复杂度都为O(log n)，大体相当；而哈希表在保持较低的哈希值冲突概率的前提下，查找时间复杂度接近O(1)，性能更高一些。所以我们平常使用的各种Map或dictionary结构，大都是基于哈希表实现的。<br>从算法实现难度上来比较，skiplist比平衡树要简单得多。]]></description><link>04、数据库\02、redis\12、底层原理：数据结构.html</link><guid isPermaLink="false">04、数据库/02、Redis/12、底层原理：数据结构.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Tue, 19 Mar 2024 13:02:10 GMT</pubDate></item><item><title><![CDATA[13、底层原理：网络模型]]></title><description><![CDATA[ 
+ <br><br><br><br>Redis 是一个 CS 架构的软件，通信一般分两步（不包括 pipeline 和 PubSub）：<br>客户端（client）向服务端（server）发送一条命令，服务端解析并执行命令，<br>
+返回响应结果给客户端，因此客户端发送命令的格式、服务端响应结果的格式必须有一个规范，这个规范就是通信协议。<br>
+而在 Redis 中采用的是 RESP（Redis Serialization Protocol）协议：<br>Redis 1.2 版本引入了 RESP 协议<br>
+Redis 2.0 版本中成为与 Redis 服务端通信的标准，称为 RESP 2<br>
+Redis 6.0 版本中，从 RESP 2 升级到了 RESP 3 协议，增加了更多数据类型并且支持 6.0 的新特性–客户端缓存<br>
+但目前，默认使用的依然是 RESP 2 协议。在 RESP 中，通过首字节的字符来区分不同数据类型，常用的数据类型包括 5 种：<br>单行字符串：首字节是‘+’，后面跟上单行字符串，以 CRLF（ “\r\n” ）结尾。例如返回”OK”： “+OK\r\n”<br>错误（Errors）：首字节是‘-’，与单行字符串格式一样，只是字符串是异常信息，例如：”-Error message\r\n”<br>数值：首字节是‘:’，后面跟上数字格式的字符串，以 CRLF 结尾。例如：”: 10\r\n”<br>多行字符串：首字节是‘$’，表示二进制安全的字符串，最大支持 512 MB：<br>如果大小为 0，则代表空字符串：”-1\r\n”<br>
+数组：首字节是‘*’，后面跟上数组元素个数，再跟上元素，元素数据类型不限 :<br><img src="\04、数据库\02、redis\assets\13、底层原理：网络模型\img-20240318_215003.png"><br><br>Redis 支持 TCP 通信，因此我们可以使用 Socket 来模拟客户端，与 Redis 服务端建立连接：<br>public class Main {
+
+    static Socket s;
+    static PrintWriter writer;
+    static BufferedReader reader;
+
+    public static void main(String[] args) {
+        try {
+            // 1.建立连接
+            String host = "192.168.150.101";
+            int port = 6379;
+            s = new Socket(host, port);
+            // 2.获取输出流、输入流
+            writer = new PrintWriter(new OutputStreamWriter(s.getOutputStream(), StandardCharsets.UTF_8));
+            reader = new BufferedReader(new InputStreamReader(s.getInputStream(), StandardCharsets.UTF_8));
+
+            // 3.发出请求
+            // 3.1.获取授权 auth 123321
+            sendRequest("auth", "123321");
+            Object obj = handleResponse();
+            System.out.println("obj = " + obj);
+
+            // 3.2.set name 虎哥
+            sendRequest("set", "name", "虎哥");
+            // 4.解析响应
+            obj = handleResponse();
+            System.out.println("obj = " + obj);
+
+            // 3.2.set name 虎哥
+            sendRequest("get", "name");
+            // 4.解析响应
+            obj = handleResponse();
+            System.out.println("obj = " + obj);
+
+            // 3.2.set name 虎哥
+            sendRequest("mget", "name", "num", "msg");
+            // 4.解析响应
+            obj = handleResponse();
+            System.out.println("obj = " + obj);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            // 5.释放连接
+            try {
+                if (reader != null) reader.close();
+                if (writer != null) writer.close();
+                if (s != null) s.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private static Object handleResponse() throws IOException {
+        // 读取首字节
+        int prefix = reader.read();
+        // 判断数据类型标示
+        switch (prefix) {
+            case '+': // 单行字符串，直接读一行
+                return reader.readLine();
+            case '-': // 异常，也读一行
+                throw new RuntimeException(reader.readLine());
+            case ':': // 数字
+                return Long.parseLong(reader.readLine());
+            case '$': // 多行字符串
+                // 先读长度
+                int len = Integer.parseInt(reader.readLine());
+                if (len == -1) {
+                    return null;
+                }
+                if (len == 0) {
+                    return "";
+                }
+                // 再读数据,读len个字节。我们假设没有特殊字符，所以读一行（简化）
+                return reader.readLine();
+            case '*':
+                return readBulkString();
+            default:
+                throw new RuntimeException("错误的数据格式！");
+        }
+    }
+
+    private static Object readBulkString() throws IOException {
+        // 获取数组大小
+        int len = Integer.parseInt(reader.readLine());
+        if (len &lt;= 0) {
+            return null;
+        }
+        // 定义集合，接收多个元素
+        List&lt;Object&gt; list = new ArrayList&lt;&gt;(len);
+        // 遍历，依次读取每个元素
+        for (int i = 0; i &lt; len; i++) {
+            list.add(handleResponse());
+        }
+        return list;
+    }
+
+    // set name 虎哥
+    private static void sendRequest(String ... args) {
+        writer.println("*" + args.length);
+        for (String arg : args) {
+            writer.println("$" + arg.getBytes(StandardCharsets.UTF_8).length);
+            writer.println(arg);
+        }
+        writer.flush();
+    }
+}
+复制]]></description><link>04、数据库\02、redis\13、底层原理：网络模型.html</link><guid isPermaLink="false">04、数据库/02、Redis/13、底层原理：网络模型.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 18 Mar 2024 13:51:51 GMT</pubDate><enclosure url="04、数据库\02、redis\assets\13、底层原理：网络模型\img-20240318_215003.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;04、数据库\02、redis\assets\13、底层原理：网络模型\img-20240318_215003.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[100、 ★ Redis面试题汇总 ★]]></title><description><![CDATA[ 
  <br><br>
 <br>什么是redis，为什么要使用它
 <br>redis一般有哪些使用场景
@@ -22046,12 +22748,12 @@ lazyfree-lazy-expire yes
 <br>Redis单线程模型？ 在6.0之前如何提高多核CPU的利用率？
 <br>可以在同一个服务器部署多个Redis的实例，并把他们当作不同的服务器来使用，在某些时候，无论如何一个服务器是不够的， 所以，如果你想使用多个CPU，你可以考虑一下分片（shard）。<br>
 <br>6.0版本中多线程
-<br><br>著作权归@pdai所有 原文链接：<a rel="noopener" class="external-link" href="https://pdai.tech/md/db/nosql-redis/db-redis-z-mianshi.html" target="_blank">https://pdai.tech/md/db/nosql-redis/db-redis-z-mianshi.html</a>]]></description><link>04、数据库\02、redis\100、-★-redis面试题汇总-★.html</link><guid isPermaLink="false">04、数据库/02、Redis/100、 ★ Redis面试题汇总 ★.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Sat, 16 Mar 2024 12:48:35 GMT</pubDate></item><item><title><![CDATA[★ 常见词汇含义 ★]]></title><description><![CDATA[ 
- <br><br><br>Development和Operations的组合词，是一种 执行规范（思想）<br>主要用于开发、测试、运维之间的沟通协作资源整合。<br>“.pic-0、常见词汇/image-20231019211459600.png” could not be found.<br>软件开发人员（Dev）和  IT运维技术人员（Ops）<br>]]></description><link>06、架构设计\02、分布式系统\00、常见词汇.html</link><guid isPermaLink="false">06、架构设计/02、分布式系统/00、常见词汇.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:46 GMT</pubDate></item><item><title><![CDATA[01、限流]]></title><description><![CDATA[ 
+<br>求教学问题：<br>主从哨兵模式：如果主节点 down 机没有被立刻发现，数据丢失问题怎么解决的？<br>主从从模式下，主挂了，会发生什么现象？<br>少数派会拒绝写入吗？<br>如果备份推荐 AOF 还是 RDB]]></description><link>04、数据库\02、redis\100、-★-redis面试题汇总-★.html</link><guid isPermaLink="false">04、数据库/02、Redis/100、 ★ Redis面试题汇总 ★.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 18 Mar 2024 13:10:49 GMT</pubDate></item><item><title><![CDATA[★ 常见词汇含义 ★]]></title><description><![CDATA[ 
+ <br><br><br>Development和Operations的组合词，是一种 执行规范（思想）<br>主要用于开发、测试、运维之间的沟通协作资源整合。<br>“.pic-0、常见词汇/image-20231019211459600.png” could not be found.<br>软件开发人员（Dev）和  IT运维技术人员（Ops）<br>]]></description><link>06、架构设计\01、架构基础\00、常见词汇.html</link><guid isPermaLink="false">06、架构设计/01、架构基础/00、常见词汇.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:46 GMT</pubDate></item><item><title><![CDATA[01、限流]]></title><description><![CDATA[ 
  <br><br>限流，就是对请求或并发数进行限制；<br>因服务资源有限、处理能力有限，为了保证系统的稳定性、可用性，系统以牺牲部分请求为代价或者延迟处理请求为代价，保证系统整体服务可用。<br>
 <br>阈值：在一个单位时间内允许的请求量。如 QPS 限制为10，说明 1 秒内最多接受 10 次请求。
 <br>拒绝策略：超过阈值的请求的拒绝策略，常见的拒绝策略有直接拒绝、排队等待等。
-<br><br>常见的限流算法有：计数器、令牌桶、漏桶。<br><br>在单位时间内维护一个计数器，能够限制在每个固定的时间段内请求通过的次数，以达到限流的效果。<br><img src="\06、架构设计\02、分布式系统\assets\01、限流\img-20240125_201605.png"><br>具体的实现可以是这样的：对于每次服务调用，可以通过&nbsp;AtomicLong#incrementAndGet()方法来给计数器加1并返回最新值，通过这个最新值和阈值进行比较。<br>import java.util.concurrent.TimeUnit;
+<br><br>常见的限流算法有：计数器、令牌桶、漏桶。<br><br>在单位时间内维护一个计数器，能够限制在每个固定的时间段内请求通过的次数，以达到限流的效果。<br><img src="\06、架构设计\01、架构基础\assets\01、限流\img-20240125_201605.png"><br>具体的实现可以是这样的：对于每次服务调用，可以通过&nbsp;AtomicLong#incrementAndGet()方法来给计数器加1并返回最新值，通过这个最新值和阈值进行比较。<br>import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class FixedWindowCounter {
@@ -22096,12 +22798,12 @@ public class FixedWindowCounter {
 复制<br>优点：&nbsp;实现简单，理解容易。<br>缺点：<br>
 <br>“突刺现象”：在单位时间 1 s 内的前 10 ms，已经通过了 100 个请求，那后面的 990 ms，只能眼巴巴的把请求拒绝，我们把这种现象称为。
 <br>"边界效应"：无法处理窗口边界问题。因为在某个时间窗口内进行流量控制，就可能会出现窗口边界效应，即在时间窗口的边界处可能会有大量的请求被允许通过，从而导致突发流量。
-<br><img src="\06、架构设计\02、分布式系统\assets\01、限流\img-20240125_201811.png"><br><br>滑动窗口算法是对固定窗口算法的一种改进。在滑动窗口算法中，窗口的起止时间是动态的，窗口的大小固定。<br>
-这种算法能够较好地处理窗口边界问题，但是实现相对复杂，需要记录每个请求的时间戳。<br>实现原理是：&nbsp;每来一个请求，就向后推一个时间窗口，计算这个窗口内的请求数量。如果请求数量超过限制就拒绝请求，否则就处理请求，并记录请求的时间戳。另外还需要一个任务清理过期的时间戳。<br><img src="\06、架构设计\02、分布式系统\assets\01、限流\img-20240125_202107.png"><br>优点：&nbsp;解决了固定窗口算法的窗口边界问题，避免突发流量压垮服务器。<br>缺点：&nbsp;“突刺现象”依旧存在。例如：限流是每秒 100个，在第一毫秒发送了 1000个请求，达到限流，剩余窗口时间的请求都将会被拒绝。<br><br>漏桶限流算法是一种常用的流量整形（Traffic Shaping）和流量控制（Traffic Policing）的算法，它可以有效地控制数据的传输速率以及防止网络拥塞。<br>实现原理是：<br>
+<br><img src="\06、架构设计\01、架构基础\assets\01、限流\img-20240125_201811.png"><br><br>滑动窗口算法是对固定窗口算法的一种改进。在滑动窗口算法中，窗口的起止时间是动态的，窗口的大小固定。<br>
+这种算法能够较好地处理窗口边界问题，但是实现相对复杂，需要记录每个请求的时间戳。<br>实现原理是：&nbsp;每来一个请求，就向后推一个时间窗口，计算这个窗口内的请求数量。如果请求数量超过限制就拒绝请求，否则就处理请求，并记录请求的时间戳。另外还需要一个任务清理过期的时间戳。<br><img src="\06、架构设计\01、架构基础\assets\01、限流\img-20240125_202107.png"><br>优点：&nbsp;解决了固定窗口算法的窗口边界问题，避免突发流量压垮服务器。<br>缺点：&nbsp;“突刺现象”依旧存在。例如：限流是每秒 100个，在第一毫秒发送了 1000个请求，达到限流，剩余窗口时间的请求都将会被拒绝。<br><br>漏桶限流算法是一种常用的流量整形（Traffic Shaping）和流量控制（Traffic Policing）的算法，它可以有效地控制数据的传输速率以及防止网络拥塞。<br>实现原理是：<br>
 <br>一个固定容量的漏桶，按照固定速率出水（处理请求）；
 <br>当流入水（请求数量）的速度过大会直接溢出（请求数量超过限制则直接拒绝）。
 <br>桶里的水（请求）不够则无法出水（桶内没有请求则不处理）。
-<br>当请求流量正常或者较小的时候，请求能够得到正常的处理。当请求流量过大时，漏桶限流算法可以通过丢弃部分请求来防止系统过载。<br>这种算法的一个重要特性是，输出数据的速率始终是稳定的，无论输入的数据流量如何变化。这就确保了系统的负载不会超过预设的阈值。但是，由于漏桶的出口速度是固定的，所以无法处理突发流量。此外，如果入口流量过大，漏桶可能会溢出，导致数据丢失。<br><img src="\06、架构设计\02、分布式系统\assets\01、限流\img-20240125_203147.png"><br>import java.util.concurrent.Executors;  
+<br>当请求流量正常或者较小的时候，请求能够得到正常的处理。当请求流量过大时，漏桶限流算法可以通过丢弃部分请求来防止系统过载。<br>这种算法的一个重要特性是，输出数据的速率始终是稳定的，无论输入的数据流量如何变化。这就确保了系统的负载不会超过预设的阈值。但是，由于漏桶的出口速度是固定的，所以无法处理突发流量。此外，如果入口流量过大，漏桶可能会溢出，导致数据丢失。<br><img src="\06、架构设计\01、架构基础\assets\01、限流\img-20240125_203147.png"><br>import java.util.concurrent.Executors;  
 import java.util.concurrent.ScheduledExecutorService;  
 import java.util.concurrent.ScheduledFuture;  
 import java.util.concurrent.TimeUnit;  
@@ -22173,7 +22875,7 @@ public class LeakyBucket {
 <br>当有请求到来时，会尝试从桶中移除一个（或 n 个）令牌，如果桶中有足够的令牌，则请求可以被处理或数据包可以被发送；
 <br>如果桶中没有令牌，那么请求将被拒绝；
 <br>桶中的令牌数不能超过桶的容量，如果新生成的令牌超过了桶的容量，那么新的令牌会被丢弃。
-<br>令牌桶算法的一个重要特性是，它能够应对突发流量。当桶中有足够的令牌时，可以一次性处理多个请求，这对于需要处理突发流量的应用场景非常有用。但是又不会无限制的增加处理速率导致压垮服务器，因为桶内令牌数量是有限制的。<br><img src="\06、架构设计\02、分布式系统\assets\01、限流\img-20240125_204209.png"><br>优点：<br>
+<br>令牌桶算法的一个重要特性是，它能够应对突发流量。当桶中有足够的令牌时，可以一次性处理多个请求，这对于需要处理突发流量的应用场景非常有用。但是又不会无限制的增加处理速率导致压垮服务器，因为桶内令牌数量是有限制的。<br><img src="\06、架构设计\01、架构基础\assets\01、限流\img-20240125_204209.png"><br>优点：<br>
 <br>可以处理突发流量：令牌桶算法可以处理突发流量。当桶满时，能够以最大速度处理请求。这对于需要处理突发流量的应用场景非常有用。
 <br>限制平均速率：在长期运行中，数据的传输率会被限制在预定义的平均速率（即生成令牌的速率）。
 <br>灵活性：与漏桶算法相比，令牌桶算法提供了更大的灵活性。例如，可以动态地调整生成令牌的速率。
@@ -22222,7 +22924,77 @@ public class SmoothWarmingUpExample {
         }
     }
 }
-复制<br><br>Sentinel 是由阿里巴巴开发的一款流量控制和熔断降级的开源框架。它最初由阿里巴巴集团的高德团队开发，用于应对分布式系统中的高并发流量，提供了一系列功能来保护系统的稳定性。<br><br>参考文章：<br><a rel="noopener" class="external-link" href="https://www.jb51.net/article/257674.htm#_label1" target="_blank">https://www.jb51.net/article/257674.htm#_label1</a><br><a rel="noopener" class="external-link" href="https://zhuanlan.zhihu.com/p/629800828" target="_blank">https://zhuanlan.zhihu.com/p/629800828</a>]]></description><link>06、架构设计\02、分布式系统\01、限流.html</link><guid isPermaLink="false">06、架构设计/02、分布式系统/01、限流.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:46 GMT</pubDate><enclosure url="06、架构设计\02、分布式系统\assets\01、限流\img-20240125_201605.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;06、架构设计\02、分布式系统\assets\01、限流\img-20240125_201605.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[0]]></title><description><![CDATA[ 
+复制<br><br>Sentinel 是由阿里巴巴开发的一款流量控制和熔断降级的开源框架。它最初由阿里巴巴集团的高德团队开发，用于应对分布式系统中的高并发流量，提供了一系列功能来保护系统的稳定性。<br><br>参考文章：<br><a rel="noopener" class="external-link" href="https://www.jb51.net/article/257674.htm#_label1" target="_blank">https://www.jb51.net/article/257674.htm#_label1</a><br><a rel="noopener" class="external-link" href="https://zhuanlan.zhihu.com/p/629800828" target="_blank">https://zhuanlan.zhihu.com/p/629800828</a>]]></description><link>06、架构设计\01、架构基础\01、限流.html</link><guid isPermaLink="false">06、架构设计/01、架构基础/01、限流.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:46 GMT</pubDate><enclosure url="06、架构设计\01、架构基础\assets\01、限流\img-20240125_201605.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;06、架构设计\01、架构基础\assets\01、限流\img-20240125_201605.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[分布式系统 - 分布式会话及实现方案]]></title><description><![CDATA[ 
+ <br><br>
+<br>单机 - Session + Cookie
+<br>多机器
+
+<br>在负载均衡侧 - Session 粘滞
+<br>Session数据同步
+
+
+<br>多机器，集群 - session集中管理，比如redis；目前方案上用的最多的是SpringSession，早前也有用tomcat集成方式的。
+<br>无状态token，比如JWT
+<br><br>Http 协议本身是无状态的，客户端只需要向服务器请求下载内容，客户端和服务器都不记录彼此的历史信息，每一次请求都是独立的。<br>因为浏览器与服务器是使用 socke 套接字进行通信，服务器将请求结果返回给浏览器之后，会关闭当前的 socket 链接，而且服务器也会在处理页面完毕之后销毁页面对象。<br>然而在 Web 应用的很多场景下需要维护用户状态才能正常工作 (是否登录等)，或者说提供便捷 (记住密码，浏览历史等)，状态的保持就是一个很重要的功能。因此在 web 应用开发里就出现了保持 http 链接状态的技术：一个是 cookie 技术，另一种是 session 技术。<br><br>Cookie 技术是 http 状态保持在客户端的解决方案，Cookie 就是由服务器发给客户端的特殊信息，而这些信息以文本文件的方式存放在客户端，然后客户端每次向服务器发送请求的时候都会带上这些特殊的信息。<br>当用户首次使用浏览器访问一个支持Cookie的网站的时候，用户会提供包括用户名在内的个人信息并且提交至服务器；接着，服务器在向客户端回传相应的超文本的同时也会发回这些个人信息，当然这些信息并不是存放在HTTP响应体（Response Body）中的，而是存放于HTTP响应头（Response Header）；当客户端浏览器接收到来自服务器的响应之后，浏览器会将这些信息存放在一个统一的位置。<br>存储在硬盘上的cookie 不可以在不同的浏览器间共享，可以在同一浏览器的不同进程间共享，比如两个IE窗口。这是因为每中浏览器存储cookie的位置不一样，比如<br>
+<br>Chrome下的cookie放在：C:\Users\sharexie\AppData\Local\Google\Chrome\User Data\Default\Cache <br>
+
+<br>Firefox下的cookie放在：C:\Users\sharexie\AppData\Roaming\Mozilla\Firefox\Profiles\tq2hit6m.default\cookies.sqlite （倒数第二个文件名是随机的文件名字）<br>
+
+<br>Ie下的cookie放在：C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Cookies
+<br><br>cookie的内容主要包括：名字，值，过期时间，路径和域。路径与域合在一起就构成了cookie的作用范围。<br>如果不设置过期时间，则表示这个cookie的生命期为浏览器会话期间，只要关闭浏览器窗口，cookie就消失了，这种生命期为浏览器会话期的 cookie被称为会话cookie。会话cookie一般不存储在硬盘上而是保存在内存里。如果设置了过期时间，浏览器就会把cookie保存到硬盘上，关闭后再次打开浏览器，这些cookie仍然有效直到超过设定的过期时间。<br><br>cookie 的使用是由浏览器按照一定的原则在后台自动发送给服务器的。<br>当客户端二次向服务器发送请求的时候，浏览器检查所有存储的cookie，如果某个cookie所声明的作用范围大于等于将要请求的资源所在的位置，则把该cookie附在请求资源的HTTP请求头上发送给服务器。有了Cookie这样的技术实现，服务器在接收到来自客户端浏览器的请求之后，就能够通过分析存放于请求头的Cookie得到客户端特有的信息，从而动态生成与该客户端相对应的内容。通常，我们可以从很多网站的登录界面中看到“请记住我”这样的选项，如果你勾选了它之后再登录，那么在下一次访问该网站的时候就不需要进行重复而繁琐的登录动作了，而这个功能就是通过Cookie实现的。<br><br>Session一般叫做会话，Session技术是http状态保持在服务端的解决方案，它是通过服务器来保持状态的。我们可以把客户端浏览器与服务器之间一系列交互的动作称为一个 Session。是服务器端为客户端所开辟的存储空间，在其中保存的信息就是用于保持状态。因此，session是解决http协议无状态问题的服务端解决方案，它能让客户端和服务端一系列交互动作变成一个完整的事务。<br><br>那么Session在何时创建呢？当然还是在服务器端程序运行的过程中创建的，不同语言实现的应用程序有不同创建Session的方法。<br>当客户端第一次请求服务端，当server端程序调用 HttpServletRequest.getSession(true)这样的语句时的时候，服务器会为客户端创建一个session，并将通过特殊算法算出一个session的ID，用来标识该session对象。<br>Session存储在服务器的内存中(tomcat服务器通过StandardManager类将session存储在内存中)，也可以持久化到file，数据库，memcache，redis等。客户端只保存sessionid到cookie中，而不会保存session。<br>浏览器的关闭并不会导致Session的删除，只有当超时、程序调用HttpSession.invalidate()以及服务端程序关闭才会删除。<br>
+<br>Tomcat中的Session创建
+<br>ManagerBase是所有session管理工具类的基类，它是一个抽象类，所有具体实现session管理功能的类都要继承这个类，该类有一个受保护的方法，该方法就是创建sessionId值的方法：<br>(tomcat的session的id值生成的机制是一个随机数加时间加上jvm的id值，jvm的id值会根据服务器的硬件信息计算得来，因此不同jvm的id值都是唯一的)。<br>StandardManager类是tomcat容器里默认的session管理实现类，它会将session的信息存储到web容器所在服务器的内存里。 PersistentManagerBase也是继承ManagerBase类，它是所有持久化存储session信息的基类，PersistentManager继承了PersistentManagerBase，但是这个类只是多了一个静态变量和一个getName方法，目前看来意义不大，对于持久化存储session，tomcat还提供了StoreBase的抽象类，它是所有持久化存储session的基类，另外tomcat还给出了文件存储FileStore和数据存储JDBCStore两个实现。<br><br>cookie和session的方案虽然分别属于客户端和服务端，但是服务端的session的实现对客户端的cookie有依赖关系的，服务端执行session机制时候会生成session的id值，这个id值会发送给客户端，客户端每次请求都会把这个id值放到http请求的头部发送给服务端，而这个id值在客户端会保存下来，保存的容器就是cookie，因此当我们完全禁掉浏览器的cookie的时候，服务端的session也会不能正常使用。<br><br>Session 优点：  <br>
+<br>Session 中的信息存储在服务端，相比于 cookie 就在一定程度上加大了数据的安全性。  
+<br>Session 数据存储在服务端，相比于 jwt 方便进行管理，也就是说当用户登录和主动注销，只需要添加删除对应的 session 就可以，这样管理起来很方便。<br>
+Session 缺点：  
+<br>Session 存储在服务端，这就增大了服务器的开销，当用户多的情况下，服务器性能会大大降低。  
+<br>因为是基于 cookie 来进行用户识别的, cookie 如果被截获，用户就会很容易受到跨站请求伪造的攻击。  
+<br>用户认证之后，服务端做认证记录，如果认证的记录被保存在内存中的话，这意味着用户下次请求还必须要请求在这台服务器上, 这样才能拿到授权的资源，这样在分布式的应用上，相应的限制了负载均衡器的能力。这也意味着限制了应用的扩展能力。
+<br>Cookie 优点：  <br>
+<br>简单性 Cookie 是一种基于文本的轻量结构，包含简单的键值对。  
+<br>数据持久性虽然客户端计算机上 Cookie 的持续时间取决于客户端上的 Cookie 过期处理和用户干预，Cookie 通常是客户端上持续时间最长的数据保留形式。<br>
+Cookie 缺点：  
+<br>大小受到限制，大多数浏览器对 Cookie 的大小有 4096 字节的限制，尽管在当今新的浏览器和客户端设备版本中，支持 8192 字节的 Cookie 大小已愈发常见。  
+<br>非常不安全，cookie 将数据裸露在浏览器中，这样大大增大了数据被盗取的风险，所有我们不应该将中要的数据放在 cookie 中，或者将数据加密处理。  
+<br>容易被 csrf 攻击，可以设置 csrf_token 来避免攻击。
+<br><br>
+无状态的token或者有状态的Session集中管理是目前最为常用的方案。
+<br>下面主要讨论的有状态的分布式 Session 会话：<br><br>
+为什么这种方案到目前还有很多项目使用呢？因为不需要在项目代码侧改动，而是只需要在负载均衡侧改动。
+<br>方案即将客户端的每次请求都转发至同一台服务器，这就需要负载均衡器能够根据每次请求的会话标识（SessionId）来进行请求转发，如下图所示。<br><img src="\06、架构设计\02、分布式系统\assets\分布式系统-分布式会话及实现方案\img-20240318_220818.png"><br>这种方案实现比较简单，对于Web服务器来说和单机的情况一样。但是可能会带来如下问题：<br>
+<br>如果有一台服务器宕机或者重启，那么这台机器上的会话数据会全部丢失。
+<br>会话标识是应用层信息，那么负载均衡要将同一个会话的请求都保存到同一个Web服务器上的话，就需要进行应用层（第7层）的解析，这个开销比第4层大。
+<br>负载均衡器将变成一个有状态的节点，要将会话保存到具体Web服务器的映射。和无状态节点相比，内存消耗更大，容灾方面也会更麻烦。
+<br><br>Session Replication 的方案则不对负载均衡器做更改，而是在Web服务器之间增加了会话数据同步的功能，各个服务器之间通过同步保证不同Web服务器之间的Session数据的一致性，如下图所示。<br><img src="\06、架构设计\02、分布式系统\assets\分布式系统-分布式会话及实现方案\img-20240318_220925.png"><br>Session Replication 方案对负载均衡器不再有要求，但是同样会带来以下问题：<br>
+<br>同步Session数据会造成额外的网络带宽的开销，只要Session数据有变化，就需要将新产生的Session数据同步到其他服务器上，服务器数量越多，同步带来的网络带宽开销也就越大。
+<br>每台Web服务器都需要保存全部的Session数据，如果整个集群的Session数量太多的话，则对于每台机器用于保存Session数据的占用会很严重。
+<br><br>Session 数据集中存储方案则是将集群中的所有Session集中存储起来，Web服务器本身则并不存储Session数据，不同的Web服务器从同样的地方来获取Session，如下图所示。<br><img src="\06、架构设计\02、分布式系统\assets\分布式系统-分布式会话及实现方案\img-20240318_220952.png"><br>相对于Session Replication方案，此方案的Session数据将不保存在本机，并且Web服务器之间也没有了Session数据的复制，但是该方案存在的问题在于：<br>
+<br>读写Session数据引入了网络操作，这相对于本机的数据读取来说，问题就在于存在时延和不稳定性，但是通信发生在内网，则问题不大。
+<br>如果集中存储Session的机器或集群出现问题，则会影响应用。
+<br><br>Cookie Based 方案是将Session数据放在Cookie里，访问Web服务器的时候，再由Web服务器生成对应的Session数据，如下图所示。<br><img src="\06、架构设计\02、分布式系统\assets\分布式系统-分布式会话及实现方案\img-20240318_221056.png"><br>但是Cookie Based 方案依然存在不足：<br>
+<br>Cookie长度的限制。这会导致Session长度的限制。
+<br>安全性。Seesion数据本来是服务端数据，却被保存在了客户端，即使可以加密，但是依然存在不安全性。
+<br>带宽消耗。这里不是指内部Web服务器之间的宽带消耗，而是数据中心的整体外部带宽的消耗。
+<br>性能影响。每次HTTP请求和响应都带有Seesion数据，对Web服务器来说，在同样的处理情况下，响应的结果输出越少，支持的并发就会越高。
+<br><br>JSON Web Token (JWT)，它是目前最流行的跨域身份验证解决方案<br>JWT 的精髓在于：“去中心化”，数据是保存在客户端的。<br>一个 JWT 实际上就是一个字符串，它由三部分组成：头部 (Header)、载荷 (Payload) 与签名 (signature)<br><br>使用基于 Token 的身份验证方法，在服务端不需要存储用户的登录记录。大概的流程是这样的：<br> 1、客户端通过用户名和密码登录服务器；<br>
+2、服务端对客户端身份进行验证；<br>
+3、服务端对该用户生成 Token，返回给客户端；<br>
+4、客户端将 Token 保存到本地浏览器，一般保存到 cookie 中；<br>
+5、客户端发起请求，需要携带该 Token；<br>
+6、服务端收到请求后，首先验证 Token，之后返回数据。<br>优点：<br>
+<br>无状态、可扩展 ：在客户端存储的 Token 是无状态的，并且能够被扩展。基于这种无状态和不存储 Session 信息，负载均衡器能够将用户信息从一个服务传到其他服务器上。
+<br>安全：请求中发送 token 而不再是发送 cookie 能够防止 CSRF (跨站请求伪造)。
+<br>可提供接口给第三方服务：使用 token 时，可以提供可选的权限给第三方应用程序。
+<br>多平台跨域
+<br>Jwt 优点：<br>
+1、因为 json 的通用性，jwt 可以支持跨语言请求，像 JAVA, JavaScript, NodeJS, PHP 等很多语言都可以使用。<br>
+2、因为有了 payload 部分，所以 JWT 可以在自身存储一些其他业务逻辑所必要的非敏感信息。<br>
+3、便于传输，jwt 的构成非常简单，字节占用很小，所以它是非常便于传输的。<br>
+4、它不需要在服务端保存会话信息, 所以它易于应用的扩展，即信息不保存在服务端，不会存在 session 扩展不方便的情况。<br>Jwt 缺点：<br>
+1、登录状态信息续签问题。比如设置 token 的有效期为一个小时，那么一个小时后，如果用户仍然在这个 web 应用上，这个时候当然不能指望用户再登录一次。目前可用的解决办法是在每次用户发出请求都返回一个新的 token，前端再用这个新的 token 来替代旧的，这样每一次请求都会刷新 token 的有效期。但是这样，需要频繁的生成 token。另外一种方案是判断还有多久这个 token 会过期，在 token 快要过期时，返回一个新的 token。  <br>2、用户主动注销。JWT 并不支持用户主动退出登录，当然，可以在客户端删除这个 token，但在别处使用的 token 仍然可以正常访问。为了支持注销，我的解决方案是在注销时将该 token 加入黑名单。  <br>使用 jwt 注意点：<br>
+1、在 payload 中不应该存放敏感信息，以为该部分客户端是可以解密的。<br>
+2、secret_key 不能泄露。<br><br>存储差异<br>
+Cookie 信息和 jwt 存储在客户端，session 信息存储在服务端，但是 cookie 是浏览器客户端独有的。]]></description><link>06、架构设计\02、分布式系统\分布式系统-分布式会话及实现方案.html</link><guid isPermaLink="false">06、架构设计/02、分布式系统/分布式系统 - 分布式会话及实现方案.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 18 Mar 2024 14:25:38 GMT</pubDate><enclosure url="06、架构设计\02、分布式系统\assets\分布式系统-分布式会话及实现方案\img-20240318_220818.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;06、架构设计\02、分布式系统\assets\分布式系统-分布式会话及实现方案\img-20240318_220818.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[0]]></title><description><![CDATA[ 
  <br><a rel="noopener" class="external-link" href="https://blog.csdn.net/qq_42324086/article/details/121184789" target="_blank">https://blog.csdn.net/qq_42324086/article/details/121184789</a><br><a rel="noopener" class="external-link" href="https://blog.csdn.net/weixin_52880572/article/details/125794836?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-125794836-blog-128910539.235%5Ev43%5Epc_blog_bottom_relevance_base4&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-125794836-blog-128910539.235%5Ev43%5Epc_blog_bottom_relevance_base4&amp;utm_relevant_index=2" target="_blank">https://blog.csdn.net/weixin_52880572/article/details/125794836?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-125794836-blog-128910539.235%5Ev43%5Epc_blog_bottom_relevance_base4&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-125794836-blog-128910539.235%5Ev43%5Epc_blog_bottom_relevance_base4&amp;utm_relevant_index=2</a>]]></description><link>06、架构设计\03、微服务架构\springboot\0.html</link><guid isPermaLink="false">06、架构设计/03、微服务架构/SpringBoot/0.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Thu, 14 Mar 2024 15:07:45 GMT</pubDate></item><item><title><![CDATA[01、虚拟化Dorcker]]></title><description><![CDATA[ 
  <br><br><br>虚拟化（Virtualization）是一种资源管理技术。将计算机的各种实体资源（服务器、网络、内存及存储等），以抽象、转换后呈现出来，打破实体结构间的不可切割的障碍，使用户可以用更好的方式来利用这些资源。<br><br><br>通过在一台物理计算机上运行多个虚拟机或容器，可以更有效地利用计算资源，降低硬件成本。<br><br>虚拟化使得应用程序和环境可以被打包为独立的虚拟机或容器，可以方便地在不同的计算环境中部署和迁移。<br><br>虚拟化技术提供了隔离的执行环境，使得不同的虚拟机或容器之间相互隔离，提高了安全性和稳定性。<br><br>通过虚拟化，可以更方便地管理和维护计算环境，包括快速部署、备份和恢复等操作。<br><br><br>硬件物理平台本身提供了对特殊指令的截获和重定向的支持。支持虚拟化的硬件，也是一些基于硬件实现软件虚拟化技术的关键。在基于硬件实现软件虚拟化的技术中，在硬件是实现虚拟化的基础，硬件(主要是CPU)会为虚拟化软件提供支持，从而实现硬件资源的虚拟化。<br>支持虚拟化的硬件有：<br>
 <br>
@@ -23110,7 +23882,7 @@ ___
     它实际上包含了两行。
 复制<br>在这个例子中，[^1]&nbsp;是对脚注的引用，[^1]: 这是脚注的内容。&nbsp;<br>
 标识符可以是数字或单词，但不能包含空格或制表符。标识符仅将脚注参考与脚注本身相关联-在输出中，脚注按顺序编号。<br>
-脚注代号可以随便命名，不过推荐使用数字序号。脚注代号+∶+空格＋脚注内容<br>这是一段带有多个脚注的文本<a href="\#fn-1-9b56881e3c9ebcd0" class="footnote-link" target="_self" rel="noopener">[1]</a>内容<a href="\#fn-2-9b56881e3c9ebcd0" class="footnote-link" target="_self" rel="noopener">[2]</a>。<br><br><br><br>可以通过&nbsp;- [ ]&nbsp;来创建一个未完成的任务，通过&nbsp;- [x]&nbsp;来创建一个已完成的任务。例如：<br>- [ ] 这是一个未完成的任务。
+脚注代号可以随便命名，不过推荐使用数字序号。脚注代号+∶+空格＋脚注内容<br>这是一段带有多个脚注的文本<a href="\#fn-1-0c440cad6e1463bc" class="footnote-link" target="_self" rel="noopener">[1]</a>内容<a href="\#fn-2-0c440cad6e1463bc" class="footnote-link" target="_self" rel="noopener">[2]</a>。<br><br><br><br>可以通过&nbsp;- [ ]&nbsp;来创建一个未完成的任务，通过&nbsp;- [x]&nbsp;来创建一个已完成的任务。例如：<br>- [ ] 这是一个未完成的任务。
 - [x] 这是一个已完成的任务。
 复制<br>
 <br>这是一个未完成的任务。
@@ -23174,7 +23946,7 @@ Expected one of the following:
 六级标题：无序的使用符号：●　，如果需要数字标题使用    ❶ ❷ ❸ ❹ ❺ ❻ ❼ ❽ ❾ ❿, 其中需要加空格<br>如果不是大类，三级标题转四，也不算违规，一） 变成 1、，更便于阅读，但目前而言，这种情况是极少数的。<br>
 因为 markdown 只支持到 6 级标题。<br>6 级以下：<br>
 七级标题：  A.  B. C.    或   (A) (B) (C)<br>
-七级标题：  a.  b.  c.    或   (a) (b) (c)<br>如果标题较少，并且无序，不管几级标题也可忽略符号，方便查阅，避免目录全是符号。<br>同时尽量少用标题，虽然可以生成目录头，但是有些没有明显意义的不需要标题，但是加上符号阅读时方便即可。<br>以下是样例代码：<br>#### 1、测试四级标题
+七级标题：  a.  b.  c.    或   (a) (b) (c)<br>如果标题较少，并且无序，不管几级标题也可忽略符号，方便查阅，避免目录全是符号。<br>同时尽量少用标题，虽然可以生成目录头，但是有些没有明显意义的不需要标题，但是加粗加上符号阅读时方便即可。<br>以下是样例代码：<br>#### 1、测试四级标题
 ####  ❈　测试四级标题
 
 ##### ① 测试五级标题
@@ -23188,6 +23960,6 @@ Expected one of the following:
 图片格式最好为：. PNG 这种支持高清方式<br>文章内所有链接统一使用标准 markdown 格式，防止使用 typora 使连接失效。<br>
 如果已经有 obisidian 的链接了，单文件可以直接选中已有文件，只要设置对了会自动变成 markdown 的原本格式。<br>
 <br>
-<br>这是第一个脚注的内容。<a href="\#fnref-1-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>这是第二个脚注的内容。<a href="\#fnref-2-9b56881e3c9ebcd0" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>readme.html</link><guid isPermaLink="false">README.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Mon, 26 Feb 2024 12:56:50 GMT</pubDate></item></channel></rss>
+<br>这是第一个脚注的内容。<a href="\#fnref-1-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>这是第二个脚注的内容。<a href="\#fnref-2-0c440cad6e1463bc" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>readme.html</link><guid isPermaLink="false">README.md</guid><dc:creator><![CDATA[kegh]]></dc:creator><pubDate>Tue, 19 Mar 2024 12:23:59 GMT</pubDate></item></channel></rss>

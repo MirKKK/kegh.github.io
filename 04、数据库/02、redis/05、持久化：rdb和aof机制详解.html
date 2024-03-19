@@ -23,7 +23,7 @@
 <li data-line="1">主进程判断当前是否已经存在正在执行的子进程，如果存在，那么主进程直接返回；</li>
 <li data-line="2">如果不存在正在执行的子进程，那么就fork一个新的子进程进行持久化数据，fork过程是阻塞的，fork操作完成后主进程即可执行其他操作；</li>
 <li data-line="3">子进程先将数据写入到临时的rdb文件中，待快照数据写入完成后再原子替换旧的rdb文件；</li>
-<li data-line="4">同时发送信号给主进程，通知主进程rdb持久化完成，主进程更新相关的统计信息（info Persitence下的rdb_*相关选项）。</li>
+<li data-line="4">同时发送信号给主进程，通知主进程rdb持久化完成，主进程更新相关的统计信息（info Persitence下的 <code>rdb_*</code> 相关选项）。</li>
 </ul></div><div><p></p><div src="04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_210729.png" class="internal-embed media-embed image-embed is-loaded"><img src="04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_210729.png"></div><p></p></div></div></div><div class="heading-wrapper"><h5 data-heading="2）自动触发" class="heading" id="2）自动触发"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>2）自动触发</h5><div class="heading-children"><div><p>在以下4种情况时会自动触发：</p></div><div><p>❶ redis.conf 中配置 <code>save m n</code>，即在 m 秒内有 n 次修改时，自动触发 bgsave 生成 rdb 文件；<br>
 ❷ 主从复制时，从节点要从主节点进行全量复制时也会触发 bgsave 操作，生成当时的快照发送到从节点；<br>
 ❸ 执行 debug reload 命令重新加载 redis 时也会触发 bgsave 操作；（争议，"DEBUG RELOAD"命令被认为是调试命令）<br>
@@ -68,8 +68,8 @@ rdbchecksum yes
 </blockquote></div><div><p>很简单，在没有将数据全部写入到磁盘前，这次快照操作都不算成功。<strong>如果出现了服务崩溃的情况，将以上一次完整的RDB快照文件作为恢复内存数据的参考</strong>。在快照操作过程中不能影响上一次的备份数据。Redis服务会在磁盘上创建一个临时文件进行数据操作，待操作成功后才会用这个临时文件替换掉上一次的备份。</p></div><div><blockquote>
 <p>可以每秒做一次快照吗？</p>
 </blockquote></div><div><p><strong>如果频繁地执行全量快照，也会带来两方面的开销</strong>：</p></div><div><ul>
-<li data-line="0">一方面，频繁将全量数据写入磁盘，会给磁盘带来很大压力，多个快照竞争有限的磁盘带宽，前一个快照还没有做完，后一个又开始做了，容易造成恶性循环。</li>
-<li data-line="1">另一方面，bgsave 子进程需要通过 fork 操作从主线程创建出来。虽然，子进程在创建后不会再阻塞主线程，但是，fork 这个创建过程本身会阻塞主线程，而且主线程的内存越大，阻塞时间越长。如果频繁 fork 出 bgsave 子进程，这就会频繁<strong>阻塞主线程</strong>了。</li>
+<li data-line="0">频繁将全量数据写入磁盘，会给磁盘带来很大压力，多个快照竞争有限的磁盘带宽，前一个快照还没有做完，后一个又开始做了，容易造成恶性循环。</li>
+<li data-line="2">另一方面，bgsave 子进程需要通过 fork 操作从主线程创建出来。虽然，子进程在创建后不会再阻塞主线程，但是，fork 这个创建过程本身会阻塞主线程，而且主线程的内存越大，阻塞时间越长。如果频繁 fork 出 bgsave 子进程，这就会<strong>频繁阻塞主线程</strong>了。</li>
 </ul></div><div><p>那么，有什么其他好方法吗？此时，我们可以做增量快照，也就是AOF持久化，是指做了一次全量快照后，后续的快照只对修改的数据进行快照记录，这样可以避免每次全量快照的开销。这个比较好理解。</p></div></div></div><div class="heading-wrapper"><h4 data-heading="4、RDB 优缺点" class="heading" id="4、RDB_优缺点"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>4、RDB 优缺点</h4><div class="heading-children"><div><ul>
 <li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
 <p><strong>优点</strong></p>
@@ -90,7 +90,7 @@ rdbchecksum yes
 </ul></div><div><p>针对 RDB 不适合实时持久化的问题，Redis 提供了 AOF 持久化方式来解。</p></div></div></div></div></div><div class="heading-wrapper"><h3 data-heading="二）AOF 持久化" class="heading" id="二）AOF_持久化"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>二）AOF 持久化</h3><div class="heading-children"><div><p>Append Only file（追加文件），日志里记录的是 Redis 收到的每一条命令，这些命令是以文本形式保存。</p></div><div class="heading-wrapper"><h4 data-heading="1、写后日志" class="heading" id="1、写后日志"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>1、写后日志</h4><div class="heading-children"><div><p>日志采用写后日志，<strong>先写内存，后写日志</strong>。</p></div><div><blockquote>
 <p>PS: 大多数的数据库采用的是写前日志（WAL），例如 MySQL，通过写前日志和两阶段提交，实现数据和逻辑的一致性。</p>
 </blockquote></div><div><p></p><div alt="assets/05、持久化：RDB和AOF机制详解/img-20240315_212409.png" src="04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_212409.png" class="internal-embed media-embed image-embed is-loaded" style="width: 550px; max-width: 100%;"><img alt="assets/05、持久化：RDB和AOF机制详解/img-20240315_212409.png" src="04、数据库/02、redis/assets/05、持久化：rdb和aof机制详解/img-20240315_212409.png" style="width: 550px; max-width: 100%;"></div><p></p></div><div><p>采用后写日志有两方面好处：</p></div><div><ul>
-<li data-line="0"><strong>避免额外的检查开销</strong>：Redis 在向 AOF 里面记录日志的时候，并不会先去对这些命令进行语法检查。所以，如果先记日志再执行命令的话，日志中就有可能记录了错误的命令，Redis 在使用日志恢复数据时，就可能会出错。</li>
+<li data-line="0"><strong>避免额外的检查开销</strong>：如果先记日志再执行命令的话，日志中就有可能记录了错误的命令，Redis 在使用日志恢复数据时，就可能会出错。Redis 在向 AOF 里面记录日志的时候，并不会先去对这些命令进行语法检查。</li>
 <li data-line="1">不会阻塞当前的写操作</li>
 </ul></div><div><p>但这种方式存在潜在风险：</p></div><div><ul>
 <li data-line="0">
@@ -175,17 +175,20 @@ aof-rewrite-incremental-fsync yes
 <li data-line="1">如果aof存在，那么就去加载aof文件，加载成功的话redis重启成功，如果aof文件加载失败，那么会打印日志表示启动失败，此时可以去修复aof文件后重新启动；</li>
 <li data-line="2">若aof文件不存在，那么redis就会转而去加载rdb文件，如果rdb文件不存在，redis直接启动成功；</li>
 <li data-line="3">如果rdb文件存在就会去加载rdb文件恢复数据，如加载失败则打印日志提示启动失败，如加载成功，那么redis重启成功，且使用rdb文件恢复数据；</li>
-</ul></div><div><p>那么为什么会优先加载AOF呢？因为AOF保存的数据更完整，通过上面的分析我们知道AOF基本上最多损失1s的数据。</p></div></div></div><div class="heading-wrapper"><h2 data-heading="四、性能与实践" class="heading" id="四、性能与实践"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>四、性能与实践</h2><div class="heading-children"><div><p>通过上面的分析，我们都知道RDB的快照、AOF的重写都需要fork，这是一个重量级操作，会对Redis造成阻塞。因此为了不影响Redis主进程响应，我们需要尽可能降低阻塞。</p></div><div><ul>
-<li data-line="0">降低fork的频率，比如可以手动来触发RDB生成快照、与AOF重写；</li>
-<li data-line="1">控制Redis最大使用内存，防止fork耗时过长；</li>
-<li data-line="2">使用更牛逼的硬件；</li>
-<li data-line="3">合理配置Linux的内存分配策略，避免因为物理内存不足导致fork失败。</li>
-</ul></div><div><p>在线上我们到底该怎么做？我提供一些自己的实践经验。</p></div><div><ul>
-<li data-line="0">如果Redis中的数据并不是特别敏感或者可以通过其它方式重写生成数据，可以关闭持久化，如果丢失数据可以通过其它途径补回；</li>
-<li data-line="1">自己制定策略定期检查Redis的情况，然后可以手动触发备份、重写数据；</li>
-<li data-line="2">单机如果部署多个实例，要防止多个机器同时运行持久化、重写操作，防止出现内存、CPU、IO资源竞争，让持久化变为串行；</li>
-<li data-line="3">可以加入主从机器，利用一台从机器进行备份处理，其它机器正常响应客户端的命令；</li>
-<li data-line="4">RDB持久化与AOF持久化可以同时存在，配合使用。</li>
+</ul></div><div><p>那么为什么会优先加载AOF呢？因为AOF保存的数据更完整，通过上面的分析我们知道AOF基本上最多损失1s的数据。</p></div></div></div><div class="heading-wrapper"><h2 data-heading="四、性能与实践" class="heading" id="四、性能与实践"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>四、性能与实践</h2><div class="heading-children"><div><p>通过上面的分析，我们都知道RDB的快照、AOF的重写都需要fork，这是一个重量级操作，会对Redis造成阻塞。因此为了不影响Redis主进程响应，我们需要尽可能降低阻塞。</p></div><div><p>内存如何控制分配：</p></div><div><ul>
+<li data-line="0">更好的硬件</li>
+<li data-line="1">合理配置 Linux 的内存分配策略，避免因为物理内存不足导致 fork 失败</li>
+<li data-line="2">控制单个 Redis 实例内存上限，如 4 G 或 8 G。可以加快 fork 的速度、减少主从同步、数据迁移压力（可以单机部署多台 redis 实例）</li>
+<li data-line="3">物理机部署多个 Redis 实例，要防止同时运行持久化、重写操作，防止资源竞争，尝试让持久化变为串行；</li>
+<li data-line="4">不要与 CPU 内存密集型应用（ES）、高硬盘负载（数据库、消息队列）应用一起部署。</li>
+</ul></div><div><p>线上备份怎么做最优：</p></div><div><ul>
+<li data-line="0">用来做缓存的 Redis <strong>关闭持久化</strong>，数据不敏感或可以通过其它方式重写生成数据；</li>
+<li data-line="1">脚本或程序<strong>定期触发备份、重写</strong>数据（制定策略定期检查 Redis 的情况）；</li>
+<li data-line="2">主从机器，让从机器进行备份处理；</li>
+<li data-line="3">4.0 以上让 RDB 与 AOF 持久化同时存在，结合使用。</li>
+</ul></div><div><p>使用 AOF 持久化时：</p></div><div><ul>
+<li data-line="0">设置合理的 rewrite 阈值，避免频繁的 bgrewrite</li>
+<li data-line="1">配置 no-appendfsync-on-rewrite = yes，禁止在 rewrite 期间做 aof，避免因 AOF 引起的阻塞。简单说就是，禁止在重写期间 fsync 刷盘</li>
 </ul></div><div class="mod-footer"></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
 		<div class="graph-view-container">
 			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
